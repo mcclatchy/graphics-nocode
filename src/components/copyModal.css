@@ -1,0 +1,7 @@
+.tool-copy-text {
+	font-size: 12px;
+}
+
+.tool-copy-modal {
+	width: calc(80% - var(--tool-menu-width)) !important;
+}

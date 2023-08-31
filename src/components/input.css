@@ -1,0 +1,131 @@
+.tool-edit-input-output {
+	--input-range-dot-size: 15px;
+}
+
+textarea {
+	width: calc(100% - 15px);
+	font-family: var(--tool-font-family);
+	font-size: 16px;
+	background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 10px !important;
+	resize: none;
+}
+
+textarea + div > output {
+	display: none;
+}
+
+input:focus, select:focus, .focus {
+	box-shadow: none;
+}
+
+.tool-edit-input-output {
+	position: relative;
+}
+
+.unit-range {
+	font-size: 12px;
+	color: var(--tool-gray);
+	margin: 5px;
+}
+
+.tool-edit-item[type="range"] {
+	margin-top: 20px;
+}
+
+.tool-edit-item[type="range"] output {
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	font-size: 14px;
+	transform: translate(-50%, -100%);
+}
+
+.range-output {
+  width: calc(100% - var(--input-range-dot-size));
+  position: absolute;
+  height: 2px;
+  left: calc(var(--input-range-dot-size) / 2);
+  pointer-events: none;
+}
+
+input[type="range"] {
+  /*  styling the track  */
+  -webkit-appearance: none;
+  padding: 0;
+  height: 2px;
+  background: #ccc;
+  border-radius: 16px;
+  width: 250px;
+  margin: 0;
+/*	background-color: #f1f1f1;
+	accent-color: transparent;*/
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 1px;
+  background: #ccc;
+  border-radius: 16px;
+  border: none;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  height: 1px;
+  background: #ccc;
+  border-radius: 16px;
+  border: none;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: var(--input-range-dot-size);
+  width: var(--input-range-dot-size);
+  background-color: var(--tool-black);
+  border-radius: 50%;
+  transform: translate(0, calc(-50% + 1px));
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: var(--input-range-dot-size);
+  width: var(--input-range-dot-size);
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(0, calc(-50% + 1px));
+}
+
+.flex-row, .tool-edit-input-output, .tool-edit-item[type="color"], .tool-edit-item[type="range"] {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.tool-edit-item[type="color"] output {
+	margin-left: 10px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin-left: 5px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+	border-radius: 5px;
+}

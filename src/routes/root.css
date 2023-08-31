@@ -1,0 +1,199 @@
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tool-h1 {
+  font-size: 5em;
+  line-height: 1.25;
+  color: var(--tool-black);
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+.tool-landing {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: Satoshi, Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.tool-landing .tool-foreground, .tool-landing .tool-background {
+  height: 100%;
+  width: 100%;
+}
+.tool-landing .tool-foreground {
+  position: relative;
+  z-index: 1;
+}
+.tool-landing .tool-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.tool-landing .tool-background .tool-pane {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: blur(200px);
+  background-color: #F5F5FD;
+  opacity: 80%;
+  z-index: 10;
+}
+
+.ellipse {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ellipse.one {
+  width: 66%;
+  height: 130%;
+  background-color: #CAD2FC;
+  opacity: 70%;
+  top: -28%;
+  left: 20%;
+  z-index: 5;
+}
+
+.ellipse.two {
+  width: 60%;
+  height: 60%;
+  background-color: #F0DDE3;
+  opacity: 100%;
+  bottom: -20%;
+  left: -13%;
+  z-index: 2;
+}
+
+.ellipse.three {
+  width: 66%;
+  height: 125%;
+  background-color: #FFB983;
+  opacity: 50%;
+  top: -40%;
+  left: -20%;
+  z-index: 1;
+}
+
+.ellipse.four {
+  height: 120%;
+  width: 100%;
+  background-color: #E0F4FD;
+  opacity: 100%;
+  top: -10%;
+  right: -20%;
+  z-index: 4;
+}
+
+.ellipse.five {
+  width: 90%;
+  height: 70%;
+  background-color: #E1F0DD;
+  opacity: 100%;
+  bottom: -20%;
+  right: -10%;
+  z-index: 4;
+}
+
+.divider {
+  font-weight: 300;
+}
+
+.tool-banner {
+  padding-top: 2rem;
+  color: var(--tool-black);
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+}
+
+.tool-tagline {
+  color: var(--tool-gray);
+  font-size: 1.5rem;
+  font-weight: bold;
+  max-width: 650px;
+  margin-top: 3rem;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.tool-buttons {
+  margin-top: 5rem;
+}
+
+.tool-buttons button {
+  margin: 1rem;
+  width: min(175px, 40%);
+  border-radius: 50px;
+  height: 50px;
+}
+
+.tool-buttons button {
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.tool-buttons button.enhance:hover {
+  border: 2px solid var(--tool-black);
+}
+
+.tool-buttons button.documentation:hover {
+  border: 2px solid var(--tool-black);
+}
+
+.tool-buttons button.enhance {
+  border: 1px solid var(--tool-black);
+  background-color: var(--tool-background-color);
+}
+
+.tool-buttons button.documentation {
+  background-color: #C3C2E6;
+  color: #fff;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.centered-x {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.centered-y {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .tool-h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tool-h1 {
+    font-size: 3rem;
+  }
+  .tool-banner, .tool-tagline {
+    font-size: 1.25rem;
+  }
+}

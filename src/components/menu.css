@@ -1,0 +1,80 @@
+.tool-h3 {
+	color: var(--tool-font-color);
+	font-family: var(--tool-font-family);
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+button {
+	box-shadow: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.tool-menu {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: var(--tool-menu-width);
+	height: 100vh;
+	text-align: left;
+	border-right: 1px solid var(--tool-black);
+	background: var(--tool-background-color);
+	z-index: 100;
+}
+
+.tool-topper, .tool-footer {
+	height: 50px;
+	width: 100%;
+	background-color: #DDE7FA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tool-topper {
+	border-bottom: 1px solid var(--tool-black);
+}
+
+.tool-footer {
+	border-top: 1px solid var(--tool-black);
+}
+
+.tool-footer button {
+	display: flex;
+}
+
+.tool-sections {
+	padding: 0 15px;
+	height: calc(100% - 100px);
+	overflow: scroll;
+}
+
+.tool-copy {
+	font-family: var(--tool-font-family);
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 7px;
+	color: var(--tool-black);
+}
+
+.tool-footer.active {
+	pointer-events: all;
+}
+
+.tool-copy.active {
+	cursor: pointer;
+}
+
+.icon-copy.active {
+	opacity: 1;
+}

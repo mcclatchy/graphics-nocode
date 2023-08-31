@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-Regular'), url(./fonts/Satoshi-Regular.woff) format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-Italic'), url(./fonts/Satoshi-Italic.woff) format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-Black'), url(./fonts/Satoshi-Black.woff) format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-BlackItalic'), url(./fonts/Satoshi-BlackItalic.woff) format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-Bold'), url(./fonts/Satoshi-Bold.woff) format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-BoldItalic'), url(./fonts/Satoshi-BoldItalic.woff) format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-Medium'), url(./fonts/Satoshi-Medium.woff) format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-MediumItalic'), url(./fonts/Satoshi-MediumItalic.woff) format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-Light'), url(./fonts/Satoshi-Light.woff) format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: local('Satoshi-LightItalic'), url(./fonts/Satoshi-LightItalic.woff) format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+:root {
+  --tool-gray: #707070;
+  --tool-lightgray: #F1f1f1;
+  --tool-black: #0E1111;
+  --tool-white: #FFFFFF;
+  --tool-font-color: var(--tool-black);
+  --tool-background-color: #ffffff;
+  --tool-font-family: Satoshi, Inter, system-ui, sans-serif;
+  --tool-font-monospace: Courier New, monospace;
+  --tool-menu-width: 230px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.monospace {
+  font-family: var(--tool-font-monospace);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--tool-background-color);
+  }
+  a:hover {
+    color: #747bff;
+  }
+}

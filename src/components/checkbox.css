@@ -1,0 +1,43 @@
+.checkbox-wrapper {
+	margin: 3px 7px;
+}
+
+.checkbox-wrapper label {
+	cursor: pointer;
+	font-family: var(--tool-font-family);
+	font-weight: 300;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + .checkmark {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 12px;
+  height: 12px;
+  margin: -1px 0px 0 0;
+  vertical-align: middle;
+  background: white left top no-repeat;
+  border: 1px solid #00000099;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + .checkmark {
+  background: #00000099 -19px top no-repeat;
+  border: 1px solid #000000;
+}
+
+.checkbox-wrapper p {
+	margin: 0;
+	display: inline-block;
+	margin-left: 9px;
+	font-family: var(--tool-font-family);
+	font-size: 17px;
+	user-select: none;
+}
+
+.checkbox-wrapper p.checked {
+	font-weight: bold;
+}

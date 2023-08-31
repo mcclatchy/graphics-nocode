@@ -1,0 +1,33 @@
+.tool-switch {
+	font-family: var(--tool-font-family);
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+.tool-switch .item {
+	padding: 5px 5px;
+	border: 1px solid var(--tool-black);
+	width: 110px;
+	text-align: center;
+	opacity: 25%;
+	z-index: 0;
+	cursor: pointer;
+}
+
+.tool-switch .item:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.tool-switch .item:last-child {
+	border-radius: 0 5px 5px 0;
+	margin-left: -1px;
+}
+
+.tool-switch .item.active {
+	opacity: 100%;
+	font-weight: bold;
+	background-color: var(--tool-lightgray);
+	z-index: 1;
+}

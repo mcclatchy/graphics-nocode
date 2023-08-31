@@ -1,0 +1,49 @@
+.tool-modal {
+	max-height: 90%;
+	width: min(750px, calc(80% - var(--tool-menu-width)));
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	background: var(--tool-background-color);
+	margin-left: calc(var(--tool-menu-width) / 2);
+	border-radius: 10px;
+	border: 2px solid var(--tool-black);
+	z-index: 100;
+	font-family: var(--tool-font-family);
+	overflow: scroll;
+	--tool-modal-margin: 25px;
+}
+
+.tool-modal-topper {
+	margin: var(--tool-modal-margin);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.tool-modal-wrapper {
+	margin: 30px var(--tool-modal-margin);
+}
+
+.tool-modal-label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.tool-modal-value {
+	padding: 10px 5px;
+}
+
+.tool-title {
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.tool-remove {
+	cursor: pointer;
+}
+

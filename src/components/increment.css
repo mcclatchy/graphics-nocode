@@ -1,0 +1,47 @@
+.increment-wrapper {
+	margin: 3px 7px;
+}
+
+.increment-wrapper label {
+	cursor: pointer;
+	font-family: var(--tool-font-family);
+	font-weight: 300;
+}
+
+.increment-wrapper p {
+	margin: 0;
+	display: inline-block;
+	margin-left: 9px;
+	font-family: var(--tool-font-family);
+	font-size: 17px;
+	user-select: none;
+}
+
+.increment-wrapper p.checked {
+	font-weight: bold;
+}
+
+.increment img {
+	opacity: 0.5;
+}
+
+.increment img.checked {
+	opacity: 1;
+}
+
+.increment {
+	position: relative;
+}
+
+.increment .count {
+	position: absolute;
+	top: -7px;
+	margin: 0 !important;
+	font-family: var(--tool-font-family);
+	font-size: 10px;
+	display: none;
+}
+
+.increment .count.checked {
+	display: inline-block;
+}

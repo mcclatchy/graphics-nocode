@@ -1,0 +1,12 @@
+.card-toolbar {
+	position: absolute;
+  right: 10px;
+  z-index: 10;
+  top: 5px;
+}
+
+.card-toolbar img {
+	margin-right: 10px;
+  cursor: pointer;
+  filter: invert(0.5);
+}
