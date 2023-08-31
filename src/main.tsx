@@ -1,10 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-import Root from "./routes/root";
-import Enhance from "./routes/enhance";
+import Root from "./routes/root.jsx";
+import Enhance from "./routes/enhance.jsx";
 
 const router = createBrowserRouter([
   {

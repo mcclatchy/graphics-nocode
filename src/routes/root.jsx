@@ -3,8 +3,6 @@ import { useState } from 'react'
 import './root.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className="tool-landing">
@@ -27,11 +25,11 @@ function App() {
             </p>
             <div className="tool-buttons">
               <Link to="/enhance">
-                <button className="enhance" onClick={() => setCount((count) => count + 1)}>
+                <button className="enhance">
                   + Enhance story
                 </button>
               </Link>
-              <button className="documentation" onClick={() => setCount((count) => count + 1)}>
+              <button className="documentation">
                 Documentation
               </button>
             </div>
