@@ -60,6 +60,13 @@ const Increment = (props) => {
                 props.setEditOptions(props.defaultOptions);
                 return updatedWebComponents;
               });
+
+              // TODO: Need to tie this in more specifically with the updating DOM?
+              const delay = ms => new Promise(res => setTimeout(res, ms));
+              delay(500).then(() => {
+                const elem = document.getElementById(id)
+                elem && elem.scrollIntoView({ behavior: "smooth"});
+              });
             }
           }}
 
