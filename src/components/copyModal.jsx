@@ -108,23 +108,23 @@ class CopyModal extends React.Component {
 	          value={getLinksAndScripts()}
 	          className="monospace tool-copy-text"
 	          spellCheck="false"
-	          readOnly="true"
+	          readOnly={true}
 	        />
        	</div>
 
 
         {/* Body: Cards */}
-        {this.props.webComponents && this.props.webComponents.map((webComponent) => {
+        {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
         	const element = document.getElementById(webComponent.props.id);
         	const html = element?.outerHTML;
           return (
-          	<div className="tool-modal-wrapper">
+          	<div className="tool-modal-wrapper" key={i}>
 				      <div className="tool-modal-label">Body - {webComponent.props.id}</div>
               <TextareaAutosize 
 	              defaultValue={beautifyHTML(html)}
 		            className="monospace tool-copy-text"
 		            spellCheck="false"
-		            readOnly="true"
+		            readOnly={true}
 	            />
 				    </div>
 

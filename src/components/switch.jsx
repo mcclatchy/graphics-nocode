@@ -10,9 +10,10 @@ const Switch = (props) => {
 
 	return (
    <div className="tool-switch">
-    {props.options.map((option) => {
+    {props.options.map((option, i) => {
       return (
         <div
+          key={i}
         	className={"item " + (option.value === value ? "active" : "")}
         	value={option.value}
         	onClick={(e) => {

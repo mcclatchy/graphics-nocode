@@ -20,9 +20,10 @@ class EditModal extends React.Component {
           <div className="tool-title">Edit</div>
           <img className="tool-remove" src={Remove} alt="remove" onClick={(e) => { this.props.setEditMode(false); this.props.setEditOptions({}); }}/>
         </div>
-        {this.props.editOptions && Object.keys(this.props.editOptions).map((key) => {
+        {this.props.editOptions && Object.keys(this.props.editOptions).map((key, i) => {
           return (
             <Input 
+              key={i}
               editKey={key}
               editOptions={this.props.editOptions}
               setEditOptions={this.props.setEditOptions}

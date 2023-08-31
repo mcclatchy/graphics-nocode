@@ -627,7 +627,7 @@ class SampleArticle extends React.Component {
               {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
                 const toolbar = this.props.toolbars[i];
                 return (
-                  <div style={{position: 'relative'}}>
+                  <div style={{position: 'relative'}} key={i}>
                     {cloneElement(toolbar, { key: toolbar.id })}
                     {cloneElement(webComponent, { key: webComponent.id })}
                   </div>

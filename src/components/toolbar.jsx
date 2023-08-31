@@ -7,10 +7,13 @@ import './toolbar.css'
 const removeWebComponent = (e, props) => {
   props.setWebComponents(webComponents => webComponents.filter(webComponent => webComponent.props.id !== props.id ));
   props.setToolbars(toolbars => toolbars.filter(toolbar => toolbar.props.id !== props.id ));
-  props.setCount(count => count - 1 >= 0 ? count - 1 : 0);
+  props.setCount(count => {
+    const updatedCount = count - 1 >= 0 ? count - 1 : 0;
+    updatedCount === 0 && props?.link && toggleLink(props.link);
+    updatedCount === 0 && props?.script && toggleScript(props.script);
+    return updatedCount;
+  });
   props.setEditMode(false);
-  props?.link && toggleLink(props.link);
-  props?.script && toggleScript(props.script);
 }
 
 const editWebComponent = (e, props) => {

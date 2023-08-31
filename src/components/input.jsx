@@ -26,7 +26,6 @@ const Input = (props) => {
         return (
           <TextareaAutosize
             type={type}
-            defaultValue={newValue || defaultValue}
             value={newValue || defaultValue}
             className="tool-modal-value"
             onChange={(e) => { handleChange(e, props); }}
@@ -35,12 +34,11 @@ const Input = (props) => {
         );
       case 'range':
         return (
-          <div class="flex-row">
-            <div class="unit-range">{min}{unit}</div>
+          <div className="flex-row">
+            <div className="unit-range">{min}{unit}</div>
             <div className="tool-edit-input-output" type={type}>
               <input
                 type={type}
-                defaultValue={newValue || defaultValue}
                 min={min}
                 max={max}
                 value={newValue || defaultValue}
@@ -54,7 +52,7 @@ const Input = (props) => {
                 <output style={{left: `${sliderPercentage}%`}}>{newValue || defaultValue}{unit}</output>
               </div>
             </div>
-            <div class="unit-range">{max}{unit}</div>
+            <div className="unit-range">{max}{unit}</div>
           </div>
         );
       case 'switch':
@@ -80,7 +78,6 @@ const Input = (props) => {
           <div className="tool-edit-input-output" type={type}>
             <input
               type={type}
-              defaultValue={newValue || defaultValue}
               min={min}
               max={max}
               value={newValue || defaultValue}

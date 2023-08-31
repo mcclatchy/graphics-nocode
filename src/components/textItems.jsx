@@ -9,12 +9,13 @@ const textItems = (props) => {
 
 	return (
     <div>
-      {props.value.map((item,index) => {
+      {props.value.map((item, i) => {
           return(
             <TextareaAutosize
+              key={i}
               defaultValue={item}
               className="tool-modal-value"
-              onChange={(e) => { updateValue(e, index); }}
+              onChange={(e) => { updateValue(e, i); }}
               spellCheck="false"
             ></TextareaAutosize>
           )
