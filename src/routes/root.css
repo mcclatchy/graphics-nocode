@@ -144,7 +144,7 @@
 }
 
 .tool-buttons button {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   font-size: 1em;
   font-weight: bold;
   font-family: inherit;
@@ -153,6 +153,7 @@
 
 .tool-buttons button.enhance:hover {
   border: 2px solid var(--tool-black);
+  padding: 0px;
 }
 
 .tool-buttons button.documentation:hover {
@@ -161,6 +162,7 @@
 
 .tool-buttons button.enhance {
   border: 1px solid var(--tool-black);
+  padding: 1px;
   background-color: var(--tool-background-color);
 }
 
