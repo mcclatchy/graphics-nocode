@@ -1,25 +1,34 @@
-import TextareaAutosize from 'react-textarea-autosize';
+import { useState } from "react";
+import TextItem from './textItem.jsx'
+import Plus from '../assets/plus.svg';
 import './textItems.css'
 
 const textItems = (props) => {
-
-  const updateValue = (e, index) => {
-    props.value[index] = e.target.value;
-  }
+  const [textItems, setTextItems] = useState(props.value);
 
 	return (
     <div>
-      {props.value.map((item, i) => {
+      {textItems.map((item, i) => {
           return(
-            <TextareaAutosize
-              key={i}
-              defaultValue={item}
-              className="tool-modal-value"
-              onChange={(e) => { updateValue(e, i); }}
-              spellCheck="false"
-            ></TextareaAutosize>
+            <TextItem
+              key={`${item}-${i}`}
+              value={props.value}
+              item={item}
+              updateIndex={i}
+              props={props.props}
+              handleChange={props.handleChange}
+              setValue={props.setValue}
+              setEditOptions={props.setEditOptions}
+              editKey={props.editKey}
+              setTextItems={setTextItems}
+            />
           )
       })}
+      <div className="tool-add-text-item">
+        <button>
+          <img src={Plus} alt="add" onClick={(e) => props.setValue(props.value.push("")) }/>
+        </button>
+      </div>
     </div>
   )
 }

@@ -71,6 +71,9 @@ const Input = (props) => {
             value={newValue || defaultValue}
             props={props}
             handleChange={handleChange}
+            setValue={setValue}
+            setEditOptions={props.setEditOptions}
+            editKey={props.editKey}
           />
         )
       default:

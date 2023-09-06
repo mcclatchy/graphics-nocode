@@ -1,0 +1,36 @@
+.tool-edit-text-item, .tool-add-text-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.tool-edit-text-item {
+	margin: 10px 0;
+	align-items: center;
+}
+
+.tool-remove-text-item {
+	padding-left: 15px;
+}
+
+.tool-remove-text-item button img {
+	height: 12px;
+	width: 12px;
+	opacity: 0.5;
+}
+.tool-remove-text-item button:hover img {
+	opacity: 1;
+}
+
+.tool-add-text-item button {
+	margin: 10px 0 0 0;
+}
+
+.tool-add-text-item button img {
+	height: 15px;
+	width: 15px;
+	opacity: 0.5;
+}
+.tool-add-text-item button:hover img {
+	opacity: 1;
+}
