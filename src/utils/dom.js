@@ -1,5 +1,8 @@
+const SCRIPT_PREFIX = "tool-script"
+const LINK_PREFIX = "tool-link"
+
 export const addScript = (url) => {
-  const id = `script-${getFilenameFromUrl(url)}`;
+  const id = `${SCRIPT_PREFIX}-${getFilenameFromUrl(url)}`;
 
   if (!document.getElementById(id)) {
 	  const script = document.createElement("script");
@@ -12,7 +15,7 @@ export const addScript = (url) => {
 }
 
 export const addLink = (url) => {
-	const id = `link-${getFilenameFromUrl(url)}`;
+	const id = `${LINK_PREFIX}-${getFilenameFromUrl(url)}`;
 
 	if (!document.getElementById(id)) {
 	  const link = document.createElement("link");
@@ -28,8 +31,20 @@ export const removeElementById = (id) => {
   document.getElementById(id).remove();
 }
 
+export const removeAllElementsByIdPrefix = (prefix) => {
+  document.querySelectorAll(`[id^="${prefix}"]`).forEach((elem) => elem.remove());
+}
+
+export const removeToolLinks = () => {
+  removeAllElementsByIdPrefix(LINK_PREFIX);
+}
+
+export const removeToolScripts = () => {
+  removeAllElementsByIdPrefix(SCRIPT_PREFIX);
+}
+
 export const toggleScript = (url, add) => {
-  const id = `script-${getFilenameFromUrl(url)}`;
+  const id = `${SCRIPT_PREFIX}-${getFilenameFromUrl(url)}`;
   if (add) {
     addScript(url);
   } else {
@@ -38,7 +53,7 @@ export const toggleScript = (url, add) => {
 }
 
 export const toggleLink = (url, add) => {
-  const id = `link-${getFilenameFromUrl(url)}`;
+  const id = `${LINK_PREFIX}-${getFilenameFromUrl(url)}`;
   if (add) {
     addLink(url, id);
   } else {

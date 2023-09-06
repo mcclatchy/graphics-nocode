@@ -5,6 +5,7 @@ import Home from '../assets/home.svg';
 import Checkbox from './checkbox.jsx';
 import Increment from './increment.jsx';
 import Formats from './formats.jsx';
+import { removeToolLinks, removeToolScripts } from '../utils/dom.js'
 import './menu.css'
 
 
@@ -15,7 +16,12 @@ const Menu = (props) => {
       <div className="tool-menu">
       	<div className="tool-topper">
       		<Link to="/">
-	      		<button>
+	      		<button 
+	      			onClick={(e) => { 
+		      			removeToolLinks();
+		      			removeToolScripts(); 
+		      		}}
+		      	>
 	      			<img src={Home} alt="Home"/>
 	      		</button>
 	      	</Link>
