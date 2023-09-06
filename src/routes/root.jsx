@@ -29,9 +29,11 @@ function App() {
                   + Enhance story
                 </button>
               </Link>
-              <button className="documentation">
-                Documentation
-              </button>
+              <a href="https://www.github.com/mcclatchy/graphics-nocode" target="_blank">
+                <button className="documentation">
+                  Documentation
+                </button>
+              </a>
             </div>
           </div>
         </div>  
