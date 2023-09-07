@@ -58,9 +58,9 @@ const textItem = (props) => {
         onChange={e => { updateValue(e, props.updateIndex); }}
         spellCheck="false"
       ></TextareaAutosize>
-      <div className="tool-remove-text-item">
+      <div className="tool-remove-text-item" onClick={e => { removeValue(e, props.updateIndex); }}>
         <button>
-          <img src={Minus} alt="remove" onClick={e => { removeValue(e, props.updateIndex); }}/>
+          <img src={Minus} alt="remove"/>
         </button>
       </div>
     </div>
