@@ -1,6 +1,6 @@
 .tool-modal {
 	max-height: 90%;
-	width: min(750px, calc(80% - var(--tool-menu-width)));
+	width: min(950px, calc(80% - var(--tool-menu-width)));
 	position: fixed;
 	top: 50%;
 	left: 50%;

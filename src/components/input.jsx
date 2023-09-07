@@ -72,6 +72,7 @@ const Input = (props) => {
             props={props}
             handleChange={handleChange}
             setValue={setValue}
+            editOptions={props.editOptions}
             setEditOptions={props.setEditOptions}
             editKey={props.editKey}
           />

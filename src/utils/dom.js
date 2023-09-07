@@ -32,7 +32,7 @@ export const removeElementById = (id) => {
 }
 
 export const removeAllElementsByIdPrefix = (prefix) => {
-  document.querySelectorAll(`[id^="${prefix}"]`).forEach((elem) => elem.remove());
+  getAllElementsByIdPrefix(prefix).forEach((elem) => elem.remove());
 }
 
 export const removeToolLinks = () => {
@@ -41,6 +41,18 @@ export const removeToolLinks = () => {
 
 export const removeToolScripts = () => {
   removeAllElementsByIdPrefix(SCRIPT_PREFIX);
+}
+
+export const getAllElementsByIdPrefix = (prefix) => {
+  return document.querySelectorAll(`[id^="${prefix}"]`)
+}
+
+export const getToolLinks = () => {
+  return getAllElementsByIdPrefix(LINK_PREFIX)
+}
+
+export const getToolScripts = () => {
+  return getAllElementsByIdPrefix(SCRIPT_PREFIX)
 }
 
 export const toggleScript = (url, add) => {

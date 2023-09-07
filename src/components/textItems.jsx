@@ -6,6 +6,14 @@ import './textItems.css'
 const textItems = (props) => {
   const [textItems, setTextItems] = useState(props.value);
 
+  const addTextItem = () => {
+    const tagOptions = props.editOptions[props.editKey].options;
+    props.setValue(props.value.push({
+      tag: tagOptions[0],
+      text: ""
+    }))
+  }
+
 	return (
     <div>
       {textItems.map((item, i) => {
@@ -18,6 +26,7 @@ const textItems = (props) => {
               props={props.props}
               handleChange={props.handleChange}
               setValue={props.setValue}
+              editOptions={props.editOptions}
               setEditOptions={props.setEditOptions}
               editKey={props.editKey}
               setTextItems={setTextItems}
@@ -26,7 +35,7 @@ const textItems = (props) => {
       })}
       <div className="tool-add-text-item">
         <button>
-          <img src={Plus} alt="add" onClick={(e) => props.setValue(props.value.push("")) }/>
+          <img src={Plus} alt="add" onClick={e => addTextItem() }/>
         </button>
       </div>
     </div>

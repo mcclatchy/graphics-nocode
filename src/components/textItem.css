@@ -1,0 +1,14 @@
+.tool-edit-text-item select {
+	width: 65px;
+	margin-right: 20px;
+	font-family: var(--tool-font-family);
+	border-radius: 5px;
+	background-color: var(--tool-lightgray);
+	color: var(--tool-gray);
+	border: none;
+
+	background-image: url("../assets/down.svg");
+  background-repeat: no-repeat;
+  background-size: 0.75em 100%;
+  background-position: calc(100% - 12px) 1px;
+}

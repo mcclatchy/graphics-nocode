@@ -10,6 +10,8 @@ import './menu.css'
 
 
 const Menu = (props) => {
+	const [numThemes, setNumThemes] = useState(0)
+	const [numEnhancements, setNumEnhancements] = useState(0)
 
   return (
     <>
@@ -42,11 +44,13 @@ const Menu = (props) => {
 	        	<Checkbox
 	        		label="Dark"
 	        		link="https://storage.googleapis.com/mc-high-impact/2023/broken-government/dark.css"
+	        		setNum={setNumThemes}
 	        	/>
 			      <Checkbox
 			      	label="Declutter"
 	        		link="https://www.miamiherald.com/static/hi/themes/declutter.css"
 	        		script="https://www.miamiherald.com/static/hi/themes/declutter.js"
+	        		setNum={setNumThemes}
 			      />
 	        </div>
 
@@ -60,6 +64,7 @@ const Menu = (props) => {
 	        		label="minimalHeader"
 	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/topper-minimalist.css"
 	        		script="https://www.miamiherald.com/static/hi//2023/broken-government/topper-minimalist.js"
+	        		setNum={setNumEnhancements}
 	        	/>
 			      {/*<Checkbox label="minimalFooter"/>*/}
 			      {/*<Checkbox
@@ -130,14 +135,38 @@ const Menu = (props) => {
 	        				"label": "Text",
 	        				"options": ["h5", "p"],
 	        				"value": [
-	        					"<h5>Sources</h5>",
-										"<p>Scenes not witnessed by the reporter in this series were compiled from research, interviews and public records including documents from the Mecklenburg County Detention Center and Clerk of Superior Court.</p>",
-										"<h5>Credits</h5>",
-										"<p>Kallie Cox | Reporter</p>",
-										"<p>Anna Douglas | Editor</p>",
-										"<p>Rachel Handley | Illustrations & Design</p> ",
-										"<p>Gabby McCall | Page Design</p>",
-										"<p>David Newcomb | Development & Design</p>"
+										{
+											"tag": "h5",
+											"text": "Sources"
+										},
+										{
+											"tag": "p",
+											"text": "Scenes not witnessed by the reporter in this series were compiled from research, interviews and public records including documents from the Mecklenburg County Detention Center and Clerk of Superior Court."
+										},
+										{
+											"tag": "h5",
+											"text": "Credits"
+										},
+										{
+											"tag": "p",
+											"text": "Kallie Cox | Reporter"
+										},
+										{
+											"tag": "p",
+											"text": "Anna Douglas | Editor"
+										},
+										{
+											"tag": "p",
+											"text": "Rachel Handley | Illustrations & Design"
+										},
+										{
+											"tag": "p",
+											"text": "Gabby McCall | Page Design"
+										},
+										{
+											"tag": "p",
+											"text": "David Newcomb | Development & Design"
+										}
 	        				],
 	        				"type": "text-item"
 	        			}
@@ -159,6 +188,17 @@ const Menu = (props) => {
 			      	script="https://www.miamiherald.com/static/hi/2023/broken-government/summary-list.js"
 			      	link="https://www.miamiherald.com/static/hi/2023/broken-government/summary-list.css"
 	        		defaultOptions={{
+	        			"data-list-style": {
+	        				"label": "List Style",
+	        				"value": "ul",
+	        				"options": [{"label": "Bulleted", "value": "ul"}, {"label": "Numbered", "value": "ol"}],
+	        				"type": "switch"
+	        			},
+	        			"data-border-color": {
+	        				"label": "Border Color",
+	        				"value": "#777777",
+	        				"type": "color"
+	        			},
 	        			"data-title": {
 	        				"label": "Title",
 	        				"value": "Summary of Items",
@@ -173,23 +213,24 @@ const Menu = (props) => {
 	        				"label": "Text",
 	        				"options": ["li"],
 	        				"value": [
-	        					"<li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>",
-	        					"<li>Cras ut neque a orci vulputate sollicitudin. Mauris convallis orci vitae semper vehicula.</li>",
-	        					"<li>Donec vestibulum, neque at facilisis maximus, felis lectus condimentum ex, et laoreet nulla dolor vitae urna.</li>",
-	        					"<li>Fusce ut mi faucibus, ultrices ante a, imperdiet quam. Etiam a sem at leo condimentum pretium sit amet ut lacus.</li>"
+	        					{
+											"tag": "li",
+											"text": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+										},
+										{
+											"tag": "li",
+											"text": "Cras ut neque a orci vulputate sollicitudin. Mauris convallis orci vitae semper vehicula."
+										},
+										{
+											"tag": "li",
+											"text": "Donec vestibulum, neque at facilisis maximus, felis lectus condimentum ex, et laoreet nulla dolor vitae urna."
+										},
+										{
+											"tag": "li",
+											"text": "Fusce ut mi faucibus, ultrices ante a, imperdiet quam. Etiam a sem at leo condimentum pretium sit amet ut lacus."
+										}
 	        				],
 	        				"type": "text-item"
-	        			},
-	        			"data-border-color": {
-	        				"label": "Border Color",
-	        				"value": "#00000088",
-	        				"type": "color"
-	        			},
-	        			"data-list-style": {
-	        				"label": "List Style",
-	        				"value": "ul",
-	        				"options": [{"label": "Numbered", "value": "ol"}, {"label": "Bulleted", "value": "ul"}],
-	        				"type": "switch"
 	        			}
 	        		}}
 
@@ -216,13 +257,13 @@ const Menu = (props) => {
         <div
         	className="tool-footer"
         	style={{
-        		pointerEvents: (props.webComponents.length > 0) ? 'all' : 'none'
+        		pointerEvents: (numEnhancements > 0 || numThemes > 0 || props.webComponents.length > 0) ? 'all' : 'none'
         	}}
         >
       		<button
       			onClick={(e) => { props.setCopyMode(true); }}
 	        	style={{
-	        		opacity: (props.webComponents.length) > 0 ? 1 : 0.25
+	        		opacity: (numEnhancements > 0 || numThemes > 0 || props.webComponents.length) > 0 ? 1 : 0.25
 	        	}}
       		>
       			<img src={Copy} alt="Copy" className="icon-copy"/>

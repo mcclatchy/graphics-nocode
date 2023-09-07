@@ -9,10 +9,10 @@ const removeWebComponent = (e, props) => {
   props.setToolbars(toolbars => toolbars.filter(toolbar => toolbar.props.id !== props.id ));
   props.setCount(count => {
     const updatedCount = count - 1 >= 0 ? count - 1 : 0;
-    updatedCount === 0 && props?.link && toggleLink(props.link);
-    updatedCount === 0 && props?.script && toggleScript(props.script);
     return updatedCount;
   });
+  props.count === 0 && props?.link && toggleLink(props.link);
+  props.count === 0 && props?.script && toggleScript(props.script);
   props.setEditMode(false);
 }
 

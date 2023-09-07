@@ -3,8 +3,8 @@ import "./checkbox.css"
 import { toggleLink, toggleScript } from "../utils/dom.js"
 
 
-const Checkbox = ({ label, checked, link, script }) => {
-  const defaultChecked = checked ? checked : false;
+const Checkbox = (props) => {
+  const defaultChecked = props.checked ? props.checked : false;
   const [isChecked, setIsChecked] = useState(defaultChecked);
 
   return (
@@ -14,15 +14,14 @@ const Checkbox = ({ label, checked, link, script }) => {
           type="checkbox"
           checked={isChecked}
           onChange={() => {
-            setIsChecked((prev) => {
-              link && toggleLink(link, !prev);
-              script && toggleScript(script, !prev);
-              return !prev
-            });
+            setIsChecked((prev) => !prev );
+            props.link && toggleLink(props.link, !isChecked);
+            props.script && toggleScript(props.script, !isChecked);
+            isChecked ? props.setNum(num => num - 1) : props.setNum(num => num + 1);
           }}
         />
         <span className="checkmark"></span>
-        <p className={"label " + (isChecked ? 'checked' : '')}>{label}</p>
+        <p className={"label " + (isChecked ? 'checked' : '')}>{props.label}</p>
       </label>
     </div>
   );

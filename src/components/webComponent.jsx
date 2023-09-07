@@ -7,7 +7,8 @@ const WebComponent = ({ name, id, options = {} }) => {
     Object.keys(options).map(function(key, i) {
       const value = options[key].value;
       if (key === "slot") {
-        slot = value.join("\n");
+        const formattedValue = value.map(val => `<${val.tag}>${val.text}</${val.tag}>`);
+        slot = formattedValue.join("\n");
         return "";
       } else {
         return `${key}="${value}"`;

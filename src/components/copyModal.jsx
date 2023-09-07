@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TextareaAutosize from 'react-textarea-autosize';
 import Input from './input.jsx'
 import Remove from '../assets/remove.svg'
+import { getToolLinks, getToolScripts } from "../utils/dom.js"
 import "./copyModal.css"
 
 
@@ -78,13 +79,13 @@ class CopyModal extends React.Component {
   render() {
   	// TODO: stop accessing the DOM probably and use state instead
   	function getScripts() {
-			const scripts =document.querySelectorAll('script[id^=script]');
+			const scripts = getToolScripts();
 			const scriptsString = Array.from(scripts).map((script) => script.outerHTML ).join("\n");
 			return scriptsString;
 		}
 
 		function getLinks() {
-			const links = document.querySelectorAll('link[id^=link]');
+			const links = getToolLinks();
 			const linksString = Array.from(links).map((link) => link.outerHTML ).join("\n");
 			return linksString;
 		}
