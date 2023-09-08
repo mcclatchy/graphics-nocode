@@ -38,7 +38,7 @@ const Menu = (props) => {
 	        	<h3 className="tool-h3">Themes</h3>
 	        	<Checkbox
 	        		label="Dark"
-	        		link="https://storage.googleapis.com/mc-high-impact/2023/broken-government/dark.css"
+	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/dark.css"
 	        		setNum={props.setNumThemes}
 	        	/>
 			      <Checkbox
@@ -106,6 +106,45 @@ const Menu = (props) => {
 	        				"unit": "px",
 	        				"min": "300",
 	        				"max": "700"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+	        	/>
+	        	<Increment
+	        		label="event-timeline"
+	        		script="https://www.miamiherald.com/static/hi/cards/event-timeline/event-timeline.js"
+	        		defaultOptions={{
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "Gone but not forgotten",
+	        				"type": "text"
+	        			},
+	        			"data-subtitle": {
+	        				"label": "Subtitle",
+	        				"value": "A decade of efforts to bring journalist Austin Tice home from Syria",
+	        				"type": "text"
+	        			},
+	        			"data-sheet": {
+	        				"label": "Sheet",
+	        				"value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/1npUIJTdZLX9tgM01AX1oNBKfpejCpXSMU8Seim8Msdo.json",
+	        				"type": "text"
+	        			},
+	        			"data-expanded": {
+	        				"label": "Style",
+	        				"value": null,
+	        				"options": [{"label": "Collapsed", "value": null}, {"label": "Expanded", "value": "true"}],
+	        				"type": "switch"
 	        			}
 	        		}}
 
