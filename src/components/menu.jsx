@@ -10,8 +10,6 @@ import './menu.css'
 
 
 const Menu = (props) => {
-	const [numThemes, setNumThemes] = useState(0)
-	const [numEnhancements, setNumEnhancements] = useState(0)
 
   return (
     <>
@@ -34,9 +32,6 @@ const Menu = (props) => {
 	        	<Formats/>
 	        </div>
 
-	        {/* TODO: themes and enhancements can be destructive to the page so that simply adding/subtracting scripts is not going to cut it. 
-	          	Better to manage state and refresh page from base + themes + enhancemnts + cards etc when adding/removing an item
-	        */}
 	        {/* TODO: work on component naming and organization - Checkbox is doing way more than the checkbox part.... Same with Increment....*/}
 	        {/* Themes */}
 	        <div className="tool-section">
@@ -44,13 +39,13 @@ const Menu = (props) => {
 	        	<Checkbox
 	        		label="Dark"
 	        		link="https://storage.googleapis.com/mc-high-impact/2023/broken-government/dark.css"
-	        		setNum={setNumThemes}
+	        		setNum={props.setNumThemes}
 	        	/>
 			      <Checkbox
 			      	label="Declutter"
 	        		link="https://www.miamiherald.com/static/hi/themes/declutter.css"
 	        		script="https://www.miamiherald.com/static/hi/themes/declutter.js"
-	        		setNum={setNumThemes}
+	        		setNum={props.setNumThemes}
 			      />
 	        </div>
 
@@ -64,7 +59,7 @@ const Menu = (props) => {
 	        		label="minimalHeader"
 	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/topper-minimalist.css"
 	        		script="https://www.miamiherald.com/static/hi//2023/broken-government/topper-minimalist.js"
-	        		setNum={setNumEnhancements}
+	        		setNum={props.setNumEnhancements}
 	        	/>
 			      {/*<Checkbox label="minimalFooter"/>*/}
 			      {/*<Checkbox
@@ -257,13 +252,13 @@ const Menu = (props) => {
         <div
         	className="tool-footer"
         	style={{
-        		pointerEvents: (numEnhancements > 0 || numThemes > 0 || props.webComponents.length > 0) ? 'all' : 'none'
+        		pointerEvents: (props.numEnhancements > 0 || props.numThemes > 0 || props.webComponents.length > 0) ? 'all' : 'none'
         	}}
         >
       		<button
       			onClick={(e) => { props.setCopyMode(true); }}
 	        	style={{
-	        		opacity: (numEnhancements > 0 || numThemes > 0 || props.webComponents.length) > 0 ? 1 : 0.25
+	        		opacity: (props.numEnhancements > 0 || props.numThemes > 0 || props.webComponents.length) > 0 ? 1 : 0.25
 	        	}}
       		>
       			<img src={Copy} alt="Copy" className="icon-copy"/>

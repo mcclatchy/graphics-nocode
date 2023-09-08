@@ -35,6 +35,8 @@ class Article extends React.Component {
               freeze={this.props.editMode || this.props.copyMode}
               toolbars={this.props.toolbars}
               webComponents={this.props.webComponents}
+              numThemes={this.props.numThemes}
+              numEnhancements={this.props.numEnhancements}
             />
         	</div>
         </div>

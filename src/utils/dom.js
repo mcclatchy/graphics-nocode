@@ -7,10 +7,11 @@ export const addScript = (url) => {
   if (!document.getElementById(id)) {
 	  const script = document.createElement("script");
 
-	  script.src = url;
+	  script.src = `${url}?v=${Date.now()}`;
 	  script.type = "module";
 	  script.id = id
 	  document.body.appendChild(script);
+    console.log("Added", script)
   }
 }
 

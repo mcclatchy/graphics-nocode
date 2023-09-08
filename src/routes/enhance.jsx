@@ -11,6 +11,8 @@ const Enhance = () => {
   const [editOptions, setEditOptions] = useState({});
   const [toolbars, setToolbars] = useState([]);
   const [webComponents, setWebComponents] = useState([]);
+  const [numThemes, setNumThemes] = useState(0)
+  const [numEnhancements, setNumEnhancements] = useState(0)
 
   return (
     <>
@@ -30,6 +32,12 @@ const Enhance = () => {
 
           webComponents={webComponents}
           setWebComponents={setWebComponents}
+
+          numThemes={numThemes}
+          setNumThemes={setNumThemes}
+
+          numEnhancements={numEnhancements}
+          setNumEnhancements={setNumEnhancements}
         />	
         <Article
           copyMode={copyMode}
@@ -43,6 +51,12 @@ const Enhance = () => {
 
           toolbars={toolbars}
           webComponents={webComponents}
+          
+          numThemes={numThemes}
+          setNumThemes={setNumThemes}
+
+          numEnhancements={numEnhancements}
+          setNumEnhancements={setNumEnhancements}
         />
 	    </div>
     </>
