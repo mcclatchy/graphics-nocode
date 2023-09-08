@@ -11,7 +11,6 @@ export const addScript = (url) => {
 	  script.type = "module";
 	  script.id = id
 	  document.body.appendChild(script);
-    console.log("Added", script)
   }
 }
 
