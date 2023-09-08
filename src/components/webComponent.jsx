@@ -6,12 +6,14 @@ const WebComponent = ({ name, id, options = {} }) => {
   const attributes = Object.keys(options) ? 
     Object.keys(options).map(function(key, i) {
       const value = options[key].value;
-      if (key === "slot") {
-        const formattedValue = value.map(val => `<${val.tag}>${val.text}</${val.tag}>`);
-        slot = formattedValue.join("\n");
-        return "";
-      } else {
-        return `${key}="${value}"`;
+      if (value !== null) {
+        if (key === "slot") {
+          const formattedValue = value.map(val => `<${val.tag}>${val.text}</${val.tag}>`);
+          slot = formattedValue.join("\n");
+          return "";
+        } else {
+          return `${key}="${value}"`;
+        }
       }
     }).join(" ") : ""
 
