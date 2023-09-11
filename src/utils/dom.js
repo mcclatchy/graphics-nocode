@@ -1,34 +1,35 @@
 const SCRIPT_PREFIX = "tool-script"
 const LINK_PREFIX = "tool-link"
 
-export const addScript = (url) => {
+export const addScript = (url, prefix=SCRIPT_PREFIX) => {
   const id = `${SCRIPT_PREFIX}-${getFilenameFromUrl(url)}`;
 
   if (!document.getElementById(id)) {
-	  const script = document.createElement("script");
+    const script = document.createElement("script");
 
-	  script.src = `${url}?v=${Date.now()}`;
-	  script.type = "module";
-	  script.id = id
-	  document.body.appendChild(script);
+    script.src = `${url}?v=${Date.now()}`;
+    script.type = "module";
+    script.id = id
+    document.body.appendChild(script);
   }
 }
 
-export const addLink = (url) => {
+export const addLink = (url, prefix=LINK_PREFIX) => {
 	const id = `${LINK_PREFIX}-${getFilenameFromUrl(url)}`;
 
-	if (!document.getElementById(id)) {
-	  const link = document.createElement("link");
+  if (!document.getElementById(id)) {
+    const link = document.createElement("link");
 
-	  link.rel = 'stylesheet';
-	  link.href = url;
-	  link.id = id;
-	  document.head.appendChild(link);
-	}
+    link.rel = 'stylesheet';
+    link.href = url;
+    link.id = id;
+    document.head.appendChild(link);
+  }
 }
 
 export const removeElementById = (id) => {
-  document.getElementById(id).remove();
+  const elem = document.getElementById(id)
+  elem && elem.remove();
 }
 
 export const removeAllElementsByIdPrefix = (prefix) => {
@@ -55,18 +56,18 @@ export const getToolScripts = () => {
   return getAllElementsByIdPrefix(SCRIPT_PREFIX)
 }
 
-export const toggleScript = (url, add) => {
+export const toggleScript = (url) => {
   const id = `${SCRIPT_PREFIX}-${getFilenameFromUrl(url)}`;
-  if (add) {
+  if (!document.getElementById(id)) {
     addScript(url);
   } else {
     removeElementById(id);
   }
 }
 
-export const toggleLink = (url, add) => {
+export const toggleLink = (url) => {
   const id = `${LINK_PREFIX}-${getFilenameFromUrl(url)}`;
-  if (add) {
+  if (!document.getElementById(id)) {
     addLink(url, id);
   } else {
     removeElementById(id);

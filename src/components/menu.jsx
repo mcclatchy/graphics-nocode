@@ -39,13 +39,15 @@ const Menu = (props) => {
 	        	<Checkbox
 	        		label="Dark"
 	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/dark.css"
-	        		setNum={props.setNumThemes}
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
 	        	/>
 			      <Checkbox
 			      	label="Declutter"
 	        		link="https://www.miamiherald.com/static/hi/themes/declutter.css"
 	        		script="https://www.miamiherald.com/static/hi/themes/declutter.js"
-	        		setNum={props.setNumThemes}
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
 			      />
 	        </div>
 
@@ -59,7 +61,8 @@ const Menu = (props) => {
 	        		label="minimalHeader"
 	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/topper-minimalist.css"
 	        		script="https://www.miamiherald.com/static/hi//2023/broken-government/topper-minimalist.js"
-	        		setNum={props.setNumEnhancements}
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
 	        	/>
 			      {/*<Checkbox label="minimalFooter"/>*/}
 			      {/*<Checkbox
@@ -120,6 +123,9 @@ const Menu = (props) => {
 
 	        		webComponents={props.webComponents}
 	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
 	        	/>
 	        	<Increment
 	        		label="event-timeline"
@@ -159,6 +165,9 @@ const Menu = (props) => {
 
 	        		webComponents={props.webComponents}
 	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
 	        	/>
 			      <Increment
 			      	label="outro-text"
@@ -217,6 +226,9 @@ const Menu = (props) => {
 
 	        		webComponents={props.webComponents}
 	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
 			      />
 			      <Increment label="summary-list"
 			      	script="https://www.miamiherald.com/static/hi/2023/broken-government/summary-list.js"
@@ -279,6 +291,9 @@ const Menu = (props) => {
 
 	        		webComponents={props.webComponents}
 	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
 			      />
 	        </div>
 
@@ -291,13 +306,13 @@ const Menu = (props) => {
         <div
         	className="tool-footer"
         	style={{
-        		pointerEvents: (props.numEnhancements > 0 || props.numThemes > 0 || props.webComponents.length > 0) ? 'all' : 'none'
+        		pointerEvents: (props.scripts.length > 0 || props.links.length > 0 || props.webComponents.length > 0) ? 'all' : 'none'
         	}}
         >
       		<button
       			onClick={(e) => { props.setCopyMode(true); }}
 	        	style={{
-	        		opacity: (props.numEnhancements > 0 || props.numThemes > 0 || props.webComponents.length) > 0 ? 1 : 0.25
+	        		opacity: (props.scripts.length > 0 || props.links.length > 0 || props.webComponents.length) > 0 ? 1 : 0.25
 	        	}}
       		>
       			<img src={Copy} alt="Copy" className="icon-copy"/>

@@ -159,7 +159,7 @@ class SampleArticle extends React.Component {
 
     
     return (
-      <div style={{containerType: "inline-size"}} ref={this.targetRef} key={`themes-${this.props.numThemes}-enhancements-${this.props.numEnhancements}`}>
+      <div style={{containerType: "inline-size"}} ref={this.targetRef} key={`themes-${this.props.links.length}-enhancements-${this.props.scripts.length}`}>
         <meta charSet="utf-8" />
         {/* WPS Generated */}
         <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net/" />

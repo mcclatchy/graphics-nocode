@@ -3,6 +3,7 @@ import "./increment.css"
 import Toolbar from "./toolbar.jsx"
 import WebComponent from "./webComponent.jsx"
 import Plus from '../assets/plus.svg';
+import { updateArray } from "../utils/array.js"
 import { addLink, addScript } from "../utils/dom.js"
 import ReactDOMServer from 'react-dom/server'
 
@@ -22,8 +23,8 @@ const Increment = (props) => {
 
             // TODO: Where should this type of logic live?
             if (count < maxCount) {
-              props.script && addScript(props.script);
-              props.link && addLink(props.link);
+              props.link && props.setLinks(links => updateArray(links, props.link, true) );
+              props.script && props.setScripts(scripts => updateArray(scripts, props.script, true) );
               const id = `${props.label}-${count}`
 
               const webComponent = <WebComponent

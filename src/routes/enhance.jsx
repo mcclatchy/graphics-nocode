@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { addLink, addScript, removeToolLinks, removeToolScripts, toggleLink, toggleScript } from '../utils/dom.js'
 import Menu from '../components/menu.jsx'
 import Article from '../components/article.jsx'
 import './root.css'
@@ -11,11 +12,23 @@ const Enhance = () => {
   const [editOptions, setEditOptions] = useState({});
   const [toolbars, setToolbars] = useState([]);
   const [webComponents, setWebComponents] = useState([]);
-  const [numThemes, setNumThemes] = useState(0)
-  const [numEnhancements, setNumEnhancements] = useState(0)
+  const [links, setLinks] = useState([]);
+  const [scripts, setScripts] = useState([]);
 
+
+  {/* TODO: maybe a cleaner way of running this? It re-applies each script each time the scripts array changes
+      WHY? Having trouble running a JS file multiple times sample article refresh
+  */}
+  removeToolLinks();
+  removeToolScripts();
   return (
     <>
+      {scripts.map(script => {
+        addScript(script);
+      })}
+      {links.map(link => {
+        addLink(link);
+      })}
       <div>
         <Menu 
           copyMode={copyMode}
@@ -33,11 +46,11 @@ const Enhance = () => {
           webComponents={webComponents}
           setWebComponents={setWebComponents}
 
-          numThemes={numThemes}
-          setNumThemes={setNumThemes}
+          links={links}
+          setLinks={setLinks}
 
-          numEnhancements={numEnhancements}
-          setNumEnhancements={setNumEnhancements}
+          scripts={scripts}
+          setScripts={setScripts}
         />	
         <Article
           copyMode={copyMode}
@@ -52,11 +65,8 @@ const Enhance = () => {
           toolbars={toolbars}
           webComponents={webComponents}
           
-          numThemes={numThemes}
-          setNumThemes={setNumThemes}
-
-          numEnhancements={numEnhancements}
-          setNumEnhancements={setNumEnhancements}
+          links={links}
+          scripts={scripts}
         />
 	    </div>
     </>

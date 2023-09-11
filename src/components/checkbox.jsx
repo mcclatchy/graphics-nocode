@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./checkbox.css"
+import { updateArray } from "../utils/array.js"
 import { toggleLink, toggleScript } from "../utils/dom.js"
 
 
@@ -15,9 +16,8 @@ const Checkbox = (props) => {
           checked={isChecked}
           onChange={() => {
             setIsChecked((prev) => !prev );
-            props.link && toggleLink(props.link, !isChecked);
-            props.script && toggleScript(props.script, !isChecked);
-            isChecked ? props.setNum(num => num - 1) : props.setNum(num => num + 1);
+            props.link && props.setLinks(links => updateArray(links, props.link, !isChecked) );
+            props.script && props.setScripts(scripts => updateArray(scripts, props.script, !isChecked) );
           }}
         />
         <span className="checkmark"></span>
