@@ -1,8 +1,11 @@
-const SCRIPT_PREFIX = "tool-script"
-const LINK_PREFIX = "tool-link"
+// TODO: refactor this prefix setup...
+// Meant to identify different types of scripts & prevent reloading / rerunning web component registries on refresh
+export const SCRIPT_PREFIX = "tool-script"
+export const LINK_PREFIX = "tool-link"
+export const WEB_COMPONENT_PREFIX = "web-component"
 
 export const addScript = (url, prefix=SCRIPT_PREFIX) => {
-  const id = `${SCRIPT_PREFIX}-${getFilenameFromUrl(url)}`;
+  const id = `${prefix}-${getFilenameFromUrl(url)}`;
 
   if (!document.getElementById(id)) {
     const script = document.createElement("script");
@@ -15,7 +18,7 @@ export const addScript = (url, prefix=SCRIPT_PREFIX) => {
 }
 
 export const addLink = (url, prefix=LINK_PREFIX) => {
-	const id = `${LINK_PREFIX}-${getFilenameFromUrl(url)}`;
+	const id = `${prefix}-${getFilenameFromUrl(url)}`;
 
   if (!document.getElementById(id)) {
     const link = document.createElement("link");
@@ -56,8 +59,8 @@ export const getToolScripts = () => {
   return getAllElementsByIdPrefix(SCRIPT_PREFIX)
 }
 
-export const toggleScript = (url) => {
-  const id = `${SCRIPT_PREFIX}-${getFilenameFromUrl(url)}`;
+export const toggleScript = (url, prefix=SCRIPT_PREFIX) => {
+  const id = `${prefix}-${getFilenameFromUrl(url)}`;
   if (!document.getElementById(id)) {
     addScript(url);
   } else {
@@ -65,8 +68,8 @@ export const toggleScript = (url) => {
   }
 }
 
-export const toggleLink = (url) => {
-  const id = `${LINK_PREFIX}-${getFilenameFromUrl(url)}`;
+export const toggleLink = (url, prefix=LINK_PREFIX) => {
+  const id = `${prefix}-${getFilenameFromUrl(url)}`;
   if (!document.getElementById(id)) {
     addLink(url, id);
   } else {

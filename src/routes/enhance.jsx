@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { addLink, addScript, removeToolLinks, removeToolScripts, toggleLink, toggleScript } from '../utils/dom.js'
+import { addLink, addScript, removeToolLinks, removeToolScripts } from '../utils/dom.js'
 import Menu from '../components/menu.jsx'
 import Article from '../components/article.jsx'
 import './root.css'

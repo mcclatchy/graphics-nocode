@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./checkbox.css"
 import { updateArray } from "../utils/array.js"
-import { toggleLink, toggleScript } from "../utils/dom.js"
 
 
 const Checkbox = (props) => {
