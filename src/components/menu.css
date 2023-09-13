@@ -81,7 +81,7 @@ button {
 
 .tool-menu-overlay {
 	height: 100vh;
-	width: 100%;
+	width: var(--tool-menu-width);
 	position: fixed;
 	top: 0;
 	display: none;
