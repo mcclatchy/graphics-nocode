@@ -230,7 +230,8 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
-			      <Increment label="summary-list"
+			      <Increment
+			      	label="summary-list"
 			      	script="https://www.miamiherald.com/static/hi/2023/broken-government/summary-list.js"
 			      	link="https://www.miamiherald.com/static/hi/2023/broken-government/summary-list.css"
 	        		defaultOptions={{

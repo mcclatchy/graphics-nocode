@@ -68,8 +68,31 @@ function beautifyHTML(html) {
 	}
 }
 
+function cleanHTML(html) {
+	if (!html) return html;
+	html = makePathRelative(html);
+	html = removeVersion(html);
+	html = removeId(html);
+	html = removeBlankLines(html);
+	return html;
+}
 
+function makePathRelative(html) {
+	if (!html) return html;
+	return html.replaceAll(/"(http|www)(.*?)\/static/g, '"/static')
+}
 
+function removeVersion(html) {
+	return html.replaceAll(/\?v(.*?)"/g, '"')
+}
+
+function removeId(html) {
+	return html.replace(/id=\"(.*?)\"/g, "").replace(" >", ">")
+}
+
+function removeBlankLines(html) {
+	return html.replace(/^\s*[\r\n]/gm, "");
+}
 
 class CopyModal extends React.Component {
   constructor(props) {
@@ -80,13 +103,13 @@ class CopyModal extends React.Component {
   	// TODO: stop accessing the DOM probably and use state instead
   	function getScripts() {
 			const scripts = getToolScripts();
-			const scriptsString = Array.from(scripts).map((script) => script.outerHTML ).join("\n");
+			const scriptsString = scripts.map((script) => cleanHTML(script.outerHTML) ).join("\n");
 			return scriptsString;
 		}
 
 		function getLinks() {
 			const links = getToolLinks();
-			const linksString = Array.from(links).map((link) => link.outerHTML ).join("\n");
+			const linksString = links.map((link) => cleanHTML(link.outerHTML) ).join("\n");
 			return linksString;
 		}
 
@@ -116,13 +139,16 @@ class CopyModal extends React.Component {
 
         {/* Body: Cards */}
         {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
-        	const element = document.getElementById(webComponent.props.id);
+        	let element = document.getElementById(webComponent.props.id);
+      		if (element && !webComponent.props.options?.slot) {
+        		element.innerHTML = ''
+        	}
         	const html = element?.outerHTML;
           return (
           	<div className="tool-modal-wrapper" key={i}>
-				      <div className="tool-modal-label">Body - {webComponent.props.id}</div>
+				      <div className="tool-modal-label">{webComponent.props.id}</div>
               <TextareaAutosize 
-	              defaultValue={beautifyHTML(html)}
+	              defaultValue={makePathRelative(beautifyHTML(html))}
 		            className="monospace tool-copy-text"
 		            spellCheck="false"
 		            readOnly={true}

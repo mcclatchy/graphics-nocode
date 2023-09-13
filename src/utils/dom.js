@@ -52,11 +52,15 @@ export const getAllElementsByIdPrefix = (prefix) => {
 }
 
 export const getToolLinks = () => {
-  return getAllElementsByIdPrefix(LINK_PREFIX)
+  const links = Array.from(getAllElementsByIdPrefix(LINK_PREFIX));
+  const webComponentLinks = Array.from(getAllElementsByIdPrefix(`${WEB_COMPONENT_PREFIX}-${LINK_PREFIX}`));
+  return links.concat(webComponentLinks);
 }
 
 export const getToolScripts = () => {
-  return getAllElementsByIdPrefix(SCRIPT_PREFIX)
+  const scripts = Array.from(getAllElementsByIdPrefix(SCRIPT_PREFIX));
+  const webComponentScripts = Array.from(getAllElementsByIdPrefix(`${WEB_COMPONENT_PREFIX}-${SCRIPT_PREFIX}`));
+  return scripts.concat(webComponentScripts);
 }
 
 export const toggleScript = (url, prefix=SCRIPT_PREFIX) => {
