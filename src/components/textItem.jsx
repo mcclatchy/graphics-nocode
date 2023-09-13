@@ -42,16 +42,21 @@ const textItem = (props) => {
     });
   }
 
+  const options = props.editOptions[props.editKey]["options"];
+
 	return (
     <div className="tool-edit-text-item" key={`${props.item}-${props.updateIndex}`}>
-      <select
-        value={tagValue}
-        onChange={e => { updateTag(e, props.updateIndex); }}>
-      >
-        {props.editOptions[props.editKey]["options"].map(option => {
-          return <option value={option} key={option}>{option}</option>
-        })}
-      </select>
+      {options.length > 1 ? 
+        <select
+          value={tagValue}
+          onChange={e => { updateTag(e, props.updateIndex); }}>
+        >
+          {options.map(option => {
+            return <option value={option} key={option}>{option}</option>
+          })}
+        </select> :
+        ""
+      }
       <TextareaAutosize
         value={textValue}
         className="tool-modal-value"
