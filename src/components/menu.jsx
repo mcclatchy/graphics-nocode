@@ -14,6 +14,7 @@ const Menu = (props) => {
   return (
     <>
       <div className="tool-menu">
+      	<div className="tool-menu-overlay" style={{display: props.copyMode ? 'block' : 'none' }}></div>
       	<div className="tool-topper">
       		<Link to="/">
 	      		<button 
