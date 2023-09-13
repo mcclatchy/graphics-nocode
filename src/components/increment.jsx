@@ -4,7 +4,7 @@ import Toolbar from "./toolbar.jsx"
 import WebComponent from "./webComponent.jsx"
 import Plus from '../assets/plus.svg';
 import { updateArray } from "../utils/array.js"
-import { addLink, addScript, SCRIPT_PREFIX, LINK_PREFIX, WEB_COMPONENT_PREFIX } from "../utils/dom.js"
+import { addLink, addScript } from "../utils/dom.js"
 import ReactDOMServer from 'react-dom/server'
 
 const Increment = (props) => {
@@ -23,8 +23,8 @@ const Increment = (props) => {
 
             // TODO: Where should this type of logic live?
             if (count < maxCount) {
-              props.link && addLink(props.link, `${WEB_COMPONENT_PREFIX}-${LINK_PREFIX}`);
-              props.script && addScript(props.script, `${WEB_COMPONENT_PREFIX}-${SCRIPT_PREFIX}`); //setScripts(scripts => updateArray(scripts, props.script, true) );
+              props.link && props.setLinks(links => updateArray(links, props.link, true) );
+              props.script && props.setScripts(scripts => updateArray(scripts, props.script, true) );
               const id = `${props.label}-${count}`
 
               const webComponent = <WebComponent

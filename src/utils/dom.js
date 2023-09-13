@@ -1,8 +1,5 @@
-// TODO: refactor this prefix setup...
-// Meant to identify different types of scripts & prevent reloading / rerunning web component registries on refresh
 export const SCRIPT_PREFIX = "tool-script"
 export const LINK_PREFIX = "tool-link"
-export const WEB_COMPONENT_PREFIX = "web-component"
 
 export const addScript = (url, prefix=SCRIPT_PREFIX) => {
   const id = `${prefix}-${getFilenameFromUrl(url)}`;
@@ -53,14 +50,12 @@ export const getAllElementsByIdPrefix = (prefix) => {
 
 export const getToolLinks = () => {
   const links = Array.from(getAllElementsByIdPrefix(LINK_PREFIX));
-  const webComponentLinks = Array.from(getAllElementsByIdPrefix(`${WEB_COMPONENT_PREFIX}-${LINK_PREFIX}`));
-  return links.concat(webComponentLinks);
+  return links;
 }
 
 export const getToolScripts = () => {
   const scripts = Array.from(getAllElementsByIdPrefix(SCRIPT_PREFIX));
-  const webComponentScripts = Array.from(getAllElementsByIdPrefix(`${WEB_COMPONENT_PREFIX}-${SCRIPT_PREFIX}`));
-  return scripts.concat(webComponentScripts);
+  return scripts;
 }
 
 export const toggleScript = (url, prefix=SCRIPT_PREFIX) => {
