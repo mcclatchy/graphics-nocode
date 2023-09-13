@@ -121,43 +121,47 @@ class CopyModal extends React.Component {
 
     return(
       <div className="tool-modal tool-copy-modal" style={{display: this.props.copyMode ? 'block' : 'none' }}>
-        <div className="tool-modal-topper">
-          <div className="tool-title">Copy</div>
-          <img className="tool-remove" src={Remove} alt="remove" onClick={(e) => { this.props.setCopyMode(false); }}/>
-        </div>
-        {/*Related: Scripts and Links*/}
-        <div className="tool-modal-wrapper">
-		      <div className="tool-modal-label">Related</div>
-	        <TextareaAutosize 
-	          value={getLinksAndScripts()}
-	          className="monospace tool-copy-text"
-	          spellCheck="false"
-	          readOnly={true}
-	        />
-       	</div>
+
+        <div className="tool-modal-inner">
+	        <div className="tool-modal-topper">
+	          <div className="tool-title">Copy</div>
+	          <img className="tool-remove" src={Remove} alt="remove" onClick={(e) => { this.props.setCopyMode(false); }}/>
+	        </div>
+          <div className="tool-modal-spacer"></div>
+	        {/*Related: Scripts and Links*/}
+	        <div className="tool-modal-wrapper">
+			      <div className="tool-modal-label">Related</div>
+		        <TextareaAutosize 
+		          value={getLinksAndScripts()}
+		          className="monospace tool-copy-text"
+		          spellCheck="false"
+		          readOnly={true}
+		        />
+	       	</div>
 
 
-        {/* Body: Cards */}
-        {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
-        	let element = document.getElementById(webComponent.props.id);
-      		if (element && !webComponent.props.options?.slot) {
-        		element.innerHTML = ''
-        	}
-        	const html = element?.outerHTML;
-          return (
-          	<div className="tool-modal-wrapper" key={i}>
-				      <div className="tool-modal-label">{webComponent.props.id}</div>
-              <TextareaAutosize 
-	              defaultValue={makePathRelative(beautifyHTML(html))}
-		            className="monospace tool-copy-text"
-		            spellCheck="false"
-		            readOnly={true}
-	            />
-				    </div>
+	        {/* Body: Cards */}
+	        {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
+	        	let element = document.getElementById(webComponent.props.id);
+	      		if (element && !webComponent.props.options?.slot) {
+	        		element.innerHTML = ''
+	        	}
+	        	const html = element?.outerHTML;
+	          return (
+	          	<div className="tool-modal-wrapper" key={i}>
+					      <div className="tool-modal-label">{webComponent.props.id}</div>
+	              <TextareaAutosize 
+		              defaultValue={makePathRelative(beautifyHTML(html))}
+			            className="monospace tool-copy-text"
+			            spellCheck="false"
+			            readOnly={true}
+		            />
+					    </div>
 
-          )
-        })}
-      </div>
+	          )
+	        })}
+	      </div>
+	    </div>
     )
   }
 }
