@@ -1,5 +1,7 @@
 import React, { Component, cloneElement } from "react";
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import Toolbar from "./Toolbar.jsx"
+import WebComponent from "./webComponent.jsx"
 import "./sampleArticle.css"
 
 
@@ -11,10 +13,10 @@ class SampleArticle extends React.Component {
   
   // TODO: going to be difficult to update this sample article with any regularity - hard to keep in sync
   render() {
-    let targetElement = this.targetRef && this.targetRef?.current;
-    if (targetElement) {
-      this.props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
-    }
+    // let targetElement = this.targetRef && this.targetRef?.current;
+    // if (targetElement) {
+    //   this.props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
+    // }
 
     window.pageInfo = {
       videoLead: 'false',
@@ -630,7 +632,14 @@ class SampleArticle extends React.Component {
                 return (
                   <div style={{position: 'relative'}} key={i}>
                     {cloneElement(toolbar, { key: toolbar.id })}
-                    {cloneElement(webComponent, { key: webComponent.id })}
+                    <WebComponent
+                      name={webComponent.props.name}
+                      id={webComponent.props.id}
+                      options={webComponent.props.options}
+                      script={webComponent.props.script}
+                      link={webComponent.props.link}
+                    >
+                    </WebComponent>
                   </div>
                 )
               })}

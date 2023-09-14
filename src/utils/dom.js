@@ -44,6 +44,11 @@ export const removeToolScripts = () => {
   removeAllElementsByIdPrefix(SCRIPT_PREFIX);
 }
 
+export const removeElementBySrcPrefix = (src) => {
+  const elem = document.querySelector(`[src^="${src}"]`)
+  elem && elem.remove();
+}
+
 export const getAllElementsByIdPrefix = (prefix) => {
   return document.querySelectorAll(`[id^="${prefix}"]`)
 }
@@ -56,24 +61,6 @@ export const getToolLinks = () => {
 export const getToolScripts = () => {
   const scripts = Array.from(getAllElementsByIdPrefix(SCRIPT_PREFIX));
   return scripts;
-}
-
-export const toggleScript = (url, prefix=SCRIPT_PREFIX) => {
-  const id = `${prefix}-${getFilenameFromUrl(url)}`;
-  if (!document.getElementById(id)) {
-    addScript(url);
-  } else {
-    removeElementById(id);
-  }
-}
-
-export const toggleLink = (url, prefix=LINK_PREFIX) => {
-  const id = `${prefix}-${getFilenameFromUrl(url)}`;
-  if (!document.getElementById(id)) {
-    addLink(url, id);
-  } else {
-    removeElementById(id);
-  }
 }
 
 export const getFilenameFromUrl = (url) => {

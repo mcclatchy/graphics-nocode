@@ -31,6 +31,8 @@ const Increment = (props) => {
                 name={props.label}
                 id={id}
                 options={props.defaultOptions}
+                script={props.script}
+                link={props.link}
               />;
 
               props.setWebComponents(webComponents => {
@@ -56,6 +58,9 @@ const Increment = (props) => {
 
                   webComponents={updatedWebComponents}
                   setWebComponents={props.setWebComponents}
+
+                  setLinks={props.setLinks}
+                  setScripts={props.setScripts}
                 />
                 props.setToolbars(toolbars => [...toolbars, toolbar]);
                 props.setEditOptions(props.defaultOptions);

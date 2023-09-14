@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Remove from '../assets/remove.svg'
 import Edit from '../assets/edit.svg'
-import { toggleLink, toggleScript } from '../utils/dom.js'
+import { updateArray } from '../utils/array.js'
 import './toolbar.css'
 
 const removeWebComponent = (e, props) => {
@@ -11,8 +11,8 @@ const removeWebComponent = (e, props) => {
     const updatedCount = count - 1 >= 0 ? count - 1 : 0;
     return updatedCount;
   });
-  props.count === 0 && props?.link && toggleLink(props.link);
-  props.count === 0 && props?.script && toggleScript(props.script);
+  props.count === 0 && props?.link && props.setLinks(links => updateArray(links, props.link, false) );
+  props.count === 0 && props?.script && props.setScripts(scripts => updateArray(scripts, props.script, false) );
   props.setEditMode(false);
 }
 

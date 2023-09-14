@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { removeVersion } from '../utils/string.js'
 import { addLink, addScript, removeToolLinks, removeToolScripts } from '../utils/dom.js'
 import Menu from '../components/menu.jsx'
 import Article from '../components/article.jsx'

@@ -1,28 +1,37 @@
+import React, { Component } from "react";
+
 import './webComponent.css'
 
-const WebComponent = ({ name, id, options = {} }) => {
-  let slot;
+class WebComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-  const attributes = Object.keys(options) ? 
-    Object.keys(options).map(function(key, i) {
-      const value = options[key].value;
-      if (value !== null) {
-        if (key === "slot") {
-          const formattedValue = value.map(val => `<${val.tag}>${val.text}</${val.tag}>`);
-          slot = formattedValue.join("\n");
-          return "";
-        } else {
-          return `${key}="${value}"`;
+  render() {
+    let slot;
+
+    const attributes = this.props.options && Object.keys(this.props.options) ? 
+      Object.keys(this.props.options).map((key, i) => {
+        const value = this.props.options[key].value;
+        if (value !== null) {
+          if (key === "slot") {
+            const formattedValue = value.map(val => `<${val.tag}>${val.text}</${val.tag}>`);
+            slot = formattedValue.join("\n");
+            return "";
+          } else {
+            return `${key}="${value}"`;
+          }
         }
-      }
-    }).join(" ") : ""
+      }).join(" ") : ""
 
-  const html = `<${name} id="${id}" ${attributes ? attributes : ""}>${slot ? slot : ""}</${name}>`
-  return (
-  	<div className="embed-infographic">
-  		<div dangerouslySetInnerHTML={{__html: html}}></div>
-  	</div>
-  );
-};
+    const html = `<${this.props.name} id="${this.props.id}" ${attributes ? attributes : ""}>${slot ? slot : ""}</${this.props.name}>`
+
+    return (
+      <div className="embed-infographic">
+        <div dangerouslySetInnerHTML={{__html: html}}></div>
+      </div>
+    );
+  }
+}
 
 export default WebComponent;
