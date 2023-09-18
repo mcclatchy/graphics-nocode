@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import TextareaAutosize from 'react-textarea-autosize';
 import Input from './input.jsx'
 import Remove from '../assets/remove.svg'
-import { getToolLinks, getToolScripts } from "../utils/dom.js"
+import { getElementByIdPrefix, getToolLinks, getToolScripts } from "../utils/dom.js"
 import { beautifyHTML, cleanHTML, makePathRelative } from "../utils/html.js"
 import "./copyModal.css"
 
@@ -54,9 +54,10 @@ class CopyModal extends React.Component {
 
 	        {/* Body: Cards */}
 	        {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
-	        	let element = document.getElementById(webComponent.props.id);
+	        	let element = getElementByIdPrefix(webComponent.props.id);
 	      		if (element && !webComponent.props.options?.slot) {
 	        		element.innerHTML = ''
+	        		element.removeAttribute('id');
 	        	}
 	        	const html = element?.outerHTML;
 	          return (

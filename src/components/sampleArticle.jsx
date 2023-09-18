@@ -634,7 +634,7 @@ class SampleArticle extends React.Component {
                     {cloneElement(toolbar, { key: toolbar.id })}
                     <WebComponent
                       name={webComponent.props.name}
-                      id={webComponent.props.id}
+                      id={`${webComponent.props.id}?v=${Date.now()}`}
                       options={webComponent.props.options}
                       script={webComponent.props.script}
                       link={webComponent.props.link}

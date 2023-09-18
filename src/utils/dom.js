@@ -49,6 +49,10 @@ export const removeElementBySrcPrefix = (src) => {
   elem && elem.remove();
 }
 
+export const getElementByIdPrefix = (prefix) => {
+  return document.querySelector(`[id^="${prefix}"]`)
+}
+
 export const getAllElementsByIdPrefix = (prefix) => {
   return document.querySelectorAll(`[id^="${prefix}"]`)
 }
