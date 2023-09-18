@@ -171,6 +171,52 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 	        	/>
 			      <Increment
+			      	label="link-preview"
+			      	script="https://www.miamiherald.com/static/hi/cards/link-preview/link-preview.js"
+	        		defaultOptions={{
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "Made in Miami: Network",
+	        				"type": "text"
+	        			},
+	        			"data-summary": {
+	        				"label": "Summary",
+	        				"value": "Investigators in at least three countries are sorting through a rogues’ gallery of players, trying to determine how the killing of Haitian President Jovenel Moïse was carried out on July 7, 2021.",
+	        				"type": "text"
+	        			},
+	        			"data-link": {
+	        				"label": "Link URL",
+	        				"value": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article266152901.html",
+	        				"type": "text"
+	        			},
+	        			"data-img": {
+	        				"label": "Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2022/haiti-assassination/assets/network-outlink.jpg",
+	        				"type": "text"
+	        			},
+	        			"data-alt": {
+	        				"label": "Alt Text",
+	        				"value": "Illustration of Jovenel Moïse in a network graphic node with a network of other illustrated profiles surrounding him",
+	        				"type": "text"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+			      <Increment
 			      	label="outro-text"
 			      	script="https://www.miamiherald.com/static/hi/2023/devalos-perkins/outro-text.js"
 			      	link="https://www.miamiherald.com/static/hi/2023/devalos-perkins/outro-text.css"
