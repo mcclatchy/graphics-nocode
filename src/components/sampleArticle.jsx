@@ -13,10 +13,10 @@ class SampleArticle extends React.Component {
   
   // TODO: going to be difficult to update this sample article with any regularity - hard to keep in sync
   render() {
-    // let targetElement = this.targetRef && this.targetRef?.current;
-    // if (targetElement) {
-    //   this.props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
-    // }
+    let targetElement = this.targetRef && this.targetRef?.current;
+    if (targetElement) {
+      this.props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
+    }
 
     window.pageInfo = {
       videoLead: 'false',

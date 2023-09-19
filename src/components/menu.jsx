@@ -61,7 +61,7 @@ const Menu = (props) => {
 	        	<Checkbox
 	        		label="minimalHeader"
 	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/topper-minimalist.css"
-	        		script="https://www.miamiherald.com/static/hi//2023/broken-government/topper-minimalist.js"
+	        		script="https://www.miamiherald.com/static/hi/2023/broken-government/topper-minimalist.js"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
