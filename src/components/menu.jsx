@@ -65,11 +65,12 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
-			      {/*<Checkbox label="minimalFooter"/>*/}
-			      {/*<Checkbox
-			      	label="moveLeadArtToTop"
-							script="https://www.miamiherald.com/static/hi/2023/broken-government/lead-cue.js"
-			      />*/}
+			      <Checkbox
+			      	label="minimalFooter"
+							link="https://www.miamiherald.com/static/hi/2023/broken-government/minimal-footer.css"
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
 			      {/*<Checkbox label="removeAds"/>*/}
 	        </div>
 
