@@ -4,7 +4,7 @@ import Toolbar from "./toolbar.jsx"
 import WebComponent from "./webComponent.jsx"
 import Plus from '../assets/plus.svg';
 import { updateArray } from "../utils/array.js"
-import { addLink, addScript } from "../utils/dom.js"
+import { getElementByIdPrefix } from "../utils/dom.js"
 import ReactDOMServer from 'react-dom/server'
 
 const Increment = (props) => {
@@ -70,7 +70,7 @@ const Increment = (props) => {
               // TODO: Need to tie this in more specifically with the updating DOM?
               const delay = ms => new Promise(res => setTimeout(res, ms));
               delay(500).then(() => {
-                const elem = document.getElementById(id)
+                const elem = getElementByIdPrefix(id)
                 elem && elem.scrollIntoView({ behavior: "smooth"});
               });
             }
