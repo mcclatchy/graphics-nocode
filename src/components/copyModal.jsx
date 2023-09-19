@@ -57,8 +57,8 @@ class CopyModal extends React.Component {
 	        	let element = getElementByIdPrefix(webComponent.props.id);
 	      		if (element && !webComponent.props.options?.slot) {
 	        		element.innerHTML = ''
-	        		element.removeAttribute('id');
 	        	}
+	        	element && element.removeAttribute('id');
 	        	const html = element?.outerHTML;
 	          return (
 	          	<div className="tool-modal-wrapper" key={i}>
