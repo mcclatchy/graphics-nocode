@@ -175,15 +175,25 @@ const Menu = (props) => {
 			      	label="link-preview"
 			      	script="https://www.miamiherald.com/static/hi/cards/link-preview/link-preview.js"
 	        		defaultOptions={{
+	        			"data-series": {
+	        				"label": "Series",
+	        				"value": "Made in Miami",
+	        				"type": "text"
+	        			},
 	        			"data-title": {
 	        				"label": "Title",
-	        				"value": "Made in Miami: Network",
+	        				"value": "A rogue's gallery of suspects",
 	        				"type": "text"
 	        			},
 	        			"data-summary": {
 	        				"label": "Summary",
 	        				"value": "Investigators in at least three countries are sorting through a rogues’ gallery of players, trying to determine how the killing of Haitian President Jovenel Moïse was carried out on July 7, 2021.",
 	        				"type": "text"
+	        			},
+	        			"data-color": {
+	        				"label": "Color",
+	        				"value": "#424242",
+	        				"type": "color"
 	        			},
 	        			"data-link": {
 	        				"label": "Link URL",
@@ -199,7 +209,7 @@ const Menu = (props) => {
 	        				"label": "Alt Text",
 	        				"value": "Illustration of Jovenel Moïse in a network graphic node with a network of other illustrated profiles surrounding him",
 	        				"type": "text"
-	        			}
+	        			},
 	        		}}
 
 	        		editMode={props.editMode}
