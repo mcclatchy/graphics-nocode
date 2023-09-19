@@ -71,7 +71,12 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
-			      {/*<Checkbox label="removeAds"/>*/}
+			      <Checkbox
+			      	label="moveLeadArtToTop"
+							link="https://www.miamiherald.com/static/hi/2023/broken-government/move-lead-art-to-top.js"
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
 	        </div>
 
 	        {/* Cards */}
