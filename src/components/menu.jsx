@@ -39,7 +39,7 @@ const Menu = (props) => {
 	        	<h3 className="tool-h3">Themes</h3>
 	        	<Checkbox
 	        		label="Dark"
-	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/dark.css"
+	        		link="https://www.miamiherald.com/static/hi/graphics/1.0.0/dark.css"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
@@ -60,20 +60,20 @@ const Menu = (props) => {
 	        	<h3 className="tool-h3">Enhancements</h3>
 	        	<Checkbox
 	        		label="minimalHeader"
-	        		link="https://www.miamiherald.com/static/hi/2023/broken-government/topper-minimalist.css"
-	        		script="https://www.miamiherald.com/static/hi/2023/broken-government/topper-minimalist.js"
+	        		link="https://www.miamiherald.com/static/hi/graphics/1.0.0/topper-minimalist.css"
+	        		script="https://www.miamiherald.com/static/hi/graphics/1.0.0/topper-minimalist.js"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
 			      <Checkbox
 			      	label="minimalFooter"
-							link="https://www.miamiherald.com/static/hi/2023/broken-government/minimal-footer.css"
+							link="https://www.miamiherald.com/static/hi/graphics/1.0.0/minimal-footer.css"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
 			      <Checkbox
 			      	label="moveLeadArtToTop"
-							script="https://www.miamiherald.com/static/hi/2023/broken-government/move-lead-art-to-top.js"
+							script="https://www.miamiherald.com/static/hi/graphics/1.0.0/move-lead-art-to-top.js"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
@@ -234,8 +234,8 @@ const Menu = (props) => {
 			      />
 			      <Increment
 			      	label="outro-text"
-			      	script="https://www.miamiherald.com/static/hi/2023/devalos-perkins/outro-text.js"
-			      	link="https://www.miamiherald.com/static/hi/2023/devalos-perkins/outro-text.css"
+			      	script="https://www.miamiherald.com/static/hi/graphics/1.0.0/outro-text.js"
+			      	link="https://www.miamiherald.com/static/hi/graphics/1.0.0/outro-text.css"
 	        		defaultOptions={{
 	        			"slot": {
 	        				"label": "Text",
@@ -295,8 +295,8 @@ const Menu = (props) => {
 			      />
 			      <Increment
 			      	label="summary-list"
-			      	script="https://www.miamiherald.com/static/hi/2023/broken-government/summary-list.js"
-			      	link="https://www.miamiherald.com/static/hi/2023/broken-government/summary-list.css"
+			      	script="https://www.miamiherald.com/static/hi/graphics/1.0.0/summary-list.js"
+			      	link="https://www.miamiherald.com/static/hi/graphics/1.0.0/summary-list.css"
 	        		defaultOptions={{
 	        			"data-list-style": {
 	        				"label": "List Style",
