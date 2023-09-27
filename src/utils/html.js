@@ -41,7 +41,7 @@ export function beautifyHTML(html) {
 		return html;
 	}
 	const flatHTML = html.replaceAll("\n", " ");
-	const regex = /<([a-zA-Z0-9-]+)(?:[^>]+)>(.*?)<\/\1>/;
+	const regex = /<([a-zA-Z0-9-]+)(?:[^>]+)?>(.*?)<\/\1>/;
 	const match = flatHTML.match(regex);
 
 	if (match) {
@@ -62,6 +62,10 @@ export function cleanHTML(html) {
 	html = removeId(html);
 	html = removeBlankLines(html);
 	return html;
+}
+
+export function removeEmbedInfographic(html) {
+	return html.replace(/^<div[^>]*>|<\/div>$/g, '');
 }
 
 export function makePathRelative(html) {

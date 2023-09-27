@@ -5,3 +5,45 @@
 .tool-copy-modal {
 	width: calc(80% - var(--tool-menu-width)) !important;
 }
+
+.tool-copy-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+.tool-copy-icon-container {
+	position: relative;
+}
+
+.tool-copy-icon-container::before {
+	position: absolute;
+	left: 0;
+	padding-right: 7px;
+	transform: translate(-100%, 0);
+	content: "Copied!";
+	visibility: hidden;
+	opacity: 0;
+	transition: all 250ms;
+}
+
+.tool-copy-icon-container.active:before, .tool-copy-icon-container.active > .tool-copy-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tool-copy-icon {
+	margin-bottom: 5px;
+	pointer-events: none;
+	opacity: 0.25;
+	transition: all 250ms;
+}
+
+.tool-copy-icon-container:hover {
+	cursor: pointer;
+}
+
+.tool-copy-icon-container:hover .tool-copy-icon {
+	opacity: 1;
+}

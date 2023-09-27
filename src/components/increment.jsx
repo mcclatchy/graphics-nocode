@@ -25,7 +25,7 @@ const Increment = (props) => {
             if (count < maxCount) {
               props.link && props.setLinks(links => updateArray(links, props.link, true) );
               props.script && props.setScripts(scripts => updateArray(scripts, props.script, true) );
-              const id = `${props.label}-${count}`
+              const id = `${props.label}-${count + 1}`
 
               const webComponent = <WebComponent
                 name={props.label}

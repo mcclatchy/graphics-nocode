@@ -73,6 +73,8 @@
   --tool-font-family: Satoshi, Inter, system-ui, sans-serif;
   --tool-font-monospace: Courier New, monospace;
   --tool-menu-width: 230px;
+  --tool-selection-bg-color: var(--tool-gray);
+  --tool-selection-color: var(--tool-white);
 }
 
 body {
@@ -84,6 +86,34 @@ body {
 
 .monospace {
   font-family: var(--tool-font-monospace);
+}
+
+/*** Works on common browsers ***/
+::selection{
+    background-color: var(--tool-selection-bg-color);
+    color: var(--tool-selection-color);
+}
+/*** Mozilla based browsers ***/
+::-moz-selection{
+    background-color: var(--tool-selection-bg-color);
+    color: var(--tool-selection-color);
+}
+
+/***For Other Browsers ***/
+::-o-selection{
+    background-color: var(--selection-bg-color);
+    color: var(--tool-selection-color);
+}
+
+::-ms-selection{
+    background-color: var(--tool-selection-bg-color);
+    color: var(--tool-selection-color);
+}
+
+/*** For Webkit ***/
+::-webkit-selection{
+    background-color: var(--tool-selection-bg-color);
+    color: var(--tool-selection-color);
 }
 
 @media (prefers-color-scheme: light) {

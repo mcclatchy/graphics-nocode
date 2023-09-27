@@ -49,7 +49,7 @@ const textItem = (props) => {
       {options.length > 1 ? 
         <select
           value={tagValue}
-          onChange={e => { updateTag(e, props.updateIndex); }}>
+          onChange={e => { updateTag(e, props.updateIndex); }}
         >
           {options.map(option => {
             return <option value={option} key={option}>{option}</option>

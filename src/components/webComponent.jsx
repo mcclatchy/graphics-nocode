@@ -27,9 +27,7 @@ class WebComponent extends React.Component {
     const html = `<${this.props.name} id="${this.props.id}" ${attributes ? attributes : ""}>${slot ? slot : ""}</${this.props.name}>`
 
     return (
-      <div className="embed-infographic">
-        <div dangerouslySetInnerHTML={{__html: html}}></div>
-      </div>
+      <div className="embed-infographic" dangerouslySetInnerHTML={{__html: html}}></div>
     );
   }
 }
