@@ -48,7 +48,7 @@ const textItem = (props) => {
     <div className="tool-edit-text-item" key={`${props.item}-${props.updateIndex}`}>
       {options.length > 1 ? 
         <select
-          value={tagValue}
+          value={props.item.tag}
           onChange={e => { updateTag(e, props.updateIndex); }}
         >
           {options.map(option => {
@@ -58,7 +58,7 @@ const textItem = (props) => {
         ""
       }
       <TextareaAutosize
-        value={textValue}
+        value={props.item.text}
         className="tool-modal-value"
         onChange={e => { updateValue(e, props.updateIndex); }}
         spellCheck="false"
