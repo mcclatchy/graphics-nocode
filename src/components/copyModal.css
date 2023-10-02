@@ -1,5 +1,5 @@
 .tool-copy-text {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .tool-copy-modal {
@@ -7,9 +7,9 @@
 }
 
 .tool-copy-header {
+	margin-top: 25px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	position: relative;
 }
 
@@ -19,11 +19,12 @@
 
 .tool-copy-icon-container::before {
 	position: absolute;
-	left: 0;
+	left: 50%;
 	padding-right: 7px;
-	transform: translate(-100%, 0);
+	transform: translate(-50%, -100%);
 	content: "Copied!";
 	visibility: hidden;
+	font-size: 14px;
 	opacity: 0;
 	transition: all 250ms;
 }
@@ -34,7 +35,8 @@
 }
 
 .tool-copy-icon {
-	margin-bottom: 5px;
+	margin-bottom: 7px;
+	margin-right: 7px;
 	pointer-events: none;
 	opacity: 0.25;
 	transition: all 250ms;

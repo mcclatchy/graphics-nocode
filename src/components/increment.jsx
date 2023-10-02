@@ -9,7 +9,7 @@ import ReactDOMServer from 'react-dom/server'
 
 const Increment = (props) => {
   const [count, setCount] = useState(0);
-  const maxCount = 9;
+  const maxCount = props?.maxCount || 9;
   return (
     <div className="increment-wrapper">
       <label>
@@ -39,6 +39,7 @@ const Increment = (props) => {
                 const updatedWebComponents = [...props.webComponents, webComponent];
                 const toolbar = <Toolbar
                   id={id}
+                  name={props.label}
                   options={props.defaultOptions}
 
                   script={props.script}

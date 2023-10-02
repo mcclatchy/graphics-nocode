@@ -55,10 +55,10 @@ class CopyModal extends React.Component {
 	        {/*Related: Scripts and Links*/}
 	        <div className="tool-modal-wrapper">
 			      <div className="tool-copy-header">
-			      	<div className="tool-modal-label">Related</div>
 			      	<div className="tool-copy-icon-container" onClick={(e) => { copy(e, this.embedRelatedId); }}>
 			      		<img className="tool-copy-icon" src={Copy} alt="copy"/>
 			      	</div>
+			      	<div className="tool-modal-label">Related</div>
 			      </div>
 		        <TextareaAutosize 
 		        	id={this.embedRelatedId}
@@ -82,10 +82,10 @@ class CopyModal extends React.Component {
 	          return (
 	          	<div className="tool-modal-wrapper" key={i}>
 		          	<div className="tool-copy-header">
-						      <div className="tool-modal-label">{webComponent.props.id}</div>
 						      <div className="tool-copy-icon-container" onClick={(e) => { copy(e, textId); }}>
 				      			<img className="tool-copy-icon" src={Copy} alt="copy"/>
 				      		</div>
+				      		<div className="tool-modal-label">{webComponent.props.id}</div>
 				      	</div>
 	              <TextareaAutosize 
 	              	id={textId}

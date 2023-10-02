@@ -13,10 +13,22 @@ class SampleArticle extends React.Component {
   
   // TODO: going to be difficult to update this sample article with any regularity - hard to keep in sync
   render() {
+    const clearMovedWebComponent = (tag) => {
+      const webComponent = document.querySelector(tag);
+      webComponent && webComponent.remove();
+    }
+
     let targetElement = this.targetRef && this.targetRef?.current;
     if (targetElement) {
       this.props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
     }
+
+    const nonBodyComponentNames = ["lead-logo"]
+    const nonBodyWebComponents = this.props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
+    const nonBodyToolbars = this.props.toolbars.filter(toolbar => nonBodyComponentNames.includes(toolbar.props.name))
+
+    const bodyWebComponents = this.props.webComponents.filter(webComponent => !nonBodyComponentNames.includes(webComponent.props.name));
+    const bodyToolbars = this.props.toolbars.filter(toolbar => !nonBodyComponentNames.includes(toolbar.props.name))
 
     window.pageInfo = {
       videoLead: 'false',
@@ -519,11 +531,33 @@ class SampleArticle extends React.Component {
 			        </nav>
 			    </div>
 			</div>
-        <div><div className="breaking-news-organism impact" /><article className="paper story-body">{/**/}{/**/}<header className="header"><h2 className="caps kicker-id h6">
+        <div><div className="breaking-news-organism impact" /><article className="paper story-body">{/**/}{/**/}
+            <header className="header">
+              {nonBodyWebComponents && nonBodyWebComponents.map((webComponent, i) => {
+                const toolbar = nonBodyToolbars[i];
+                clearMovedWebComponent(webComponent.props.name);
+                return (
+                  <div style={{width: "100%", position: "relative"}} key={i}>
+                    {cloneElement(toolbar, { key: toolbar.id })}
+                    <WebComponent
+                      name={webComponent.props.name}
+                      id={`${webComponent.props.id}?v=${Date.now()}`}
+                      options={webComponent.props.options}
+                      script={webComponent.props.script}
+                      link={webComponent.props.link}
+                    >
+                    </WebComponent>
+                  </div>
+                )
+              })}
+              <h2 className="caps kicker-id h6">
                 <a className="kicker" href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman">
                   Michelle Kaufman
                 </a>
               </h2>
+
+
+
               <h1 className="h1">
                 Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive | Opinion
               </h1>
@@ -627,8 +661,8 @@ class SampleArticle extends React.Component {
 
               <p>For years, just about every time I ran into Jorge Mas, he talked about the possibility of bringing Lionel Messi to Inter Miami. It always seemed a far-fetched dream to this jaded sportswriter who had lived through countless well-intentioned South Florida soccer projects over the past quarter century. </p>
 
-              {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
-                const toolbar = this.props.toolbars[i];
+              {bodyWebComponents && bodyWebComponents.map((webComponent, i) => {
+                const toolbar = bodyToolbars[i];
                 return (
                   <div style={{position: 'relative'}} key={i}>
                     {cloneElement(toolbar, { key: toolbar.id })}

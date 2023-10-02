@@ -176,6 +176,42 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
+	        	<Increment
+			      	label="lead-logo"
+			      	maxCount="1"
+			      	script="https://www.miamiherald.com/static/hi/cards/lead-logo/lead-logo.js"
+			      	link="https://www.miamiherald.com/static/hi/cards/lead-logo/lead-logo.css"
+	        		defaultOptions={{
+	        			"data-logo": {
+	        				"label": "Logo URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/reality-check/images/reality-check-logo-black.png",
+	        				"type": "text"
+	        			},
+	        			"data-max-width": {
+	        				"label": "Logo Max Width",
+	        				"value": "500",
+	        				"type": "range",
+	        				"unit": "px",
+	        				"min": "150",
+	        				"max": "700"
+	        			},
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
 			      <Increment
 			      	label="link-preview"
 			      	script="https://www.miamiherald.com/static/hi/cards/link-preview/link-preview.js"
