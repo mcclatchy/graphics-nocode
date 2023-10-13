@@ -23,6 +23,7 @@ class EditModal extends React.Component {
           </div>
           <div className="tool-modal-spacer"></div>
           {this.props.editOptions && Object.keys(this.props.editOptions).map((key, i) => {
+            if (this.props.editOptions[key].hide) return;
             return (
               <Input 
                 key={i}

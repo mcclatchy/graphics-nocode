@@ -537,7 +537,7 @@ class SampleArticle extends React.Component {
                 const toolbar = nonBodyToolbars[i];
                 clearMovedWebComponent(webComponent.props.name);
                 return (
-                  <div style={{width: "100%", position: "relative"}} key={i}>
+                  <div style={{width: "100%", position: "relative", padding: 0}} key={i}>
                     {cloneElement(toolbar, { key: toolbar.id })}
                     <WebComponent
                       name={webComponent.props.name}
@@ -664,7 +664,7 @@ class SampleArticle extends React.Component {
               {bodyWebComponents && bodyWebComponents.map((webComponent, i) => {
                 const toolbar = bodyToolbars[i];
                 return (
-                  <div style={{position: 'relative'}} key={i}>
+                  <div style={{position: 'relative', maxWidth: "100%", padding: 0}} key={i}>
                     {cloneElement(toolbar, { key: toolbar.id })}
                     <WebComponent
                       name={webComponent.props.name}

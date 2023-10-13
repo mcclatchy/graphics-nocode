@@ -177,6 +177,62 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 	        	/>
 	        	<Increment
+	        		label="info-slate"
+	        		script="https://www.miamiherald.com/static/hi/cards/info-slate/info-slate.js"
+	        		defaultOptions={{
+	        			"data-info": {
+	        				"label": "Info",
+	        				"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat sapien eu sem mollis, non vehicula tortor malesuada.",
+	        				"type": "text"
+	        			},
+	        			"data-source": {
+	        				"label": "Source",
+	        				"value": "Source: National Institute of Health",
+	        				"type": "text"
+	        			},
+
+	        			"data-max-width": {
+	        				"label": "Quote Max Width",
+	        				"value": "700",
+	        				"type": "range",
+	        				"unit": "px",
+	        				"min": "300",
+	        				"max": "700"
+	        			},
+	        			"data-text-color": {
+	        				"label": "Text Color",
+	        				"value": "",
+	        				"type": "color"
+	        			},
+	        			"data-background-color": {
+	        				"label": "Background Color",
+	        				"value": "",
+	        				"type": "color"
+	        			},
+	        			"data-embed-class": {
+	        				"label": "Embed Class",
+	        				"value": "full-bleed",
+	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
+	        				"type": "switch"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
 			      	label="lead-logo"
 			      	maxCount="1"
 			      	script="https://www.miamiherald.com/static/hi/cards/lead-logo/lead-logo.js"
@@ -397,12 +453,105 @@ const Menu = (props) => {
 			      />
 	        </div>
 
+					{/* Graphics */}
+	        <div className="tool-section">
+	        	<h3 className="tool-h3">Graphics</h3>
+	        	<Increment
+	        		label="scrolling-video"
+	        		script="./scrolling-video.js"
+	        		defaultOptions={{
+	        			"src": {
+	        				"label": "Video - Landscape",
+	        				"value": "https://www.miamiherald.com/static/hi/2022/diabetic-amputations/videos/scrollVideoThree.mp4",
+	        				"type": "text"
+	        			},
+	        			"portrait-src": {
+	        				"label": "Video - Portrait",
+	        				"value": "https://www.miamiherald.com/static/hi/2022/diabetic-amputations/videos/scrollVideoThreeMobile.mp4",
+	        				"type": "text"
+	        			},
+	        			"interpolate": {
+	        				"value": true,
+	        				"hide": true,
+	        				"type": "boolean"
+	        			},
+	        			"data-embed-class": {
+	        				"label": "Embed Class",
+	        				"value": "full-bleed",
+	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
+	        				"type": "switch",
+	        				"hide": true
+	        			},
+	        			"--scrolling-video-text-color": {
+	        				"label": "Color",
+	        				"value": "#000000",
+	        				"type": "color"
+	        			},
+	        			"slot": {
+	        				"label": "Text",
+	        				"options": ["p"],
+	        				"value": [
+										{
+											"tag": "p",
+											"text": "Sources"
+										},
+										{
+											"tag": "p",
+											"text": "Scenes not witnessed by the reporter in this series were compiled from research, interviews and public records including documents from the Mecklenburg County Detention Center and Clerk of Superior Court."
+										},
+										{
+											"tag": "p",
+											"text": "Credits"
+										},
+										{
+											"tag": "p",
+											"text": "Kallie Cox | Reporter"
+										},
+										{
+											"tag": "p",
+											"text": "Anna Douglas | Editor"
+										},
+										{
+											"tag": "p",
+											"text": "Rachel Handley | Illustrations & Design"
+										},
+										{
+											"tag": "p",
+											"text": "Gabby McCall | Page Design"
+										},
+										{
+											"tag": "p",
+											"text": "David Newcomb | Development & Design"
+										}
+	        				],
+	        				"type": "text-item"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+        	</div>
+
 	        {/* TODO: will be cool, will need to add functionality to upload data (1) locally and (2) eventually in the bucket (CSV Google Sheets upload)? */}
 	        {/* Charts */}
 	        {/*<div className="section">
 	        	<h3>Charts</h3>
         	</div>*/}
         </div>
+
         <div
         	className="tool-footer"
         	style={{
