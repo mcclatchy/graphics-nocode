@@ -12,3 +12,37 @@
   background-size: 0.75em 100%;
   background-position: calc(100% - 12px) 1px;
 }
+
+/* TODO: May need to change from here down depending on how many attributes and which kind in the future */
+
+.tool-text-item-inputs {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.tool-text-item-attribute {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
+}
+
+.tool-text-item-attribute-title-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.tool-text-item-attribute-title {
+	margin: 0px 10px 0px 0px;
+	color: var(--tool-gray);
+	font-style: italic;
+	font-size: 14px;
+}
+
+.tool-text-item-attribute textarea {
+  padding: 5px !important;
+  max-height: 18px !important;
+  width: 65px;
+  font-size: 14px;
+}

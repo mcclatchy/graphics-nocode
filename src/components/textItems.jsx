@@ -8,9 +8,20 @@ const textItems = (props) => {
 
   const addTextItem = () => {
     const tagOptions = props.editOptions[props.editKey].options;
+
+    // TODO: Need to find a clean way to map things out here
+    // Probably means in the menu file I need to define schema more clearly for each attribute
+    // That way I can pass along things like type and label
+    let attributes = {};
+    props.editOptions[props.editKey].attributes.map(attribute => {
+      attributes[attribute] = {
+        value: ""
+      }
+    });
     props.setValue(props.value.push({
       tag: tagOptions[0],
-      text: ""
+      text: "",
+      attributes: attributes
     }))
   }
 

@@ -2,11 +2,12 @@
 	height: 200px;
 	background: var(--tool-lightgray);
 }
-/* Doing this because usually styles apply to .story-body > * but this gets nested deeper with the page setup */
+/* TODO: Can I change this? Doing this because usually styles apply to .story-body > * but this gets nested deeper with the page setup */
 .embed-infographic {
   margin: 20px auto;
   padding: 0 var(--page-padding);
 }
+/* TODO: Have a way to import new saratoga CSS and change what needs changing (i.e. @media to @container queries) */
 .d-sm,.d-md{display:none}@container(min-width: 768px){.h-sm{display:none}.d-sm{display:block}}@container(min-width: 992px){.h-md{display:none}.d-md{display:block}}/*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

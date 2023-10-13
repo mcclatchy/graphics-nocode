@@ -457,8 +457,53 @@ const Menu = (props) => {
 	        <div className="tool-section">
 	        	<h3 className="tool-h3">Graphics</h3>
 	        	<Increment
+	        		label="obituary-section"
+	        		link="https://www.miamiherald.com/static/hi/cards/obituary-section/obituary-section.css"
+	        		script="https://www.miamiherald.com/static/hi/cards/obituary-section/obituary-section.js"
+	        		defaultOptions={{
+	        			"data-sheet": {
+	        				"label": "Sheet",
+	        				"value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/109B1KqGXQ9V_XUfap1GMZuEHMg3M6VSeYTa9IvW_lX8.json",
+	        				"type": "text"
+	        			},
+	        			"data-img-filepath": {
+	        				"label": "Image Folder",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/eky-floods/images",
+	        				"type": "text"
+	        			},
+	        			"data-sort": {
+	        				"label": "Sort By",
+	        				"value": "section",
+	        				"type": "text"
+	        			},
+	        			"collage": {
+	        				"value": true,
+	        				"hide": true,
+	        				"type": "boolean"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
 	        		label="scrolling-video"
-	        		script="./scrolling-video.js"
+	        		// TODO: This CSS file is meh - needs to be refactored to match story styling
+	        		// Anythign that departs from that can be configured (right now it's too custom)
+	        		// link="/static/hi/cards/scrolling-video/scrolling-video.css"
+	        		script="https://www.miamiherald.com/static/hi/cards/scrolling-video/scrolling-video.js"
 	        		defaultOptions={{
 	        			"src": {
 	        				"label": "Video - Landscape",
@@ -475,56 +520,121 @@ const Menu = (props) => {
 	        				"hide": true,
 	        				"type": "boolean"
 	        			},
-	        			"data-embed-class": {
-	        				"label": "Embed Class",
-	        				"value": "full-bleed",
-	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
-	        				"type": "switch",
-	        				"hide": true
-	        			},
+	        			// TODO: Need to add more of these CSS variable editOptions
+	        			// And need to refactor other color change areas to work with this
+	        			// Also need to stop namespacing web component CSS variables
+	        			// And look holistically across the set of items to formalize a graphics design system
 	        			"--scrolling-video-text-color": {
-	        				"label": "Color",
-	        				"value": "#000000",
+	        				"label": "Text Color",
+	        				"value": "#ffffff",
 	        				"type": "color"
 	        			},
 	        			"slot": {
 	        				"label": "Text",
 	        				"options": ["p"],
+	        				// TODO: Also need to (very likely) make this the place where I define the attributes schema
+	        				// That way I can easily use the info to add a new item with the appropriate attribute (see textItems.jsx)
+	        				"attributes": ["data-timestamp"],
 	        				"value": [
 										{
 											"tag": "p",
-											"text": "Sources"
+											"text": "Sources",
+											// TODO: This nested attribute setup is a little experimental
+											// Appears to be working decently but I'll need to stay very up to date with what attributes are possible
+											// Unfortunately I can't cleanly add different input types - so I need to look into discretizing those components
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:00.68",
+													"type": "text"
+												}
+											}
 										},
 										{
 											"tag": "p",
-											"text": "Scenes not witnessed by the reporter in this series were compiled from research, interviews and public records including documents from the Mecklenburg County Detention Center and Clerk of Superior Court."
+											"text": "Scenes not witnessed by the reporter in this series were compiled from research, interviews and public records including documents from the Mecklenburg County Detention Center and Clerk of Superior Court.",
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:01.68",
+													"type": "text"
+												}
+											}
 										},
 										{
 											"tag": "p",
-											"text": "Credits"
+											"text": "Credits",
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:02.68",
+													"type": "text"
+												}
+											}
 										},
 										{
 											"tag": "p",
-											"text": "Kallie Cox | Reporter"
+											"text": "Kallie Cox | Reporter",
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:03.68",
+													"type": "text"
+												}
+											}
 										},
 										{
 											"tag": "p",
-											"text": "Anna Douglas | Editor"
+											"text": "Anna Douglas | Editor",
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:04.68",
+													"type": "text"
+												}
+											}
 										},
 										{
 											"tag": "p",
-											"text": "Rachel Handley | Illustrations & Design"
+											"text": "Rachel Handley | Illustrations & Design",
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:05.68",
+													"type": "text"
+												}
+											}
 										},
 										{
 											"tag": "p",
-											"text": "Gabby McCall | Page Design"
+											"text": "Gabby McCall | Page Design",
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:06.68",
+													"type": "text"
+												}
+											}
 										},
 										{
 											"tag": "p",
-											"text": "David Newcomb | Development & Design"
+											"text": "David Newcomb | Development & Design",
+											"attributes": {
+												"data-timestamp": {
+													"label": "Timestamp",
+													"value": "00:07.68",
+													"type": "text"
+												}
+											}
 										}
 	        				],
 	        				"type": "text-item"
+	        			},
+	        			"data-embed-class": {
+	        				"label": "Embed Class",
+	        				"value": "full-bleed",
+	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
+	        				"type": "switch"
 	        			}
 	        		}}
 

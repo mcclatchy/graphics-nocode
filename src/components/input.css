@@ -126,6 +126,6 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 }
 
 input[type="color"]::-webkit-color-swatch {
-	border: none;
+	border: 1px solid var(--tool-lightgray);
 	border-radius: 5px;
 }

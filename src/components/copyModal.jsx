@@ -77,6 +77,8 @@ class CopyModal extends React.Component {
 	        		element.innerHTML = ''
 	        	}
 	        	element && element.removeAttribute('id');
+	        	// TODO: Remove inline styles from children? Seems useful for scrolling-video. Need to see if it scales...
+	        	element?.children && Array.from(element.children).forEach(child => child.removeAttribute("style"))
 	        	const html = element?.outerHTML;
 	        	const textId = `tool-embed-${webComponent.props.id}`;
 	          return (

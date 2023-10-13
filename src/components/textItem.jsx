@@ -6,6 +6,7 @@ import './textItem.css'
 const textItem = (props) => {
   const [textValue, setTextValue] = useState(props.item.text);
   const [tagValue, setTagValue] = useState(props.item.tag);
+  const [attributesValue, setAttributesValue] = useState(props.item.attributes || {});
 
   const updateValue = (e, index) => {
     e.preventDefault();
@@ -17,6 +18,20 @@ const textItem = (props) => {
       return editOptions;
     });
     setTextValue(e.target.value);    
+  }
+
+  const updateAttribute = (e, index, field) => {
+    e.preventDefault();
+    props.value[index].attributes[field].value = e.target.value;
+    props.setValue(props.value);
+    props.setTextItems(props.value)
+    props.setEditOptions(editOptions => {
+      editOptions[props.editKey]["value"] = props.value
+      return editOptions;
+    });
+    const clone = structuredClone(props.value[index].attributes);
+
+    setAttributesValue(clone); 
   }
 
   const updateTag = (e, index) => {
@@ -57,12 +72,34 @@ const textItem = (props) => {
         </select> :
         ""
       }
-      <TextareaAutosize
-        value={props.item.text}
-        className="tool-modal-value"
-        onChange={e => { updateValue(e, props.updateIndex); }}
-        spellCheck="false"
-      ></TextareaAutosize>
+      <div className="tool-text-item-inputs">
+
+        {Object.keys(attributesValue).map(attribute => {
+          return(
+            <div className="tool-text-item-attribute" key={attribute}>
+              <div className="tool-text-item-attribute-title-wrapper">
+                <p className="tool-text-item-attribute-title">{attributesValue[attribute].label}</p>
+              </div>
+              <TextareaAutosize
+                onHeightChange={e => { rowHeight: 22 }}
+                value={attributesValue[attribute].value}
+                className="tool-modal-value"
+                onChange={e => { updateAttribute(e, props.updateIndex, attribute); }}
+                spellCheck="false"
+              ></TextareaAutosize>
+            </div>
+          )
+        })}
+        
+        <TextareaAutosize
+          value={props.item.text}
+          className="tool-modal-value"
+          onChange={e => { updateValue(e, props.updateIndex); }}
+          spellCheck="false"
+        ></TextareaAutosize>
+
+      </div>
+
       <div className="tool-remove-text-item" onClick={e => { removeValue(e, props.updateIndex); }}>
         <button>
           <img src={Minus} alt="remove"/>

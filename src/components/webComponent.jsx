@@ -15,7 +15,11 @@ class WebComponent extends React.Component {
         const value = this.props.options[key].value;
         if (value !== null) {
           if (key === "slot") {
-            const formattedValue = value.map(val => `<${val.tag}>${val.text}</${val.tag}>`);
+            const getFormattedAttributes = (attributes) => attributes ? Object.keys(attributes).map(key => {
+              return `${key}="${attributes[key].value}"`
+            }).join(" ") : ""
+
+            const formattedValue = value.map(val => `<${val.tag} ${getFormattedAttributes(val.attributes)}>${val.text}</${val.tag}>`);
             slot = formattedValue.join("\n");
             return "";
           } else {

@@ -40,7 +40,8 @@ export function beautifyHTML(html) {
 	if (!html) {
 		return html;
 	}
-	const flatHTML = html.replaceAll("\n", " ");
+	// TODO: figure out a cleaner way to get rid of the style attribute completely
+	const flatHTML = html.replaceAll("\n", " ").replaceAll('style=""', "");
 	const regex = /<([a-zA-Z0-9-]+)(?:[^>]+)?>(.*?)<\/\1>/;
 	const match = flatHTML.match(regex);
 
