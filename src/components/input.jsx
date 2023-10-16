@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import TextareaAutosize from 'react-textarea-autosize';
 import Switch from './switch.jsx'
 import TextItems from './textItems.jsx'
+import { getLuminance, hexToRgb } from '../utils/color.js'
 import './input.css'
 
 const calculateRangePercentage = (value, min, max) => {
@@ -78,6 +79,14 @@ const Input = (props) => {
           />
         )
       default:
+        if (type === 'color') {
+          const color = newValue || defaultValue;
+          const luminance = color && getLuminance(hexToRgb(color));
+          const inputColor = document.querySelector('input[type="color"]')
+          const inputBorder = luminance && luminance > 180 ? '1px solid var(--tool-gray)' : "none";
+          inputColor && inputColor.style.setProperty('--input-color-border', inputBorder);
+        }
+
         return(
           <div className="tool-edit-input-output" type={type}>
             <input

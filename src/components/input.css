@@ -1,5 +1,6 @@
 .tool-edit-input-output {
 	--input-range-dot-size: 15px;
+	--input-color-border: 1px solid var(--tool-gray);
 }
 
 textarea {
@@ -126,6 +127,6 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 }
 
 input[type="color"]::-webkit-color-swatch {
-	border: 1px solid var(--tool-lightgray);
+	border: var(--input-color-border);
 	border-radius: 5px;
 }

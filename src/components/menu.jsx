@@ -135,48 +135,6 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 	        	/>
 	        	<Increment
-	        		label="event-timeline"
-	        		script="https://www.miamiherald.com/static/hi/cards/event-timeline/event-timeline.js"
-	        		defaultOptions={{
-	        			"data-title": {
-	        				"label": "Title",
-	        				"value": "Gone but not forgotten",
-	        				"type": "text"
-	        			},
-	        			"data-subtitle": {
-	        				"label": "Subtitle",
-	        				"value": "A decade of efforts to bring journalist Austin Tice home from Syria",
-	        				"type": "text"
-	        			},
-	        			"data-sheet": {
-	        				"label": "Sheet",
-	        				"value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/1npUIJTdZLX9tgM01AX1oNBKfpejCpXSMU8Seim8Msdo.json",
-	        				"type": "text"
-	        			},
-	        			"data-expanded": {
-	        				"label": "Style",
-	        				"value": null,
-	        				"options": [{"label": "Collapsed", "value": null}, {"label": "Expanded", "value": "true"}],
-	        				"type": "switch"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-	        	/>
-	        	<Increment
 	        		label="info-slate"
 	        		script="https://www.miamiherald.com/static/hi/cards/info-slate/info-slate.js"
 	        		defaultOptions={{
@@ -457,6 +415,48 @@ const Menu = (props) => {
 	        <div className="tool-section">
 	        	<h3 className="tool-h3">Graphics</h3>
 	        	<Increment
+	        		label="event-timeline"
+	        		script="https://www.miamiherald.com/static/hi/cards/event-timeline/event-timeline.js"
+	        		defaultOptions={{
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "Gone but not forgotten",
+	        				"type": "text"
+	        			},
+	        			"data-subtitle": {
+	        				"label": "Subtitle",
+	        				"value": "A decade of efforts to bring journalist Austin Tice home from Syria",
+	        				"type": "text"
+	        			},
+	        			"data-sheet": {
+	        				"label": "Sheet",
+	        				"value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/1npUIJTdZLX9tgM01AX1oNBKfpejCpXSMU8Seim8Msdo.json",
+	        				"type": "text"
+	        			},
+	        			"data-expanded": {
+	        				"label": "Style",
+	        				"value": null,
+	        				"options": [{"label": "Collapsed", "value": null}, {"label": "Expanded", "value": "true"}],
+	        				"type": "switch"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
 	        		label="obituary-section"
 	        		link="https://www.miamiherald.com/static/hi/cards/obituary-section/obituary-section.css"
 	        		script="https://www.miamiherald.com/static/hi/cards/obituary-section/obituary-section.js"
@@ -538,91 +538,70 @@ const Menu = (props) => {
 	        				"value": [
 										{
 											"tag": "p",
-											"text": "Sources",
+											"text": "Revascularization procedures<br>restore blood flow to the<br>extremities and can often save<br>a limb from amputation.",
 											// TODO: This nested attribute setup is a little experimental
 											// Appears to be working decently but I'll need to stay very up to date with what attributes are possible
 											// Unfortunately I can't cleanly add different input types - so I need to look into discretizing those components
+											// TODO: sort these by timestamp (maybe define that above somewhere) even when added
 											"attributes": {
 												"data-timestamp": {
 													"label": "Timestamp",
-													"value": "00:00.68",
+													"value": "00:01.17",
 													"type": "text"
 												}
 											}
 										},
 										{
 											"tag": "p",
-											"text": "Scenes not witnessed by the reporter in this series were compiled from research, interviews and public records including documents from the Mecklenburg County Detention Center and Clerk of Superior Court.",
+											"text": "One of the most common is angioplasty.",
 											"attributes": {
 												"data-timestamp": {
 													"label": "Timestamp",
-													"value": "00:01.68",
+													"value": "00:04.04",
 													"type": "text"
 												}
 											}
 										},
 										{
 											"tag": "p",
-											"text": "Credits",
+											"text": "Plaque in the artery<br>reduces blood flow to<br>the affected limb.",
 											"attributes": {
 												"data-timestamp": {
 													"label": "Timestamp",
-													"value": "00:02.68",
+													"value": "00:06.04",
 													"type": "text"
 												}
 											}
 										},
 										{
 											"tag": "p",
-											"text": "Kallie Cox | Reporter",
+											"text": "During angioplasty, a balloon catheter<br>is inserted through the site of the narrowed<br>blood vessel.",
 											"attributes": {
 												"data-timestamp": {
 													"label": "Timestamp",
-													"value": "00:03.68",
+													"value": "00:08.14",
 													"type": "text"
 												}
 											}
 										},
 										{
 											"tag": "p",
-											"text": "Anna Douglas | Editor",
+											"text": "The balloon is then inflated to open<br>the blood vessel, restoring blood flow.",
 											"attributes": {
 												"data-timestamp": {
 													"label": "Timestamp",
-													"value": "00:04.68",
+													"value": "00:10.20",
 													"type": "text"
 												}
 											}
 										},
 										{
 											"tag": "p",
-											"text": "Rachel Handley | Illustrations & Design",
+											"text": "A patient’s five-year survival rate after<br>limb salvage revascularization is 80% to 90%",
 											"attributes": {
 												"data-timestamp": {
 													"label": "Timestamp",
-													"value": "00:05.68",
-													"type": "text"
-												}
-											}
-										},
-										{
-											"tag": "p",
-											"text": "Gabby McCall | Page Design",
-											"attributes": {
-												"data-timestamp": {
-													"label": "Timestamp",
-													"value": "00:06.68",
-													"type": "text"
-												}
-											}
-										},
-										{
-											"tag": "p",
-											"text": "David Newcomb | Development & Design",
-											"attributes": {
-												"data-timestamp": {
-													"label": "Timestamp",
-													"value": "00:07.68",
+													"value": "00:12.25",
 													"type": "text"
 												}
 											}
