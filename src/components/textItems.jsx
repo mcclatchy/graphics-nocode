@@ -45,8 +45,8 @@ const textItems = (props) => {
           )
       })}
       <div className="tool-add-text-item">
-        <button>
-          <img src={Plus} alt="add" onClick={e => addTextItem() }/>
+        <button onClick={e => addTextItem()}>
+          <img src={Plus} alt="add"/>
         </button>
       </div>
     </div>

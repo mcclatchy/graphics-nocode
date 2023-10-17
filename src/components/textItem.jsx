@@ -78,7 +78,7 @@ const textItem = (props) => {
           return(
             <div className="tool-text-item-attribute" key={attribute}>
               <div className="tool-text-item-attribute-title-wrapper">
-                <p className="tool-text-item-attribute-title">{attributesValue[attribute].label}</p>
+                <p className="tool-text-item-attribute-title" style={{display: "none"}}>{attributesValue[attribute].label}</p>
               </div>
               <TextareaAutosize
                 onHeightChange={e => { rowHeight: 22 }}
