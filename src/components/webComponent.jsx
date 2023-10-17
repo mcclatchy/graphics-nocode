@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { sortByField } from "../utils/array.js"
 
 import './webComponent.css'
 
@@ -10,9 +11,16 @@ class WebComponent extends React.Component {
   render() {
     let slot;
 
-    const attributes = this.props.options && Object.keys(this.props.options) ? 
-      Object.keys(this.props.options).filter(key => !key.startsWith("--")).map((key, i) => {
-        const value = this.props.options[key].value;
+    const sortedOptions = {}
+    Object.keys(this.props.options).forEach(key => {
+      let option = this.props.options[key];
+      option.value = option.sort ? sortByField(option.value, option.sort) : option.value;
+      sortedOptions[key] = option;
+    })
+
+    const attributes = sortedOptions && Object.keys(sortedOptions) ? 
+      Object.keys(sortedOptions).filter(key => !key.startsWith("--")).map((key, i) => {
+        const value = sortedOptions[key].value;
         if (value !== null) {
           if (key === "slot") {
             const getFormattedAttributes = (attributes) => attributes ? Object.keys(attributes).map(key => {
@@ -28,9 +36,9 @@ class WebComponent extends React.Component {
         }
       }).join(" ") : ""
 
-    const style = this.props.options && Object.keys(this.props.options) ? 
-      Object.keys(this.props.options).filter(key => key.startsWith("--")).map((key, i) => {
-        const value = this.props.options[key].value;
+    const style = sortedOptions && Object.keys(sortedOptions) ? 
+      Object.keys(sortedOptions).filter(key => key.startsWith("--")).map((key, i) => {
+        const value = sortedOptions[key].value;
         if (value !== null) {
           return `${key}: ${value}`
         }

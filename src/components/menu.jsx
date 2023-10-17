@@ -535,6 +535,7 @@ const Menu = (props) => {
 	        				// TODO: Also need to (very likely) make this the place where I define the attributes schema
 	        				// That way I can easily use the info to add a new item with the appropriate attribute (see textItems.jsx)
 	        				"attributes": ["data-timestamp"],
+	        				"sort": "data-timestamp",
 	        				"value": [
 										{
 											"tag": "p",

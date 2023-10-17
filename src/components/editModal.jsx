@@ -19,7 +19,15 @@ class EditModal extends React.Component {
         <div className="tool-modal-inner">
           <div className="tool-modal-topper">
             <div className="tool-title">Edit</div>
-            <img className="tool-remove" src={Remove} alt="remove" onClick={(e) => { this.props.setEditMode(false); this.props.setEditOptions({}); }}/>
+            <img
+              className="tool-remove"
+              src={Remove}
+              alt="remove"
+              onClick={(e) => { 
+                this.props.setEditMode(false);
+                this.props.setEditOptions({});
+              }}
+            />
           </div>
           <div className="tool-modal-spacer"></div>
           {this.props.editOptions && Object.keys(this.props.editOptions).map((key, i) => {

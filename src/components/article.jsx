@@ -4,6 +4,7 @@ import { useState } from 'react'
 import SampleArticle from "./sampleArticle.jsx"
 import CopyModal from "./copyModal.jsx"
 import EditModal from "./editModal.jsx"
+import { sortByField } from "../utils/array.js"
 import './article.css'
 
 
@@ -13,6 +14,13 @@ class Article extends React.Component {
   }
 
   render() {
+    const sortedEditOptions = {}
+    Object.keys(this.props.editOptions).forEach(key => {
+      let option = this.props.editOptions[key];
+      option.value = option.sort ? sortByField(option.value, option.sort) : option.value;
+      sortedEditOptions[key] = option;
+    })
+
     return (
       <>
       	<div className="tool-article-wrapper">
@@ -23,7 +31,7 @@ class Article extends React.Component {
             webComponents={this.props.webComponents}
           />
           <EditModal
-            editOptions={this.props.editOptions}
+            editOptions={sortedEditOptions}
             setEditOptions={this.props.setEditOptions}
 
             editMode={this.props.editMode}
