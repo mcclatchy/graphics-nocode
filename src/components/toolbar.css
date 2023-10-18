@@ -5,10 +5,12 @@
 	position: sticky;
   right: 10px;
   z-index: 10;
-  top: 5px;
+  top: 10px;
+  height: 0px;
 }
 
 .card-toolbar img {
+  height: 24px;
 	margin-right: 10px;
   cursor: pointer;
   filter: invert(0.5);
