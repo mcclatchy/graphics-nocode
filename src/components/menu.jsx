@@ -159,12 +159,12 @@ const Menu = (props) => {
 	        			},
 	        			"data-text-color": {
 	        				"label": "Text Color",
-	        				"value": "",
+	        				"value": "#000000",
 	        				"type": "color"
 	        			},
 	        			"data-background-color": {
 	        				"label": "Background Color",
-	        				"value": "",
+	        				"value": "#ffffff",
 	        				"type": "color"
 	        			},
 	        			"data-embed-class": {
@@ -520,15 +520,6 @@ const Menu = (props) => {
 	        				"hide": true,
 	        				"type": "boolean"
 	        			},
-	        			// TODO: Need to add more of these CSS variable editOptions
-	        			// And need to refactor other color change areas to work with this
-	        			// Also need to stop namespacing web component CSS variables
-	        			// And look holistically across the set of items to formalize a graphics design system
-	        			"--scrolling-video-text-color": {
-	        				"label": "Text Color",
-	        				"value": "#ffffff",
-	        				"type": "color"
-	        			},
 	        			"slot": {
 	        				"label": "Text",
 	        				"options": ["p"],
@@ -615,6 +606,15 @@ const Menu = (props) => {
 	        				"value": "full-bleed",
 	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
 	        				"type": "switch"
+	        			},
+	        			// TODO: Need to add more of these CSS variable editOptions
+	        			// And need to refactor other color change areas to work with this
+	        			// Also need to stop namespacing web component CSS variables
+	        			// And look holistically across the set of items to formalize a graphics design system
+	        			"--scrolling-video-text-color": {
+	        				"label": "Text Color",
+	        				"value": "#ffffff",
+	        				"type": "color"
 	        			}
 	        		}}
 
