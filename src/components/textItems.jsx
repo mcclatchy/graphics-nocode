@@ -13,7 +13,7 @@ const textItems = (props) => {
     // Probably means in the menu file I need to define schema more clearly for each attribute
     // That way I can pass along things like type and label
     let attributes = {};
-    props.editOptions[props.editKey].attributes.map(attribute => {
+    props.editOptions[props.editKey]?.attributes && props.editOptions[props.editKey].attributes.map(attribute => {
       attributes[attribute] = {
         value: ""
       }
