@@ -499,6 +499,73 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 	        	/>
 	        	<Increment
+	        		label="scrolling-map"
+	        		script="https://www.miamiherald.com/static/hi/graphics/1.0.0/scrolling-map.js"
+	        		defaultOptions={{
+	        			"mapId": {
+	        				"label": "Map ID",
+	        				"value": "map-ogallala",
+	        				"type": "text"
+	        			},
+	        			"projectPath": {
+	        				"label": "Project URL Path",
+	        				"value": "https://www.kansascity.com/static/hi/2023/kc-ogallala-aquifer",
+	        				"type": "text"
+	        			},
+	        			"textConfig": {
+	        				"label": "Text Config URL",
+	        				"value": "https://www.kansascity.com/static/hi/2023/kc-ogallala-aquifer/data/config-text.json",
+	        				"type": "text"
+	        			},
+	        			"mapConfig": {
+	        				"label": "Map Config URL",
+	        				"value": "https://www.kansascity.com/static/hi/2023/kc-ogallala-aquifer/data/config-map.json",
+	        				"type": "text"
+	        			},
+	        			"background": {
+	        				"label": "Background Color",
+	        				"value": "#191917",
+	        				"type": "color"
+	        			},
+	        			"textColor": {
+	        				"label": "Text Color",
+	        				"value": "#ffffff",
+	        				"type": "color"
+	        			},
+	        			"textBorder": {
+	        				"label": "Text Border Color",
+	        				"value": "#444444",
+	        				"type": "color"
+	        			},
+	        			"textBackground": {
+	        				"label": "Text Background Color",
+	        				"value": "#191917",
+	        				"type": "color"
+	        			},
+	        			"embedClass": {
+	        				"label": "Embed Class",
+	        				"value": "full-bleed",
+	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
+	        				"type": "switch"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
 	        		label="scrolling-video"
 	        		// TODO: This CSS file is meh - needs to be refactored to match story styling
 	        		// Anythign that departs from that can be configured (right now it's too custom)

@@ -23,6 +23,8 @@ class SampleArticle extends React.Component {
       this.props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
     }
 
+    const noInlineSizeNames = ['scrolling-map']
+
     const nonBodyComponentNames = ["lead-logo"]
     const nonBodyWebComponents = this.props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
     const nonBodyToolbars = this.props.toolbars.filter(toolbar => nonBodyComponentNames.includes(toolbar.props.name))
@@ -173,7 +175,7 @@ class SampleArticle extends React.Component {
 
     
     return (
-      <div style={{containerType: "inline-size"}} ref={this.targetRef} key={`themes-${this.props.links.length}-enhancements-${this.props.scripts.length}`}>
+      <div ref={this.targetRef} key={`themes-${this.props.links.length}-enhancements-${this.props.scripts.length}`}>
         <meta charSet="utf-8" />
         {/* WPS Generated */}
         <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net/" />
@@ -664,7 +666,7 @@ class SampleArticle extends React.Component {
               {bodyWebComponents && bodyWebComponents.map((webComponent, i) => {
                 const toolbar = bodyToolbars[i];
                 return (
-                  <div style={{position: 'relative', maxWidth: "100%", padding: 0}} key={i}>
+                  <div style={{position: 'relative', maxWidth: "100%", padding: 0, containerType: noInlineSizeNames.includes(webComponent.props.name) ? "" : "inline-size"}} key={i}>
                     {cloneElement(toolbar, { key: toolbar.id })}
                     <WebComponent
                       name={webComponent.props.name}
