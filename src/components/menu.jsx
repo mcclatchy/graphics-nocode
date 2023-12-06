@@ -191,6 +191,45 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 	        	/>
 	        	<Increment
+			      	label="lead-image"
+			      	maxCount="1"
+			      	script="https://www.miamiherald.com/static/hi/cards/lead-image/lead-image.js"
+			      	link="https://www.miamiherald.com/static/hi/cards/lead-image/lead-image.css"
+	        		defaultOptions={{
+	        			"data-image": {
+	        				"label": "Lead Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2024/charlotte-sweet-16/images/banner.jpg",
+	        				"type": "text"
+	        			},
+	        			"slot": {
+	        				"label": "Caption",
+	        				"options": ["figcaption"],
+	        				"value": [
+										{
+											"tag": "figcaption",
+											"text": "Illustration by Rachel Handley"
+										}
+	        				],
+	        				"type": "text-item"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+	        	<Increment
 			      	label="lead-logo"
 			      	maxCount="1"
 			      	script="https://www.miamiherald.com/static/hi/cards/lead-logo/lead-logo.js"
@@ -284,8 +323,7 @@ const Menu = (props) => {
 			      />
 			      <Increment
 			      	label="outro-text"
-			      	script="https://www.miamiherald.com/static/hi/graphics/1.0.0/outro-text.js"
-			      	link="https://www.miamiherald.com/static/hi/graphics/1.0.0/outro-text.css"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/outro-text.js"
 	        		defaultOptions={{
 	        			"slot": {
 	        				"label": "Text",

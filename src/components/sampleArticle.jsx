@@ -5,32 +5,61 @@ import WebComponent from "./webComponent.jsx"
 import "./sampleArticle.css"
 
 
-class SampleArticle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.targetRef = React.createRef();
-  }
-  
-  // TODO: going to be difficult to update this sample article with any regularity - hard to keep in sync
-  render() {
+const SampleArticle = (props) => {
+    const targetRef = React.createRef();
+
+    // const useMutationObserver = (
+    //   ref,
+    //   callback,
+    //   options = {
+    //     attributes: true,
+    //     characterData: true,
+    //     childList: true,
+    //     subtree: false,
+    //   }
+    // ) => {
+    //   React.useEffect(() => {
+    //     if (ref.current) {
+    //       const observer = new MutationObserver(callback);
+    //       observer.observe(ref.current, options);
+    //       return () => observer.disconnect();
+    //     }
+    //   }, [callback, options]);
+    // };
+    // const mutationRef = React.useRef();
+    // const [mutationCount, setMutationCount] = React.useState(0);
+    // const incrementMutationCount = () => {
+    //   if (mutationCount === 1) {
+    //     console.log("here")
+    //     return mutationCount
+    //   }
+    //   return setMutationCount(mutationCount + 1);
+    // };
+    // useMutationObserver(mutationRef, incrementMutationCount);
+
+
+
+
+
     const clearMovedWebComponent = (tag) => {
       const webComponent = document.querySelector(tag);
       webComponent && webComponent.remove();
     }
 
-    let targetElement = this.targetRef && this.targetRef?.current;
+    let targetElement = targetRef && targetRef?.current;
     if (targetElement) {
-      this.props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
+      props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
     }
 
     const noInlineSizeNames = ['scrolling-map']
 
-    const nonBodyComponentNames = ["lead-logo"]
-    const nonBodyWebComponents = this.props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
-    const nonBodyToolbars = this.props.toolbars.filter(toolbar => nonBodyComponentNames.includes(toolbar.props.name))
+    const nonBodyComponentNames = ["lead-image", "lead-logo"]
+    const nonBodyWebComponents = props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
+    const nonBodyToolbars = props.toolbars.filter(toolbar => nonBodyComponentNames.includes(toolbar.props.name))
 
-    const bodyWebComponents = this.props.webComponents.filter(webComponent => !nonBodyComponentNames.includes(webComponent.props.name));
-    const bodyToolbars = this.props.toolbars.filter(toolbar => !nonBodyComponentNames.includes(toolbar.props.name))
+
+    const bodyWebComponents = props.webComponents.filter(webComponent => !nonBodyComponentNames.includes(webComponent.props.name));
+    const bodyToolbars = props.toolbars.filter(toolbar => !nonBodyComponentNames.includes(toolbar.props.name))
 
     window.pageInfo = {
       videoLead: 'false',
@@ -172,10 +201,11 @@ class SampleArticle extends React.Component {
         },
       },
     };
-
+  
+  // TODO: going to be difficult to update this sample article with any regularity - hard to keep in sync
     
     return (
-      <div ref={this.targetRef} key={`themes-${this.props.links.length}-enhancements-${this.props.scripts.length}`}>
+      <div ref={targetRef} key={`themes-${props.links.length}-enhancements-${props.scripts.length}`}>
         <meta charSet="utf-8" />
         {/* WPS Generated */}
         <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net/" />
@@ -533,13 +563,14 @@ class SampleArticle extends React.Component {
 			        </nav>
 			    </div>
 			</div>
-        <div><div className="breaking-news-organism impact" /><article className="paper story-body">{/**/}{/**/}
-            <header className="header">
-              {nonBodyWebComponents && nonBodyWebComponents.map((webComponent, i) => {
+        <div><div className="breaking-news-organism impact" />
+        <article className="paper story-body" >{/**/}{/**/}
+            {nonBodyWebComponents && nonBodyWebComponents.map((webComponent, i) => {
                 const toolbar = nonBodyToolbars[i];
+
                 clearMovedWebComponent(webComponent.props.name);
                 return (
-                  <div style={{width: "100%", position: "relative", padding: 0}} key={i}>
+                  <div style={{width: "100%", maxWidth: "100vw", position: "relative", padding: 0}} key={i} >
                     {cloneElement(toolbar, { key: toolbar.id })}
                     <WebComponent
                       name={webComponent.props.name}
@@ -552,6 +583,9 @@ class SampleArticle extends React.Component {
                   </div>
                 )
               })}
+
+            <header className="header">
+     
               <h2 className="caps kicker-id h6">
                 <a className="kicker" href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman">
                   Michelle Kaufman
@@ -1002,8 +1036,8 @@ class SampleArticle extends React.Component {
           <a className="legal-links-item caps" href="https://www.miamiherald.com/site-services/terms-of-service/#navlink=mi_footer">Terms of Service</a>
         </section>
       </div>
-    )
-  } 
+ )
 }
+
 
 export default SampleArticle;
