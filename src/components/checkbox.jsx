@@ -20,7 +20,7 @@ const Checkbox = (props) => {
           }}
         />
         <span className="checkmark"></span>
-        <p className={"label " + (isChecked ? 'checked' : '')}>{props.label}</p>
+        <p className={(isChecked ? 'checked' : '')}>{props.label}</p>
       </label>
     </div>
   );

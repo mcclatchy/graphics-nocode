@@ -82,7 +82,7 @@ const Increment = (props) => {
         	<img className={(count > 0 ? 'checked' : '')} src={Plus} alt="add"/>
         	<p className={"count " + (count > 0 ? 'checked' : '')}>{count}</p>
         </span>
-        <p className={"label " + (count > 0 ? 'checked' : '')}>{props.label}</p>
+        <p className={(count > 0 ? 'checked' : '')}>{props.label}</p>
       </label>
     </div>
   );

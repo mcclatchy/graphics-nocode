@@ -13,6 +13,7 @@
 	display: inline-block;
 	margin-left: 9px;
 	font-family: var(--tool-font-family);
+	color: var(--tool-font-color);
 	font-size: 17px;
 	user-select: none;
 }

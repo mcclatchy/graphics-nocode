@@ -36,6 +36,7 @@ input[type="checkbox"]:checked + .checkmark {
 	font-family: var(--tool-font-family);
 	font-size: 17px;
 	user-select: none;
+	color: var(--tool-font-color);
 }
 
 .checkbox-wrapper p.checked {

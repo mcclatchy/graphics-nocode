@@ -73,7 +73,8 @@ const Menu = (props) => {
 			      />
 			      <Checkbox
 			      	label="moveLeadArtToTop"
-							script="https://www.miamiherald.com/static/hi/graphics/1.0.0/move-lead-art-to-top.js"
+							script="https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.js"
+							link="https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.css"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />

@@ -300,42 +300,66 @@ const SampleArticle = (props) => {
 			                </div>
 			            </div>
 			        </div>
-			        <div id="flag" className="paper masthead" role="banner">
-			            <div className="sds-flag">
-			                <div className="flag-menu row" role="menu"><button aria-haspopup="true" role="menuitem" id="sectionsmenu"><svg width={18} height={16} viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
-			                            <path d="M0.623635 2.47959H16.8381C17.1826 2.47959 17.4618 2.23291 17.4618 1.92857V0.55102C17.4618 0.246685 17.1826 0 16.8381 0H0.623635C0.279193 0 0 0.246685 0 0.55102V1.92857C0 2.23291 0.279193 2.47959 0.623635 2.47959ZM0.623635 8.9898H16.8381C17.1826 8.9898 17.4618 8.74311 17.4618 8.43878V7.06122C17.4618 6.75689 17.1826 6.5102 16.8381 6.5102H0.623635C0.279193 6.5102 0 6.75689 0 7.06122V8.43878C0 8.74311 0.279193 8.9898 0.623635 8.9898ZM0.623635 15.5H16.8381C17.1826 15.5 17.4618 15.2533 17.4618 14.949V13.5714C17.4618 13.2671 17.1826 13.0204 16.8381 13.0204H0.623635C0.279193 13.0204 0 13.2671 0 13.5714V14.949C0 15.2533 0.279193 15.5 0.623635 15.5Z" /></svg></button><a href="#primary-content" className="flex tabkey-reveal" accessKey={1} tabIndex={1}><span className="button impact">Skip to Content</span></a>
-			                    <form id="search-icon" action="/search/" className="search row h-phone" role="search"><label htmlFor="flag-search-input"><svg width={17} height={17} xmlns="http://www.w3.org/2000/svg">
-			                                <path d="m16.768 14.699-3.31-3.31a.796.796 0 0 0-.565-.233h-.541a6.872 6.872 0 0 0 1.46-4.25A6.905 6.905 0 0 0 6.907 0 6.905 6.905 0 0 0 0 6.906a6.905 6.905 0 0 0 6.906 6.907 6.872 6.872 0 0 0 4.25-1.461v.54c0 .213.083.416.233.565l3.31 3.31a.794.794 0 0 0 1.126 0l.94-.94a.8.8 0 0 0 .003-1.128Zm-9.862-3.543c-2.347 0-4.25-1.899-4.25-4.25 0-2.347 1.9-4.25 4.25-4.25 2.348 0 4.25 1.9 4.25 4.25 0 2.348-1.899 4.25-4.25 4.25Z" /></svg></label><input id="flag-search-input" className="search-field" type="text" name="q" placeholder=" " aria-label="Search Kansas City Star" tabIndex={0} /></form>
-			                </div>
-			                <div id="signInOut" className="flag-account row"><a href="https://account.miamiherald.com/auth0?section=michellekaufman" id="logIn">LOG IN</a><a href="https://subscribe.miamiherald.com/beinformed" className="button">SUBSCRIBE NOW</a>{/*v-if*/}{/*v-if*/}</div>{/*v-if*/}<a href="https://www.miamiherald.com" aria-label="Miami Herald" className="flag-logo"><img src="https://www.miamiherald.com/wps/build/images/miamiherald/logo.svg" alt="miamiherald Logo" className="logo" width={3770} height={300} />
-			                    <h1 style={{position: 'absolute', outline: 'none', display: 'none'}}>Lionel Messi gives up captain armband for trophy ceremony | Miami Herald</h1>
-			                    <p className="mmn-company">Part of the McClatchy Media Network</p>
-			                </a>
-			                <div className="flag-left stack h-phone">
-			                    <p><b>Wednesday, August 23, 2023</b></p>
-			                    <p><a href="https://www.miamiherald.com/e-edition/today" aria-label="eEdition">Today's eEdition</a></p>
-			                </div>
-			                <div className="flag-right stack h-phone">
-			                    <div className="row"><a href="/weather" aria-label="Weather" role="menuitem"><img width={40} height={40} src="https://www.miamiherald.com/wps/source/images/widgets/weather/wxicons-blk/wxicons-blk-2.svg" alt="Mostly sunny" /><span><b>89°F</b> <small>90° 81°</small></span></a></div>
-			                </div>
-			                <div className="flag-nav slider">
-			                    <div className="row">
-			                        <div><a href="https://www.miamiherald.com/news/#navlink=navbar">News</a></div>
-			                        <div><a href="https://www.miamiherald.com/sports/#navlink=navbar">Sports</a></div>
-			                        <div><a href="https://www.miamiherald.com/news/business/#navlink=navbar">Business</a></div>
-			                        <div><a href="https://www.miamiherald.com/news/politics-government/#navlink=navbar">Politics</a></div>
-			                        <div><a href="https://www.miamiherald.com/opinion/#navlink=navbar">Opinion</a></div>
-			                        <div><a href="https://www.miamiherald.com/miami-com/restaurants/#navlink=navbar">Food &amp; Drink</a></div>
-			                        <div><a href="https://www.miamiherald.com/news/local/environment/climate-change/#navlink=navbar">Climate Change</a></div><span className="separator">•</span>
-			                        <div><a href="https://www.miamiherald.com/betting/#navlink=navbar">Sports Betting</a></div>
-			                        <div><a href="https://www.miamiherald.com/money/#navlink=navbar">Personal Finance</a></div>
-			                        <div><a href="https://classifieds.mcclatchy.com/marketplace/miami/category/Legals/Legals/">Public Notices</a></div>
-			                        <div><a href="https://www.legacy.com/us/obituaries/herald/browse/">Obituaries</a></div>
-			                        <div><a href="https://www.miamiherald.com/shopping/#navlink=navbar">Shopping</a></div>
-			                    </div>
-			                </div>
-			            </div>
-			        </div>
+<div id="flag" className="paper masthead" role="banner">
+    <div className="sds-flag">
+        <div className="flag-menu row" role="menu">
+        
+        <button aria-haspopup="true" role="menuitem" id="sectionsmenu">
+          <svg width="18" height="16" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.623635 2.47959H16.8381C17.1826 2.47959 17.4618 2.23291 17.4618 1.92857V0.55102C17.4618 0.246685 17.1826 0 16.8381 0H0.623635C0.279193 0 0 0.246685 0 0.55102V1.92857C0 2.23291 0.279193 2.47959 0.623635 2.47959ZM0.623635 8.9898H16.8381C17.1826 8.9898 17.4618 8.74311 17.4618 8.43878V7.06122C17.4618 6.75689 17.1826 6.5102 16.8381 6.5102H0.623635C0.279193 6.5102 0 6.75689 0 7.06122V8.43878C0 8.74311 0.279193 8.9898 0.623635 8.9898ZM0.623635 15.5H16.8381C17.1826 15.5 17.4618 15.2533 17.4618 14.949V13.5714C17.4618 13.2671 17.1826 13.0204 16.8381 13.0204H0.623635C0.279193 13.0204 0 13.2671 0 13.5714V14.949C0 15.2533 0.279193 15.5 0.623635 15.5Z"></path>
+          </svg>
+        </button>
+
+        <a href="#primary-content" className="flex tabkey-reveal" accessKey="1" tabIndex="1">
+          <span className="button impact">Skip to Content</span>
+        </a>
+
+        <form id="search-icon" action="/search/" className="search row h-phone" role="search" method="POST">
+          <label htmlFor="flag-search-input">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path d="m16.768 14.699-3.31-3.31a.796.796 0 0 0-.565-.233h-.541a6.872 6.872 0 0 0 1.46-4.25A6.905 6.905 0 0 0 6.907 0 6.905 6.905 0 0 0 0 6.906a6.905 6.905 0 0 0 6.906 6.907 6.872 6.872 0 0 0 4.25-1.461v.54c0 .213.083.416.233.565l3.31 3.31a.794.794 0 0 0 1.126 0l.94-.94a.8.8 0 0 0 .003-1.128Zm-9.862-3.543c-2.347 0-4.25-1.899-4.25-4.25 0-2.347 1.9-4.25 4.25-4.25 2.348 0 4.25 1.9 4.25 4.25 0 2.348-1.899 4.25-4.25 4.25Z"></path>
+            </svg>
+          </label>
+          <input id="flag-search-input" className="search-field" type="text" name="q" placeholder=" " aria-label="Search Kansas City Star" tabIndex="0"/>
+        </form>
+
+        </div>
+        <div id="signInOut" className="flag-account row"><a href="https://account.miamiherald.com/auth0?section=ecefrontpage" id="logIn">LOG IN</a><a href="https://subscribe.miamiherald.com/holiday-sale" className="button">SUBSCRIBE NOW</a>
+        </div>
+        <a href="https://www.miamiherald.com" aria-label="Miami Herald" className="flag-logo"><img src="https://www.miamiherald.com/wps/build/images/miamiherald/logo.svg" alt="miamiherald Logo" className="logo" width="3770" height="300"/>
+            <h1 style={{position: "absolute", outline: "none", display: "none"}}>More time in G League coming for Miami Heat’s Nikola Jovic | Miami Herald</h1>
+            <p className="mmn-company">Part of the McClatchy Media Network</p>
+        </a>
+        <div className="flag-left stack h-phone">
+            <p><b>Monday, December 18, 2023</b></p>
+            <p><a href="https://eedition.miamiherald.com/app/MIAHER" aria-label="eEdition">Today's eEdition</a></p>
+        </div>
+        <div className="flag-right stack h-phone">
+          <div className="row">
+            <a href="https://www.miamiherald.com/news/weather-news/" aria-label="Weather" role="menuitem">
+              <img width="40" height="40" src="https://www.miamiherald.com/wps/source/images/widgets/weather/wxicons-blk/wxicons-blk-6.svg" alt="Mostly cloudy"/>
+              <span><b>71°F</b> <small>78° 62°</small></span>
+            </a>
+          </div>
+        </div>
+        <div className="flag-nav slider">
+            <div className="row">
+                <div><a href="https://www.miamiherald.com/news/#navlink=navbar">News</a></div>
+                <div><a href="https://www.miamiherald.com/sports/#navlink=navbar">Sports</a></div>
+                <div><a href="https://www.miamiherald.com/news/business/#navlink=navbar">Business</a></div>
+                <div><a href="https://www.miamiherald.com/news/politics-government/#navlink=navbar">Politics</a></div>
+                <div><a href="https://www.miamiherald.com/opinion/#navlink=navbar">Opinion</a></div>
+                <div><a href="https://www.miamiherald.com/miami-com/restaurants/#navlink=navbar">Food &amp; Drink</a></div>
+                <div><a href="https://www.miamiherald.com/news/local/environment/climate-change/#navlink=navbar">Climate Change</a></div><span className="separator">•</span>
+                <div><a href="https://www.miamiherald.com/betting/#navlink=navbar">Sports Betting</a></div>
+                <div><a href="https://www.miamiherald.com/money/#navlink=navbar">Personal Finance</a></div>
+                <div><a href="https://classifieds.mcclatchy.com/marketplace/miami/category/Legals/Legals/">Public Notices</a></div>
+                <div><a href="https://www.legacy.com/us/obituaries/herald/browse/">Obituaries</a></div>
+                <div><a href="https://www.miamiherald.com/shopping/#navlink=navbar">Shopping</a></div>
+            </div>
+        </div>
+    </div>
+</div>
 			        <nav className="main-nav sans summary impact hidden jsready" id="mainNav" role="menu" aria-hidden="true" tabIndex={-1}><button id="closenavigation" className="summary flex" tabIndex={0}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
 			                    <title>Close navigation panel</title>
 			                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="white" />
@@ -608,65 +632,8 @@ const SampleArticle = (props) => {
                     <time id="update_date" className="update-date time" dateTime="2023-08-22T12:42:32-04:00">Updated August 22, 2023 12:42 PM</time>
                   </div>
                 </div>
-                <div className="social-network-macro">
-                  <ul className="share-list">
-                    <li className="share-icon">
-                      <a className="link-icon" title="Share on Twitter" aria-label="Share on Twitter" href="https://twitter.com/share?text=Lionel+Messi%E2%80%99s+play+has+been+%E2%80%98epic%E2%80%99+so+far%2C+his+humility+has+been+equally+impressive+%7C+Opinion&url=https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article278457949.html" >
-                        <span className="glyphicon glyphicon-twitter" />
-                      </a>
-                    </li>
-                    <li className="share-icon">
-                      <a className="link-icon facebook-share" title="Share on Facebook" aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article278457949.html" >
-                        <span className="glyphicon glyphicon-facebook" />
-                      </a>
-                    </li>
-                    <li className="share-icon">
-                      <a className="link-icon" title="Share by Email" aria-label="Share by Email" href="mailto:?subject=Lionel%20Messi%E2%80%99s%20play%20has%20been%20%E2%80%98epic%E2%80%99%20so%20far%2C%20his%20humility%20has%20been%20equally%20impressive%20%7C%20Opinion&body=https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article278457949.html">
-                        <span className="glyphicon glyphicon-envelope" />
-                      </a>
-                    </li>
-                    <li className="share-icon extra-share-options-icon event-author-section" role="button">
-                      <div className="extra-share-macro-container extra-share-author-section">
-                        <div className="extra-share-macro extra-share-macro-author-section">
-                          <div className="hover-row" />
-                          <div className="speech-bubble">
-                            <ul className="extra-share-options-list extra-share-options-container">
-                              <li className="extra-share-option">
-                                <a title="Share on LinkedIn" aria-label="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article278457949.html&title=Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive | Opinion">
-                                  <span className="glyphicon glyphicon-linkedin" />
-                                </a>
-                              </li>
-                              <li className="extra-share-option">
-                                <a title="Share on Pinterest" aria-label="Share on Pinterest" href="https://www.pinterest.com/pin/create/button/?url=https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article278457949.html&description=Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive | Opinion&media=https://www.miamiherald.com/wps/build/images/undefined/facebook.jpg">
-                                  <span className="glyphicon glyphicon-pinterest" />
-                                </a>
-                              </li>
-                              <li className="extra-share-option">
-                                <a title="Share on Reddit" aria-label="Share on Reddit" href="https://www.reddit.com/submit?url=https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article278457949.html">
-                                  <span className="glyphicon glyphicon-reddit" />
-                                </a>
-                              </li>
-                              <li className="extra-share-option">
-                                <a title="Print" aria-label="Print">
-                                  <span className="glyphicon glyphicon-print" />
-                                </a>
-                              </li>
-                            </ul>            
-                            <div className="extra-share-options-container order-reprint-container">
-                              <a title="Reprints" aria-label="Reprints" href="https://www.mcclatchyreprints.com"> ORDER REPRINT
-                                <span>→</span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a className="link-icon" title="more" aria-label="more">
-                        <span className="glyphicon glyphicon-share" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div></header>
+              </div>
+            </header>
 
               <figure>
                 <div className="lead-item ">
