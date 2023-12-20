@@ -610,13 +610,9 @@ const SampleArticle = (props) => {
 
             <header className="header">
      
-              <h2 className="caps kicker-id h6">
-                <a className="kicker" href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman">
-                  Michelle Kaufman
-                </a>
-              </h2>
-
-
+              <a className="kicker h6" href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman">
+                Michelle Kaufman
+              </a>
 
               <h1 className="h1">
                 Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive | Opinion
