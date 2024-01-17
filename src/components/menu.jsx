@@ -51,8 +51,8 @@ const Menu = (props) => {
 	        	/>
 			      <Checkbox
 			      	label="Declutter"
-	        		link="https://www.miamiherald.com/static/hi/graphics/1.0.0/declutter.css"
-	        		script="https://www.miamiherald.com/static/hi/graphics/1.0.0/declutter.js"
+	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/declutter.css"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/declutter.js"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
@@ -66,8 +66,8 @@ const Menu = (props) => {
 	        	<h3 className="tool-h3">Enhancements</h3>
 	        	<Checkbox
 	        		label="minimalHeader"
-	        		link="https://www.miamiherald.com/static/hi/graphics/1.0.0/topper-minimalist.css"
-	        		script="https://www.miamiherald.com/static/hi/graphics/1.0.0/topper-minimalist.js"
+	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/minimal-header.css"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/minimal-header.js"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
@@ -81,6 +81,12 @@ const Menu = (props) => {
 			      	label="moveLeadArtToTop"
 							script="https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.js"
 							link="https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.css"
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+			      <Checkbox
+			      	label="premiumHeaders"
+							link="https://www.miamiherald.com/static/hi/graphics/2.0.0/premium-headers.css"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
