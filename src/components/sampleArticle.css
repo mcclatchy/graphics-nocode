@@ -11,9 +11,9 @@
 	container-type:inline-size
 }
 .masthead {
-    --paper-color: white !important;
+    --paper-color: var(--paper-color) !important;
 }
-#mastheadVueContainer {
+#mastheadVueContainer, .tool-article {
 	background: var(--paper-color);
 }
 

@@ -38,6 +38,12 @@ const Menu = (props) => {
 	        <div className="tool-section">
 	        	<h3 className="tool-h3">Themes</h3>
 	        	<Checkbox
+	        		label="Beige"
+	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/beige.css"
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Checkbox
 	        		label="Dark"
 	        		link="https://www.miamiherald.com/static/hi/graphics/1.0.0/dark.css"
 	        		setLinks={props.setLinks}
@@ -45,8 +51,8 @@ const Menu = (props) => {
 	        	/>
 			      <Checkbox
 			      	label="Declutter"
-	        		link="https://www.miamiherald.com/static/hi/themes/declutter.css"
-	        		script="https://www.miamiherald.com/static/hi/themes/declutter.js"
+	        		link="https://www.miamiherald.com/static/hi/graphics/1.0.0/declutter.css"
+	        		script="https://www.miamiherald.com/static/hi/graphics/1.0.0/declutter.js"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
