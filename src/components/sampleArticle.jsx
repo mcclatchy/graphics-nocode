@@ -699,6 +699,7 @@ const SampleArticle = (props) => {
               </div>{/*]*/}{/*[*/}
 
               <p>That game ended in a 1-0 loss. Miami’s losing skid stretched to five games. A chorus of boos rained down on the team as players and then-coach Phil Neville trudged dejectedly toward the tunnel.</p>{/**/}{/*]*/}{/*[*/}
+              <h3>Messi drives turnaround</h3>
               <p>Fast forward four-and-a-half months to Aug. 19. I am in Nashville, in the bowels of Geodis Park stadium. Messi and his teammates are still out on the field celebrating their <a href="https://www.miamiherald.com/sports/mls/inter-miami/article278388354.html" target="_self" rel="Follow">dramatic victory in the Leagues Cup final,</a> a game that ended with an 11-round penalty kick shootout. The pink-clad Miami players are clutching, kissing and hoisting the trophy, the first in club history.</p>{/**/}{/*]*/}{/*[*/}
               <p>They then surprised new coach Tata Martino with a champagne shower during his news conference.</p>
 
@@ -713,6 +714,7 @@ const SampleArticle = (props) => {
 
               <div id="zone-el-106" className="zone zone-el" index={12} issportsarticle="true" stnplayerkill="false" allowstnplayer="true" data-type="ad"/>{/*]*/}{/*[*/}
 
+              <h3>Messi's leadership</h3>
               <p>Epic, indeed.</p>{/**/}{/*]*/}{/*[*/}
               <p>Not only did Messi defy all odds and decide to join Inter Miami, his former FC Barcelona teammates Sergio Busquets and Jordi Alba signed and are also along for the ride. The trio helped form one of the greatest club teams in history and in just one month their field vision, skill and experience have elevated the team with the worst record in MLS into perhaps the best team in the league.</p>{/**/}{/*]*/}{/*[*/}
               <p>Inter Miami had five wins and 22 goals in 22 games before Messi’s arrival. The team has seven wins and 22 goals in seven games since he joined the team. And a trophy. Messi has scored 10 goals in his first seven games, and each one seems more spectacular than the last.</p>{/**/}{/*]*/}{/*[*/}
