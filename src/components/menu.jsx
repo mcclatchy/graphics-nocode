@@ -148,6 +148,42 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 	        	/>
 	        	<Increment
+	        		label="fact-box"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/fact-box.js"
+	        		defaultOptions={{
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "What is a charter school?",
+	        				"type": "text"
+	        			},
+	        			"data-fact": {
+	        				"label": "Fact",
+	        				"value": "Charter schools are publicly funded, independently run institutions with flexibility in curriculum and operations. Established by teachers, parents, or community groups, they operate under a specific charter, accountable for meeting academic goals beyond traditional public school constraints.",
+	        				"type": "text"
+	        			},
+	        			"data-image": {
+	        				"label": "Image",
+	        				"value": "",
+	        				"type": "text"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
 	        		label="info-slate"
 	        		script="https://www.miamiherald.com/static/hi/cards/info-slate/info-slate.js"
 	        		defaultOptions={{
@@ -396,19 +432,14 @@ const Menu = (props) => {
 			      />
 			      <Increment
 			      	label="summary-list"
-			      	script="https://www.miamiherald.com/static/hi/graphics/1.0.0/summary-list.js"
-			      	link="https://www.miamiherald.com/static/hi/graphics/1.0.0/summary-list.css"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.js"
+			      	link="https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.css"
 	        		defaultOptions={{
 	        			"data-list-style": {
 	        				"label": "List Style",
 	        				"value": "ul",
 	        				"options": [{"label": "Bulleted", "value": "ul"}, {"label": "Numbered", "value": "ol"}],
 	        				"type": "switch"
-	        			},
-	        			"data-border-color": {
-	        				"label": "Border Color",
-	        				"value": "#777777",
-	        				"type": "color"
 	        			},
 	        			"data-title": {
 	        				"label": "Title",
