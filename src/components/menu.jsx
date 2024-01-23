@@ -316,7 +316,7 @@ const Menu = (props) => {
 			      />
 			      <Increment
 			      	label="link-preview"
-			      	script="https://www.miamiherald.com/static/hi/cards/link-preview/link-preview.js"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/link-preview.js"
 	        		defaultOptions={{
 	        			"data-series": {
 	        				"label": "Series",
