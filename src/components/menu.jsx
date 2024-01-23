@@ -333,11 +333,6 @@ const Menu = (props) => {
 	        				"value": "Investigators in at least three countries are sorting through a rogues’ gallery of players, trying to determine how the killing of Haitian President Jovenel Moïse was carried out on July 7, 2021.",
 	        				"type": "text"
 	        			},
-	        			"data-color": {
-	        				"label": "Color",
-	        				"value": "#424242",
-	        				"type": "color"
-	        			},
 	        			"data-link": {
 	        				"label": "Link URL",
 	        				"value": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article266152901.html",
@@ -353,6 +348,11 @@ const Menu = (props) => {
 	        				"value": "Illustration of Jovenel Moïse in a network graphic node with a network of other illustrated profiles surrounding him",
 	        				"type": "text"
 	        			},
+	        			"data-color": {
+	        				"label": "Color (Optional)",
+	        				"value": "",
+	        				"type": "color"
+	        			}
 	        		}}
 
 	        		editMode={props.editMode}
