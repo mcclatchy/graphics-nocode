@@ -162,7 +162,7 @@ const Menu = (props) => {
 	        				"type": "text"
 	        			},
 	        			"data-image": {
-	        				"label": "Image",
+	        				"label": "Image URL (Optional)",
 	        				"value": "",
 	        				"type": "text"
 	        			}
