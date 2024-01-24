@@ -53,7 +53,7 @@ const SampleArticle = (props) => {
 
     const noInlineSizeNames = ['scrolling-map']
 
-    const nonBodyComponentNames = ["lead-image", "lead-logo"]
+    const nonBodyComponentNames = ["lead-image", "lead-logo", "lead-video"]
     const nonBodyWebComponents = props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
     const nonBodyToolbars = props.toolbars.filter(toolbar => nonBodyComponentNames.includes(toolbar.props.name))
 

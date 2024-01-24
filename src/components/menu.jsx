@@ -278,6 +278,50 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
+
+	        	<Increment
+			      	label="lead-video"
+			      	maxCount="1"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-video.js"
+			      	link="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-video.css"
+	        		defaultOptions={{
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "Messi in Miami",
+	        				"type": "text"
+	        			},
+	        			"data-video": {
+	        				"label": "Video URL - Landscape",
+	        				"value": "https://miamiherald.com/static/hi/2023/skydiving-lodi/videos/intro-tyler-interview.mp4",
+	        				"type": "text"
+	        			},
+	        			"data-video-portrait": {
+	        				"label": "Video URL - Portrait",
+	        				"value": "https://miamiherald.com/static/hi/2023/skydiving-lodi/videos/intro-tyler-interview-portrait.mp4",
+	        				"type": "text"
+	        			},
+	        			"data-logo": {
+	        				"label": "Logo URL (Optional: will override Title)",
+	        				"value": "",
+	        				"type": "text"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
 	        	<Increment
 			      	label="lead-logo"
 			      	maxCount="1"
