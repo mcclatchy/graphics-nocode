@@ -97,7 +97,7 @@ const Menu = (props) => {
 	        	<h3 className="tool-h3">Cards</h3>
 	        	<Increment
 	        		label="block-quote"
-	        		script="https://www.miamiherald.com/static/hi/cards/block-quote/block-quote.js"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/block-quote.js"
 	        		defaultOptions={{
 	        			"data-quote": {
 	        				"label": "Quote",
@@ -185,7 +185,7 @@ const Menu = (props) => {
 	        	/>
 	        	<Increment
 	        		label="info-slate"
-	        		script="https://www.miamiherald.com/static/hi/cards/info-slate/info-slate.js"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/info-slate.js?vsim=12"
 	        		defaultOptions={{
 	        			"data-info": {
 	        				"label": "Info",
@@ -208,12 +208,12 @@ const Menu = (props) => {
 	        			},
 	        			"data-text-color": {
 	        				"label": "Text Color",
-	        				"value": "#000000",
+	        				"value": "",
 	        				"type": "color"
 	        			},
 	        			"data-background-color": {
 	        				"label": "Background Color",
-	        				"value": "#ffffff",
+	        				"value": "",
 	        				"type": "color"
 	        			},
 	        			"data-embed-class": {
