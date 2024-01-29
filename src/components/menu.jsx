@@ -185,7 +185,7 @@ const Menu = (props) => {
 	        	/>
 	        	<Increment
 	        		label="info-slate"
-	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/info-slate.js?vsim=12"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/info-slate.js"
 	        		defaultOptions={{
 	        			"data-info": {
 	        				"label": "Info",
@@ -325,8 +325,8 @@ const Menu = (props) => {
 	        	<Increment
 			      	label="lead-logo"
 			      	maxCount="1"
-			      	script="https://www.miamiherald.com/static/hi/cards/lead-logo/lead-logo.js"
-			      	link="https://www.miamiherald.com/static/hi/cards/lead-logo/lead-logo.css"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.js"
+			      	link="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.css"
 	        		defaultOptions={{
 	        			"data-logo": {
 	        				"label": "Logo URL",
