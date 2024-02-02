@@ -45,7 +45,7 @@ const Menu = (props) => {
 	        	/>
 	        	<Checkbox
 	        		label="Dark"
-	        		link="https://www.miamiherald.com/static/hi/graphics/1.0.0/dark.css"
+	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/dark.css"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
