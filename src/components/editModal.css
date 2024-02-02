@@ -6,6 +6,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: none;
+	color: var(--tool-font-color);
 	background: var(--tool-background-color);
 	margin-left: calc(var(--tool-menu-width) / 2);
 	border-radius: 10px;

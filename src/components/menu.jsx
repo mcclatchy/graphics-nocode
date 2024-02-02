@@ -165,6 +165,58 @@ const Menu = (props) => {
 	        				"label": "Image URL (Optional)",
 	        				"value": "",
 	        				"type": "text"
+	        			},
+	        			"--fact-box-icon-height": {
+	        				"label": "Image Height (px)",
+	        				"value": "70px",
+	        				"type": "text"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
+	        		label="image-quote"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/image-quote.js"
+	        		defaultOptions={{
+	        			"data-quote": {
+	        				"label": "Quote",
+	        				"value": "“Today, it is the city’s political leadership, once again, that has fallen into unethical behavior, criminal investigations and dealmaking that are not in the best interest of the public.”",
+	        				"type": "text"
+	        			},
+	        			"data-attribution": {
+	        				"label": "Attribution",
+	        				"value": "Merrett Stierheim, retired government administrator",
+	        				"type": "text"
+	        			},
+	        			"data-image": {
+	        				"label": "Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/miami-political-webs/images/miami-political-webs-story5-portrait-stierheim.png",
+	        				"type": "text"
+	        			},
+	        			"data-image-alt": {
+	        				"label": "Image Alt Text",
+	        				"value": "Portrait image of Merrett Stierheim, retired government administrator. Image submitted by Stierheim.",
+	        				"type": "text"
+	        			},
+	        			"data-image-position": {
+	        				"label": "Image Position",
+	        				"value": "left",
+	        				"options": [{"label": "Left", "value": "left"}, {"label": "Right", "value": "right"}],
+	        				"type": "switch"
 	        			}
 	        		}}
 
