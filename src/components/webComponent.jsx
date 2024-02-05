@@ -38,7 +38,7 @@ class WebComponent extends React.Component {
 
     const style = sortedOptions && Object.keys(sortedOptions) ? 
       Object.keys(sortedOptions).filter(key => key.startsWith("--")).map((key, i) => {
-        const value = sortedOptions[key].value;
+        const value = sortedOptions[key]?.unit ? `${sortedOptions[key].value}${sortedOptions[key]?.unit}` : sortedOptions[key].value;
         if (value !== null) {
           return `${key}: ${value}`
         }

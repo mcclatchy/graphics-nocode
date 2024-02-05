@@ -356,6 +356,14 @@ const Menu = (props) => {
 	        				"label": "Logo URL (Optional: will override Title)",
 	        				"value": "",
 	        				"type": "text"
+	        			},
+	        			"--lead-video-header-max-width": {
+	        				"label": "Header Max Width",
+	        				"value": "600",
+	        				"type": "range",
+	        				"unit": "px",
+	        				"min": "400",
+	        				"max": "728"
 	        			}
 	        		}}
 
