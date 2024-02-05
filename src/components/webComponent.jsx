@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { sortByField } from "../utils/array.js"
+import { sortByField } from "../utils/array.js";
+import { groupBy } from "../utils/json.js";
+import { getInternalStyleFromOptions, getExternalStyleFromOptions } from "../utils/style.js";
 
 import './webComponent.css'
 
@@ -36,15 +38,20 @@ class WebComponent extends React.Component {
         }
       }).join(" ") : ""
 
-    const style = sortedOptions && Object.keys(sortedOptions) ? 
-      Object.keys(sortedOptions).filter(key => key.startsWith("--")).map((key, i) => {
-        const value = sortedOptions[key]?.unit ? `${sortedOptions[key].value}${sortedOptions[key]?.unit}` : sortedOptions[key].value;
-        if (value !== null) {
-          return `${key}: ${value}`
-        }
-      }).join("; ") : ""
 
-    const html = `<${this.props.name} ${style ? `style="${style}"` : ""} id="${this.props.id}" ${attributes ? attributes : ""}>${slot ? slot : ""}</${this.props.name}>`
+    const internalStyle = getInternalStyleFromOptions(sortedOptions);
+    const externalStyle = getExternalStyleFromOptions(sortedOptions);
+
+    const html = `
+      ${externalStyle}
+      <${this.props.name}
+        ${internalStyle}
+        id="${this.props.id}"
+        ${attributes ? attributes : ""}
+      >
+        ${slot ? slot : ""}
+      </${this.props.name}>
+    `
 
     return (
       <div className="embed-infographic" dangerouslySetInnerHTML={{__html: html}}></div>

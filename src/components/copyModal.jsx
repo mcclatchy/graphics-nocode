@@ -5,6 +5,7 @@ import Copy from '../assets/copy.svg'
 import Remove from '../assets/remove.svg'
 import { getElementByIdPrefix, getToolLinks, getToolScripts } from "../utils/dom.js"
 import { beautifyHTML, cleanHTML, makePathRelative } from "../utils/html.js"
+import { getExternalStyleFromOptions } from "../utils/style.js";
 import "./copyModal.css"
 
 class CopyModal extends React.Component {
@@ -81,6 +82,7 @@ class CopyModal extends React.Component {
 	        	element?.children && Array.from(element.children).forEach(child => child.removeAttribute("style"))
 	        	const html = element?.outerHTML;
 	        	const textId = `tool-embed-${webComponent.props.id}`;
+	        	const style = getExternalStyleFromOptions(webComponent.props.options);
 	          return (
 	          	<div className="tool-modal-wrapper" key={i}>
 		          	<div className="tool-copy-header">
@@ -91,7 +93,7 @@ class CopyModal extends React.Component {
 				      	</div>
 	              <TextareaAutosize 
 	              	id={textId}
-		              defaultValue={makePathRelative(beautifyHTML(html))}
+		              value={makePathRelative(beautifyHTML(html)) + `${style ? "\n" + beautifyHTML(style) : ""}`}
 			            className="monospace tool-copy-text"
 			            spellCheck="false"
 			            readOnly={true}

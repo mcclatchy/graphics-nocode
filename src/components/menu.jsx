@@ -330,8 +330,43 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
-
 	        	<Increment
+			      	label="lead-logo"
+			      	maxCount="1"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.js"
+			      	link="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.css"
+	        		defaultOptions={{
+	        			"data-logo": {
+	        				"label": "Logo URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/reality-check/images/reality-check-logo-black.png",
+	        				"type": "text"
+	        			},
+	        			"data-max-width": {
+	        				"label": "Logo Max Width",
+	        				"value": "500",
+	        				"type": "range",
+	        				"unit": "px",
+	        				"min": "150",
+	        				"max": "700"
+	        			},
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+						<Increment
 			      	label="lead-video"
 			      	maxCount="1"
 			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-video.js"
@@ -359,48 +394,13 @@ const Menu = (props) => {
 	        			},
 	        			"--lead-video-header-max-width": {
 	        				"label": "Header Max Width",
-	        				"value": "600",
+	        				"value": "728",
 	        				"type": "range",
 	        				"unit": "px",
 	        				"min": "400",
-	        				"max": "728"
+	        				"max": "728",
+	        				"property": ":root"
 	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-			      />
-	        	<Increment
-			      	label="lead-logo"
-			      	maxCount="1"
-			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.js"
-			      	link="https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.css"
-	        		defaultOptions={{
-	        			"data-logo": {
-	        				"label": "Logo URL",
-	        				"value": "https://www.miamiherald.com/static/hi/2023/reality-check/images/reality-check-logo-black.png",
-	        				"type": "text"
-	        			},
-	        			"data-max-width": {
-	        				"label": "Logo Max Width",
-	        				"value": "500",
-	        				"type": "range",
-	        				"unit": "px",
-	        				"min": "150",
-	        				"max": "700"
-	        			},
 	        		}}
 
 	        		editMode={props.editMode}
