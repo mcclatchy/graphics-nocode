@@ -724,6 +724,29 @@ const SampleArticle = (props) => {
 
               <p>A simple postgame gesture Saturday night spoke volumes as to who Messi is as a person. As players made their way to the stage for the trophy presentation, Messi took off his captain’s armband and sought out DeAndre Yedlin, insisting he wear it. “No, no, no, no, no,” Yedlin said, smiling. Messi put the band on Yedlin’s left arm and the two players lifted the trophy together.</p>{/**/}{/*]*/}{/*[*/}
               <p>It was a beautiful moment.</p>{/**/}{/*]*/}{/*[*/}
+              
+              <figure>
+                  <div>
+                      <div className="img-container picture ">
+                          <picture>
+                              <source srcSet="https://www.miamiherald.com/latest-news/x1jxsb/picture280261124/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Cincinnat%20(2)" media="(min-width: 992px)" />
+                              <source srcSet="https://www.miamiherald.com/latest-news/x1jxsb/picture280261124/alternates/LANDSCAPE_960/MIA_Inter_Miami_v_Cincinnat%20(2)" media="(min-width: 768px)" />
+                              <source srcSet="https://www.miamiherald.com/latest-news/x1jxsb/picture280261124/alternates/LANDSCAPE_768/MIA_Inter_Miami_v_Cincinnat%20(2)" media="(min-width: 601px)" />
+                              <source srcSet="https://www.miamiherald.com/latest-news/x1jxsb/picture280261124/alternates/LANDSCAPE_640/MIA_Inter_Miami_v_Cincinnat%20(2)" media="(min-width: 441px)" />
+                              <source srcSet="https://www.miamiherald.com/latest-news/x1jxsb/picture280261124/alternates/LANDSCAPE_480/MIA_Inter_Miami_v_Cincinnat%20(2)" media="(min-width: 320px)" />
+                              <img className="responsive-image" srcSet="https://www.miamiherald.com/latest-news/x1jxsb/picture280261124/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Cincinnat%20(2)" alt="Inter Miami forward Lionel Messi (10) arrives before playing against FC Cincinnati in their MLS match at DRV PNK Stadium on Saturday, Oct. 7, 2023, in Fort Lauderdale, Fla." title="Inter Miami forward Lionel Messi (10) arrives before playing against FC Cincinnati in their MLS match at DRV PNK Stadium on Saturday, Oct. 7, 2023, in Fort Lauderdale, Fla." />
+                          </picture>
+                      </div>
+                      <figcaption>
+                          Inter Miami forward Lionel Messi (10) arrives before playing against FC Cincinnati in their MLS match at DRV PNK Stadium on Saturday, Oct. 7, 2023, in Fort Lauderdale, Fla.
+                          <span className="byline">
+                              MATIAS J. OCNER
+                          </span>
+                          <span className="credit">mocner@miamiherald.com</span>
+                      </figcaption>
+                  </div>
+              </figure>
+
               <p>Yedlin was the captain before Messi arrived. The U.S. national team defender took on a leadership role when he joined Inter Miami in 2022, even though midfielder Gregore wore the captain’s armband. His influence was undeniable, as teammates began joining him in meditation sessions and barefoot post-practice “grounding” walks around the field. He also persuaded Neville to let players show off their fashion sense before games rather than show up in team gear.</p>{/**/}{/*]*/}{/*[*/}
               <p>When Gregore sustained a serious foot injury early this season, Yedlin assumed the official role of captain. When Messi showed up, Yedlin gave the armband to the Argentine legend.</p>
 
