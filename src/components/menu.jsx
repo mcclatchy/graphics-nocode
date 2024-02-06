@@ -78,6 +78,12 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 			      />
 			      <Checkbox
+			      	label="makeMediaWide"
+							script="https://www.miamiherald.com/static/hi/graphics/2.0.0/make-media-wide.js"
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+			      <Checkbox
 			      	label="moveLeadArtToTop"
 							script="https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.js"
 							link="https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.css"
@@ -377,21 +383,6 @@ const Menu = (props) => {
 	        				"value": "Messi in Miami",
 	        				"type": "text"
 	        			},
-	        			"data-video": {
-	        				"label": "Video URL - Landscape",
-	        				"value": "https://miamiherald.com/static/hi/2023/skydiving-lodi/videos/intro-tyler-interview.mp4",
-	        				"type": "text"
-	        			},
-	        			"data-video-portrait": {
-	        				"label": "Video URL - Portrait",
-	        				"value": "https://miamiherald.com/static/hi/2023/skydiving-lodi/videos/intro-tyler-interview-portrait.mp4",
-	        				"type": "text"
-	        			},
-	        			"data-logo": {
-	        				"label": "Logo URL (Optional: will override Title)",
-	        				"value": "",
-	        				"type": "text"
-	        			},
 	        			"--lead-video-header-max-width": {
 	        				"label": "Header Max Width",
 	        				"value": "728",
@@ -400,6 +391,21 @@ const Menu = (props) => {
 	        				"min": "400",
 	        				"max": "728",
 	        				"property": ":root"
+	        			},
+	        			"data-video": {
+	        				"label": "Video URL - Landscape",
+	        				"value": "https://miamiherald.com/static/hi/2023/skydiving-lodi/videos/intro-tyler-interview.mp4",
+	        				"type": "text"
+	        			},
+	        			"data-video-portrait": {
+	        				"label": "Video URL - Portrait (Optional)",
+	        				"value": "",
+	        				"type": "text"
+	        			},
+	        			"data-logo": {
+	        				"label": "Logo URL (Optional: will override Title)",
+	        				"value": "",
+	        				"type": "text"
 	        			}
 	        		}}
 
