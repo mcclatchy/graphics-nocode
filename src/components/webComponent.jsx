@@ -29,7 +29,13 @@ class WebComponent extends React.Component {
               return `${key}="${attributes[key].value}"`
             }).join(" ") : ""
 
-            const formattedValue = value.map(val => `<${val.tag} ${getFormattedAttributes(val.attributes)}>${val.text}</${val.tag}>`);
+            const formattedValue = value.map(val => {
+              if (val.text) {
+                return `<${val.tag} ${getFormattedAttributes(val.attributes)}>${val.text}</${val.tag}>`
+              } else {
+                return null;
+              }
+            });
             slot = formattedValue.join("\n");
             return "";
           } else {

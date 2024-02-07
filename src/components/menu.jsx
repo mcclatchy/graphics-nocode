@@ -383,6 +383,12 @@ const Menu = (props) => {
 	        				"value": "Messi in Miami",
 	        				"type": "text"
 	        			},
+        				"data-header-position": {
+	        				"label": "Header Position",
+	        				"value": "overlaid",
+	        				"options": [{"label": "Overlay", "value": "overlaid"}, {"label": "Beneath", "value": ""}],
+	        				"type": "switch"
+	        			},
 	        			"--lead-video-header-max-width": {
 	        				"label": "Header Max Width",
 	        				"value": "728",
@@ -540,6 +546,99 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
+			      <Increment
+	        		label="resizable-image"
+	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-image.css"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-image.js"
+	        		defaultOptions={{
+	        			"data-image": {
+	        				"label": "Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/idaho-shepherds/images/5.jpg",
+	        				"type": "text"
+	        			},
+	        			"data-image-alt": {
+	        				"label": "Image Alt Text",
+	        				"value": "Impressionist illustration of person in field",
+	        				"type": "text"
+	        			},
+	        			"data-embed-class": {
+	        				"label": "Embed Class",
+	        				"value": "",
+	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Prominent", "value": "prominent"}, {"label": "Full Bleed", "value": "full-bleed"}],
+	        				"type": "switch"
+	        			},
+	        			"slot": {
+	        				"label": "Caption",
+	        				"options": ["figcaption"],
+	        				"value": [
+										{
+											"tag": "figcaption",
+											"text": "Illustration by Rachel Handley"
+										}
+	        				],
+	        				"type": "text-item"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
+	        		label="resizable-video"
+	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-video.css"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-video.js"
+	        		defaultOptions={{
+	        			"data-video": {
+	        				"label": "Video URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2024/sac-cal-osha/videos/osha-lead-video-loop.mp4",
+	        				"type": "text"
+	        			},
+	        			"data-embed-class": {
+	        				"label": "Embed Class",
+	        				"value": "",
+	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Prominent", "value": "prominent"}, {"label": "Full Bleed", "value": "full-bleed"}],
+	        				"type": "switch"
+	        			},
+	        			"slot": {
+	        				"label": "Caption",
+	        				"options": ["figcaption"],
+	        				"value": [
+										{
+											"tag": "figcaption",
+											"text": "Illustration by Rachel Handley, animation by Sohail Al-Jamea"
+										}
+	        				],
+	        				"type": "text-item"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
 			      <Increment
 			      	label="summary-list"
 			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.js"
