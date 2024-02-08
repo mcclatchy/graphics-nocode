@@ -154,6 +154,57 @@ const Menu = (props) => {
 	        		setScripts={props.setScripts}
 	        	/>
 	        	<Increment
+	        		label="dual-image"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/dual-image.js"
+	        		defaultOptions={{
+	        			"data-left-image": {
+	        				"label": "Left Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/idaho-shepherds/images/1.jpg",
+	        				"type": "text"
+	        			},
+	        			"data-left-caption": {
+	        				"label": "Left Image Caption",
+	        				"value": "Impressionist illustration of migrant farmworker's tent in a field with mountains in the background by Rachel Handley",
+	        				"type": "text"
+	        			},
+	        			"data-left-image-alt": {
+	        				"label": "Left Image Alt Text",
+	        				"value": "Impressionist illustration of migrant farmworker's tent in a field with mountains in the background",
+	        				"type": "text"
+	        			},
+	        			"data-right-image": {
+	        				"label": "Right Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/idaho-shepherds/images/5.jpg",
+	        				"type": "text"
+	        			},
+	        			"data-right-caption": {
+	        				"label": "Right Image Caption",
+	        				"value": "Impressionist illustration of person on a horse by Rachel Handley",
+	        				"type": "text"
+	        			},
+	        			"data-right-image-alt": {
+	        				"label": "Right Image Alt Text",
+	        				"value": "Impressionist illustration of person on a horse",
+	        				"type": "text"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
 	        		label="fact-box"
 	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/fact-box.js"
 	        		defaultOptions={{
