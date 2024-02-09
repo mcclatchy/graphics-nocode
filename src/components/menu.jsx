@@ -64,6 +64,12 @@ const Menu = (props) => {
 	        {/* Enhancements */}
 	        <div className="tool-section">
 	        	<h3 className="tool-h3">Enhancements</h3>
+			      <Checkbox
+			      	label="makeMediaWide"
+							script="https://www.miamiherald.com/static/hi/graphics/2.0.0/make-media-wide.js"
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
 	        	<Checkbox
 	        		label="minimalHeader"
 	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/minimal-header.css"
@@ -74,12 +80,6 @@ const Menu = (props) => {
 			      <Checkbox
 			      	label="minimalFooter"
 							link="https://www.miamiherald.com/static/hi/graphics/1.0.0/minimal-footer.css"
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-			      />
-			      <Checkbox
-			      	label="makeMediaWide"
-							script="https://www.miamiherald.com/static/hi/graphics/2.0.0/make-media-wide.js"
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
@@ -597,6 +597,112 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
+			      <Increment
+			      	label="related-stories"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/related-stories.js"
+	        		defaultOptions={{
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "More coverage on schools",
+	        				"type": "text"
+	        			},
+								"data-include-site": {
+									"label": "Include Site Name",
+	        				"value": "",
+	        				"options": [{"label": "On", "value": "true"}, {"label": "Off", "value": ""}],
+	        				"type": "switch"
+								},
+	        			"slot": {
+	        				"label": "Story URLs",
+	        				"options": ["related-story"],
+	        				"attributes": ["data-url"],
+	        				"excludeText": true,
+	        				"value": [
+										{
+											"tag": "related-story",
+											"text": "",
+											"attributes": {
+												"data-url": {
+													"label": "URL",
+													"value": "https://www.miamiherald.com/news/local/education/article285186842.html",
+													"type": "text"
+												}
+											}
+										},
+										{
+											"tag": "related-story",
+											"text": "",
+											"attributes": {
+												"data-url": {
+													"label": "URL",
+													"value": "https://www.idahostatesman.com/news/local/education/article282967503.html",
+													"type": "text"
+												}
+											}
+										},
+										{
+											"tag": "related-story",
+											"text": "",
+											"attributes": {
+												"data-url": {
+													"label": "URL",
+													"value": "https://www.kansascity.com/news/local/article285147997.html",
+													"type": "text"
+												}
+											}
+										}
+	        				],
+	        				"type": "text-item"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+			      {/*<Increment
+			      	label="related-story"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/related-story.js"
+	        		defaultOptions={{
+	        			"data-url": {
+	        				"label": "Series",
+	        				"value": "https://www.miamiherald.com/news/politics-government/article285261532.html",
+	        				"type": "text"
+	        			},
+	        			"data-dividers": {
+		       				"label": "Dividers",
+	        				"value": "true",
+	        				"options": [{"label": "On", "value": "true"}, {"label": "Off", "value": ""}],
+	        				"type": "switch"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />*/}
 			      <Increment
 	        		label="resizable-image"
 	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-image.css"

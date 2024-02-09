@@ -30,7 +30,7 @@ class WebComponent extends React.Component {
             }).join(" ") : ""
 
             const formattedValue = value.map(val => {
-              if (val.text) {
+              if (val.text || val.attributes) {
                 return `<${val.tag} ${getFormattedAttributes(val.attributes)}>${val.text}</${val.tag}>`
               } else {
                 return null;

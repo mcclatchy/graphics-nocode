@@ -58,6 +58,7 @@ const textItem = (props) => {
   }
 
   const options = props.editOptions[props.editKey]["options"];
+  const excludeText = props.editOptions[props.editKey]?.excludeText;
 
 	return (
     <div className="tool-edit-text-item" key={`${props.item}-${props.updateIndex}`}>
@@ -76,27 +77,37 @@ const textItem = (props) => {
 
         {Object.keys(attributesValue).map(attribute => {
           return(
-            <div className="tool-text-item-attribute" key={attribute}>
+            <div className={`tool-text-item-attribute ${excludeText ? "exclude-text" : ""}`} key={attribute}>
               <div className="tool-text-item-attribute-title-wrapper">
                 <p className="tool-text-item-attribute-title" style={{display: "none"}}>{attributesValue[attribute].label}</p>
               </div>
-              <TextareaAutosize
-                onHeightChange={e => { rowHeight: 22 }}
-                value={attributesValue[attribute].value}
-                className="tool-modal-value"
-                onChange={e => { updateAttribute(e, props.updateIndex, attribute); }}
-                spellCheck="false"
-              ></TextareaAutosize>
+              {excludeText ? 
+                <TextareaAutosize
+                  value={attributesValue[attribute].value}
+                  className="tool-modal-value"
+                  onChange={e => { updateAttribute(e, props.updateIndex, attribute); }}
+                  spellCheck="false"
+                ></TextareaAutosize>
+                 :
+                <TextareaAutosize
+                  onHeightChange={e => { rowHeight: 22 }}
+                  value={attributesValue[attribute].value}
+                  className="tool-modal-value"
+                  onChange={e => { updateAttribute(e, props.updateIndex, attribute); }}
+                  spellCheck="false"
+                ></TextareaAutosize>
+              }
             </div>
           )
         })}
-        
-        <TextareaAutosize
-          value={props.item.text}
-          className="tool-modal-value"
-          onChange={e => { updateValue(e, props.updateIndex); }}
-          spellCheck="false"
-        ></TextareaAutosize>
+        {excludeText ? "" :
+          <TextareaAutosize
+            value={props.item.text}
+            className="tool-modal-value"
+            onChange={e => { updateValue(e, props.updateIndex); }}
+            spellCheck="false"
+          ></TextareaAutosize>
+        }
 
       </div>
 
