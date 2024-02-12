@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { removeVersion } from '../utils/string.js'
+import { getUserMode } from '../utils/url.js'
 import { addLink, addScript, removeToolLinks, removeToolScripts } from '../utils/dom.js'
+import { USER_MODE_DEV, MENU_CONFIG_DEV, MENU_CONFIG_DEFAULT } from "../utils/globals.js"
 import Menu from '../components/menu.jsx'
 import Article from '../components/article.jsx'
 import './root.css'
@@ -15,7 +17,17 @@ const Enhance = () => {
   const [webComponents, setWebComponents] = useState([]);
   const [links, setLinks] = useState([]);
   const [scripts, setScripts] = useState([]);
+  const [userMode, setUserMode] = useState(getUserMode(window.location.href));
 
+  useEffect(() => {
+    const handleUrlChange = () => {
+      setUserMode(getUserMode(window.location.href));
+    };
+    window.addEventListener('popstate', handleUrlChange);
+    return () => {
+      window.removeEventListener('popstate', handleUrlChange);
+    };
+  }, []);
 
   {/* TODO: maybe a cleaner way of running this? It re-applies each script each time the scripts array changes
       WHY? Having trouble running a JS file multiple times sample article refresh
@@ -32,6 +44,8 @@ const Enhance = () => {
       })}
       <div>
         <Menu 
+          config={userMode === USER_MODE_DEV ? MENU_CONFIG_DEV : MENU_CONFIG_DEFAULT }
+
           copyMode={copyMode}
           setCopyMode={setCopyMode}
 
