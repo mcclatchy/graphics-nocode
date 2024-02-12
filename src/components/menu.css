@@ -58,6 +58,10 @@ button {
 	overflow: scroll;
 }
 
+.tool-section:last-of-type {
+	padding-bottom: 20px;
+}
+
 .tool-copy {
 	font-family: var(--tool-font-family);
 	font-size: 16px;
