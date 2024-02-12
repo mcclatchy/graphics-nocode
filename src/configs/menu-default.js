@@ -30,7 +30,8 @@ const menuDefault = {
             {
                 "label": "Color",
                 "value": "#00008b",
-                "type": "color"
+                "type": "color",
+                "hide": true
             },
             "data-max-width":
             {
@@ -39,7 +40,8 @@ const menuDefault = {
                 "type": "range",
                 "unit": "px",
                 "min": "300",
-                "max": "700"
+                "max": "700",
+                "hide": true
             },
             "data-attribution-max-width":
             {
@@ -48,7 +50,8 @@ const menuDefault = {
                 "type": "range",
                 "unit": "px",
                 "min": "300",
-                "max": "700"
+                "max": "700",
+                "hide": true
             }
         }
     },
@@ -68,18 +71,6 @@ const menuDefault = {
             {
                 "label": "Fact",
                 "value": "Charter schools are publicly funded, independently run institutions with flexibility in curriculum and operations. Established by teachers, parents, or community groups, they operate under a specific charter, accountable for meeting academic goals beyond traditional public school constraints.",
-                "type": "text"
-            },
-            "data-image":
-            {
-                "label": "Image URL (Optional)",
-                "value": "",
-                "type": "text"
-            },
-            "--fact-box-icon-height":
-            {
-                "label": "Image Height (px)",
-                "value": "70px",
                 "type": "text"
             }
         }
@@ -110,19 +101,8 @@ const menuDefault = {
                 "type": "range",
                 "unit": "px",
                 "min": "300",
-                "max": "700"
-            },
-            "data-text-color":
-            {
-                "label": "Text Color",
-                "value": "",
-                "type": "color"
-            },
-            "data-background-color":
-            {
-                "label": "Background Color",
-                "value": "",
-                "type": "color"
+                "max": "700",
+                "hide": true
             },
             "data-embed-class":
             {
@@ -141,7 +121,8 @@ const menuDefault = {
                     "label": "Full Bleed",
                     "value": "full-bleed"
                 }],
-                "type": "switch"
+                "type": "switch",
+                "hide": true
             }
         }
     },
@@ -277,7 +258,8 @@ const menuDefault = {
                     "label": "Off",
                     "value": ""
                 }],
-                "type": "switch"
+                "type": "switch",
+                "hide": true
             },
             "slot":
             {
