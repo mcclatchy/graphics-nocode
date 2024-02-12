@@ -98,257 +98,10 @@ const Menu = (props) => {
 			      />
 	        </div>
 
-	        {/* Cards */}
+	        {/* Lead Cards */}
 	        <div className="tool-section">
-	        	<h3 className="tool-h3">Cards</h3>
-	        	<Increment
-	        		label="block-quote"
-	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/block-quote.js"
-	        		defaultOptions={{
-	        			"data-quote": {
-	        				"label": "Quote",
-	        				"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat sapien eu sem mollis, non vehicula tortor malesuada.",
-	        				"type": "text"
-	        			},
-	        			"data-attribution": {
-	        				"label": "Attribution",
-	        				"value": "Cicero",
-	        				"type": "text"
-	        			},
-	        			"data-color": {
-	        				"label": "Color",
-	        				"value": "#00008b",
-	        				"type": "color"
-	        			},
-	        			"data-max-width": {
-	        				"label": "Quote Max Width",
-	        				"value": "600",
-	        				"type": "range",
-	        				"unit": "px",
-	        				"min": "300",
-	        				"max": "700"
-	        			},
-	        			"data-attribution-max-width": {
-	        				"label": "Attribution Max Width",
-	        				"value": "400",
-	        				"type": "range",
-	        				"unit": "px",
-	        				"min": "300",
-	        				"max": "700"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-	        	/>
-	        	<Increment
-	        		label="dual-image"
-	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/dual-image.js"
-	        		defaultOptions={{
-	        			"data-left-image": {
-	        				"label": "Left Image URL",
-	        				"value": "https://www.miamiherald.com/static/hi/2023/idaho-shepherds/images/1.jpg",
-	        				"type": "text"
-	        			},
-	        			"data-left-caption": {
-	        				"label": "Left Image Caption",
-	        				"value": "Impressionist illustration of migrant farmworker's tent in a field with mountains in the background by Rachel Handley",
-	        				"type": "text"
-	        			},
-	        			"data-left-image-alt": {
-	        				"label": "Left Image Alt Text",
-	        				"value": "Impressionist illustration of migrant farmworker's tent in a field with mountains in the background",
-	        				"type": "text"
-	        			},
-	        			"data-right-image": {
-	        				"label": "Right Image URL",
-	        				"value": "https://www.miamiherald.com/static/hi/2023/idaho-shepherds/images/5.jpg",
-	        				"type": "text"
-	        			},
-	        			"data-right-caption": {
-	        				"label": "Right Image Caption",
-	        				"value": "Impressionist illustration of person on a horse by Rachel Handley",
-	        				"type": "text"
-	        			},
-	        			"data-right-image-alt": {
-	        				"label": "Right Image Alt Text",
-	        				"value": "Impressionist illustration of person on a horse",
-	        				"type": "text"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-	        	/>
-	        	<Increment
-	        		label="fact-box"
-	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/fact-box.js"
-	        		defaultOptions={{
-	        			"data-title": {
-	        				"label": "Title",
-	        				"value": "What is a charter school?",
-	        				"type": "text"
-	        			},
-	        			"data-fact": {
-	        				"label": "Fact",
-	        				"value": "Charter schools are publicly funded, independently run institutions with flexibility in curriculum and operations. Established by teachers, parents, or community groups, they operate under a specific charter, accountable for meeting academic goals beyond traditional public school constraints.",
-	        				"type": "text"
-	        			},
-	        			"data-image": {
-	        				"label": "Image URL (Optional)",
-	        				"value": "",
-	        				"type": "text"
-	        			},
-	        			"--fact-box-icon-height": {
-	        				"label": "Image Height (px)",
-	        				"value": "70px",
-	        				"type": "text"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-	        	/>
-	        	<Increment
-	        		label="image-quote"
-	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/image-quote.js"
-	        		defaultOptions={{
-	        			"data-quote": {
-	        				"label": "Quote",
-	        				"value": "“Today, it is the city’s political leadership, once again, that has fallen into unethical behavior, criminal investigations and dealmaking that are not in the best interest of the public.”",
-	        				"type": "text"
-	        			},
-	        			"data-attribution": {
-	        				"label": "Attribution",
-	        				"value": "Merrett Stierheim, retired government administrator",
-	        				"type": "text"
-	        			},
-	        			"data-image": {
-	        				"label": "Image URL",
-	        				"value": "https://www.miamiherald.com/static/hi/2023/miami-political-webs/images/miami-political-webs-story5-portrait-stierheim.png",
-	        				"type": "text"
-	        			},
-	        			"data-image-alt": {
-	        				"label": "Image Alt Text",
-	        				"value": "Portrait image of Merrett Stierheim, retired government administrator. Image submitted by Stierheim.",
-	        				"type": "text"
-	        			},
-	        			"data-image-position": {
-	        				"label": "Image Position",
-	        				"value": "left",
-	        				"options": [{"label": "Left", "value": "left"}, {"label": "Right", "value": "right"}],
-	        				"type": "switch"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-	        	/>
-	        	<Increment
-	        		label="info-slate"
-	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/info-slate.js"
-	        		defaultOptions={{
-	        			"data-info": {
-	        				"label": "Info",
-	        				"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat sapien eu sem mollis, non vehicula tortor malesuada.",
-	        				"type": "text"
-	        			},
-	        			"data-source": {
-	        				"label": "Source",
-	        				"value": "Source: National Institute of Health",
-	        				"type": "text"
-	        			},
-
-	        			"data-max-width": {
-	        				"label": "Quote Max Width",
-	        				"value": "700",
-	        				"type": "range",
-	        				"unit": "px",
-	        				"min": "300",
-	        				"max": "700"
-	        			},
-	        			"data-text-color": {
-	        				"label": "Text Color",
-	        				"value": "",
-	        				"type": "color"
-	        			},
-	        			"data-background-color": {
-	        				"label": "Background Color",
-	        				"value": "",
-	        				"type": "color"
-	        			},
-	        			"data-embed-class": {
-	        				"label": "Embed Class",
-	        				"value": "full-bleed",
-	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
-	        				"type": "switch"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-	        	/>
-	        	<Increment
+	        	<h3 className="tool-h3">Lead Cards</h3>
+						<Increment
 			      	label="lead-image"
 			      	maxCount="1"
 			      	script="https://www.miamiherald.com/static/hi/cards/lead-image/lead-image.js"
@@ -481,44 +234,45 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
-			      <Increment
-			      	label="link-preview"
-			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/link-preview.js"
+	        </div>
+
+	        {/* Text Cards */}
+	        <div className="tool-section">
+	        	<h3 className="tool-h3">Text Cards</h3>
+	        	<Increment
+	        		label="block-quote"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/block-quote.js"
 	        		defaultOptions={{
-	        			"data-series": {
-	        				"label": "Series",
-	        				"value": "Made in Miami",
+	        			"data-quote": {
+	        				"label": "Quote",
+	        				"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat sapien eu sem mollis, non vehicula tortor malesuada.",
 	        				"type": "text"
 	        			},
-	        			"data-title": {
-	        				"label": "Title",
-	        				"value": "A rogue's gallery of suspects",
-	        				"type": "text"
-	        			},
-	        			"data-summary": {
-	        				"label": "Summary",
-	        				"value": "Investigators in at least three countries are sorting through a rogues’ gallery of players, trying to determine how the killing of Haitian President Jovenel Moïse was carried out on July 7, 2021.",
-	        				"type": "text"
-	        			},
-	        			"data-link": {
-	        				"label": "Link URL",
-	        				"value": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article266152901.html",
-	        				"type": "text"
-	        			},
-	        			"data-img": {
-	        				"label": "Image URL",
-	        				"value": "https://www.miamiherald.com/static/hi/2022/haiti-assassination/assets/network-outlink.jpg",
-	        				"type": "text"
-	        			},
-	        			"data-alt": {
-	        				"label": "Alt Text",
-	        				"value": "Illustration of Jovenel Moïse in a network graphic node with a network of other illustrated profiles surrounding him",
+	        			"data-attribution": {
+	        				"label": "Attribution",
+	        				"value": "Cicero",
 	        				"type": "text"
 	        			},
 	        			"data-color": {
-	        				"label": "Color (Optional)",
-	        				"value": "",
+	        				"label": "Color",
+	        				"value": "#00008b",
 	        				"type": "color"
+	        			},
+	        			"data-max-width": {
+	        				"label": "Quote Max Width",
+	        				"value": "600",
+	        				"type": "range",
+	        				"unit": "px",
+	        				"min": "300",
+	        				"max": "700"
+	        			},
+	        			"data-attribution-max-width": {
+	        				"label": "Attribution Max Width",
+	        				"value": "400",
+	        				"type": "range",
+	        				"unit": "px",
+	        				"min": "300",
+	        				"max": "700"
 	        			}
 	        		}}
 
@@ -536,7 +290,104 @@ const Menu = (props) => {
 
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
-			      />
+	        	/>
+	        	<Increment
+	        		label="fact-box"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/fact-box.js"
+	        		defaultOptions={{
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "What is a charter school?",
+	        				"type": "text"
+	        			},
+	        			"data-fact": {
+	        				"label": "Fact",
+	        				"value": "Charter schools are publicly funded, independently run institutions with flexibility in curriculum and operations. Established by teachers, parents, or community groups, they operate under a specific charter, accountable for meeting academic goals beyond traditional public school constraints.",
+	        				"type": "text"
+	        			},
+	        			"data-image": {
+	        				"label": "Image URL (Optional)",
+	        				"value": "",
+	        				"type": "text"
+	        			},
+	        			"--fact-box-icon-height": {
+	        				"label": "Image Height (px)",
+	        				"value": "70px",
+	        				"type": "text"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
+	        		label="info-slate"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/info-slate.js"
+	        		defaultOptions={{
+	        			"data-info": {
+	        				"label": "Info",
+	        				"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat sapien eu sem mollis, non vehicula tortor malesuada.",
+	        				"type": "text"
+	        			},
+	        			"data-source": {
+	        				"label": "Source",
+	        				"value": "Source: National Institute of Health",
+	        				"type": "text"
+	        			},
+
+	        			"data-max-width": {
+	        				"label": "Quote Max Width",
+	        				"value": "700",
+	        				"type": "range",
+	        				"unit": "px",
+	        				"min": "300",
+	        				"max": "700"
+	        			},
+	        			"data-text-color": {
+	        				"label": "Text Color",
+	        				"value": "",
+	        				"type": "color"
+	        			},
+	        			"data-background-color": {
+	        				"label": "Background Color",
+	        				"value": "",
+	        				"type": "color"
+	        			},
+	        			"data-embed-class": {
+	        				"label": "Embed Class",
+	        				"value": "full-bleed",
+	        				"options": [{"label": "None", "value": ""}, {"label": "Wide", "value": "wide"}, {"label": "Full Bleed", "value": "full-bleed"}],
+	        				"type": "switch"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
 			      <Increment
 			      	label="outro-text"
 			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/outro-text.js"
@@ -579,6 +430,225 @@ const Menu = (props) => {
 										}
 	        				],
 	        				"type": "text-item"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+			      <Increment
+			      	label="summary-list"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.js"
+			      	link="https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.css"
+	        		defaultOptions={{
+	        			"data-list-style": {
+	        				"label": "List Style",
+	        				"value": "ul",
+	        				"options": [{"label": "Bulleted", "value": "ul"}, {"label": "Numbered", "value": "ol"}],
+	        				"type": "switch"
+	        			},
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "Summary of Items",
+	        				"type": "text"
+	        			},
+	        			"data-subtitle": {
+	        				"label": "Subtitle",
+	        				"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat sapien eu sem mollis, non vehicula tortor malesuada.",
+	        				"type": "text"
+	        			},
+	        			"slot": {
+	        				"label": "Text",
+	        				"options": ["li"],
+	        				"value": [
+	        					{
+											"tag": "li",
+											"text": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+										},
+										{
+											"tag": "li",
+											"text": "Cras ut neque a orci vulputate sollicitudin. Mauris convallis orci vitae semper vehicula."
+										},
+										{
+											"tag": "li",
+											"text": "Donec vestibulum, neque at facilisis maximus, felis lectus condimentum ex, et laoreet nulla dolor vitae urna."
+										},
+										{
+											"tag": "li",
+											"text": "Fusce ut mi faucibus, ultrices ante a, imperdiet quam. Etiam a sem at leo condimentum pretium sit amet ut lacus."
+										}
+	        				],
+	        				"type": "text-item"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+			      />
+	        </div>
+
+	        <div className="tool-section">
+	        	<h3 className="tool-h3">Media Cards</h3>
+	        	<Increment
+	        		label="dual-image"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/dual-image.js"
+	        		defaultOptions={{
+	        			"data-left-image": {
+	        				"label": "Left Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/idaho-shepherds/images/1.jpg",
+	        				"type": "text"
+	        			},
+	        			"data-left-caption": {
+	        				"label": "Left Image Caption",
+	        				"value": "Impressionist illustration of migrant farmworker's tent in a field with mountains in the background by Rachel Handley",
+	        				"type": "text"
+	        			},
+	        			"data-left-image-alt": {
+	        				"label": "Left Image Alt Text",
+	        				"value": "Impressionist illustration of migrant farmworker's tent in a field with mountains in the background",
+	        				"type": "text"
+	        			},
+	        			"data-right-image": {
+	        				"label": "Right Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/idaho-shepherds/images/5.jpg",
+	        				"type": "text"
+	        			},
+	        			"data-right-caption": {
+	        				"label": "Right Image Caption",
+	        				"value": "Impressionist illustration of person on a horse by Rachel Handley",
+	        				"type": "text"
+	        			},
+	        			"data-right-image-alt": {
+	        				"label": "Right Image Alt Text",
+	        				"value": "Impressionist illustration of person on a horse",
+	        				"type": "text"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
+	        		label="image-quote"
+	        		script="https://www.miamiherald.com/static/hi/graphics/2.0.0/image-quote.js"
+	        		defaultOptions={{
+	        			"data-quote": {
+	        				"label": "Quote",
+	        				"value": "“Today, it is the city’s political leadership, once again, that has fallen into unethical behavior, criminal investigations and dealmaking that are not in the best interest of the public.”",
+	        				"type": "text"
+	        			},
+	        			"data-attribution": {
+	        				"label": "Attribution",
+	        				"value": "Merrett Stierheim, retired government administrator",
+	        				"type": "text"
+	        			},
+	        			"data-image": {
+	        				"label": "Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2023/miami-political-webs/images/miami-political-webs-story5-portrait-stierheim.png",
+	        				"type": "text"
+	        			},
+	        			"data-image-alt": {
+	        				"label": "Image Alt Text",
+	        				"value": "Portrait image of Merrett Stierheim, retired government administrator. Image submitted by Stierheim.",
+	        				"type": "text"
+	        			},
+	        			"data-image-position": {
+	        				"label": "Image Position",
+	        				"value": "left",
+	        				"options": [{"label": "Left", "value": "left"}, {"label": "Right", "value": "right"}],
+	        				"type": "switch"
+	        			}
+	        		}}
+
+	        		editMode={props.editMode}
+	        		setEditMode={props.setEditMode}
+
+	        		editOptions={props.editOptions}
+	        		setEditOptions={props.setEditOptions}
+
+	        		toolbars={props.toolbars}
+	        		setToolbars={props.setToolbars}
+
+	        		webComponents={props.webComponents}
+	        		setWebComponents={props.setWebComponents}
+
+	        		setLinks={props.setLinks}
+	        		setScripts={props.setScripts}
+	        	/>
+	        	<Increment
+			      	label="link-preview"
+			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/link-preview.js"
+	        		defaultOptions={{
+	        			"data-series": {
+	        				"label": "Series",
+	        				"value": "Made in Miami",
+	        				"type": "text"
+	        			},
+	        			"data-title": {
+	        				"label": "Title",
+	        				"value": "A rogue's gallery of suspects",
+	        				"type": "text"
+	        			},
+	        			"data-summary": {
+	        				"label": "Summary",
+	        				"value": "Investigators in at least three countries are sorting through a rogues’ gallery of players, trying to determine how the killing of Haitian President Jovenel Moïse was carried out on July 7, 2021.",
+	        				"type": "text"
+	        			},
+	        			"data-link": {
+	        				"label": "Link URL",
+	        				"value": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article266152901.html",
+	        				"type": "text"
+	        			},
+	        			"data-img": {
+	        				"label": "Image URL",
+	        				"value": "https://www.miamiherald.com/static/hi/2022/haiti-assassination/assets/network-outlink.jpg",
+	        				"type": "text"
+	        			},
+	        			"data-alt": {
+	        				"label": "Alt Text",
+	        				"value": "Illustration of Jovenel Moïse in a network graphic node with a network of other illustrated profiles surrounding him",
+	        				"type": "text"
+	        			},
+	        			"data-color": {
+	        				"label": "Color (Optional)",
+	        				"value": "",
+	        				"type": "color"
 	        			}
 	        		}}
 
@@ -671,38 +741,6 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 			      />
-			      {/*<Increment
-			      	label="related-story"
-			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/related-story.js"
-	        		defaultOptions={{
-	        			"data-url": {
-	        				"label": "Series",
-	        				"value": "https://www.miamiherald.com/news/politics-government/article285261532.html",
-	        				"type": "text"
-	        			},
-	        			"data-dividers": {
-		       				"label": "Dividers",
-	        				"value": "true",
-	        				"options": [{"label": "On", "value": "true"}, {"label": "Off", "value": ""}],
-	        				"type": "switch"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-			      />*/}
 			      <Increment
 	        		label="resizable-image"
 	        		link="https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-image.css"
@@ -796,67 +834,6 @@ const Menu = (props) => {
 	        		setLinks={props.setLinks}
 	        		setScripts={props.setScripts}
 	        	/>
-			      <Increment
-			      	label="summary-list"
-			      	script="https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.js"
-			      	link="https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.css"
-	        		defaultOptions={{
-	        			"data-list-style": {
-	        				"label": "List Style",
-	        				"value": "ul",
-	        				"options": [{"label": "Bulleted", "value": "ul"}, {"label": "Numbered", "value": "ol"}],
-	        				"type": "switch"
-	        			},
-	        			"data-title": {
-	        				"label": "Title",
-	        				"value": "Summary of Items",
-	        				"type": "text"
-	        			},
-	        			"data-subtitle": {
-	        				"label": "Subtitle",
-	        				"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat sapien eu sem mollis, non vehicula tortor malesuada.",
-	        				"type": "text"
-	        			},
-	        			"slot": {
-	        				"label": "Text",
-	        				"options": ["li"],
-	        				"value": [
-	        					{
-											"tag": "li",
-											"text": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-										},
-										{
-											"tag": "li",
-											"text": "Cras ut neque a orci vulputate sollicitudin. Mauris convallis orci vitae semper vehicula."
-										},
-										{
-											"tag": "li",
-											"text": "Donec vestibulum, neque at facilisis maximus, felis lectus condimentum ex, et laoreet nulla dolor vitae urna."
-										},
-										{
-											"tag": "li",
-											"text": "Fusce ut mi faucibus, ultrices ante a, imperdiet quam. Etiam a sem at leo condimentum pretium sit amet ut lacus."
-										}
-	        				],
-	        				"type": "text-item"
-	        			}
-	        		}}
-
-	        		editMode={props.editMode}
-	        		setEditMode={props.setEditMode}
-
-	        		editOptions={props.editOptions}
-	        		setEditOptions={props.setEditOptions}
-
-	        		toolbars={props.toolbars}
-	        		setToolbars={props.setToolbars}
-
-	        		webComponents={props.webComponents}
-	        		setWebComponents={props.setWebComponents}
-
-	        		setLinks={props.setLinks}
-	        		setScripts={props.setScripts}
-			      />
 	        </div>
 
 					{/* Graphics */}
