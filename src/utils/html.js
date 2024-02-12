@@ -6,7 +6,7 @@ export function formatHTML(html) {
   var result = '';
   var indent= '';
 
-  html.split(/>\s*</).forEach((element) => {
+  html.trim().split(/>\s*</).forEach((element) => {
       if (element.match( /^\/\w/ )) {
           indent = indent.substring(tab.length);
       }
