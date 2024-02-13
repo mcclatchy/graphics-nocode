@@ -71,7 +71,7 @@ export function removeEmbedInfographic(html) {
 
 export function makePathRelative(html) {
 	if (!html) return html;
-	return html.replaceAll(/"(http|www)(.*?)\/static/g, '"/static')
+	return html.replaceAll(/"(http|www)(.*?)\/static/g, '"/static').replaceAll("https://storage.googleapis.com/mc-high-impact/", "/static/hi/");
 }
 
 export function removeVersion(html) {
