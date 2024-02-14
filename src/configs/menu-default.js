@@ -265,7 +265,13 @@ const menuDefault = {
             {
                 "label": "Story URLs",
                 "options": ["related-story"],
-                "attributes": ["data-url"],
+                "attributes": {
+                    "data-url": {
+                        "value": "",
+                        "label": "URL",
+                        "type": "text"
+                    }
+                },
                 "excludeText": true,
                 "value": [
                 {

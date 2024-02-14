@@ -61,7 +61,7 @@ const textItem = (props) => {
   const excludeText = props.editOptions[props.editKey]?.excludeText;
 
 	return (
-    <div className="tool-edit-text-item" key={`${props.item}-${props.updateIndex}`}>
+    <div className={`tool-edit-text-item ${excludeText ? "exclude-text" : ""}`} key={`${props.item}-${props.updateIndex}`}>
       {options.length > 1 ? 
         <select
           value={props.item.tag}
@@ -73,13 +73,13 @@ const textItem = (props) => {
         </select> :
         ""
       }
-      <div className="tool-text-item-inputs">
+      <div className={`tool-text-item-inputs ${excludeText ? "exclude-text" : ""}`}>
 
         {Object.keys(attributesValue).map(attribute => {
           return(
             <div className={`tool-text-item-attribute ${excludeText ? "exclude-text" : ""}`} key={attribute}>
               <div className="tool-text-item-attribute-title-wrapper">
-                <p className="tool-text-item-attribute-title" style={{display: "none"}}>{attributesValue[attribute].label}</p>
+                <p className="tool-text-item-attribute-title" style={{display: `${excludeText ? "block" : "none"}`}}>{attributesValue[attribute].label}</p>
               </div>
               {excludeText ? 
                 <TextareaAutosize

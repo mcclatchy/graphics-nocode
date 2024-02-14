@@ -13,6 +13,13 @@
   background-position: calc(100% - 12px) 1px;
 }
 
+.tool-edit-text-item.exclude-text {
+	margin-top: 30px;
+}
+.tool-edit-text-item.exclude-text:first-of-type {
+	margin-top: 10px;
+}
+
 /* TODO: May need to change from here down depending on how many attributes and which kind in the future */
 
 .tool-text-item-inputs {
@@ -22,15 +29,27 @@
 	align-items: center;
 }
 
+.tool-text-item-inputs.exclude-text {
+	flex-direction: column;
+}
+
 .tool-text-item-attribute {
 	display: flex;
 	flex-direction: column;
 	margin-right: 15px;
 }
 
+.tool-text-item-attribute.exclude-text {
+	flex-direction: row;
+	width: 100%;
+	margin-top: 5px;
+}
+
 .tool-text-item-attribute-title-wrapper {
 	display: flex;
 	align-items: center;
+	justify-content: end;
+	width: 100px;
 }
 
 .tool-text-item-attribute-title {
@@ -38,6 +57,7 @@
 	color: var(--tool-gray);
 	font-style: italic;
 	font-size: 14px;
+	text-align: right;
 }
 
 .tool-text-item-attribute textarea {
@@ -47,9 +67,6 @@
   font-size: 14px;
 }
 
-.tool-text-item-attribute.exclude-text {
-  width: 100%;
-}
 .tool-text-item-attribute.exclude-text textarea {
 	padding: 15px 10px !important;
 	max-height: unset !important;

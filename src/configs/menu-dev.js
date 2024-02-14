@@ -544,6 +544,236 @@ const menuDev = {
     },
     {
         "type": "increment",
+        "label": "podcast-grid",
+        "script": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/podcast-grid.js",
+        "defaultOptions":
+        {
+            "--background-color":
+            {
+                "label": "Background Color",
+                "value": "#e8eaf8",
+                "type": "color"
+            },
+            "slot":
+            {
+                "label": "Podcast Cards",
+                "options": ["podcast-card"],
+                "attributes": {
+                    "data-title": {
+                        "value": "",
+                        "label": "Title",
+                        "type": "text"
+                    },
+                    "data-image": {
+                        "value": "",
+                        "label": "Image URL",
+                        "type": "text"
+                    },
+                    "data-audio": {
+                        "value": "",
+                        "label": "Audio URL",
+                        "type": "text"
+                    },
+                    "data-overlay": {
+                        "value": "",
+                        "label": "Overlay Text",
+                        "type": "text"
+                    }
+                },
+                "excludeText": true,
+                "value": [
+                {
+                    "tag": "podcast-card",
+                    "text": "",
+                    "attributes":
+                    {
+                        "data-title":
+                        {
+                            "label": "Title",
+                            "value": "1. The Town",
+                            "type": "text"
+                        },
+                        "data-image":
+                        {
+                            "label": "Image URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "type": "text"
+                        },
+                        "data-audio":
+                        {
+                            "label": "Audio URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/audio/borges.mp3",
+                            "type": "text"
+                        },
+                        "data-overlay":
+                        {
+                            "label": "Overlay Text",
+                            "value": "",
+                            "type": "text"
+                        }
+                    }
+                },
+                {
+                    "tag": "podcast-card",
+                    "text": "",
+                    "attributes":
+                    {
+                        "data-title":
+                        {
+                            "label": "Title",
+                            "value": "2. The Trial",
+                            "type": "text"
+                        },
+                        "data-image":
+                        {
+                            "label": "Image URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "type": "text"
+                        },
+                        "data-audio":
+                        {
+                            "label": "Audio URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/audio/borges.mp3",
+                            "type": "text"
+                        },
+                        "data-overlay":
+                        {
+                            "label": "Overlay Text",
+                            "value": "Coming Mar. 2",
+                            "type": "text"
+                        }
+                    }
+                },
+                {
+                    "tag": "podcast-card",
+                    "text": "",
+                    "attributes":
+                    {
+                        "data-title":
+                        {
+                            "label": "Title",
+                            "value": "3. Atticus Finch",
+                            "type": "text"
+                        },
+                        "data-image":
+                        {
+                            "label": "Image URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "type": "text"
+                        },
+                        "data-audio":
+                        {
+                            "label": "Audio URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/audio/borges.mp3",
+                            "type": "text"
+                        },
+                        "data-overlay":
+                        {
+                            "label": "Overlay Text",
+                            "value": "Coming Soon",
+                            "type": "text"
+                        }
+                    }
+                },
+                {
+                    "tag": "podcast-card",
+                    "text": "",
+                    "attributes":
+                    {
+                        "data-title":
+                        {
+                            "label": "Title",
+                            "value": "4. Who's Who",
+                            "type": "text"
+                        },
+                        "data-image":
+                        {
+                            "label": "Image URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "type": "text"
+                        },
+                        "data-audio":
+                        {
+                            "label": "Audio URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/audio/borges.mp3",
+                            "type": "text"
+                        },
+                        "data-overlay":
+                        {
+                            "label": "Overlay Text",
+                            "value": "Coming Soon",
+                            "type": "text"
+                        }
+                    }
+                },
+                {
+                    "tag": "podcast-card",
+                    "text": "",
+                    "attributes":
+                    {
+                        "data-title":
+                        {
+                            "label": "Title",
+                            "value": "5. The Crime",
+                            "type": "text"
+                        },
+                        "data-image":
+                        {
+                            "label": "Image URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "type": "text"
+                        },
+                        "data-audio":
+                        {
+                            "label": "Audio URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/audio/borges.mp3",
+                            "type": "text"
+                        },
+                        "data-overlay":
+                        {
+                            "label": "Overlay Text",
+                            "value": "Coming Soon",
+                            "type": "text"
+                        }
+                    }
+                },
+                {
+                    "tag": "podcast-card",
+                    "text": "",
+                    "attributes":
+                    {
+                        "data-title":
+                        {
+                            "label": "Title",
+                            "value": "6. Past is Present",
+                            "type": "text"
+                        },
+                        "data-image":
+                        {
+                            "label": "Image URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "type": "text"
+                        },
+                        "data-audio":
+                        {
+                            "label": "Audio URL",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/audio/borges.mp3",
+                            "type": "text"
+                        },
+                        "data-overlay":
+                        {
+                            "label": "Overlay Text",
+                            "value": "Coming Soon",
+                            "type": "text"
+                        }
+                    }
+                }],
+                "type": "text-item"
+            }
+        }
+    },
+    {
+        "type": "increment",
         "label": "related-stories",
         "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/related-stories.js",
         "defaultOptions":
@@ -573,7 +803,13 @@ const menuDev = {
             {
                 "label": "Story URLs",
                 "options": ["related-story"],
-                "attributes": ["data-url"],
+                "attributes": {
+                    "data-url": {
+                        "value": "",
+                        "label": "URL",
+                        "type": "text"
+                    }
+                },
                 "excludeText": true,
                 "value": [
                 {
@@ -901,7 +1137,13 @@ const menuDev = {
             {
                 "label": "Text",
                 "options": ["p"],
-                "attributes": ["data-timestamp"],
+                "attributes": {
+                    "data-timestamp": {
+                        "value": "",
+                        "label": "Timestamp",
+                        "type": "text"
+                    }
+                },
                 "sort": "data-timestamp",
                 "value": [
                 {
