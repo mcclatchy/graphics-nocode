@@ -551,7 +551,7 @@ const menuDev = {
             "--background-color":
             {
                 "label": "Background Color",
-                "value": "#e8eaf8",
+                "value": "#f5f7fa",
                 "type": "color"
             },
             "slot":
