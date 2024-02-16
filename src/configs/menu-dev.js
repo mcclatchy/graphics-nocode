@@ -548,11 +548,45 @@ const menuDev = {
         "script": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/podcast-grid.js",
         "defaultOptions":
         {
+            "data-follow-links": {
+                "label": "Follow Links",
+                "value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/1xx32op6dseR5U_yFq5EOBP8yEhfriwpxyWxDO0x476I.json",
+                "type": "text"
+            },
             "--background-color":
             {
                 "label": "Background Color",
                 "value": "#f5f7fa",
                 "type": "color"
+            },
+            "--title-justify-content":
+            {
+                "label": "Justify Title",
+                "value": "start",
+                "options": [
+                {
+                    "label": "Start",
+                    "value": "start"
+                },
+                {
+                    "label": "Center",
+                    "value": "center"
+                },
+                {
+                    "label": "End",
+                    "value": "end"
+                }],
+                "type": "switch"
+            },
+            "data-promo-image": {
+                "label": "Promo Image (Optional)",
+                "value": "",
+                "type": "text"
+            },
+            "data-promo-url": {
+                "label": "Promo Url (Optional)",
+                "value": "",
+                "type": "text"
             },
             "slot":
             {
@@ -590,7 +624,7 @@ const menuDev = {
                         "data-title":
                         {
                             "label": "Title",
-                            "value": "1. The Town",
+                            "value": "Episode 1: The 'Hideous Face' at the Window",
                             "type": "text"
                         },
                         "data-image":
@@ -621,7 +655,7 @@ const menuDev = {
                         "data-title":
                         {
                             "label": "Title",
-                            "value": "2. The Trial",
+                            "value": "Episode 2: Southern Justice?",
                             "type": "text"
                         },
                         "data-image":
@@ -639,7 +673,7 @@ const menuDev = {
                         "data-overlay":
                         {
                             "label": "Overlay Text",
-                            "value": "Coming Mar. 2",
+                            "value": "",
                             "type": "text"
                         }
                     }
@@ -652,7 +686,7 @@ const menuDev = {
                         "data-title":
                         {
                             "label": "Title",
-                            "value": "3. Atticus Finch",
+                            "value": "Episode 3: Innocent Blood",
                             "type": "text"
                         },
                         "data-image":
@@ -670,7 +704,7 @@ const menuDev = {
                         "data-overlay":
                         {
                             "label": "Overlay Text",
-                            "value": "Coming Soon",
+                            "value": "",
                             "type": "text"
                         }
                     }
@@ -683,7 +717,7 @@ const menuDev = {
                         "data-title":
                         {
                             "label": "Title",
-                            "value": "4. Who's Who",
+                            "value": "Episode 4: The Friend of the Common People",
                             "type": "text"
                         },
                         "data-image":
@@ -701,7 +735,7 @@ const menuDev = {
                         "data-overlay":
                         {
                             "label": "Overlay Text",
-                            "value": "Coming Soon",
+                            "value": "",
                             "type": "text"
                         }
                     }
@@ -714,7 +748,7 @@ const menuDev = {
                         "data-title":
                         {
                             "label": "Title",
-                            "value": "5. The Crime",
+                            "value": "Episode 5: 'If You Are Through With Me, Let Me Out'",
                             "type": "text"
                         },
                         "data-image":
@@ -732,7 +766,7 @@ const menuDev = {
                         "data-overlay":
                         {
                             "label": "Overlay Text",
-                            "value": "Coming Soon",
+                            "value": "",
                             "type": "text"
                         }
                     }
@@ -745,7 +779,7 @@ const menuDev = {
                         "data-title":
                         {
                             "label": "Title",
-                            "value": "6. Past is Present",
+                            "value": "Episode 6: Can Anybody Help?",
                             "type": "text"
                         },
                         "data-image":
@@ -763,7 +797,7 @@ const menuDev = {
                         "data-overlay":
                         {
                             "label": "Overlay Text",
-                            "value": "Coming Soon",
+                            "value": "",
                             "type": "text"
                         }
                     }
