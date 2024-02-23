@@ -628,7 +628,7 @@ const menuDev = {
                         "data-image":
                         {
                             "label": "Image URL",
-                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode-1.jpg",
                             "type": "text"
                         },
                         "data-audio":
@@ -659,7 +659,7 @@ const menuDev = {
                         "data-image":
                         {
                             "label": "Image URL",
-                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode-2.jpg",
                             "type": "text"
                         },
                         "data-audio":
@@ -690,7 +690,7 @@ const menuDev = {
                         "data-image":
                         {
                             "label": "Image URL",
-                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode-3.jpg",
                             "type": "text"
                         },
                         "data-audio":
@@ -721,7 +721,7 @@ const menuDev = {
                         "data-image":
                         {
                             "label": "Image URL",
-                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode-4.jpg",
                             "type": "text"
                         },
                         "data-audio":
@@ -752,7 +752,7 @@ const menuDev = {
                         "data-image":
                         {
                             "label": "Image URL",
-                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode-5.jpg",
                             "type": "text"
                         },
                         "data-audio":
@@ -783,7 +783,7 @@ const menuDev = {
                         "data-image":
                         {
                             "label": "Image URL",
-                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode.jpg",
+                            "value": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/images/episode-6.jpg",
                             "type": "text"
                         },
                         "data-audio":
