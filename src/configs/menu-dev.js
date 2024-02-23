@@ -545,13 +545,21 @@ const menuDev = {
     {
         "type": "increment",
         "label": "podcast-grid",
-        "script": "https://www.miamiherald.com/static/hi/2024/sc-willie-leaphart-podcast/podcast-grid.js",
+        "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/podcast-grid.js",
         "defaultOptions":
         {
             "data-follow-links": {
                 "label": "Follow Links",
                 "value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/1xx32op6dseR5U_yFq5EOBP8yEhfriwpxyWxDO0x476I.json",
                 "type": "text"
+            },
+            "--podcast-grid-max-width": {
+                "label": "Max Grid Width",
+                "value": "1050",
+                "type": "range",
+                "unit": "px",
+                "min": "400",
+                "max": "1100"
             },
             "--background-color":
             {
@@ -577,16 +585,6 @@ const menuDev = {
                     "value": "end"
                 }],
                 "type": "switch"
-            },
-            "data-promo-image": {
-                "label": "Promo Image (Optional)",
-                "value": "",
-                "type": "text"
-            },
-            "data-promo-url": {
-                "label": "Promo Url (Optional)",
-                "value": "",
-                "type": "text"
             },
             "slot":
             {
