@@ -9,7 +9,7 @@ const textItems = (props) => {
   const addTextItem = () => {
     const tagOptions = props.editOptions[props.editKey].options;
 
-    let attributes = JSON.parse(JSON.stringify(props.editOptions[props.editKey]?.attributes))
+    let attributes = JSON.parse(JSON.stringify(props.editOptions[props.editKey]?.attributes || {}))
 
     props.setValue(props.value.push({
       tag: tagOptions[0],
