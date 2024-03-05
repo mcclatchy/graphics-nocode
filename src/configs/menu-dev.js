@@ -831,6 +831,21 @@ const menuDev = {
                 }],
                 "type": "switch"
             },
+            "data-include-date":
+            {
+                "label": "Include Publish Date",
+                "value": "true",
+                "options": [
+                {
+                    "label": "On",
+                    "value": "true"
+                },
+                {
+                    "label": "Off",
+                    "value": ""
+                }],
+                "type": "switch"
+            },
             "slot":
             {
                 "label": "Story URLs",
