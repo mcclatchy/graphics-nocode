@@ -78,6 +78,10 @@ export function removeVersion(html) {
 	return html.replaceAll(/\?v(.*?)"/g, '"')
 }
 
+export function removeVersionString(html) {
+	return html.replaceAll(/\?v(.*?)*/g, '')
+}
+
 export function removeId(html) {
 	return html.replace(/id=\"(.*?)\"/g, "").replace(" >", ">")
 }
