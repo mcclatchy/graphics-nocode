@@ -126,6 +126,21 @@ const menuDev = {
                 }],
                 "type": "switch"
             },
+            "data-embed-class":
+            {
+                "label": "Embed Class",
+                "value": "",
+                "options": [
+                {
+                    "label": "Full Screen",
+                    "value": ""
+                },
+                {
+                    "label": "Full Bleed",
+                    "value": "full-bleed"
+                }],
+                "type": "switch"
+            },
             "--lead-video-header-max-width":
             {
                 "label": "Header Max Width",
