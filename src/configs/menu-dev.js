@@ -415,8 +415,8 @@ const menuDev = {
         {
             "type": "increment",
             "label": "image-carousel",
-            "link": "image-carousel.css",
-            "script": "image-carousel.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/image-carousel.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/image-carousel.js",
             "defaultOptions": {
                 "data-embed-class": {
                     "label": "Embed Class",
