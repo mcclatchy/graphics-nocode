@@ -12,8 +12,7 @@ export function formatHTML(html) {
       }
 
       result += indent + '<' + element + '>\r';
-
-      if (element.match( /^<?\w[^>]*[^\/]$/ ) && !element.startsWith("input")  ) { 
+      if (element.match( /^<?\w[^>]*[^\/]$/ ) && !element.startsWith("input") && !element.startsWith("img") && !element.startsWith("<img")  ) { 
           indent += tab;              
       }
   });
