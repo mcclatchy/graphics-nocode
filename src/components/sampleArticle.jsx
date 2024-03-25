@@ -51,7 +51,7 @@ const SampleArticle = (props) => {
       props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
     }
 
-    const noInlineSizeNames = ['scrolling-map']
+    const noInlineSizeNames = ['scrolling-map', 'inset-box']
 
     const nonBodyComponentNames = ["lead-image", "lead-logo", "lead-video"]
     const nonBodyWebComponents = props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
@@ -680,8 +680,6 @@ const SampleArticle = (props) => {
               <p>Why would Messi, arguably the greatest player of all time, the World Cup champion, the Argentine icon, come to Major League Soccer to play for a fledgling Inter Miami team that holds its games in a temporary stadium?</p>{/**/}{/*]*/}{/*[*/}
               <p>It made little sense.</p>{/**/}{/*]*/}{/*[*/}
               <p>Then, on April 8, during halftime of Inter Miami’s game against FC Dallas, I ran into Mas, the passionate team owner, on the DRV PNK Stadium field and he said something that made me start to believe. Maybe not believe, but at least entertain the thought that this might happen.</p>
-
-              <div id="zone-el-101" className="zone zone-el" index={3} issportsarticle="true" stnplayerkill="false" allowstnplayer="true" data-type="ad"/>{/*]*/}{/*[*/}
 
               <p>The University of Miami men’s and women’s basketball teams were being honored by Inter Miami for their historic March Madness runs, and I was on the field to capture some photos. I asked Mas how things were going, as his team had lost four games in a row, and he replied: “Michelle, it’s going to be an epic summer.”</p>{/**/}{/*]*/}{/*[*/}
               <p>“Epic?” I asked, wearing a skeptical grin.</p>{/**/}{/*]*/}{/*[*/}

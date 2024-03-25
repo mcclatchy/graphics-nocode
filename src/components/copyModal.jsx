@@ -83,16 +83,20 @@ class CopyModal extends React.Component {
 	        {this.props.webComponents && this.props.webComponents.map((webComponent, i) => {
 	        	let script = webComponent.props?.script ? cleanHTML(`<script type="module" src="${webComponent.props?.script}"></script>\n`) : "";
 	        	let link = webComponent.props?.link ? cleanHTML(`<link rel="stylesheet" href="${webComponent.props?.link}">\n`) : "";
+	        	let options = webComponent.props.options;
 	        	let element = getElementByIdPrefix(webComponent.props.id);
 	      		if (element && !webComponent.props.options?.slot) {
 	        		element.innerHTML = ''
 	        	}
-	        	element && element.removeAttribute('id');
+	        	const attributesToRemove = Object.keys(options).filter(key => options[key]?.exclude).concat(['id'])
+	        	attributesToRemove.forEach(attribute => element && element.removeAttribute(attribute));
+
 	        	// TODO: Remove inline styles from children? Seems useful for scrolling-video. Need to see if it scales...
 	        	element?.children && Array.from(element.children).forEach(child => child.removeAttribute("style"))
 	        	const html = element?.outerHTML;
 	        	const textId = `tool-embed-${webComponent.props.id}`;
-	        	const style = getExternalStyleFromOptions(webComponent.props.options);
+	        	const style = getExternalStyleFromOptions(options);
+
 	          return (
 	          	<div className="tool-modal-wrapper" key={i}>
 		          	<div className="tool-copy-header">

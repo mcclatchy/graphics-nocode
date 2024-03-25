@@ -656,6 +656,72 @@ const menuDev = {
         },
         {
             "type": "increment",
+            "label": "inset-box",
+            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/inset-box.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/inset-box.js",
+            "defaultOptions": {
+                "data-title": {
+                    "label": "Title (Optional)",
+                    "value": "Read more",
+                    "type": "text"
+                },
+                "data-link": {
+                    "label": "Link URL (Optional)",
+                    "value": "https://www.sacbee.com/news/politics-government/the-state-worker/article283078973.html",
+                    "type": "text"
+                },
+                "data-image": {
+                    "label": "Image URL",
+                    "value": "https://www.sacbee.com/latest-news/jlxxar/picture285758691/alternates/LANDSCAPE_1140/sac-osha-lead-landscape.jpg",
+                    "type": "text"
+                },
+                "data-image-alt": {
+                    "label": "Image Alt Text",
+                    "value": "",
+                    "type": "text"
+                },
+                "data-text": {
+                    "label": "Text",
+                    "value": "Cal-OSHA is experiencing a staffing crisis. Here’s how that endangers California workers",
+                    "type": "text"
+                },
+                "data-position": {
+                    "label": "Image Position",
+                    "value": "right",
+                    "options": [{
+                            "label": "Left",
+                            "value": "left"
+                        },
+                        {
+                            "label": "Right",
+                            "value": "right"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-embed-class": {
+                    "label": "Embed Class",
+                    "hide": true,
+                    "value": "inset",
+                    "options": [{
+                            "label": "Inset",
+                            "value": "inset"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-embed-max-width": {
+                    "label": "Max Embed Width",
+                    "value": "728",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "728",
+                    "max": "1000"
+                },
+            }
+        },
+        {
+            "type": "increment",
             "label": "podcast-grid",
             "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/podcast-grid.js",
             "defaultOptions": {
@@ -993,6 +1059,10 @@ const menuDev = {
                             "value": ""
                         },
                         {
+                            "label": "Portrait",
+                            "value": "portrait"
+                        },
+                        {
                             "label": "Wide",
                             "value": "wide"
                         },
@@ -1212,6 +1282,12 @@ const menuDev = {
                     "hide": true,
                     "type": "boolean"
                 },
+                "data-edit-mode": {
+                    "value": true,
+                    "hide": true,
+                    "exclude": true,
+                    "type": "boolean"
+                },
                 "slot": {
                     "label": "Text",
                     "options": ["p"],
@@ -1310,10 +1386,38 @@ const menuDev = {
                     ],
                     "type": "switch"
                 },
+                "--scrolling-video-text-alignment": {
+                    "label": "Text Alignment",
+                    "value": "start",
+                    "options": [{
+                            "label": "Left",
+                            "value": "start"
+                        },
+                        {
+                            "label": "Middle",
+                            "value": "center"
+                        },
+                        {
+                            "label": "Right",
+                            "value": "end"
+                        }
+                    ],
+                    "type": "switch"
+                },
                 "--scrolling-video-text-color": {
                     "label": "Text Color",
                     "value": "#ffffff",
                     "type": "color"
+                },
+                "--scrolling-video-text-background": {
+                    "label": "Text Background Color",
+                    "value": "#000000",
+                    "type": "color"
+                },
+                "--scrolling-video-text-border": {
+                    "label": "Text Border",
+                    "value": "none",
+                    "type": "text"
                 }
             }
         }
