@@ -37,10 +37,6 @@ const SampleArticle = (props) => {
     // };
     // useMutationObserver(mutationRef, incrementMutationCount);
 
-
-
-
-
     const clearMovedWebComponent = (tag) => {
       const webComponent = document.querySelector(tag);
       webComponent && webComponent.remove();
@@ -274,321 +270,236 @@ const SampleArticle = (props) => {
         <link rel="shortcut icon" type="image/png" sizes="196x196" href="https://www.miamiherald.com/wps/build/images/miamiherald/favicon-196.png" />
         <link href="https://mcclatchy-next-apps-prod.s3.amazonaws.com/custom-css/all/style.css" rel="stylesheet" type="text/css" />
         <meta name="parsely-metadata" content="{&quot;article_id&quot;: &quot;278457949&quot;}" />
-        {/* WPS upper navbar for subpubs */}
-        <div className="upper-nav"><div className="tab active"><a href="/" aria-label="Miami Herald"><img className="logo" src="https://www.miamiherald.com/wps/build/images/miamiherald/logo.svg" alt="Miami Herald Logo" width={300} height={50} /><img className="favicon" src="https://www.miamiherald.com/wps/build/images/miamiherald/favicon-96.png" alt="Miami Herald Logo" width={96} height={96} layout="responsive" /></a></div>{/*[*/}<div className="tab">{/*[*/}<a href="https://www.miamiherald.com/miami-com/">{/*[*/}<img className="logo" src="https://www.miamiherald.com/wps/build/images/miamiherald-miami-com/logo.svg" alt="Miami com Logo" width={300} height={50} /><img className="favicon" src="https://mcclatchy.github.io/design/img/miami.com-favicon.svg" alt="Miami com Logo" width={96} height={96} layout="responsive" />{/*]*/}</a>{/*]*/}</div><div className="tab">{/*[*/}<a href="https://www.miamiherald.com/detour">{/*[*/}<img className="logo" src="https://media.mcclatchy.com/static/images/logos/detour_big.svg" alt="detour logo" width={300} height={50} /><img className="favicon" src="https://media.mcclatchy.com/static/images/logos/detour_small.svg" alt="detour logo" width={96} height={96} layout="responsive" />{/*]*/}</a>{/*]*/}</div><div className="tab">{/*[*/}<a href="https://www.flkeysnews.com/">{/*[*/}<img className="logo" src="https://www.flkeysnews.com/wps/build/images/flkeysnews/logo.svg" alt="FL Keys News Logo" width={300} height={50} /><img className="favicon" src="https://www.flkeysnews.com/wps/build/images/flkeysnews/favicon-96.png" alt="FL Keys News Logo" width={96} height={96} layout="responsive" />{/*]*/}</a>{/*]*/}</div><div className="tab">{/*[*/}<a href="https://www.elnuevoherald.com/">{/*[*/}<img className="logo" src="https://www.elnuevoherald.com/wps/build/images/elnuevoherald/logo.svg" alt="El Nuevo Herald Logo" width={300} height={50} /><img className="favicon" src="https://www.elnuevoherald.com/wps/build/images/elnuevoherald/favicon-96.png" alt="El Nuevo Herald Logo" width={96} height={96} layout="responsive" />{/*]*/}</a>{/*]*/}</div><div className="tab">{/*[*/}<a href="https://www.bestofmiamidade.com/">{/*[*/}<img className="logo" src="https://media.mcclatchy.com/static/images/logos/badge-bmd.svg" alt="Best of Miami-Dade" width={300} height={50} /><img className="favicon" src="https://media.mcclatchy.com/static/images/logos/icon-bmd.svg" alt="Best of Miami-Dade" width={96} height={96} layout="responsive" />{/*]*/}</a>{/*]*/}</div>{/*]*/}</div>
-        <div id="mastheadVueContainer" data-v-app>
-			    <div id="mastheadVueContainer">
-			        <div id="zone-el-1" className="zone-el hidden" data-type="ad">
-			            <div data-unit="MIA.site_miamiherald/Sports" data-targeting="{&quot;slot&quot;:&quot;overlay&quot;}" className="htlad-web-overlay">
-			                <div className="htl-ad" id="htlad-1" data-unit="MIA.site_miamiherald/Sports" name="htlunit-web-overlay" data-eager data-sizes="0x0:|768x0:|992x0:|1200x0:" data-prebid="0x0:|768x0:|992x0:|1200x0:" data-oop data-targeting="{&quot;htl_refresh&quot;:[&quot;1&quot;],&quot;htl_slot_gpid&quot;:[&quot;web-overlay&quot;],&quot;slot&quot;:&quot;overlay&quot;}">
-			                    <div className="htl-ad-gpt" id="htlad-1-gpt" data-google-query-id="CPXDg7HE84ADFdw-RAgdAacHmw" style={{display: 'none'}}>
-			                        <div id="google_ads_iframe_/7675/MIA.site_miamiherald/Sports_0__container__" style={{border: '0pt none', margin: 'auto', textAlign: 'center'}} />
-			                    </div>
-			                </div>
-			            </div>
-			        </div>
-			        <div id="zone-el-2" className="zone hidden" data-type="ad">
-			            <div id="leaderboard-ad">
-			                <div className="mobile-leaderboard">
-			                    <div data-unit="MIA.site_miamiherald/Sports" data-targeting="{&quot;atf&quot;:&quot;y&quot;,&quot;pkg&quot;:&quot;a&quot;,&quot;slot&quot;:&quot;top-banner&quot;}" className="htlad-web-top-banner">
-			                        <div className="htl-ad" id="htlad-2" data-unit="MIA.site_miamiherald/Sports" name="htlunit-web-top-banner" data-eager data-sizes="0x0:320x50|768x0:728x90|992x0:970x250,970x90,728x90|1200x0:970x250,970x90,728x90" data-prebid="0x0:web-top-banner-extraSmall|768x0:web-top-banner-small|992x0:web-top-banner-medium|1200x0:web-top-banner-large" data-refresh="viewable" data-refresh-secs={30} data-refresh-max={100} data-targeting="{&quot;atf&quot;:&quot;y&quot;,&quot;htl_refresh&quot;:[&quot;1&quot;],&quot;htl_slot_gpid&quot;:[&quot;web-top-banner&quot;],&quot;pkg&quot;:&quot;a&quot;,&quot;slot&quot;:&quot;top-banner&quot;}">
-			                            <div className="htl-ad-gpt htl-size-970x250" id="htlad-2-gpt" data-google-query-id="CPnbhbHE84ADFdw-RAgdAacHmw">
-			                                <div id="google_ads_iframe_/7675/MIA.site_miamiherald/Sports_1__container__" style={{border: '0pt none', margin: 'auto', textAlign: 'center', width: '970px', height: '250px'}}><iframe frameBorder={0} src="https://d1a94b0d7334ae2ae4b9b35a1250c81e.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/7675/MIA.site_miamiherald/Sports_1" title="3rd party ad content" scrolling="no" marginWidth={0} marginHeight={0} width={970} height={250} data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabIndex={0} data-google-container-id={2} style={{border: '0px', verticalAlign: 'bottom'}} data-load-complete="true" /></div>
-			                            </div>
-			                        </div>
-			                    </div>
-			                </div>
-			            </div>
-			        </div>
-<div id="flag" className="paper masthead" role="banner">
-    <div className="sds-flag">
-        <div className="flag-menu row" role="menu">
-        
-        <button aria-haspopup="true" role="menuitem" id="sectionsmenu">
-          <svg width="18" height="16" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.623635 2.47959H16.8381C17.1826 2.47959 17.4618 2.23291 17.4618 1.92857V0.55102C17.4618 0.246685 17.1826 0 16.8381 0H0.623635C0.279193 0 0 0.246685 0 0.55102V1.92857C0 2.23291 0.279193 2.47959 0.623635 2.47959ZM0.623635 8.9898H16.8381C17.1826 8.9898 17.4618 8.74311 17.4618 8.43878V7.06122C17.4618 6.75689 17.1826 6.5102 16.8381 6.5102H0.623635C0.279193 6.5102 0 6.75689 0 7.06122V8.43878C0 8.74311 0.279193 8.9898 0.623635 8.9898ZM0.623635 15.5H16.8381C17.1826 15.5 17.4618 15.2533 17.4618 14.949V13.5714C17.4618 13.2671 17.1826 13.0204 16.8381 13.0204H0.623635C0.279193 13.0204 0 13.2671 0 13.5714V14.949C0 15.2533 0.279193 15.5 0.623635 15.5Z"></path>
-          </svg>
-        </button>
 
-        <a href="#primary-content" className="flex tabkey-reveal" accessKey="1" tabIndex="1">
-          <span className="button impact">Skip to Content</span>
-        </a>
 
-        <form id="search-icon" action="/search/" className="search row h-phone" role="search" method="POST">
-          <label htmlFor="flag-search-input">
-            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
-              <path d="m16.768 14.699-3.31-3.31a.796.796 0 0 0-.565-.233h-.541a6.872 6.872 0 0 0 1.46-4.25A6.905 6.905 0 0 0 6.907 0 6.905 6.905 0 0 0 0 6.906a6.905 6.905 0 0 0 6.906 6.907 6.872 6.872 0 0 0 4.25-1.461v.54c0 .213.083.416.233.565l3.31 3.31a.794.794 0 0 0 1.126 0l.94-.94a.8.8 0 0 0 .003-1.128Zm-9.862-3.543c-2.347 0-4.25-1.899-4.25-4.25 0-2.347 1.9-4.25 4.25-4.25 2.348 0 4.25 1.9 4.25 4.25 0 2.348-1.899 4.25-4.25 4.25Z"></path>
-            </svg>
-          </label>
-          <input id="flag-search-input" className="search-field" type="text" name="q" placeholder=" " aria-label="Search Kansas City Star" tabIndex="0"/>
-        </form>
-
-        </div>
-        <div id="signInOut" className="flag-account row"><a href="https://account.miamiherald.com/auth0?section=ecefrontpage" id="logIn">LOG IN</a><a href="https://subscribe.miamiherald.com/holiday-sale" className="button">SUBSCRIBE NOW</a>
-        </div>
-        <a href="https://www.miamiherald.com" aria-label="Miami Herald" className="flag-logo"><img src="https://www.miamiherald.com/wps/build/images/miamiherald/logo.svg" alt="miamiherald Logo" className="logo" width="3770" height="300"/>
-            <h1 style={{position: "absolute", outline: "none", display: "none"}}>More time in G League coming for Miami Heat’s Nikola Jovic | Miami Herald</h1>
-            <p className="mmn-company">Part of the McClatchy Media Network</p>
-        </a>
-        <div className="flag-left stack h-phone">
-            <p><b>Monday, December 18, 2023</b></p>
-            <p><a href="https://eedition.miamiherald.com/app/MIAHER" aria-label="eEdition">Today's eEdition</a></p>
-        </div>
-        <div className="flag-right stack h-phone">
-          <div className="row">
-            <a href="https://www.miamiherald.com/news/weather-news/" aria-label="Weather" role="menuitem">
-              <img width="40" height="40" src="https://www.miamiherald.com/wps/source/images/widgets/weather/wxicons-blk/wxicons-blk-6.svg" alt="Mostly cloudy"/>
-              <span><b>71°F</b> <small>78° 62°</small></span>
-            </a>
-          </div>
-        </div>
-        <div className="flag-nav slider">
-            <div className="row">
-                <div><a href="https://www.miamiherald.com/news/#navlink=navbar">News</a></div>
-                <div><a href="https://www.miamiherald.com/sports/#navlink=navbar">Sports</a></div>
-                <div><a href="https://www.miamiherald.com/news/business/#navlink=navbar">Business</a></div>
-                <div><a href="https://www.miamiherald.com/news/politics-government/#navlink=navbar">Politics</a></div>
-                <div><a href="https://www.miamiherald.com/opinion/#navlink=navbar">Opinion</a></div>
-                <div><a href="https://www.miamiherald.com/miami-com/restaurants/#navlink=navbar">Food &amp; Drink</a></div>
-                <div><a href="https://www.miamiherald.com/news/local/environment/climate-change/#navlink=navbar">Climate Change</a></div><span className="separator">•</span>
-                <div><a href="https://www.miamiherald.com/betting/#navlink=navbar">Sports Betting</a></div>
-                <div><a href="https://www.miamiherald.com/money/#navlink=navbar">Personal Finance</a></div>
-                <div><a href="https://classifieds.mcclatchy.com/marketplace/miami/category/Legals/Legals/">Public Notices</a></div>
-                <div><a href="https://www.legacy.com/us/obituaries/herald/browse/">Obituaries</a></div>
-                <div><a href="https://www.miamiherald.com/shopping/#navlink=navbar">Shopping</a></div>
+<div id="main-mastheadVueContainer" className="newMastheadContainer" data-v-app="">
+    <header id="mastheadVueContainer" className="updated-flag">
+        <div className="paper masthead" role="banner">
+            <div className="flag">
+                <div className="flag-row flag-top">
+                    <div className="flag-eedition h-phone"><a href="https://www.miamiherald.com/e-edition/today" aria-label="eEdition"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M5.25 1.5C4.83437 1.5 4.5 1.83438 4.5 2.25V11.75C4.5 12.0125 4.45625 12.2656 4.37187 12.5H13.75C14.1656 12.5 14.5 12.1656 14.5 11.75V2.25C14.5 1.83438 14.1656 1.5 13.75 1.5H5.25ZM2.25 14C1.00625 14 0 12.9937 0 11.75V2.5C0 2.08437 0.334375 1.75 0.75 1.75C1.16562 1.75 1.5 2.08437 1.5 2.5V11.75C1.5 12.1656 1.83438 12.5 2.25 12.5C2.66563 12.5 3 12.1656 3 11.75V2.25C3 1.00625 4.00625 0 5.25 0H13.75C14.9937 0 16 1.00625 16 2.25V11.75C16 12.9937 14.9937 14 13.75 14H2.25ZM5.5 3.25C5.5 2.83437 5.83437 2.5 6.25 2.5H9.25C9.66562 2.5 10 2.83437 10 3.25V5.75C10 6.16563 9.66562 6.5 9.25 6.5H6.25C5.83437 6.5 5.5 6.16563 5.5 5.75V3.25ZM11.75 2.5H12.75C13.1656 2.5 13.5 2.83437 13.5 3.25C13.5 3.66563 13.1656 4 12.75 4H11.75C11.3344 4 11 3.66563 11 3.25C11 2.83437 11.3344 2.5 11.75 2.5ZM11.75 5H12.75C13.1656 5 13.5 5.33437 13.5 5.75C13.5 6.16563 13.1656 6.5 12.75 6.5H11.75C11.3344 6.5 11 6.16563 11 5.75C11 5.33437 11.3344 5 11.75 5ZM6.25 7.5H12.75C13.1656 7.5 13.5 7.83437 13.5 8.25C13.5 8.66562 13.1656 9 12.75 9H6.25C5.83437 9 5.5 8.66562 5.5 8.25C5.5 7.83437 5.83437 7.5 6.25 7.5ZM6.25 10H12.75C13.1656 10 13.5 10.3344 13.5 10.75C13.5 11.1656 13.1656 11.5 12.75 11.5H6.25C5.83437 11.5 5.5 11.1656 5.5 10.75C5.5 10.3344 5.83437 10 6.25 10Z"></path>
+                            </svg> Read today's eEdition</a></div>
+                    <div className="flag-logo">
+                      <a href="https://www.miamiherald.com" aria-label="Miami Herald" className="flag-logo">
+                        <img className="logo msb-hide" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo.svg" alt="miamiherald Logo"/>
+                        <img className="logo msb-show" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo-white.svg" alt="miamiherald Logo"/>
+                      </a>
+                    </div>
+                    <div className="flag-account">
+                      <div className="msb-hide"><a href="https://account.miamiherald.com/auth0">Log In</a><span className="pipe-seperator">|</span><a href="https://subscribe.miamiherald.com/beinformed" className="subscribe-link">Subscribe</a></div>                    
+                        <div className="msb-show"><button className="button expander msb-show"><svg width="17" height="19" viewBox="0 0 17 19" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5972 7.41211C10.7942 8.21509 9.70584 8.66577 8.57034 8.66577C7.43557 8.66431 6.34719 8.21289 5.54495 7.41064C4.74197 6.60791 4.29055 5.52014 4.28909 4.38464C4.28982 3.24988 4.74051 2.16077 5.54348 1.35779C6.34646 0.55481 7.43484 0.104126 8.57034 0.104126C9.70559 0.104126 10.7942 0.55481 11.5972 1.35779C12.3999 2.16077 12.8506 3.24976 12.8506 4.38525C12.8506 5.52002 12.3999 6.60913 11.5972 7.41211ZM16.9373 18.1038H0.893825H0.203396C0.197781 15.8833 1.0801 13.7537 2.65432 12.1879C4.2239 10.6193 6.35134 9.73755 8.57034 9.73755C10.7893 9.73755 12.9178 10.6193 14.4864 12.1879C16.0557 13.7572 16.9373 15.8848 16.9373 18.1038Z"></path>
+                                </svg></button>
+                            <div id="popout" className="popout paper sans">
+                                <div className="user"><svg viewBox="0 0 496 512">
+                                        <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path>
+                                    </svg><b>Welcome Back!</b></div><a href="https://myaccount.miamiherald.com/KCM_KCS/myprofile"><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 640 512" xmlSpace="preserve">
+                                        <path className="st0" d="M144,128c0-44.2,35.8-80,80-80s80,35.8,80,80s-35.8,80-80,80S144,172.2,144,128z M352,128  C352,57.3,294.7,0,224,0S96,57.3,96,128s57.3,128,128,128S352,198.7,352,128z M49.3,464c8.9-63.3,63.3-112,129-112h91.4  c34.9,0,66.5,13.7,89.9,36l33.9-33.9c-32.1-31-75.7-50.1-123.9-50.1h-91.3C79.8,304,0,383.8,0,482.3C0,498.7,13.3,512,29.7,512  h293.1c-3.1-8.8-3.7-18.4-1.4-27.8l5.1-20.2H49.3z M613.8,235.7c-15.6-15.6-40.9-15.6-56.6,0l-29.4,29.4l71,71l29.4-29.4  c15.6-15.6,15.6-40.9,0-56.6L613.8,235.7L613.8,235.7z M375.9,417c-4.1,4.1-7,9.2-8.4,14.9l-15,60.1c-1.4,5.5,0.2,11.2,4.2,15.2  s9.7,5.6,15.2,4.2l60.1-15c5.6-1.4,10.8-4.3,14.9-8.4l129.2-129.3l-71-71L375.9,417z"></path>
+                                    </svg> Edit Profile</a><a href="https://myaccount.miamiherald.com/KCM_KCS/dashboard"><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 640 512" xmlSpace="preserve">
+                                        <path className="st0" d="M64,464h284.5c12.3,18.8,28,35.1,46.3,48H64c-35.3,0-64-28.7-64-64V224c0-35.3,28.7-64,64-64h384  c23.8,0,44.5,12.9,55.5,32.2c-2.5-0.1-5-0.2-7.5-0.2c-26.2,0-51.1,5.7-73.4,16H64c-8.8,0-16,7.2-16,16v224C48,456.8,55.2,464,64,464  z M440,80c13.3,0,24,10.7,24,24s-10.7,24-24,24H72c-13.3,0-24-10.7-24-24s10.7-24,24-24H440z M392,0c13.3,0,24,10.7,24,24  s-10.7,24-24,24H120c-13.3,0-24-10.7-24-24s10.7-24,24-24H392z M352,368c0-79.5,64.5-144,144-144s144,64.5,144,144  s-64.5,144-144,144S352,447.5,352,368z M573.7,448.7c-6.2-19-24-32.7-45.1-32.7h-65.2c-21,0-38.9,13.7-45.1,32.7  c20.2,19.4,47.5,31.3,77.7,31.3S553.5,468.1,573.7,448.7z M544,336c0-26.5-21.5-48-48-48c-26.5,0-48,21.5-48,48s21.5,48,48,48  C522.5,384,544,362.5,544,336z"></path>
+                                    </svg> My Subscriptions</a><a href="https://mcclatchy.us.auth0.com/v2/logout?client_id=zhPTXDcCNuuWCMGmbEUUs0TYtRpqKht2&amp;returnTo=https%3A%2F%2Fmiamiherald.com"><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xmlSpace="preserve">
+                                        <path className="st0" d="M505,273c9.4-9.4,9.4-24.6,0-33.9L377,111c-9.4-9.4-24.6-9.4-33.9,0s-9.4,24.6,0,33.9l87,87L184,232  c-13.3,0-24,10.7-24,24c0,13.3,10.7,24,24,24h246.1l-87,87c-9.4,9.4-9.4,24.6,0,33.9s24.6,9.4,33.9,0L505,273z M168,80  c13.3,0,24-10.7,24-24s-10.7-24-24-24H88C39.4,32,0,71.4,0,120v272c0,48.6,39.4,88,88,88h80c13.3,0,24-10.7,24-24s-10.7-24-24-24H88  c-22.1,0-40-17.9-40-40V120c0-22.1,17.9-40,40-40H168z"></path>
+                                    </svg> Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flag-line"></div>
+                <div className="flag-row flag-bottom">
+                    <div className="flag-menu" role="menu">
+                        <button aria-haspopup="true" className="button new-menu-toggle" id="menu-toggle" aria-expanded="false" role="menuitem"><svg className="icon-menu-toggle" xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 28 16" fill="none">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0.691406H11.2504V2.8904H0V0.691406ZM0 6.84766H8.65417V9.04665H0V6.84766ZM12.1158 13.0059H0V15.2049H12.1158V13.0059Z"></path>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M24.2734 9.83408C24.796 8.92389 25.0954 7.86513 25.0954 6.7353C25.0954 3.33479 22.3832 0.578125 19.0375 0.578125C15.6918 0.578125 12.9796 3.33479 12.9796 6.7353C12.9796 10.1358 15.6918 12.8925 19.0375 12.8925C20.3318 12.8925 21.5313 12.4799 22.5156 11.7771L25.8715 15.188C26.2588 15.5816 26.8868 15.5816 27.2742 15.188L27.7073 14.7477C28.0947 14.354 28.0947 13.7157 27.7073 13.322L24.3139 9.87299C24.3007 9.85956 24.2872 9.84659 24.2734 9.83408ZM19.0375 10.4296C17.0301 10.4296 15.4027 8.77561 15.4027 6.7353C15.4027 4.69499 17.0301 3.041 19.0375 3.041C21.0449 3.041 22.6722 4.69499 22.6722 6.7353C22.6722 8.77561 21.0449 10.4296 19.0375 10.4296Z"></path>
+                            </svg></button></div>
+                    <div className="flag-weather stack h-phone">
+                        <div className="row"><a href="/weather" aria-label="Weather" role="menuitem"><span>70°F</span></a></div>
+                    </div>
+                    <div className="flag-nav slider h-phone">
+                        <div className="row">
+                            <div><a href="https://www.miamiherald.com/news/local#navlink=navbar">Local News</a></div>
+                            <div><a href="https://www.miamiherald.com/news/business/openings-closings#navlink=navbar">Restaurants</a></div>
+                            <div><a href="https://www.miamiherald.com/sports/nfl/miami-dolphins#navlink=navbar">Chiefs</a></div>
+                            <div><a href="https://www.miamiherald.com/news/politics-government#navlink=navbar">Politics</a></div>
+                            <div><a href="https://www.miamiherald.com/opinion#navlink=navbar">Opinion</a></div><span className="separator">•</span>
+                            <div><a href="https://www.miamiherald.com/money#navlink=navbar">Personal Finance</a></div>
+                            <div><a href="https://www.miamiherald.com/betting">Betting</a></div>
+                            <div><a href="https://www.legacy.com/us/obituaries/miamiherald/browse">Obituaries</a></div>
+                            <div><a href="https://www.miamiherald.com/entertainment/miami/">Entertainment</a></div>
+                            <div><a href="https://www.miamiherald.com/shopping#navlink=navbar">Shopping</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <nav className="main-nav sans summary" id="main-nav" role="menu">
+                <div id="nav-menu-search-icon" className="search flex" role="menuitem" tabIndex="0">
+                    <form tabIndex="-1" action="/search/" className="flex" role="search" method="POST">
+                    <input id="nav-menu-search-bar" type="text" name="q" placeholder="Search" aria-label="Search Miami Herald" tabIndex="0"/>
+
+                      <button type="submit" aria-label="Search" tabIndex="-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                  <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                              </svg>
+                      </button>
+                    </form>
+                </div>
+                <a className="" href="https://www.miamiherald.com/#navlink=subnav" role="menuitem" tabIndex="0">Home
+                </a><a className="" href="https://www.miamiheraldfavorites.com/" role="menuitem" tabIndex="0">Miami Favorites
+                </a>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-2" id="menubtn-2" className="summary expander" tabIndex="0" aria-haspopup="true" >Customer Service</button>
+                    <div id="menu-2" aria-labelledby="menubtn-2" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service/about-us#navlink=subnav" role="menuitem" tabIndex="0">About Us</a></div>
+                        <div role="none"><a href="https://account.miamiherald.com/my-account" role="menuitem" tabIndex="0">Account Management</a></div>
+                        <div role="none"><a href="https://miamiherald.newspapers.com/" role="menuitem" tabIndex="0">Archives</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service/contact-us#navlink=subnav" role="menuitem" tabIndex="0">Contact us</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service#navlink=subnav" role="menuitem" tabIndex="0">Customer Service</a></div>
+                        <div role="none"><a href="https://subscribe.miamiherald.com/beinformed" role="menuitem" tabIndex="0">Subscribe</a></div>
+                        <div role="none"><span className="option-label" tabIndex="-1">Advertise</span></div>
+                        <div role="none"><a href="https://go.mcclatchy.com/media-capabilities-kc-star/p/1" role="menuitem" tabIndex="0">Contact McClatchy Advertising</a></div>
+                    </div>
+                </div>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-3" id="menubtn-3" className="summary expander" tabIndex="0" aria-haspopup="true" >Stay Connected</button>
+                    <div id="menu-3" aria-labelledby="menubtn-3" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/mobile#navlink=subnav" role="menuitem" tabIndex="0">Mobile Apps &amp; eReaders</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/newsletters#navlink=subnav" role="menuitem" tabIndex="0">Newsletters</a></div>
+                        <div role="none"><span className="option-label" tabIndex="-1">Social Media</span></div>
+                        <div role="none"><a href="https://www.facebook.com/miamiheraldstar/" role="menuitem" tabIndex="0">Facebook</a></div>
+                        <div role="none"><a href="https://twitter.com/kcstar" role="menuitem" tabIndex="0">Twitter</a></div>
+                        <div role="none"><a href="https://www.instagram.com/themiamiheraldstar/" role="menuitem" tabIndex="0">Instagram</a></div>
+                        <div role="none"><a href="https://www.youtube.com/user/miamiheraldStarVideo" role="menuitem" tabIndex="0">YouTube</a></div>
+                    </div>
+                </div><a className="" href="https://www.miamiherald.com/e-edition/today#navlink=subnav" role="menuitem" tabIndex="0">eEdition
+                </a><a className="" href="https://liveedition.miamiherald.com" role="menuitem" tabIndex="0">Morning Sports Edition
+                </a>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-6" id="menubtn-6" className="summary expander" tabIndex="0" aria-haspopup="true" >Obituaries</button>
+                    <div id="menu-6" aria-labelledby="menubtn-6" role="menu">
+                        <div role="none"><a href="https://www.legacy.com/obituaries/miamiherald/" role="menuitem" tabIndex="0">View Obituaries</a></div>
+                        <div role="none"><a href="https://miamiherald.obituaries.com" role="menuitem" tabIndex="0">Place an Obituary</a></div>
+                    </div>
+                </div>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-8" id="menubtn-8" className="summary expander" tabIndex="0" aria-haspopup="true" >News</button>
+                    <div id="menu-8" aria-labelledby="menubtn-8" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/news#navlink=subnav" role="menuitem" tabIndex="0">All News</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local#navlink=subnav" role="menuitem" tabIndex="0">Local news</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/crime#navlink=subnav" role="menuitem" tabIndex="0">Crime</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/education#navlink=subnav" role="menuitem" tabIndex="0">Education</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/your-kcq#navlink=subnav" role="menuitem" tabIndex="0">What's your KCQ?</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/weather-news#navlink=subnav" role="menuitem" tabIndex="0">Weather News</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/nation-world/national#navlink=subnav" role="menuitem" tabIndex="0">Nation</a></div>
+                        <div role="none"><span className="option-label" tabIndex="-1">Politics</span></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/politics-government#navlink=subnav" role="menuitem" tabIndex="0">Politics</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/politics-government/election#navlink=subnav" role="menuitem" tabIndex="0">Elections</a></div>
+                    </div>
+                </div>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-9" id="menubtn-9" className="summary expander" tabIndex="0" aria-haspopup="true" >Sports</button>
+                    <div id="menu-9" aria-labelledby="menubtn-9" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/sports#navlink=subnav" role="menuitem" tabIndex="0">All Sports</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/nfl/miami-dolphins#navlink=subnav" role="menuitem" tabIndex="0">Chiefs</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/mlb/florida-marlins#navlink=subnav" role="menuitem" tabIndex="0">Royals</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/soccer/sporting-kc#navlink=subnav" role="menuitem" tabIndex="0">Sporting KC</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/soccer/kc-current#navlink=subnav" role="menuitem" tabIndex="0">KC Current</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/high-school#navlink=subnav" role="menuitem" tabIndex="0">High School</a></div>
+                        <div role="none"><span className="option-label" tabIndex="-1">Blogs &amp; Columns</span></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/for-petes-sake#navlink=subnav" role="menuitem" tabIndex="0">For Pete's Sake</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/sam-mcdowell#navlink=subnav" role="menuitem" tabIndex="0">Sam McDowell</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/vahe-gregorian#navlink=subnav" role="menuitem" tabIndex="0">Vahe Gregorian</a></div>
+                    </div>
+                </div>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-10" id="menubtn-10" className="summary expander" tabIndex="0" aria-haspopup="true" >Opinion</button>
+                    <div id="menu-10" aria-labelledby="menubtn-10" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/editorials#navlink=subnav" role="menuitem" tabIndex="0">Editorials</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor#navlink=subnav" role="menuitem" tabIndex="0">Letters to the Editor</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/opn-columns-blogs/derek-donovan#navlink=subnav" role="menuitem" tabIndex="0">Derek Donovan</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/opn-columns-blogs/melinda-henneberger#navlink=subnav" role="menuitem" tabIndex="0">Melinda Henneberger</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/opn-columns-blogs/toriano-porter#navlink=subnav" role="menuitem" tabIndex="0">Toriano Porter</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/opn-columns-blogs/yvette-walker#navlink=subnav" role="menuitem" tabIndex="0">Yvette Walker</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/readers-opinion/guest-commentary#navlink=subnav" role="menuitem" tabIndex="0">Guest commentary</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/submit-a-letter#navlink=subnav" role="menuitem" tabIndex="0">Submit a Letter</a></div>
+                    </div>
+                </div>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-11" id="menubtn-11" className="summary expander" tabIndex="0" aria-haspopup="true" >Business</button>
+                    <div id="menu-11" aria-labelledby="menubtn-11" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/news/business/development#navlink=subnav" role="menuitem" tabIndex="0">Development</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/business/openings-closings#navlink=subnav" role="menuitem" tabIndex="0">Openings and Closings</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/money#navlink=subnav" role="menuitem" tabIndex="0">Personal Finance</a></div>
+                    </div>
+                </div>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-12" id="menubtn-12" className="summary expander" tabIndex="0" aria-haspopup="true" >Living &amp; Entertainment</button>
+                    <div id="menu-12" aria-labelledby="menubtn-12" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/miami#navlink=subnav" role="menuitem" tabIndex="0">Entertainment</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/arts-culture#navlink=subnav" role="menuitem" tabIndex="0">Arts &amp; Culture</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/living/food-drink#navlink=subnav" role="menuitem" tabIndex="0">Eat &amp; Drink</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/living/liv-columns-blogs/kc-gardens#navlink=subnav" role="menuitem" tabIndex="0">KC Gardens</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/comics#navlink=subnav" role="menuitem" tabIndex="0">Comics</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/games-puzzles#navlink=subnav" role="menuitem" tabIndex="0">Puzzles &amp; Games</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/horoscopes#navlink=subnav" role="menuitem" tabIndex="0">Horoscopes</a></div>
+                    </div>
+                </div>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-14" id="menubtn-14" className="summary expander" tabIndex="0" aria-haspopup="true" >Sports Betting</button>
+                    <div id="menu-14" aria-labelledby="menubtn-14" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/betting" role="menuitem" tabIndex="0">All Sports Betting</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/nfl/article271826242.html" role="menuitem" tabIndex="0">How to Bet on Super Bowl 2023</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/article261739482.html" role="menuitem" tabIndex="0">Florida Sportsbook Bonuses</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/article261739587.html" role="menuitem" tabIndex="0">Florida Betting Apps</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/nfl/article261741382.html" role="menuitem" tabIndex="0">Miami Chiefs Betting</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/article261740472.html" role="menuitem" tabIndex="0">BetMGM Florida Bonus Code</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/article261740867.html" role="menuitem" tabIndex="0">Caesars Sportsbook Florida Promo Code</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/article261740632.html" role="menuitem" tabIndex="0">FanDuel Florida Promo Code</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/article261740737.html" role="menuitem" tabIndex="0">DraftKings Florida Promo Code</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/betting/article264604096.html" role="menuitem" tabIndex="0">PointsBet Florida Promo Code</a></div>
+                    </div>
+                </div>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-16" id="menubtn-16" className="summary expander" tabIndex="0" aria-haspopup="true" >Shopping/Reviews</button>
+                    <div id="menu-16" aria-labelledby="menubtn-16" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/reviews#navlink=subnav" role="menuitem" tabIndex="0">Reviews</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/product-reviews#navlink=subnav" role="menuitem" tabIndex="0">Product Reviews</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/health-wellness#navlink=subnav" role="menuitem" tabIndex="0">Health and Wellness</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/software-business#navlink=subnav" role="menuitem" tabIndex="0">Software and Business</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/how-to-geek#navlink=subnav" role="menuitem" tabIndex="0">How To Geek</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/shopping#navlink=subnav" role="menuitem" tabIndex="0">Shopping</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/shop-with-us#navlink=subnav" role="menuitem" tabIndex="0">Shop With Us</a></div>
+                    </div>
+                </div><a className="" href="https://www.miamiherald.com/special-features#navlink=subnav" role="menuitem" tabIndex="0">Special Features
+                </a><a className="" href="https://www.miamiherald.com/press-releases#navlink=subnav" role="menuitem" tabIndex="0">Press Releases
+                </a><a className="" href="https://www.miamiherald.com/seniors/living#navlink=subnav" role="menuitem" tabIndex="0">Senior Living
+                </a><a className="" href="https://www.miamiherald.com/deals-offers#navlink=subnav" role="menuitem" tabIndex="0">Deals &amp; Offers
+                </a>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-22" id="menubtn-22" className="summary expander" tabIndex="0" aria-haspopup="true" >Sponsored Content</button>
+                    <div id="menu-22" aria-labelledby="menubtn-22" role="menu">
+                        <div role="none"><a href="https://www.miamiherald.com/advertise/sponsored_content/?ntv_adpz=3601" role="menuitem" tabIndex="0">Paid Content by BrandPoint</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/partner-content#navlink=subnav" role="menuitem" tabIndex="0">Partner Content</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/family-features#navlink=subnav" role="menuitem" tabIndex="0">Family Features</a></div>
+                    </div>
+                </div>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-23" id="menubtn-23" className="summary expander" tabIndex="0" aria-haspopup="true" >Classifieds</button>
+                    <div id="menu-23" aria-labelledby="menubtn-23" role="menu">
+                        <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/miamiherald/index.html#navlink=mi_footerfresno/index.html/" role="menuitem" tabIndex="0">Place a Classified Ad</a></div>
+                        <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/miamiherald/flow.html?action=jump&amp;_flowId=adportal-classified-flow&amp;categoryName=Recruitment&amp;classificationName=Employment" role="menuitem" tabIndex="0">Post a Job</a></div>
+                        <div role="none"><a href="https://classifieds.mcclatchy.com/marketplace/miamiherald/" role="menuitem" tabIndex="0">Browse Classifieds</a></div>
+                    </div>
+                </div><a className="" href="https://placecelebration.mcclatchy.com/celebrations/miamiherald/index.html" role="menuitem" tabIndex="0">Place an Ad - Celebrations
+                </a><a className="" href="https://jobs.miamiherald.com/" role="menuitem" tabIndex="0">Search Jobs
+                </a><a className="" href="https://classifieds.mcclatchy.com/marketplace/miamiherald#navlink=subnavlace/fresnollingham" role="menuitem" tabIndex="0">Search Legal Notices
+                </a>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-27" id="menubtn-27" className="summary expander" tabIndex="0" aria-haspopup="true" >Advertising</button>
+                    <div id="menu-27" aria-labelledby="menubtn-27" role="menu">
+                        <div role="none"><a href="https://business.mcclatchy.com/miamiherald/" role="menuitem" tabIndex="0">Place an Ad</a></div>
+                        <div role="none"><a href="https://hiring.mcclatchy.com/recruitmentproducts" role="menuitem" tabIndex="0">Staffing Solutions</a></div>
+                        <div role="none"><a href="https://www.winwithmcclatchy.com/political-advocacy" role="menuitem" tabIndex="0">Political | Advocacy Advertising</a></div>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </div>
+    </header>
+    <div id="promo-banner"></div>
 </div>
-			        <nav className="main-nav sans summary impact hidden jsready" id="mainNav" role="menu" aria-hidden="true" tabIndex={-1}><button id="closenavigation" className="summary flex" tabIndex={0}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
-			                    <title>Close navigation panel</title>
-			                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="white" />
-			                </svg><span className="h5 icon-label">SECTIONS</span></button>
-			            <div id="nav-menu-search-icon" className="search flex h-desktop" role="menuitem" tabIndex={0}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-			                    <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></svg><span id="searchTitle" className="h5 icon-label soft">Search</span>
-			                <form tabIndex={-1} action="/search/" className="site-search-id flex" role="search"><input id="nav-menu-search-bar" type="text" name="q" placeholder="Search" aria-label="Search Miami Herald" tabIndex={0} /><button type="submit" aria-label="Search" tabIndex={-1}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-			                            <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" /></svg></button></form>
-			            </div>{/*v-if*/}<a href="https://www.miamiherald.com/#navlink=subnav" role="menuitem" tabIndex={0}>Home {/*v-if*/}{/*v-if*/}</a>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-1" id="menubtn-1" className="summary expander" tabIndex={0} aria-haspopup="true">Customer Service</button>
-			                <div id="menu-1" aria-labelledby="menubtn-1" role="menu">
-			                    <div role="none"><a href="https://www.mcclatchy.com/our-impact/markets/miami-herald" role="menuitem" tabIndex={0}>About Us</a></div>
-			                    <div role="none"><a href="https://account.miamiherald.com/my-account/" role="menuitem" tabIndex={0}>Account Management</a></div>
-			                    <div role="none"><a href="https://miamiherald.newspapers.com/" role="menuitem" tabIndex={0}>Archives</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/customer-service/contact-us/#navlink=subnav" role="menuitem" tabIndex={0}>Contact Us</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/customer-service/#navlink=subnav" role="menuitem" tabIndex={0}>Customer Service</a></div>
-			                    <div role="none"><a href="https://subscribe.miamiherald.com/beinformed" role="menuitem" tabIndex={0}>Subscribe</a></div>
-			                    <div role="none"><a href="https://myaccount.miamiherald.com/mia_mh/home" role="menuitem" tabIndex={0}>Manage Print Subscription</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Advertise</span></div>
-			                    <div role="none"><a href="https://go.mcclatchy.com/media-capabilities-miami/p/1" role="menuitem" tabIndex={0}>Contact McClatchy Advertising</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-2" id="menubtn-2" className="summary expander" tabIndex={0} aria-haspopup="true">Stay Connected</button>
-			                <div id="menu-2" aria-labelledby="menubtn-2" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/mobile/#navlink=subnav" role="menuitem" tabIndex={0}>Mobile Apps &amp; eReaders</a></div>
-			                    <div role="none"><a href="https://t.news.miamiherald.com/webApp/mccSignupPage?siteName=miamiherald" role="menuitem" tabIndex={0}>Newsletters</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/site-services/rss/#navlink=subnav" role="menuitem" tabIndex={0}>RSS Feeds</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Social Media</span></div>
-			                    <div role="none"><a href="https://www.facebook.com/Miami-Herald/" role="menuitem" tabIndex={0}>Facebook</a></div>
-			                    <div role="none"><a href="https://twitter.com/miamiherald/" role="menuitem" tabIndex={0}>Twitter</a></div>
-			                    <div role="none"><a href="https://instagram.com/miamiherald/" role="menuitem" tabIndex={0}>Instagram</a></div>
-			                    <div role="none"><a href="https://www.youtube.com/user/miamiherald/" role="menuitem" tabIndex={0}>YouTube</a></div>
-			                </div>
-			            </div><a href="https://www.miamiherald.com/e-edition/today/#navlink=subnav" role="menuitem" tabIndex={0}>eEdition {/*v-if*/}{/*v-if*/}</a><a href="https://www.bestofmiamidade.com/" role="menuitem" tabIndex={0}>Best of Miami {/*v-if*/}{/*v-if*/}</a>
-			            <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex={-1} />
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-6" id="menubtn-6" className="summary expander" tabIndex={0} aria-haspopup="true">Condo Collapse</button>
-			                <div id="menu-6" aria-labelledby="menubtn-6" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/news/special-reports/surfside-investigation/#navlink=subnav" role="menuitem" tabIndex={0}>Investigations</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/special-reports/surfside-podcast/#navlink=subnav" role="menuitem" tabIndex={0}>Podcast</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/topics/surfside-collapse-victims/#navlink=subnav" role="menuitem" tabIndex={0}>Personal Stories</a></div>
-			                </div>
-			            </div><a href="https://www.miamiherald.com/detour/#navlink=subnav" role="menuitem" tabIndex={0}>Detour Travel {/*v-if*/}{/*v-if*/}</a>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-8" id="menubtn-8" className="summary expander" tabIndex={0} aria-haspopup="true">News</button>
-			                <div id="menu-8" aria-labelledby="menubtn-8" role="menu">
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Local &amp; State News</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/community/miami-dade/#navlink=subnav" role="menuitem" tabIndex={0}>Miami-Dade</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/community/broward/#navlink=subnav" role="menuitem" tabIndex={0}>Broward</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/#navlink=subnav" role="menuitem" tabIndex={0}>South Florida</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/community/florida-keys/#navlink=subnav" role="menuitem" tabIndex={0}>Florida Keys</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/state/florida/#navlink=subnav" role="menuitem" tabIndex={0}>Florida</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/crime/#navlink=subnav" role="menuitem" tabIndex={0}>Crime</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/curious305/#navlink=subnav" role="menuitem" tabIndex={0}>Curious305</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/coronavirus/#navlink=subnav" role="menuitem" tabIndex={0}>Coronavirus</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/education/#navlink=subnav" role="menuitem" tabIndex={0}>Education</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/environment/#navlink=subnav" role="menuitem" tabIndex={0}>Environment</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/health-care/#navlink=subnav" role="menuitem" tabIndex={0}>Health Care</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/immigration/#navlink=subnav" role="menuitem" tabIndex={0}>Immigration</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/recalls/#navlink=subnav" role="menuitem" tabIndex={0}>Recalls</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/weather/#navlink=subnav" role="menuitem" tabIndex={0}>Weather</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Nation &amp; World</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/nation-world/national/#navlink=subnav" role="menuitem" tabIndex={0}>United States</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/nation-world/world/americas/cuba/#navlink=subnav" role="menuitem" tabIndex={0}>Cuba</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/nation-world/world/americas/haiti/#navlink=subnav" role="menuitem" tabIndex={0}>Haiti</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/nation-world/world/americas/venezuela/#navlink=subnav" role="menuitem" tabIndex={0}>Venezuela</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/nation-world/world/americas/#navlink=subnav" role="menuitem" tabIndex={0}>Americas</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-9" id="menubtn-9" className="summary expander" tabIndex={0} aria-haspopup="true">Sports</button>
-			                <div id="menu-9" aria-labelledby="menubtn-9" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/#navlink=subnav" role="menuitem" tabIndex={0}>Sports</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Professional</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/nfl/miami-dolphins/#navlink=subnav" role="menuitem" tabIndex={0}>Miami Dolphins</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/fifa-world-cup/#navlink=subnav" role="menuitem" tabIndex={0}>World Cup</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/nba/miami-heat/#navlink=subnav" role="menuitem" tabIndex={0}>Miami Heat</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/mlb/miami-marlins/#navlink=subnav" role="menuitem" tabIndex={0}>Miami Marlins</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/nhl/florida-panthers/#navlink=subnav" role="menuitem" tabIndex={0}>Florida Panthers</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/mls/inter-miami/#navlink=subnav" role="menuitem" tabIndex={0}>Inter Miami</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>College</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/university-of-miami/#navlink=subnav" role="menuitem" tabIndex={0}>University of Miami</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/college/conference-usa/florida-international-university/#navlink=subnav" role="menuitem" tabIndex={0}>Florida International</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/college/sec/university-of-florida/#navlink=subnav" role="menuitem" tabIndex={0}>University of Florida</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/florida-state-university/#navlink=subnav" role="menuitem" tabIndex={0}>Florida State University</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Sports Columns</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/barry-jackson/#navlink=subnav" role="menuitem" tabIndex={0}>Barry Jackson</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/greg-cote/#navlink=subnav" role="menuitem" tabIndex={0}>Greg Cote</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/#navlink=subnav" role="menuitem" tabIndex={0}>Michelle Kaufman</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>More Sports</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/high-school/#navlink=subnav" role="menuitem" tabIndex={0}>High School Sports</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/fighting/#navlink=subnav" role="menuitem" tabIndex={0}>Wrestling &amp; MMA</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/tennis/#navlink=subnav" role="menuitem" tabIndex={0}>Tennis</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/sports/golf/#navlink=subnav" role="menuitem" tabIndex={0}>Golf</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-10" id="menubtn-10" className="summary expander" tabIndex={0} aria-haspopup="true">Politics</button>
-			                <div id="menu-10" aria-labelledby="menubtn-10" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/news/politics-government/state-politics/#navlink=subnav" role="menuitem" tabIndex={0}>Florida Politics</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/politics-government/state-politics/naked-politics/#navlink=subnav" role="menuitem" tabIndex={0}>Naked Politics</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/politics-government/election/#navlink=subnav" role="menuitem" tabIndex={0}>Elections</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/politics-government/#navlink=subnav" role="menuitem" tabIndex={0}>Political News</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/politics-government/mic-check-miami/#navlink=subnav" role="menuitem" tabIndex={0}>Mic Check Miami</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-11" id="menubtn-11" className="summary expander" tabIndex={0} aria-haspopup="true">Business</button>
-			                <div id="menu-11" aria-labelledby="menubtn-11" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/news/business/#navlink=subnav" role="menuitem" tabIndex={0}>Business</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/business/real-estate-news/#navlink=subnav" role="menuitem" tabIndex={0}>Real Estate News</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/business/tourism-cruises/#navlink=subnav" role="menuitem" tabIndex={0}>Tourism &amp; Cruises</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/topics/tech-in-miami/#navlink=subnav" role="menuitem" tabIndex={0}>Tech in Miami</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/business/startup-pitch-competition/#navlink=subnav" role="menuitem" tabIndex={0}>Startup Pitch Competition</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/business/biz-monday/#navlink=subnav" role="menuitem" tabIndex={0}>Business Monday</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/money/#navlink=subnav" role="menuitem" tabIndex={0}>Personal Finance</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-12" id="menubtn-12" className="summary expander" tabIndex={0} aria-haspopup="true">Living &amp; Entertainment</button>
-			                <div id="menu-12" aria-labelledby="menubtn-12" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/miami-com/restaurants/#navlink=subnav" role="menuitem" tabIndex={0}>Miami Restaurants</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/miami-com/restaurants/laventanita/#navlink=subnav" role="menuitem" tabIndex={0}>La Ventanita Podcast</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/entertainment/performing-arts/#navlink=subnav" role="menuitem" tabIndex={0}>Performing Arts</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/entertainment/visual-arts/#navlink=subnav" role="menuitem" tabIndex={0}>Visual Arts</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/entertainment/celebrities/#navlink=subnav" role="menuitem" tabIndex={0}>Celebrities</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/entertainment/#navlink=subnav" role="menuitem" tabIndex={0}>Entertainment</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/living/liv-columns-blogs/dave-barry/#navlink=subnav" role="menuitem" tabIndex={0}>Dave Barry</a></div>
-			                    <div role="none"><a href="http://www.flashbackmiami.com/" role="menuitem" tabIndex={0}>Flashback Miami</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/living/health-fitness/#navlink=subnav" role="menuitem" tabIndex={0}>Health &amp; Fitness</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/entertainment/comics/#navlink=subnav" role="menuitem" tabIndex={0}>Comics</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/entertainment/games-puzzles/#navlink=subnav" role="menuitem" tabIndex={0}>Puzzles &amp; Games</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/entertainment/horoscopes/#navlink=subnav" role="menuitem" tabIndex={0}>Horoscopes</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/living/#navlink=subnav" role="menuitem" tabIndex={0}>Living</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/detour/#navlink=subnav" role="menuitem" tabIndex={0}>Detour</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-13" id="menubtn-13" className="summary expander" tabIndex={0} aria-haspopup="true">Opinion</button>
-			                <div id="menu-13" aria-labelledby="menubtn-13" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/#navlink=subnav" role="menuitem" tabIndex={0}>All Opinion</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/editorials/#navlink=subnav" role="menuitem" tabIndex={0}>Editorials</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/op-ed/#navlink=subnav" role="menuitem" tabIndex={0}>Op-Ed</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/#navlink=subnav" role="menuitem" tabIndex={0}>Letters to the Editor</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/submit-letter/#navlink=subnav" role="menuitem" tabIndex={0}>Submit a Letter</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/editorial-board/#navlink=subnav" role="menuitem" tabIndex={0}>Meet the Editorial Board</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Columnists</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/news-columns-blogs/andres-oppenheimer/#navlink=subnav" role="menuitem" tabIndex={0}>Andres Oppenheimer</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/opn-columns-blogs/leonard-pitts-jr/#navlink=subnav" role="menuitem" tabIndex={0}>Leonard Pitts Jr.</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/news-columns-blogs/fabiola-santiago/#navlink=subnav" role="menuitem" tabIndex={0}>Fabiola Santiago</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/opinion/opn-columns-blogs/carl-hiaasen/#navlink=subnav" role="menuitem" tabIndex={0}>Carl Hiaasen</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-14" id="menubtn-14" className="summary expander" tabIndex={0} aria-haspopup="true">Obituaries</button>
-			                <div id="menu-14" aria-labelledby="menubtn-14" role="menu">
-			                    <div role="none"><a href="https://www.legacy.com/obituaries/herald/" role="menuitem" tabIndex={0}>Obituaries</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/news/local/obituaries/#navlink=subnav" role="menuitem" tabIndex={0}>Obituaries in the News</a></div>
-			                    <div role="none"><a href="https://herald.obituaries.com" role="menuitem" tabIndex={0}>Place an Obituary</a></div>
-			                </div>
-			            </div>
-			            <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex={-1} />
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-16" id="menubtn-16" className="summary expander" tabIndex={0} aria-haspopup="true">Sports Betting</button>
-			                <div id="menu-16" aria-labelledby="menubtn-16" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/#navlink=subnav" role="menuitem" tabIndex={0}>All Sports Betting</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article258259270.html/#navlink=subnav" role="menuitem" tabIndex={0}>Best Sportsbooks</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article257662833.html/#navlink=subnav" role="menuitem" tabIndex={0}>Best Sports Betting Apps</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/nfl/article262118452.html/#navlink=subnav" role="menuitem" tabIndex={0}>Super Bowl Odds</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Offers</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article257660528.html/#navlink=subnav" role="menuitem" tabIndex={0}>BetMGM Bonus Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article257659158.html/#navlink=subnav" role="menuitem" tabIndex={0}>Caesars Sportsbook Promo Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article257659208.html/#navlink=subnav" role="menuitem" tabIndex={0}>FanDuel Promo Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article257658518.html/#navlink=subnav" role="menuitem" tabIndex={0}>DraftKings Promo Code</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Maryland Betting</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article263618808.html/#navlink=subnav" role="menuitem" tabIndex={0}>Maryland Sportsbook Promos</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article257663918.html/#navlink=subnav" role="menuitem" tabIndex={0}>Maryland Sports Betting Apps</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article261343637.html/#navlink=subnav" role="menuitem" tabIndex={0}>BetMGM Maryland Bonus Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article261354972.html/#navlink=subnav" role="menuitem" tabIndex={0}>Caesars Sportsbook Maryland Promo Code</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Ohio Betting</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article263218723.html/#navlink=subnav" role="menuitem" tabIndex={0}>Ohio Sportsbook Promos</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article258182498.html/#navlink=subnav" role="menuitem" tabIndex={0}>Ohio Sports Betting Apps</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article261006742.html/#navlink=subnav" role="menuitem" tabIndex={0}>BetMGM Ohio Bonus Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article261016427.html/#navlink=subnav" role="menuitem" tabIndex={0}>Caesars Sportsbook Ohio Promo Code</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>New York Betting</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article263584558.html/#navlink=subnav" role="menuitem" tabIndex={0}>NY Sportsbook Promos</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article259877840.html/#navlink=subnav" role="menuitem" tabIndex={0}>BetMGM New York Bonus Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article259669235.html/#navlink=subnav" role="menuitem" tabIndex={0}>Caesars Sportsbook New York Promo Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article260807422.html/#navlink=subnav" role="menuitem" tabIndex={0}>DraftKings New York Promo Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article260137030.html/#navlink=subnav" role="menuitem" tabIndex={0}>FanDuel New York Promo Code</a></div>
-			                    <div role="none"><span className="option-label" tabIndex={-1}>Casinos</span></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/casinos/article259183883.html/#navlink=subnav" role="menuitem" tabIndex={0}>Best Online Casinos</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/casinos/article258920023.html/#navlink=subnav" role="menuitem" tabIndex={0}>Real Money Online Casinos</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/casinos/article257663358.html/#navlink=subnav" role="menuitem" tabIndex={0}>BetMGM Casino Bonus Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/casinos/article259281884.html/#navlink=subnav" role="menuitem" tabIndex={0}>WynnBet Casino Promo Code</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/casinos/article259283369.html/#navlink=subnav" role="menuitem" tabIndex={0}>New Jersey Online Casinos</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/betting/article258696128.html/#navlink=subnav" role="menuitem" tabIndex={0}>Michigan Online Casinos</a></div>
-			                </div>
-			            </div>
-			            <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex={-1} />
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-18" id="menubtn-18" className="summary expander" tabIndex={0} aria-haspopup="true">Shopping/Reviews</button>
-			                <div id="menu-18" aria-labelledby="menubtn-18" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/product-reviews/#navlink=subnav" role="menuitem" tabIndex={0}>Product Reviews</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/health-wellness/#navlink=subnav" role="menuitem" tabIndex={0}>Health and Wellness</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/software-business/#navlink=subnav" role="menuitem" tabIndex={0}>Software and Business</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/local-services/#navlink=subnav" role="menuitem" tabIndex={0}>Local Services</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/reviews/#navlink=subnav" role="menuitem" tabIndex={0}>Reviews</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/how-to-geek/#navlink=subnav" role="menuitem" tabIndex={0}>How To Geek</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/shopping/#navlink=subnav" role="menuitem" tabIndex={0}>Shopping</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/shop-with-us/#navlink=subnav" role="menuitem" tabIndex={0}>Shop With Us</a></div>
-			                </div>
-			            </div><a href="https://www.miamiherald.com/press-releases/#navlink=subnav" role="menuitem" tabIndex={0}>Press Releases {/*v-if*/}{/*v-if*/}</a><a href="https://learn-a-language.miamiherald.com/" role="menuitem" tabIndex={0}>Learn a Language {/*v-if*/}{/*v-if*/}</a><a href="https://www.miamiherald.com/seniors/living/#navlink=subnav" role="menuitem" tabIndex={0}>Senior Living {/*v-if*/}{/*v-if*/}</a><a href="https://www.miamiherald.com/deals-offers/#navlink=subnav" role="menuitem" tabIndex={0}>Deals &amp; Offers {/*v-if*/}{/*v-if*/}</a>
-			            <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex={-1} />
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-24" id="menubtn-24" className="summary expander" tabIndex={0} aria-haspopup="true">Sponsored Content</button>
-			                <div id="menu-24" aria-labelledby="menubtn-24" role="menu">
-			                    <div role="none"><a href="https://www.miamiherald.com/advertise/sponsored_content/?ntv_adpz=3592/#navlink=subnav" role="menuitem" tabIndex={0}>Paid Content by BrandPoint</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/contributor-content/#navlink=subnav" role="menuitem" tabIndex={0}>Contributor Content</a></div>
-			                    <div role="none"><a href="https://www.miamiherald.com/family-features/#navlink=subnav" role="menuitem" tabIndex={0}>Family Features</a></div>
-			                </div>
-			            </div>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-25" id="menubtn-25" className="summary expander" tabIndex={0} aria-haspopup="true">Classifieds</button>
-			                <div id="menu-25" aria-labelledby="menubtn-25" role="menu">
-			                    <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/miami/index.html" role="menuitem" tabIndex={0}>Place a Classified Ad</a></div>
-			                    <div role="none"><a href="https://classifieds.mcclatchy.com/marketplace/miami/" role="menuitem" tabIndex={0}>Browse Classifieds</a></div>
-			                </div>
-			            </div><a href="https://jobs.miamiherald.com/" role="menuitem" tabIndex={0}>Search Jobs {/*v-if*/}{/*v-if*/}</a><a href="https://classifieds.mcclatchy.com/marketplace/miami/" role="menuitem" tabIndex={0}>Search Legal Notices {/*v-if*/}{/*v-if*/}</a>
-			            <div className="subsection" tabIndex={-1}> <button aria-controls="menu-28" id="menubtn-28" className="summary expander" tabIndex={0} aria-haspopup="true">Advertising</button>
-			                <div id="menu-28" aria-labelledby="menubtn-28" role="menu">
-			                    <div role="none"><a href="https://business.mcclatchy.com/miami" role="menuitem" tabIndex={0}>Place an Ad</a></div>
-			                    <div role="none"><a href="https://hiring.mcclatchy.com/recruitmentproducts" role="menuitem" tabIndex={0}>Staffing Solutions</a></div>
-			                    <div role="none"><a href="https://www.winwithmcclatchy.com/political-advocacy" role="menuitem" tabIndex={0}>Political | Advocacy Advertising</a></div>
-			                </div>
-			            </div>
-			        </nav>
-			    </div>
-			</div>
+
         <div><div className="breaking-news-organism impact" />
-        <article className="paper story-body" >{/**/}{/**/}
+        <article className="paper story-body" >
             {nonBodyWebComponents && nonBodyWebComponents.map((webComponent, i) => {
                 const toolbar = nonBodyToolbars[i];
 

@@ -2,12 +2,12 @@ const menuDev = {
     "themes": [{
             "type": "checkbox",
             "label": "Beige",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/beige.css"
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/beige.css"
         },
         {
             "type": "checkbox",
             "label": "Dark",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/dark.css"
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/dark.css"
         },
         {
             "type": "checkbox",
@@ -24,8 +24,8 @@ const menuDev = {
         {
             "type": "checkbox",
             "label": "minimalHeader",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/minimal-header.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/minimal-header.js"
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/minimal-header.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/minimal-header.js"
         },
         {
             "type": "checkbox",
@@ -718,6 +718,20 @@ const menuDev = {
                     "min": "728",
                     "max": "1000"
                 },
+                "--inset-border-left": {
+                    "label": "Border",
+                    "value": "1px solid gray",
+                    "options": [{
+                            "label": "On",
+                            "value": "1px solid gray"
+                        },
+                        {
+                            "label": "Off",
+                            "value": "none"
+                        }
+                    ],
+                    "type": "switch"
+                }
             }
         },
         {
