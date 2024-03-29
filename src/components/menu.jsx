@@ -5,6 +5,7 @@ import Home from '../assets/home.svg';
 import Checkbox from './checkbox.jsx';
 import Increment from './increment.jsx';
 import Formats from './formats.jsx';
+import Profiles from './profiles.jsx';
 import { removeToolLinks, removeToolScripts } from '../utils/dom.js'
 import './menu.css'
 
@@ -68,6 +69,11 @@ const Menu = (props) => {
 	      	</Link>
       	</div>
       	<div className="tool-sections">
+	        <div className="tool-section">
+	        	<h3 className="tool-h3">Profile</h3>
+	        	<Profiles/>
+	        </div>
+
 	        <div className="tool-section">
 	        	<h3 className="tool-h3">Screen</h3>
 	        	<Formats/>

@@ -1,0 +1,42 @@
+.profiles {
+	margin-left: 5px;
+}
+
+.profiles button {
+	background: transparent;
+	padding: 5px;
+	width: 95px;
+	border: 1px solid var(--tool-black);
+	opacity: 0.25;
+	box-sizing: border-box !important;
+  font-family: var(--tool-font-family);
+  font-size: 16px;
+}
+
+.profiles button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.profiles button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.profiles button.active {
+	border: 1px solid var(--tool-black);
+	box-shadow: 0 0px 2px #00000099;
+	opacity: 1;
+}
+
+.profiles .desktop {
+	height: 50px;
+	width: 70px;
+}
+
+.profiles .tablet {
+	height: 45px;
+	width: 35px;
+}
+
+.profiles .mobile {
+	height: 36px;
+	width: 20px;
+}
