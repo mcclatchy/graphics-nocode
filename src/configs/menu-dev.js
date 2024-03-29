@@ -11,6 +11,11 @@ const menuDev = {
         },
         {
             "type": "checkbox",
+            "label": "Indigo",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/indigo.css"
+        },
+        {
+            "type": "checkbox",
             "label": "Declutter",
             "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/declutter.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/declutter.js"
