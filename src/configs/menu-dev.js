@@ -17,8 +17,8 @@ const menuDev = {
         {
             "type": "checkbox",
             "label": "Declutter",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/declutter.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/declutter.js"
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/declutter.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/declutter.js"
         }
     ],
     "enhancements": [{
