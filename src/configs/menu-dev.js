@@ -98,8 +98,8 @@ const menuDev = {
             "type": "increment",
             "label": "lead-video",
             "maxCount": "1",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-video.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-video.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-video.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-video.js",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
