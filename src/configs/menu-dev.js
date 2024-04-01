@@ -53,8 +53,8 @@ const menuDev = {
             "type": "increment",
             "label": "lead-image",
             "maxCount": "1",
-            "script": "https://www.miamiherald.com/static/hi/cards/lead-image/lead-image.js",
-            "link": "https://www.miamiherald.com/static/hi/cards/lead-image/lead-image.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.css",
             "defaultOptions": {
                 "data-image": {
                     "label": "Lead Image URL",
