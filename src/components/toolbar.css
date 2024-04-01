@@ -10,7 +10,11 @@
 
 .card-toolbar img {
   height: 24px;
-	margin-right: 10px;
+	margin-right: 15px;
   cursor: pointer;
   filter: invert(0.5);
+}
+
+.card-toolbar {
+  line-height: 20px;
 }

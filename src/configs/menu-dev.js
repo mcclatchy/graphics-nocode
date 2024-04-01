@@ -45,8 +45,8 @@ const menuDev = {
         },
         {
             "type": "checkbox",
-            "label": "premiumHeaders",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/premium-headers.css"
+            "label": "premiumSubheads",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/premium-subheads.css"
         }
     ],
     "lead-cards": [{
