@@ -56,9 +56,42 @@ const menuDev = {
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.js",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.css",
             "defaultOptions": {
+                "data-title": {
+                    "label": "Title",
+                    "value": "Messi in Miami",
+                    "type": "text"
+                },
+                "data-embed-class": {
+                    "label": "Embed Class",
+                    "value": "prominent",
+                    "options": [{
+                            "label": "Prominent",
+                            "value": "prominent"
+                        },
+                        {
+                            "label": "Overlap",
+                            "value": "overlap"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-header-position": {
+                    "label": "Header Position",
+                    "value": "",
+                    "options": [{
+                            "label": "Overlay",
+                            "value": "overlaid"
+                        },
+                        {
+                            "label": "Beneath",
+                            "value": ""
+                        }
+                    ],
+                    "type": "switch"
+                },
                 "data-image": {
                     "label": "Lead Image URL",
-                    "value": "https://www.miamiherald.com/static/hi/2024/charlotte-sweet-16/images/banner.jpg",
+                    "value": "https://www.miamiherald.com/static/hi/2024/nc-license-plates/images/background-test.png",
                     "type": "text"
                 },
                 "slot": {
