@@ -405,6 +405,20 @@ const menuDev = {
                     ],
                     "type": "switch"
                 },
+                "data-one-caption": {
+                    "label": "Use First Caption Only",
+                    "value": "",
+                    "options": [{
+                            "label": "True",
+                            "value": "true"
+                        },
+                        {
+                            "label": "False",
+                            "value": ""
+                        }
+                    ],
+                    "type": "switch"
+                },
                 "slot": {
                     "label": "Images",
                     "options": ["img"],
