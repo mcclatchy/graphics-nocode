@@ -56,17 +56,20 @@ const menuDev = {
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.js",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.css",
             "defaultOptions": {
-                "data-title": {
-                    "label": "Title",
-                    "value": "Messi in Miami",
-                    "type": "text"
-                },
                 "data-embed-class": {
                     "label": "Embed Class",
-                    "value": "prominent",
+                    "value": "full-bleed",
                     "options": [{
                             "label": "Prominent",
                             "value": "prominent"
+                        },
+                        {
+                            "label": "Full Screen",
+                            "value": "full-screen"
+                        },
+                        {
+                            "label": "Full Bleed",
+                            "value": "full-bleed"
                         },
                         {
                             "label": "Overlap",
@@ -91,7 +94,7 @@ const menuDev = {
                 },
                 "data-image": {
                     "label": "Lead Image URL",
-                    "value": "https://www.miamiherald.com/static/hi/2024/nc-license-plates/images/background-test.png",
+                    "value": "https://www.charlotteobserver.com/static/hi/2023/devalos-perkins/images/lead-1.jpg",
                     "type": "text"
                 },
                 "slot": {
@@ -124,6 +127,20 @@ const menuDev = {
                     "unit": "px",
                     "min": "150",
                     "max": "700"
+                }
+            }
+        },
+        {
+            "type": "increment",
+            "label": "lead-title",
+            "maxCount": "1",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-title.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-title.css",
+            "defaultOptions": {
+                "data-title": {
+                    "label": "Title",
+                    "value": "Messi in Miami",
+                    "type": "text"
                 }
             }
         },

@@ -49,7 +49,7 @@ const SampleArticle = (props) => {
 
     const noInlineSizeNames = ['scrolling-map', 'inset-box']
 
-    const nonBodyComponentNames = ["lead-image", "lead-logo", "lead-video"]
+    const nonBodyComponentNames = ["lead-image", "lead-logo", "lead-title", "lead-video"]
     const nonBodyWebComponents = props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
     const nonBodyToolbars = props.toolbars.filter(toolbar => nonBodyComponentNames.includes(toolbar.props.name))
 
@@ -505,7 +505,7 @@ const SampleArticle = (props) => {
 
                 clearMovedWebComponent(webComponent.props.name);
                 return (
-                  <div style={{width: "100%", maxWidth: "100vw", position: "relative", padding: 0}} key={i} >
+                  <div style={{width: "100%", maxWidth: "100vw", position: "relative", padding: 0, margin: 0}} key={i} >
                     {cloneElement(toolbar, { key: toolbar.id })}
                     <WebComponent
                       name={webComponent.props.name}
