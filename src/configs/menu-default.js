@@ -1,6 +1,7 @@
 const menuDefault = {
     "themes": [],
-    "enhancements": [
+    
+    "enhancements": [ 
     {
         "type": "checkbox",
         "label": "makeMediaWide",
