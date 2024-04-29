@@ -61,6 +61,25 @@ const menuDev = {
                     "value": "https://www.miamiherald.com/static/hi/2024/charlotte-sweet-16/images/banner.jpg",
                     "type": "text"
                 },
+                "--lead-image-object-position-horizontal-mobile": {
+                    "label": "Horizontal Position",
+                    "value": "50",
+                    "type": "range",
+                    "unit": "%",
+                    "min": "0",
+                    "max": "100",
+                    "property": ":root"
+                },
+                "--lead-image-object-position-vertical-mobile": {
+                    "label": "Vertical Position",
+                    "value": "50",
+                    "type": "range",
+                    "unit": "%",
+                    "min": "0",
+                    "max": "100",
+                    "property": ":root"
+                },
+                
                 "slot": {
                     "label": "Caption",
                     "options": ["figcaption"],
@@ -70,6 +89,7 @@ const menuDev = {
                     }],
                     "type": "text-item"
                 }
+                
             }
         },
         {
