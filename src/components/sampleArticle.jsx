@@ -281,7 +281,7 @@ const SampleArticle = (props) => {
                                 <path d="M5.25 1.5C4.83437 1.5 4.5 1.83438 4.5 2.25V11.75C4.5 12.0125 4.45625 12.2656 4.37187 12.5H13.75C14.1656 12.5 14.5 12.1656 14.5 11.75V2.25C14.5 1.83438 14.1656 1.5 13.75 1.5H5.25ZM2.25 14C1.00625 14 0 12.9937 0 11.75V2.5C0 2.08437 0.334375 1.75 0.75 1.75C1.16562 1.75 1.5 2.08437 1.5 2.5V11.75C1.5 12.1656 1.83438 12.5 2.25 12.5C2.66563 12.5 3 12.1656 3 11.75V2.25C3 1.00625 4.00625 0 5.25 0H13.75C14.9937 0 16 1.00625 16 2.25V11.75C16 12.9937 14.9937 14 13.75 14H2.25ZM5.5 3.25C5.5 2.83437 5.83437 2.5 6.25 2.5H9.25C9.66562 2.5 10 2.83437 10 3.25V5.75C10 6.16563 9.66562 6.5 9.25 6.5H6.25C5.83437 6.5 5.5 6.16563 5.5 5.75V3.25ZM11.75 2.5H12.75C13.1656 2.5 13.5 2.83437 13.5 3.25C13.5 3.66563 13.1656 4 12.75 4H11.75C11.3344 4 11 3.66563 11 3.25C11 2.83437 11.3344 2.5 11.75 2.5ZM11.75 5H12.75C13.1656 5 13.5 5.33437 13.5 5.75C13.5 6.16563 13.1656 6.5 12.75 6.5H11.75C11.3344 6.5 11 6.16563 11 5.75C11 5.33437 11.3344 5 11.75 5ZM6.25 7.5H12.75C13.1656 7.5 13.5 7.83437 13.5 8.25C13.5 8.66562 13.1656 9 12.75 9H6.25C5.83437 9 5.5 8.66562 5.5 8.25C5.5 7.83437 5.83437 7.5 6.25 7.5ZM6.25 10H12.75C13.1656 10 13.5 10.3344 13.5 10.75C13.5 11.1656 13.1656 11.5 12.75 11.5H6.25C5.83437 11.5 5.5 11.1656 5.5 10.75C5.5 10.3344 5.83437 10 6.25 10Z"></path>
                             </svg> Read today's Edition</a></div>
                     <div className="flag-logo">
-                      <a href="https://www.miamiherald.com" aria-lab-el="Miami Herald" className="flag-logo">
+                      <a href="https://www.miamiherald.com" aria-label="Miami Herald" className="flag-logo">
                         <img className="logo msb-hide" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo.svg" alt="miamiherald Logo"/>
                         <img className="logo msb-show" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo-white.svg" alt="miamiherald Logo"/>
                       </a>
@@ -293,19 +293,19 @@ const SampleArticle = (props) => {
                             <div id="popout" className="popout paper sans">
                                 <div className="user"><svg viewBox="0 0 496 512">
                                         <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path>
-                                    </svg><b>Welcome Back!</b></div><a href="https://myaccount.miamiherald.com/RAL_NO/myprofile"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 640 512" xml:space="preserve">
+                                    </svg><b>Welcome Back!</b></div><a href="https://myaccount.miamiherald.com/RAL_NO/myprofile"><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 640 512" xmlSpace="preserve">
                                         <path className="st0" d="M144,128c0-44.2,35.8-80,80-80s80,35.8,80,80s-35.8,80-80,80S144,172.2,144,128z M352,128  C352,57.3,294.7,0,224,0S96,57.3,96,128s57.3,128,128,128S352,198.7,352,128z M49.3,464c8.9-63.3,63.3-112,129-112h91.4  c34.9,0,66.5,13.7,89.9,36l33.9-33.9c-32.1-31-75.7-50.1-123.9-50.1h-91.3C79.8,304,0,383.8,0,482.3C0,498.7,13.3,512,29.7,512  h293.1c-3.1-8.8-3.7-18.4-1.4-27.8l5.1-20.2H49.3z M613.8,235.7c-15.6-15.6-40.9-15.6-56.6,0l-29.4,29.4l71,71l29.4-29.4  c15.6-15.6,15.6-40.9,0-56.6L613.8,235.7L613.8,235.7z M375.9,417c-4.1,4.1-7,9.2-8.4,14.9l-15,60.1c-1.4,5.5,0.2,11.2,4.2,15.2  s9.7,5.6,15.2,4.2l60.1-15c5.6-1.4,10.8-4.3,14.9-8.4l129.2-129.3l-71-71L375.9,417z"></path>
-                                    </svg> Edit Profile</a><a href="https://myaccount.miamiherald.com/RAL_NO/dashboard"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 640 512" xml:space="preserve">
+                                    </svg> Edit Profile</a><a href="https://myaccount.miamiherald.com/RAL_NO/dashboard"><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 640 512" xmlSpace="preserve">
                                         <path className="st0" d="M64,464h284.5c12.3,18.8,28,35.1,46.3,48H64c-35.3,0-64-28.7-64-64V224c0-35.3,28.7-64,64-64h384  c23.8,0,44.5,12.9,55.5,32.2c-2.5-0.1-5-0.2-7.5-0.2c-26.2,0-51.1,5.7-73.4,16H64c-8.8,0-16,7.2-16,16v224C48,456.8,55.2,464,64,464  z M440,80c13.3,0,24,10.7,24,24s-10.7,24-24,24H72c-13.3,0-24-10.7-24-24s10.7-24,24-24H440z M392,0c13.3,0,24,10.7,24,24  s-10.7,24-24,24H120c-13.3,0-24-10.7-24-24s10.7-24,24-24H392z M352,368c0-79.5,64.5-144,144-144s144,64.5,144,144  s-64.5,144-144,144S352,447.5,352,368z M573.7,448.7c-6.2-19-24-32.7-45.1-32.7h-65.2c-21,0-38.9,13.7-45.1,32.7  c20.2,19.4,47.5,31.3,77.7,31.3S553.5,468.1,573.7,448.7z M544,336c0-26.5-21.5-48-48-48c-26.5,0-48,21.5-48,48s21.5,48,48,48  C522.5,384,544,362.5,544,336z"></path>
-                                    </svg> My Subscriptions</a><a><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                                    </svg> My Subscriptions</a><a><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xmlSpace="preserve">
                                         <path className="st0" d="M505,273c9.4-9.4,9.4-24.6,0-33.9L377,111c-9.4-9.4-24.6-9.4-33.9,0s-9.4,24.6,0,33.9l87,87L184,232  c-13.3,0-24,10.7-24,24c0,13.3,10.7,24,24,24h246.1l-87,87c-9.4,9.4-9.4,24.6,0,33.9s24.6,9.4,33.9,0L505,273z M168,80  c13.3,0,24-10.7,24-24s-10.7-24-24-24H88C39.4,32,0,71.4,0,120v272c0,48.6,39.4,88,88,88h80c13.3,0,24-10.7,24-24s-10.7-24-24-24H88  c-22.1,0-40-17.9-40-40V120c0-22.1,17.9-40,40-40H168z"></path>
                                     </svg> Sign Out</a>
                                 
                             </div>
                         </div>
-                        <div class="msb-hide">
+                        <div className="msb-hide">
                           <a id="logIn" style={{cursor: "pointer"}}>Log In</a>
-                          <span class="pipe-seperator">|</span>
+                          <span className="pipe-seperator">|</span>
                           <a href="https://subscribe.miamiherald.com/beinformed" className="subscribe-link">Subscribe</a>
                         </div>
                     </div>
@@ -314,8 +314,8 @@ const SampleArticle = (props) => {
                 <div className="flag-row flag-bottom">
                     <div className="flag-menu" role="menu">
                         <button aria-haspopup="true" className="button new-menu-toggle" id="menu-toggle" aria-expanded="false" role="menuitem"><svg className="icon-menu-toggle" xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 28 16" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.691406H11.2504V2.8904H0V0.691406ZM0 6.84766H8.65417V9.04665H0V6.84766ZM12.1158 13.0059H0V15.2049H12.1158V13.0059Z"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2734 9.83408C24.796 8.92389 25.0954 7.86513 25.0954 6.7353C25.0954 3.33479 22.3832 0.578125 19.0375 0.578125C15.6918 0.578125 12.9796 3.33479 12.9796 6.7353C12.9796 10.1358 15.6918 12.8925 19.0375 12.8925C20.3318 12.8925 21.5313 12.4799 22.5156 11.7771L25.8715 15.188C26.2588 15.5816 26.8868 15.5816 27.2742 15.188L27.7073 14.7477C28.0947 14.354 28.0947 13.7157 27.7073 13.322L24.3139 9.87299C24.3007 9.85956 24.2872 9.84659 24.2734 9.83408ZM19.0375 10.4296C17.0301 10.4296 15.4027 8.77561 15.4027 6.7353C15.4027 4.69499 17.0301 3.041 19.0375 3.041C21.0449 3.041 22.6722 4.69499 22.6722 6.7353C22.6722 8.77561 21.0449 10.4296 19.0375 10.4296Z"></path>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0.691406H11.2504V2.8904H0V0.691406ZM0 6.84766H8.65417V9.04665H0V6.84766ZM12.1158 13.0059H0V15.2049H12.1158V13.0059Z"></path>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M24.2734 9.83408C24.796 8.92389 25.0954 7.86513 25.0954 6.7353C25.0954 3.33479 22.3832 0.578125 19.0375 0.578125C15.6918 0.578125 12.9796 3.33479 12.9796 6.7353C12.9796 10.1358 15.6918 12.8925 19.0375 12.8925C20.3318 12.8925 21.5313 12.4799 22.5156 11.7771L25.8715 15.188C26.2588 15.5816 26.8868 15.5816 27.2742 15.188L27.7073 14.7477C28.0947 14.354 28.0947 13.7157 27.7073 13.322L24.3139 9.87299C24.3007 9.85956 24.2872 9.84659 24.2734 9.83408ZM19.0375 10.4296C17.0301 10.4296 15.4027 8.77561 15.4027 6.7353C15.4027 4.69499 17.0301 3.041 19.0375 3.041C21.0449 3.041 22.6722 4.69499 22.6722 6.7353C22.6722 8.77561 21.0449 10.4296 19.0375 10.4296Z"></path>
                             </svg></button></div>
                     <div className="flag-weather stack h-phone">
                         <div className="row"><a href="/weather" aria-label="Weather" role="menuitem"><span>59°F</span></a></div>
@@ -346,7 +346,7 @@ const SampleArticle = (props) => {
                 <a className="" href="https://www.miamiherald.com/#navlink=subnav" role="menuitem" tabIndex="0">Home
                     
                     </a>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-1" id="menubtn-1" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Customer Service</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-1" id="menubtn-1" className="summary expander" tabIndex="0" aria-haspopup="true">Customer Service</button>
                     <div id="menu-1" aria-labelledby="menubtn-1" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/customer-service/about-us#navlink=subnav" role="menuitem" tabIndex="0">About Us</a></div>
                         <div role="none"><a href="https://account.miamiherald.com/my-account/" role="menuitem" tabIndex="0">Account Management</a></div>
@@ -361,7 +361,7 @@ const SampleArticle = (props) => {
                         <div role="none"><a href="https://go.mcclatchy.com/media-capabilities-raleigh/p/1" role="menuitem" tabIndex="0">Contact McClatchy Advertising</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-2" id="menubtn-2" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Stay Connected</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-2" id="menubtn-2" className="summary expander" tabIndex="0" aria-haspopup="true">Stay Connected</button>
                     <div id="menu-2" aria-labelledby="menubtn-2" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/mobile#navlink=subnav" role="menuitem" tabIndex="0">Mobile &amp; Apps</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/newsletters#navlink=subnav" role="menuitem" tabIndex="0">Newsletters</a></div>
@@ -379,7 +379,7 @@ const SampleArticle = (props) => {
                 <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/><a className="" href="https://www.miamiherald.com/detour#navlink=subnav" role="menuitem" tabIndex="0">Detour Travel
                     
                     </a>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-7" id="menubtn-7" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">News</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-7" id="menubtn-7" className="summary expander" tabIndex="0" aria-haspopup="true">News</button>
                     <div id="menu-7" aria-labelledby="menubtn-7" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/news/local#navlink=subnav" role="menuitem" tabIndex="0">Local</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/news/local/crime#navlink=subnav" role="menuitem" tabIndex="0">Crime</a></div>
@@ -397,7 +397,7 @@ const SampleArticle = (props) => {
                         <div role="none"><a href="https://www.miamiherald.com/news/databases#navlink=subnav" role="menuitem" tabIndex="0">Databases</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-8" id="menubtn-8" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Sports</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-8" id="menubtn-8" className="summary expander" tabIndex="0" aria-haspopup="true">Sports</button>
                     <div id="menu-8" aria-labelledby="menubtn-8" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/sports#navlink=subnav" role="menuitem" tabIndex="0">All Sports</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/sports/nhl/carolina-hurricanes#navlink=subnav" role="menuitem" tabIndex="0">Canes</a></div>
@@ -413,20 +413,20 @@ const SampleArticle = (props) => {
                         <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/scott-fowler#navlink=subnav" role="menuitem" tabIndex="0">Scott Fowler</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-9" id="menubtn-9" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Politics</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-9" id="menubtn-9" className="summary expander" tabIndex="0" aria-haspopup="true">Politics</button>
                     <div id="menu-9" aria-labelledby="menubtn-9" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/news/politics-government#navlink=subnav" role="menuitem" tabIndex="0">Politics &amp; Government</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/news/politics-government/election#navlink=subnav" role="menuitem" tabIndex="0">Election</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-10" id="menubtn-10" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Business &amp; Real Estate</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-10" id="menubtn-10" className="summary expander" tabIndex="0" aria-haspopup="true">Business &amp; Real Estate</button>
                     <div id="menu-10" aria-labelledby="menubtn-10" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/business#navlink=subnav" role="menuitem" tabIndex="0">All Business</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/news/business/real-estate-news#navlink=subnav" role="menuitem" tabIndex="0">Real Estate</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/money#navlink=subnav" role="menuitem" tabIndex="0">Personal Finance</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-11" id="menubtn-11" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Living &amp; Entertainment</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-11" id="menubtn-11" className="summary expander" tabIndex="0" aria-haspopup="true">Living &amp; Entertainment</button>
                     <div id="menu-11" aria-labelledby="menubtn-11" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/living#navlink=subnav" role="menuitem" tabIndex="0">Living</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/entertainment#navlink=subnav" role="menuitem" tabIndex="0">Entertainment</a></div>
@@ -437,7 +437,7 @@ const SampleArticle = (props) => {
                         <div role="none"><a href="https://www.miamiherald.com/entertainment/tv/warm-tv-blog#navlink=subnav" role="menuitem" tabIndex="0">Happiness is a Warm TV</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-12" id="menubtn-12" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Opinion</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-12" id="menubtn-12" className="summary expander" tabIndex="0" aria-haspopup="true">Opinion</button>
                     <div id="menu-12" aria-labelledby="menubtn-12" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/opinion#navlink=subnav" role="menuitem" tabIndex="0">All Opinion</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/opinion/editorials#navlink=subnav" role="menuitem" tabIndex="0">Editorials</a></div>
@@ -446,14 +446,14 @@ const SampleArticle = (props) => {
                         <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/submit-op-ed#navlink=subnav" role="menuitem" tabIndex="0">Submit an Op-ed</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-13" id="menubtn-13" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Obituaries</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-13" id="menubtn-13" className="summary expander" tabIndex="0" aria-haspopup="true">Obituaries</button>
                     <div id="menu-13" aria-labelledby="menubtn-13" role="menu">
                         <div role="none"><a href="https://www.legacy.com/obituaries/miamiherald/" role="menuitem" tabIndex="0">View Obituaries</a></div>
                         <div role="none"><a href="https://miamiherald.obituaries.com" role="menuitem" tabIndex="0">Place an Obituary</a></div>
                     </div>
                 </div>
                 <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-15" id="menubtn-15" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Sports Betting</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-15" id="menubtn-15" className="summary expander" tabIndex="0" aria-haspopup="true">Sports Betting</button>
                     <div id="menu-15" aria-labelledby="menubtn-15" role="menu">
                         <div role="none"><a href="https://www.charlotteobserver.com/betting/article276264976.html" role="menuitem" tabIndex="0">North Carolina Sports Betting</a></div>
                         <div role="none"><a href="https://www.charlotteobserver.com/betting/article276265821.html" role="menuitem" tabIndex="0">North Carolina Betting Apps</a></div>
@@ -468,7 +468,7 @@ const SampleArticle = (props) => {
                     </div>
                 </div>
                 <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-17" id="menubtn-17" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Shopping/Reviews</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-17" id="menubtn-17" className="summary expander" tabIndex="0" aria-haspopup="true">Shopping/Reviews</button>
                     <div id="menu-17" aria-labelledby="menubtn-17" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/reviews#navlink=subnav" role="menuitem" tabIndex="0">Reviews</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/product-reviews#navlink=subnav" role="menuitem" tabIndex="0">Product Reviews</a></div>
@@ -484,14 +484,14 @@ const SampleArticle = (props) => {
                     
                     </a>
                 <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-21" id="menubtn-21" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Sponsored Content</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-21" id="menubtn-21" className="summary expander" tabIndex="0" aria-haspopup="true">Sponsored Content</button>
                     <div id="menu-21" aria-labelledby="menubtn-21" role="menu">
                         <div role="none"><a href="https://www.miamiherald.com/advertise/sponsored-content/?ntv_adpz=3618" role="menuitem" tabIndex="0">Paid Content by BrandPoint</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/partner-content#navlink=subnav" role="menuitem" tabIndex="0">Partner Content</a></div>
                         <div role="none"><a href="https://www.miamiherald.com/family-features#navlink=subnav" role="menuitem" tabIndex="0">Family Features</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-22" id="menubtn-22" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Classifieds</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-22" id="menubtn-22" className="summary expander" tabIndex="0" aria-haspopup="true">Classifieds</button>
                     <div id="menu-22" aria-labelledby="menubtn-22" role="menu">
                         <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/raleigh/index.html" role="menuitem" tabIndex="0">Place a Classified Ad</a></div>
                         <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/raleigh/flow.html?action=jump&amp;_flowId=adportal-classified-flow&amp;categoryName=Recruitment&amp;classificationName=Employment" role="menuitem" tabIndex="0">Post a Job</a></div>
@@ -504,7 +504,7 @@ const SampleArticle = (props) => {
                     </a><a className="" href="https://classifieds.mcclatchy.com/marketplace/raleigh/" role="menuitem" tabIndex="0">Search Legal Notices
                     
                     </a>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-26" id="menubtn-26" className="summary expander" tabIndex="0" aria-haspopup="true" onclick="this.classList.toggle('open')">Advertising</button>
+                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-26" id="menubtn-26" className="summary expander" tabIndex="0" aria-haspopup="true">Advertising</button>
                     <div id="menu-26" aria-labelledby="menubtn-26" role="menu">
                         <div role="none"><a href="https://business.mcclatchy.com/raleigh" role="menuitem" tabIndex="0">Place an Ad</a></div>
                         <div role="none"><a href="https://hiring.mcclatchy.com/recruitmentproducts" role="menuitem" tabIndex="0">Staffing Solutions</a></div>
