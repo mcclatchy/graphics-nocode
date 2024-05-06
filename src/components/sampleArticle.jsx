@@ -280,7 +280,12 @@ const SampleArticle = (props) => {
                     <div className="flag-eedition h-phone"><a href="https://www.miamiherald.com/e-edition/today" aria-label="eEdition"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                                 <path d="M5.25 1.5C4.83437 1.5 4.5 1.83438 4.5 2.25V11.75C4.5 12.0125 4.45625 12.2656 4.37187 12.5H13.75C14.1656 12.5 14.5 12.1656 14.5 11.75V2.25C14.5 1.83438 14.1656 1.5 13.75 1.5H5.25ZM2.25 14C1.00625 14 0 12.9937 0 11.75V2.5C0 2.08437 0.334375 1.75 0.75 1.75C1.16562 1.75 1.5 2.08437 1.5 2.5V11.75C1.5 12.1656 1.83438 12.5 2.25 12.5C2.66563 12.5 3 12.1656 3 11.75V2.25C3 1.00625 4.00625 0 5.25 0H13.75C14.9937 0 16 1.00625 16 2.25V11.75C16 12.9937 14.9937 14 13.75 14H2.25ZM5.5 3.25C5.5 2.83437 5.83437 2.5 6.25 2.5H9.25C9.66562 2.5 10 2.83437 10 3.25V5.75C10 6.16563 9.66562 6.5 9.25 6.5H6.25C5.83437 6.5 5.5 6.16563 5.5 5.75V3.25ZM11.75 2.5H12.75C13.1656 2.5 13.5 2.83437 13.5 3.25C13.5 3.66563 13.1656 4 12.75 4H11.75C11.3344 4 11 3.66563 11 3.25C11 2.83437 11.3344 2.5 11.75 2.5ZM11.75 5H12.75C13.1656 5 13.5 5.33437 13.5 5.75C13.5 6.16563 13.1656 6.5 12.75 6.5H11.75C11.3344 6.5 11 6.16563 11 5.75C11 5.33437 11.3344 5 11.75 5ZM6.25 7.5H12.75C13.1656 7.5 13.5 7.83437 13.5 8.25C13.5 8.66562 13.1656 9 12.75 9H6.25C5.83437 9 5.5 8.66562 5.5 8.25C5.5 7.83437 5.83437 7.5 6.25 7.5ZM6.25 10H12.75C13.1656 10 13.5 10.3344 13.5 10.75C13.5 11.1656 13.1656 11.5 12.75 11.5H6.25C5.83437 11.5 5.5 11.1656 5.5 10.75C5.5 10.3344 5.83437 10 6.25 10Z"></path>
                             </svg> Read today's Edition</a></div>
-                    <div className="flag-logo"><a href="https://www.miamiherald.com" aria-lab-el="Miami Herald" className="flag-logo"><img className="logo msb-hide" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo-white.svg" alt="miamiherald Logo"/><img className="logo msb-show" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo-white.svg" alt="miamiherald Logo"/></a></div>
+                    <div className="flag-logo">
+                      <a href="https://www.miamiherald.com" aria-lab-el="Miami Herald" className="flag-logo">
+                        <img className="logo msb-hide" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo.svg" alt="miamiherald Logo"/>
+                        <img className="logo msb-show" src="https://www.miamiherald.com/wps/build/images/newLogos/miamiherald/logo-white.svg" alt="miamiherald Logo"/>
+                      </a>
+                    </div>
                     <div className="flag-account">
                         <div className="msb-show"><button className="button expander msb-show"><svg width="17" height="19" viewBox="0 0 17 19" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.5972 7.41211C10.7942 8.21509 9.70584 8.66577 8.57034 8.66577C7.43557 8.66431 6.34719 8.21289 5.54495 7.41064C4.74197 6.60791 4.29055 5.52014 4.28909 4.38464C4.28982 3.24988 4.74051 2.16077 5.54348 1.35779C6.34646 0.55481 7.43484 0.104126 8.57034 0.104126C9.70559 0.104126 10.7942 0.55481 11.5972 1.35779C12.3999 2.16077 12.8506 3.24976 12.8506 4.38525C12.8506 5.52002 12.3999 6.60913 11.5972 7.41211ZM16.9373 18.1038H0.893825H0.203396C0.197781 15.8833 1.0801 13.7537 2.65432 12.1879C4.2239 10.6193 6.35134 9.73755 8.57034 9.73755C10.7893 9.73755 12.9178 10.6193 14.4864 12.1879C16.0557 13.7572 16.9373 15.8848 16.9373 18.1038Z"></path>
@@ -297,6 +302,11 @@ const SampleArticle = (props) => {
                                     </svg> Sign Out</a>
                                 
                             </div>
+                        </div>
+                        <div class="msb-hide">
+                          <a id="logIn" style={{cursor: "pointer"}}>Log In</a>
+                          <span class="pipe-seperator">|</span>
+                          <a href="https://subscribe.miamiherald.com/beinformed" className="subscribe-link">Subscribe</a>
                         </div>
                     </div>
                 </div>
