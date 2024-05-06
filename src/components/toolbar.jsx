@@ -24,7 +24,7 @@ const editWebComponent = (e, props) => {
 
 const helpWebComponent = (e, props) => {
   e.preventDefault();
-  const url = "https://github.com/mcclatchy/graphics-nocode/?tab=readme-ov-file"
+  const url = `https://github.com/mcclatchy/graphics-nocode/?tab=readme-ov-file/#${props.name}`
   window.open(url, 'blank');
 }
 
