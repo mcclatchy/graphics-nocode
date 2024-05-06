@@ -97,6 +97,25 @@ const menuDev = {
                     "value": "https://www.charlotteobserver.com/static/hi/2023/devalos-perkins/images/lead-1.jpg",
                     "type": "text"
                 },
+                "--lead-image-object-position-horizontal-mobile": {
+                    "label": "Horizontal Position",
+                    "value": "50",
+                    "type": "range",
+                    "unit": "%",
+                    "min": "0",
+                    "max": "100",
+                    "property": ":root"
+                },
+                "--lead-image-object-position-vertical-mobile": {
+                    "label": "Vertical Position",
+                    "value": "50",
+                    "type": "range",
+                    "unit": "%",
+                    "min": "0",
+                    "max": "100",
+                    "property": ":root"
+                },
+                
                 "slot": {
                     "label": "Caption",
                     "options": ["figcaption"],
@@ -106,6 +125,7 @@ const menuDev = {
                     }],
                     "type": "text-item"
                 }
+                
             }
         },
         {
