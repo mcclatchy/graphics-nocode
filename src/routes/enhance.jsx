@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { removeVersion } from '../utils/string.js'
 import { getUserMode } from '../utils/url.js'
 import { addLink, addScript, removeToolLinks, removeToolScripts } from '../utils/dom.js'
-import { USER_MODE_DEV, MENU_CONFIG_DEV, MENU_CONFIG_DEFAULT } from "../utils/globals.js"
+import { USER_MODE_DEV, USER_MODE_ADMIN, MENU_CONFIG_DEFAULT, MENU_CONFIG_DEV, MENU_CONFIG_ADMIN } from "../utils/globals.js"
 import Menu from '../components/menu.jsx'
 import Article from '../components/article.jsx'
 import './root.css'
@@ -44,7 +44,7 @@ const Enhance = () => {
       })}
       <div>
         <Menu 
-          config={userMode === USER_MODE_DEV ? MENU_CONFIG_DEV : MENU_CONFIG_DEFAULT }
+          config={userMode === USER_MODE_ADMIN ? MENU_CONFIG_ADMIN : (userMode === USER_MODE_DEV) ? MENU_CONFIG_DEV : MENU_CONFIG_DEFAULT }
 
           copyMode={copyMode}
           setCopyMode={setCopyMode}
