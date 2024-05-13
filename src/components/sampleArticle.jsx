@@ -30,7 +30,6 @@ const SampleArticle = (props) => {
     // const [mutationCount, setMutationCount] = React.useState(0);
     // const incrementMutationCount = () => {
     //   if (mutationCount === 1) {
-    //     console.log("here")
     //     return mutationCount
     //   }
     //   return setMutationCount(mutationCount + 1);
