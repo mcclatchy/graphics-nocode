@@ -3,6 +3,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import Toolbar from "./Toolbar.jsx"
 import WebComponent from "./webComponent.jsx"
 import "./sampleArticle.css"
+import "./viafoura.css"
 
 
 const SampleArticle = (props) => {
@@ -744,7 +745,221 @@ const SampleArticle = (props) => {
                     <span>Miami Herald sportswriter Michelle Kaufman has covered 14 Olympics, six World Cups, Wimbledon, U.S. Open, NCAA Basketball Tournaments, NBA Playoffs, Super Bowls and has been the soccer writer and University of Miami basketball beat writer for 25 years. She was born in Frederick, Md., and grew up in Miami. </span>
                   </div>
                 </div>
-              </article></div><div id="zone-el-16" className="zone-el" /></article><div id="zone-el-9" className="zone-el"><div /></div><div id="zone-el-12" className="zone-el"><div><section id="subscription-cta-container">
+              </article></div>
+<div id="zone-el-16" className="zone-el" data-type="editorial">
+    <div tabindex="0" role="region" data-test="vf-conversations-root-element" className="viafoura" style={{minHeight: "428px"}} aria-label="Conversation">
+        <section data-v-8249a4bc="" data-vf-id="3" className="vf-body-text--deprecated vf-is-logged-out">
+            <div data-v-8249a4bc="" className="vf3-comments vf3-comments__last-child-no-ad">
+                <div data-v-8249a4bc="" className="vf3-comments__report-modal-overlay" style={{display: "none"}}></div>
+                <header data-v-285119eb="" data-v-8249a4bc="" className="vf-comment-header">
+                    <h2 data-v-285119eb="" className="vf-comment-header__heading vf-heading-text" style={{fontSize: "18px", fontWeight: "700", marginLeft: "13px", whiteSpace: "nowrap"}}>join the conversation</h2>
+                    <div data-v-285119eb="" className="vf-comment-header__actions">
+                        <button data-v-7870d8ba="" data-v-89919a0c="" data-v-285119eb="" type="button" className="vf-follow-button vf-label-text vf-actions-subscribe vf-button vf-no-outline is-cta is-inverted is-accent-color is-size-tiny">
+                            <span data-v-89919a0c="" data-v-7870d8ba="" aria-live="polite" className="vf-offscreen-text">
+                                Follow this conversation to be notified when new comments are posted
+                            </span>
+                            <span data-v-89919a0c="" data-v-7870d8ba="" ariaHidden="true" className="vf-follow-button__text vf-flex vf-centered">
+                                follow
+                            </span>
+                            <span data-v-89919a0c="" data-v-7870d8ba="" ariaHidden="true" className="vf-follow-button__hidden-text">
+                                following
+                            </span>
+                        </button>
+                        <div data-v-72350344="" data-v-285119eb="" className="vf-post-form__auth-actions vf-label vf-label-upper vf-actions-authentication"><button data-v-7870d8ba="" data-v-72350344="" type="button" className="vf-post-form__sign-in-action vf-button vf-no-outline is-link is-accent-color is-size-large">
+                                Log in
+                            </button> <span data-v-72350344="" className="vf-post-form__auth-action-separator">|</span> <button data-v-7870d8ba="" data-v-72350344="" type="button" className="vf-post-form__sign-up-action vf-button vf-no-outline is-link is-accent-color is-size-large">
+                                Sign up
+                            </button></div>
+                    </div>
+                </header>
+                <p style={{margin: "10px 0px"}}>Anyone can read the comments, but you must be a subscriber or logged in with a registered account to contribute. If you do not have a registered account, you can sign up for one below (it's free).</p><button style={{background: "rgb(69, 70, 88)", color: "white", height: "40px", margin: "10px 50px 10px 0px", width: "100px"}}>Login</button><button style={{background: "rgb(69, 70, 88)", color: "white", height: "40px", margin: "10px 50px 10px 0px", width: "100px"}}>Signup</button>
+                <div data-v-45fba7ae="" data-v-8249a4bc="" className="v3-comments__post-form">
+                    <div data-v-2917e5f4="" data-v-45fba7ae="" className="vf-content-focus-container vf-post-form vf-post-form__container vf-post-form__content-container red vf-is-anonymous">
+                        <div data-v-2917e5f4="" className="vf-content-focus-container__contents">
+                            <div data-v-2396f95c="" data-v-dddb053c="" data-v-b5a86bde="" data-v-45fba7ae="" className="vf-content-layout vf-new-content vf-post-form__new-content vf-new-content--single" data-v-2917e5f4="">
+                                <div data-v-2396f95c="" className="vf-content-layout__left">
+                                    <div data-v-dddb053c="" data-v-2396f95c="" className="pin-line"></div>
+                                    <div data-v-dddb053c="" data-v-2396f95c="" className="pin-line pin-line--bottom"></div> <button data-v-1dbbc2ae="" data-v-63066b2a="" data-v-45fba7ae="" ariaHidden="false" className="vf-front-avatar vf-post-form__avatar vf-avatar vf-no-outline vf-avatar--medium vf-avatar--clickable vf-js-tray-activator" data-v-2396f95c="">
+                                        <div data-v-1dbbc2ae="" className="vf-image-wrapper vf-avatar__inner vf-crop vf-image-round"><img src="https://cdn.viafoura.net/assets/defaultavatar.913f94a2fa72a280b0374131f1c9b175.png" alt="Jump to log in or sign Up" title="Jump to log in or sign Up"/>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div data-v-2396f95c="" className="vf-content-layout__right">
+                                    <div data-v-b5a86bde="" data-v-2396f95c="" className="vf-new-content__content-editor-slot-wrapper">
+                                        <div data-v-b5a86bde="" data-v-2396f95c="" className="vf-new-content__content-editor-wrapper">
+                                            <div data-v-b5a86bde="" className="vf-content-editor-form vf-new-content__content-editor vf-new-content__editor--medium-avatar" data-v-2396f95c="">
+                                                <div className="vf-editor-area vf-editor-area--with-limit"><textarea aria-label="Start the conversation" placeholder="Start the conversation" data-test="vf-conversations-new-comment-textarea" className="vf-content-editor-input vf-content vf-content-editor-form__textarea" style={{overflowX: "hidden", overflowWrap: "break-word", height: "25px"}}></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-cfdc9118="" data-v-45fba7ae="" className="content-focus-container__footer" data-v-2396f95c="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-45fba7ae="" aria-live="assertive" aria-label="" className="vf-post-alert" data-v-2917e5f4="">
+                            </div>
+                        </div>
+                        <p style={{paddingBottom: "5px"}}>Conversations are opinions of our readers and are subject to the <a href="/community-guidelines/">Community Guidelines</a>.</p>
+                    </div>
+                </div>
+                <div data-v-8249a4bc=""></div>
+                <article data-v-5909b365="" data-v-8249a4bc="" className="vf-tabbed-views vf3-comments__tabbed-nav">
+                    <nav data-v-4c13d62a="" data-v-5909b365="" className="vf-tabbed-nav vf-horiz-list vf-dropdown-tabs" aria-label="Conversation">
+                        <div role="tablist" className="vf-horiz-list vf-tabbed-nav__tabs"><span ariaHidden="true"></span>
+                            <div className="vf-flex-nav"><button data-v-35fff156="" id="all__button_4" tabindex="0" aria-label="All Comments, 0 items" className="vf-flex-nav vf-nav-button vf-accent-border-colour vf-expanding-hover-light vf-active" role="tab" aria-selected="true" aria-controls="all__panel_4"><span data-v-58b5b311="" data-v-35fff156="" className="vf-nav-label vf-nav-tab-button"><span data-v-58b5b311="" data-v-35fff156="" className="vf-label-text vf-nav-tab-button__text">
+                                            All Comments
+                                        </span>
+                                    </span>
+                                </button></div><span ariaHidden="true" style={{width: "1px"}}></span>
+                        </div>
+                        <div data-v-4851b2f1="" data-v-8249a4bc="" className="comment-nav-right vf3-comments__tabbed-nav__right">
+                            <div data-v-4851b2f1="" className="vf-dropdown vf-select-dropdown vf-sort-actions" autohide="" aria-label="sorting by newest button" positions="bottom-left,bottom-right,right-bottom,left-bottom"><button data-v-606f25f2="" type="button" className="vf-dropdown-button vf-no-outline vf-select-dropdown__trigger vf-dropdown-trigger js-trigger vf-secondary-text vf-dropdown-button--small vf-dropdown-button--accent vf-dropdown-button--icon-right vf-dropdown__text-trigger" aria-controls="dropdown1" aria-expanded="false" aria-haspopup="menu"><svg data-v-606f25f2="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-icon-svg vf-icon-svg--stroke vf-chevron-icon vf-dropdown-button__icon">
+                                        <g data-v-606f25f2="" transform="rotate(0 9 9)">
+                                            <line data-v-606f25f2="" x1="4.2" y1="6" x2="9" y2="11" stroke-width="1.1" stroke-linecap="round"></line>
+                                            <line data-v-606f25f2="" x1="13.8" y1="6" x2="9" y2="11" stroke-width="1.1" stroke-linecap="round"></line>
+                                        </g>
+                                    </svg> <span data-v-606f25f2="" className="vf-dropdown-button__text">
+                                        NEWEST
+                                    </span></button>
+                            </div>
+                            <div data-v-4851b2f1="" className="comment-nav-right__settings-button">
+                            </div>
+                            <button data-v-7870d8ba="" data-v-76f9528e="" data-v-4851b2f1="" type="button" aria-label="View your notifications and profile settings" data-vf-id="-1" data-test="vf-tray-trigger-bell" className="comment-nav-right__icon vf-button vf-no-outline is-size-large vf-tray-trigger"><strong data-v-08b30e78="" data-v-76f9528e="" aria-label="You have 0 new notifications" className="vf-label count-badge count-badge--tiny count-badge--danger-color vf-tray-count" data-v-7870d8ba="" style={{display: "none"}}><span data-v-08b30e78="" ariaHidden="true" className="count-badge__inner count-badge--tiny__inner">
+                                        0
+                                    </span></strong> <svg data-v-76f9528e="" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-icon-medium vf-icon vf-icon_bell_icon" data-v-7870d8ba="">
+                                    <defs></defs>
+                                    <g>
+                                        <path fill="currentColor" fill-rule="evenodd" d="M50 3c7 0 13 3 18 7 4 5 7 11 8 18l5 28c2 7 5 10 9 12l3 3c1 1 2 2 2 5 0 2-2 5-5 5H10c-3 0-5-3-5-5 0-3 1-4 2-5l3-3c4-2 7-5 9-12l5-28c1-7 4-13 8-18 5-4 11-7 18-7zM36 83h28v1c0 8-6 14-14 14s-14-6-14-14v-1z"></path>
+                                    </g>
+                                </svg></button>
+                        </div>
+                    </nav>
+                    <section data-v-5909b365="" id="all__panel_4" aria-labelledby="all__button_4" role="tabpanel">
+                        <div data-v-8249a4bc="" data-v-5909b365="" className="all-comments-container">
+                            <h3 data-v-8249a4bc="" data-v-5909b365="" className="vf-offscreen-text">
+                                All Comments
+                            </h3>
+                            <div data-v-095529d9="" data-v-8249a4bc="" className="all-comments" data-v-5909b365="">
+                                <div data-v-095529d9="" aria-live="assertive" aria-label="" className="vf-post-alert">
+                                </div>
+                                <div data-v-095529d9=""></div>
+                                <div data-v-095529d9="" className="all-comments__top-rt-bar-container">
+                                    <div data-v-9ff0535e="" data-v-095529d9="" className="realtime-bar vf-rt-stuck-link vf-rt-main-sticky all-comments__top-rt-bar realtime-bar--at-top" ariaHidden="true">
+                                        <div data-v-3f6168e0="" data-v-9ff0535e="" className="transition-wrapper">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-095529d9=""></div>
+                                <div data-v-5724d166="" data-v-095529d9="" className="top-typing-indicator all-comments__typing-indicator">
+                                    <div data-v-2396f95c="" data-v-5724d166="" className="vf-content-layout top-typing-indicator__internal">
+                                        <div data-v-2396f95c="" className="vf-content-layout__left">
+                                        </div>
+                                        <div data-v-2396f95c="" className="vf-content-layout__right">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-f1086c48="" data-v-095529d9="" className="vf-ad-empty-comments">
+                                    <div data-v-f1086c48=""><span data-v-f1086c48="" className="vf-empty-comments__icon-wrapper"><svg data-v-f1086c48="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-comment-icon vf-icon-small vf-empty-comments__icon vf-icon-svg vf-icon-svg--fill">
+                                                <path d="M5 3a2 2 0 00-2 2v10l1.923-1.921.077.001h8a2 2 0 002-2V5a2 2 0 00-2-2H5zM4 5a1 1 0 011-1h8a1 1 0 011 1v6.08a1 1 0 01-1 1H5l-.476-.017-.524.524V5z"></path>
+                                            </svg></span>
+                                        Start the conversation
+                                    </div>
+                                </div>
+                                <div data-v-095529d9="" className="all-comments__reply-thread-overlay" style={{display: "none"}}></div>
+                                <div data-v-9ff0535e="" data-v-095529d9="" className="realtime-bar vf-rt-stuck-link vf-rt-main-sticky bottom-rt-bar realtime-bar--at-bottom">
+                                    <div data-v-3f6168e0="" data-v-9ff0535e="" className="transition-wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <div data-v-8249a4bc="" className="vf3-comments__bottom-action">
+                </div>
+                <div data-v-1e6aff7f="" data-v-8249a4bc="" className="vf-comments-trending-articles vf3-comments vf-trending-articles">
+                    <div data-v-6d544a73="" className="vf-trending-articles vf-body-text--deprecated vf-is-logged-out">
+                        <h2 data-v-6d544a73="" className="vf-trending-articles__header vf-subheading-text">
+                            Active Conversations
+                        </h2>
+                        <p data-v-6d544a73="" className="vf-trending-articles__a11y-header vf-offscreen-text">
+                            The following is a list of the most commented articles in the last 7 days.
+                        </p>
+                        <div data-v-6d544a73="" className="vf-trending-articles__content-wrapper">
+                            <div data-v-6d544a73="" className="vf-trending-articles__row">
+                                <div data-v-6d544a73="" className="vf-trending-articles__flex-wrapper">
+                                    <div data-v-6d544a73="" className="vf-trending-articles__ad">
+                                        <div data-v-6d544a73="" className="vf-trending-articles__ad-container-wrapper">
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul data-v-01a27c49="" data-v-6d544a73="" className="vf-trending-articles-list" data-vf-id="" container-id="288589346">
+                                    <li data-v-01a27c49="" className="vf-trending-article-list__item"><a data-v-35e2c53f="" data-v-01a27c49="" href="https://www.sacbee.com/news/california/article288556376.html?__vfz=medium%3Dconversations_top_pages" className="vf-trending-article">
+                                            <p data-v-35e2c53f="" className="vf-trending-article__a11y-label vf-offscreen-text">
+                                                A trending article titled "Pride flag will no longer fly over California city after officials reverse policy" with 5 comments.
+                                            </p>
+                                            <div data-v-2646fd56="" data-v-35e2c53f="" className="vf-trending-article__layout vf-item-layout vf-item-layout--medium" ariaHidden="true">
+                                                <div data-v-2646fd56="" className="vf-item-layout__image-wrapper">
+                                                    <div data-v-2646fd56="" className="vf-image-wrapper vf-item-layout__image vf-crop vf-image-square"><img src="https://www.sacbee.com/news/nation-world/national/3dbqzd/picture286407280/alternates/LANDSCAPE_1140/sophie-emeny-g8_RshvAYCY-unsplash%20(1).jpg" alt="The LGBTQ+ Pride flag will no longer fly over a Southern California city during Pride Month in June after city leaders adopted a “neutral flag policy,” reports say."/>
+                                                    </div>
+                                                </div>
+                                                <div data-v-2646fd56="" className="vf-item-layout__spacer"></div>
+                                                <div data-v-2646fd56="" className="vf-item-layout__content">
+                                                    <p data-v-2646fd56="" title="Pride flag will no longer fly over California city after officials reverse policy" className="vf-item-layout__title vf-primary-text">
+                                                        Pride flag will no longer fly over California city after officials reverse policy
+                                                    </p>
+                                                    <p data-v-35e2c53f="" data-v-2646fd56="" className="vf-trending-article__comment-count vf-item-layout__additional-details vf-secondary-text vf-ellipsis-overflow"><svg data-v-35e2c53f="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" count="5" className="vf-comment-icon vf-trending-article__comment-icon vf-icon-svg vf-icon-svg--fill" data-v-2646fd56="">
+                                                            <path d="M5 3a2 2 0 00-2 2v10l1.923-1.921.077.001h8a2 2 0 002-2V5a2 2 0 00-2-2H5zM4 5a1 1 0 011-1h8a1 1 0 011 1v6.08a1 1 0 01-1 1H5l-.476-.017-.524.524V5z"></path>
+                                                        </svg>
+                                                        5
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li data-v-01a27c49="" className="vf-trending-article-list__item"><a data-v-35e2c53f="" data-v-01a27c49="" href="https://www.sacbee.com/news/local/article288568796.html?__vfz=medium%3Dconversations_top_pages" className="vf-trending-article">
+                                            <p data-v-35e2c53f="" className="vf-trending-article__a11y-label vf-offscreen-text">
+                                                A trending article titled "California commission approved new I-80 toll lanes. Could you be charged $1 per mile?" with 9 comments.
+                                            </p>
+                                            <div data-v-2646fd56="" data-v-35e2c53f="" className="vf-trending-article__layout vf-item-layout vf-item-layout--medium" ariaHidden="true">
+                                                <div data-v-2646fd56="" className="vf-item-layout__image-wrapper">
+                                                    <div data-v-2646fd56="" className="vf-image-wrapper vf-item-layout__image vf-crop vf-image-square"><img src="https://www.sacbee.com/latest-news/fvtiyd/picture282448738/alternates/LANDSCAPE_1140/SAC_112228_LS_Caltrans_001" alt="Caltrans regional project manager Sutha Suthahar, left, explains the proposed $465 million project to construct toll express lanes on Interstate 80 and U.S. Highway 50 in Yolo and Sacramento counties to residents Kevin Cohee, Brook Gale and Gene Castillo during a community meeting at the West Sacramento Community Center on Tuesday, Nov. 28, 2023."/>
+                                                    </div>
+                                                </div>
+                                                <div data-v-2646fd56="" className="vf-item-layout__spacer"></div>
+                                                <div data-v-2646fd56="" className="vf-item-layout__content">
+                                                    <p data-v-2646fd56="" title="California commission approved new I-80 toll lanes. Could you be charged $1 per mile?" className="vf-item-layout__title vf-primary-text">
+                                                        California commission approved new I-80 toll lanes. Could you be charged $1 per mile?
+                                                    </p>
+                                                    <p data-v-35e2c53f="" data-v-2646fd56="" className="vf-trending-article__comment-count vf-item-layout__additional-details vf-secondary-text vf-ellipsis-overflow"><svg data-v-35e2c53f="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" count="9" className="vf-comment-icon vf-trending-article__comment-icon vf-icon-svg vf-icon-svg--fill" data-v-2646fd56="">
+                                                            <path d="M5 3a2 2 0 00-2 2v10l1.923-1.921.077.001h8a2 2 0 002-2V5a2 2 0 00-2-2H5zM4 5a1 1 0 011-1h8a1 1 0 011 1v6.08a1 1 0 01-1 1H5l-.476-.017-.524.524V5z"></path>
+                                                        </svg>
+                                                        9
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer data-v-c1b33bf6="" data-v-8249a4bc="" className="vf3-conversations-footer">
+                    <div data-v-c1b33bf6="" className="vf3-conversations-footer__branding"><span data-v-da60f2d8="" data-v-c1b33bf6="" className="vf-branding-container">
+                            Powered by
+                            <a data-v-da60f2d8="" href="https://bit.ly/PowerByViafoura" title="Visit the Viafoura website" rel="noopener noreferrer" target="_blank" className="vf-branding"><svg data-v-15f2be42="" data-v-da60f2d8="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" className="vf-logo vf-branding__logo">
+                                    <path data-v-15f2be42="" d="M33.6 1.1a29 29 0 1 0 0 58 29 29 0 0 0 0-58zm5.2 39.8l-4.5 7.7a1 1 0 0 1-.9.5c-.3 0-.7-.2-.9-.5L15.7 19.2a1 1 0 0 1 0-1c.2-.3.5-.5.9-.5h8.9c.3 0 .7.2.9.5l12.4 21.7c.3.3.3.7 0 1zm7.3-12.6L41.6 36a1 1 0 0 1-.9.5c-.3 0-.7-.2-.9-.5l-9.6-16.8a1 1 0 0 1 0-1c.2-.3.5-.5.9-.5H40c.3 0 .7.2.9.5l5.2 9.1c.2.3.2.6 0 1zm5.2-9.1l-2.4 4.2a1 1 0 0 1-.9.5 1 1 0 0 1-.9-.5l-2.3-4.2a1 1 0 0 1 0-1c.2-.3.5-.5.9-.5h4.9c.3 0 .7.2.9.5 0 .4 0 .7-.2 1zM89.6 49.1L78 17.7h8.9l6 20.4.1.5h1.2l.1-.5 5.9-20.4h8.7L97.1 49.1zM115.8 49.1v-22l.7-3.4h-4.8l3.2-6h8.5v31.4zM143.2 49.7c-2.1 0-4-.1-5.8-.6-1.7-.4-3.1-.9-4.3-1.8-1.1-.7-2-1.9-2.6-3.1-.6-1.3-.9-2.9-.9-4.9 0-1.9.4-3.5 1.2-4.6a7.5 7.5 0 0 1 3.1-3c1.3-.7 2.7-1.3 4.3-1.6 1.6-.4 3.3-.5 5-.5h1.3l1.9.1 1 .1v-1.1c-.1-2.6-1.3-3.7-2.4-4.2-1.3-.5-2.9-.8-4.9-.8-1 0-2.2.1-3.6.4-1 .1-2.1.4-3.2.7l-.7-2.5-.5-2-.2-1.1c1.8-.6 3.4-.9 5-1.3 1.9-.4 3.5-.4 5-.4 4.3 0 7.5 1 9.7 3s3.3 5.2 3.3 9.5v17.9L150 49c-2.1.4-4.4.7-6.8.7zm.5-15.4c-1.9 0-3.6.4-4.9.9-1.4.7-2.2 2-2.2 3.8 0 1.1.2 2 .8 2.7a4 4 0 0 0 1.9 1.3l2.2.5 1.8.1c.9 0 1.9-.1 3-.4l.7-.1v-8.5l-.7-.1-1.4-.1-1.2-.1zM163.4 49.1V23.7h-4.3v-6h4.3v-2c0-1.9.5-2.9 1.1-4.3a12 12 0 0 1 11.3-6.3l3.1.2 2.3.6c-.6.9-1.7 2.5-3.1 5.1h-1c-1.6 0-3.1.4-4 1-1.1.7-1.9 2-1.9 3.7v2h8.1l-3.2 5.9h-4.9v25.6h-7.8zM194.5 49.5c-2.1 0-4.2-.2-5.9-.8a11.5 11.5 0 0 1-7.5-7.6c-.7-2-1.1-4.6-1.1-7.5s.4-5.3 1.1-7.4a12.1 12.1 0 0 1 7.6-7.7 18 18 0 0 1 5.8-.9c2.1 0 4 .2 5.8.8 1.8.6 3.3 1.4 4.5 2.7 1.3 1.3 2.3 2.9 3 4.9.7 2 1.1 4.6 1.1 7.5 0 3-.4 5.5-1.1 7.5a11.5 11.5 0 0 1-7.5 7.6c-1.7.6-3.7.9-5.8.9zm0-25.8c-2.2 0-4 .7-5.3 2.4-1.3 1.5-1.9 4-1.9 7.4 0 3.6.6 5.9 1.9 7.5a6.7 6.7 0 0 0 5.3 2.3c2.2 0 4-.7 5.3-2.3 1.3-1.5 1.9-3.9 1.9-7.5s-.6-5.9-1.9-7.5a6.4 6.4 0 0 0-5.3-2.3zM229.5 49.5c-2.1 0-4.2-.1-6.1-.5-1.8-.4-3.4-1-4.8-1.9-1.3-1-2.7-2.5-3.5-4.4s-1.5-4.6-1.5-8.2V17.7h7.6v16.5c0 1.6.4 2.9.7 4a5.8 5.8 0 0 0 4 4.3c.8.2 1.9.4 3 .4l3.5-.1.8-.1-.1-1.9v-23h7.6v30l-4.8 1.2c-2 .2-4.3.5-6.4.5zM250.2 49.1V23.7h-4.4l3.1-5.9h9.1v3.7s3-3.1 5.1-3.5c.8-.1 1.7-.4 2.7-.4l2.3.1h.1v6.4H266l-2.6.4c-1 .2-1.9.6-2.8 1.2-1 .7-1.8 1.7-2.2 3-.4 1.1-.6 2.6-.6 4.6v16h-7.6zM283.7 49.7c-2.1 0-4-.1-5.8-.6-1.7-.4-3.1-.9-4.3-1.8-1.1-.7-2-1.9-2.6-3.1a12 12 0 0 1-.9-4.9c0-1.9.4-3.5 1.2-4.6a7.5 7.5 0 0 1 3.1-3c1.3-.7 2.7-1.3 4.3-1.6 1.6-.4 3.3-.5 5-.5h1.3l1.9.1 1.1.1v-1.1c-.1-2.6-1.3-3.7-2.4-4.2-1.3-.5-2.9-.8-4.9-.8-1 0-2.2.1-3.6.4-1 .1-2.1.4-3.2.7l-.7-2.5-.5-2-.2-1.1c1.8-.6 3.4-.9 5-1.3 1.9-.4 3.5-.4 5-.4 4.3 0 7.4 1 9.7 3 2.2 1.9 3.2 5.2 3.2 9.5v17.9c-.8.4-3 .7-4.8 1.1-2.3.4-4.4.7-6.9.7zm.6-15.4c-1.9 0-3.6.4-4.9.9-1.4.7-2.2 2-2.2 3.8 0 1.1.2 2 .8 2.7a4 4 0 0 0 1.9 1.3l2.2.5 1.8.1c.9 0 1.8-.1 2.9-.4l.7-.1v-8.5l-.7-.1-1.4-.1-1.1-.1z" className="viafoura-logo__logo"></path>
+                                </svg></a></span></div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <div className="viafoura" style={{minHeight: "0px"}}>
+        <div data-test="vf-tray-root-element" className="vf-tray-widget" data-vf-id="1">
+        </div>
+    </div>
+</div>
+
+              <div id="zone-el-16" className="zone-el" /></article><div id="zone-el-9" className="zone-el"><div /></div><div id="zone-el-12" className="zone-el"><div><section id="subscription-cta-container">
                 <div className="card horizontal swg-promo">
                   <div className="promo package sans">
                     <h5 className="title h1">Sports Pass is your ticket to Miami sports</h5>

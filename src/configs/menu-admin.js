@@ -1,4 +1,4 @@
-const menuDev = {
+const menuAdmin = {
     "themes": [{
             "type": "checkbox",
             "label": "Beige",
@@ -115,7 +115,6 @@ const menuDev = {
                     "max": "100",
                     "property": ":root"
                 },
-                
                 "slot": {
                     "label": "Caption",
                     "options": ["figcaption"],
@@ -125,7 +124,6 @@ const menuDev = {
                     }],
                     "type": "text-item"
                 }
-                
             }
         },
         {
@@ -450,9 +448,8 @@ const menuDev = {
             }
         }
     ],
-    "media-cards": [
-	    	{
-		    		"type": "increment",
+    "media-cards": [{
+            "type": "increment",
             "label": "audio-player",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-player.js",
             "defaultOptions": {
@@ -481,7 +478,7 @@ const menuDev = {
                     "type": "switch"
                 },
             }
-	    	},
+        },
         {
             "type": "increment",
             "label": "image-carousel",
@@ -824,10 +821,9 @@ const menuDev = {
                     "hide": true,
                     "value": "inset",
                     "options": [{
-                            "label": "Inset",
-                            "value": "inset"
-                        }
-                    ],
+                        "label": "Inset",
+                        "value": "inset"
+                    }],
                     "type": "switch"
                 },
                 "data-embed-max-width": {
@@ -1330,4 +1326,4 @@ const menuDev = {
     ]
 }
 
-export default menuDev;
+export default menuAdmin;
