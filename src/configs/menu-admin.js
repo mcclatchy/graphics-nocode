@@ -35,7 +35,7 @@ const menuAdmin = {
         {
             "type": "checkbox",
             "label": "minimalFooter",
-            "link": "https://www.miamiherald.com/static/hi/graphics/1.0.0/minimal-footer.css"
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/minimal-footer.css"
         },
         {
             "type": "checkbox",
@@ -1102,7 +1102,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "scrolling-map",
-            "script": "https://www.miamiherald.com/static/hi/graphics/1.0.0/scrolling-map.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/scrolling-map.js",
             "defaultOptions": {
                 "mapId": {
                     "label": "Map ID",
