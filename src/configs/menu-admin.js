@@ -24,7 +24,7 @@ const menuAdmin = {
     "enhancements": [{
             "type": "checkbox",
             "label": "makeMediaWide",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/make-media-wide.js"
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/make-media-wide.js"
         },
         {
             "type": "checkbox",
@@ -40,8 +40,8 @@ const menuAdmin = {
         {
             "type": "checkbox",
             "label": "moveLeadArtToTop",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/move-lead-art-to-top.js"
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/move-lead-art-to-top.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/move-lead-art-to-top.js"
         },
         {
             "type": "checkbox",
@@ -130,8 +130,8 @@ const menuAdmin = {
             "type": "increment",
             "label": "lead-logo",
             "maxCount": "1",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/lead-logo.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.js",
             "defaultOptions": {
                 "data-logo": {
                     "label": "Logo URL",
@@ -232,7 +232,7 @@ const menuAdmin = {
     "text-cards": [{
             "type": "increment",
             "label": "block-quote",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/block-quote.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/block-quote.js",
             "defaultOptions": {
                 "data-quote": {
                     "label": "Quote",
@@ -270,7 +270,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "fact-box",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/fact-box.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/fact-box.js",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
@@ -297,7 +297,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "info-slate",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/info-slate.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/info-slate.js",
             "defaultOptions": {
                 "data-info": {
                     "label": "Info",
@@ -351,7 +351,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "outro-text",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/outro-text.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/outro-text.js",
             "defaultOptions": {
                 "slot": {
                     "label": "Text",
@@ -396,8 +396,8 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "summary-list",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/summary-list.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/summary-list.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/summary-list.js",
             "defaultOptions": {
                 "data-list-style": {
                     "label": "List Style",
@@ -482,8 +482,8 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "image-carousel",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/image-carousel.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/image-carousel.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-carousel.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-carousel.js",
             "defaultOptions": {
                 "data-embed-class": {
                     "label": "Embed Class",
@@ -654,7 +654,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "image-dual",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/image-dual.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-dual.js",
             "defaultOptions": {
                 "data-left-image": {
                     "label": "Left Image URL",
@@ -691,7 +691,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "image-quote",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/image-quote.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-quote.js",
             "defaultOptions": {
                 "data-quote": {
                     "label": "Quote",
@@ -732,7 +732,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "link-preview",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/link-preview.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/link-preview.js",
             "defaultOptions": {
                 "data-series": {
                     "label": "Series",
@@ -774,8 +774,8 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "inset-box",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/inset-box.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/inset-box.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.js",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title (Optional)",
@@ -853,7 +853,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "related-stories",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/related-stories.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/related-stories.js",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
@@ -940,8 +940,8 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "resizable-image",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-image.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-image.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/resizable-image.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/resizable-image.js",
             "defaultOptions": {
                 "data-image": {
                     "label": "Image URL",
@@ -993,8 +993,8 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "resizable-video",
-            "link": "https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-video.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/2.0.0/resizable-video.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/resizable-video.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/resizable-video.js",
             "defaultOptions": {
                 "data-video": {
                     "label": "Video URL",
@@ -1038,7 +1038,7 @@ const menuAdmin = {
     "graphics": [{
             "type": "increment",
             "label": "event-timeline",
-            "script": "https://www.miamiherald.com/static/hi/cards/event-timeline/event-timeline.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/event-timeline.js",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
@@ -1074,8 +1074,8 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "obituary-section",
-            "link": "https://www.miamiherald.com/static/hi/cards/obituary-section/obituary-section.css",
-            "script": "https://www.miamiherald.com/static/hi/cards/obituary-section/obituary-section.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/obituary-section.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/obituary-section.js",
             "defaultOptions": {
                 "data-sheet": {
                     "label": "Sheet",
@@ -1167,7 +1167,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "scrolling-video",
-            "script": "https://www.miamiherald.com/static/hi/cards/scrolling-video/scrolling-video.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/scrolling-video.js",
             "defaultOptions": {
                 "src": {
                     "label": "Video - Landscape",
