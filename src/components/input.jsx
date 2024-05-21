@@ -4,7 +4,8 @@ import Switch from './switch.jsx'
 import TextItems from './textItems.jsx'
 import { getLuminance, hexToRgb } from '../utils/color.js'
 import './input.css'
-
+import Refresh from '../assets/refresh-cw.svg'
+ 
 const calculateRangePercentage = (value, min, max) => {
   return 100 * (value - min) / (max - min);
 }
@@ -25,9 +26,12 @@ const Input = (props) => {
     switch(type) {
       case 'text':
         return (
+          
           <TextareaAutosize
             type={type}
+            
             value={newValue || defaultValue}
+            
             className="tool-modal-value"
             onChange={(e) => { handleChange(e, props); }}
             spellCheck="false"
@@ -119,8 +123,20 @@ const Input = (props) => {
   const [sliderPercentage, setSliderPercentage] = useState(type === 'range' ? calculateRangePercentage(parseInt(defaultValue), parseInt(min), parseInt(max)) : null)
 
 	return (
+    
     <div className="tool-modal-wrapper">
-      <div className="tool-modal-label">{label}</div>
+      
+      
+      <img className="tool-modal-refresh"
+      src={Refresh} 
+      alt="Refresh"
+      onClick={(e) => { 
+        refreshWebComponent(e, this.props);
+      }}
+    />
+   
+    
+   <div className="tool-modal-label">{label}</div>
       <div className="tool-edit-item" type={type}>
         {renderType(type)}
       </div>

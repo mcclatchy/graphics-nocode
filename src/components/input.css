@@ -14,6 +14,8 @@ textarea {
 	resize: none;
 }
 
+
+
 textarea + div > output {
 	display: none;
 }

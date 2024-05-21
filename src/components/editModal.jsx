@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Input from './input.jsx'
 import Remove from '../assets/remove.svg'
 import "./editModal.css"
-
+ 
 // TEXT
 // COLOR
 // SLIDER

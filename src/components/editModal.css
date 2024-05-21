@@ -16,6 +16,16 @@
 	--tool-modal-margin: 25px;
 }
 
+.tool-modal-refresh{
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 3px;
+	float:left
+	
+	
+}
+
+
 .tool-modal-inner {
   overflow: scroll;
 	max-height: 90vh;
@@ -42,11 +52,15 @@
 
 .tool-modal-wrapper {
 	margin: 20px var(--tool-modal-margin);
+	
 }
 
 .tool-modal-label {
 	font-weight: bold;
 	margin-bottom: 5px;
+	
+	
+
 }
 
 .tool-modal-value {
