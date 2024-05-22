@@ -125,8 +125,9 @@ const Input = (props) => {
 	return (
     
     <div className="tool-modal-wrapper">
-      
-      
+      <div className="testing">
+        
+      <button>
       <img className="tool-modal-refresh"
       src={Refresh} 
       alt="Refresh"
@@ -134,9 +135,12 @@ const Input = (props) => {
         refreshWebComponent(e, this.props);
       }}
     />
-   
-    
+   </button>
    <div className="tool-modal-label">{label}</div>
+   </div>
+   
+   
+   
       <div className="tool-edit-item" type={type}>
         {renderType(type)}
       </div>
