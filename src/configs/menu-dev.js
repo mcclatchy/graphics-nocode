@@ -216,7 +216,9 @@ const menuDev = {
                     "unit": "px",
                     "min": "300",
                     "max": "700"
-                }
+                },
+
+                
             }
         },
         {

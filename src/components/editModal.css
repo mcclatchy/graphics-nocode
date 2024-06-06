@@ -14,6 +14,7 @@
 	z-index: 100;
 	font-family: var(--tool-font-family);
 	--tool-modal-margin: 25px;
+	padding-bottom: 55px;
 }
 
 .tool-modal-refresh{
@@ -24,6 +25,47 @@
 	float: left;
 }
 
+.save-section{
+	
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+	height: 60px;
+	background: var(--tool-background-color);
+	border-top: 1px solid var(--tool-black);
+	border-radius: 0 0 10px 10px;
+	
+	
+}
+
+.save-section button{
+
+	position: absolute;
+	right: 20px;
+	padding-top: 10px;
+    
+
+}
+.save-section p{
+	padding: 20px;
+	font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+	display: inline;
+	font-family: var(--tool-font-family);
+	
+	
+	
+}
+.save-section img{
+	display: inline;
+	
+	
+	
+}
 
 
 .tool-modal-inner {

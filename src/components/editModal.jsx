@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Input from './input.jsx'
 import Remove from '../assets/remove.svg'
+import Save from '../assets/save.svg'
 import "./editModal.css"
  
 // TEXT
@@ -28,6 +29,7 @@ class EditModal extends React.Component {
                 this.props.setEditOptions({});
               }}
             />
+            
           </div>
           <div className="tool-modal-spacer"></div>
           {this.props.editOptions && Object.keys(this.props.editOptions).map((key, i) => {
@@ -41,7 +43,21 @@ class EditModal extends React.Component {
               />
             )
           })}
-        </div>
+          
+          <div className="save-section">
+            <button>
+              <p className="save-text">SAVE</p>
+              <img className="save-icon"
+                src={Save} 
+                alt="save"
+                onClick={(e) => { 
+                  this.props.setEditMode(false);
+                  this.props.setEditOptions({});
+                }}
+              />
+            </button>
+          </div> 
+        </div> 
       </div>
     )
   }
