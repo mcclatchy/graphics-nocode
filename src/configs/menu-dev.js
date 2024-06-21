@@ -13,15 +13,16 @@ const menuDev = {
             "type": "checkbox",
             "label": "Indigo",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/indigo.css"
-        },
-        {
-            "type": "checkbox",
-            "label": "Declutter",
-            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/declutter.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/declutter.js"
         }
     ],
-    "enhancements": [{
+    "enhancements": [
+        {
+            "type": "checkbox",
+            "label": "declutterPage",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/declutter.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/declutter.js"
+        },
+        {
             "type": "checkbox",
             "label": "makeMediaWide",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/make-media-wide.js"
@@ -703,48 +704,6 @@ const menuDev = {
         },
         {
             "type": "increment",
-            "label": "link-preview",
-            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/link-preview.js",
-            "defaultOptions": {
-                "data-series": {
-                    "label": "Series",
-                    "value": "Made in Miami",
-                    "type": "text"
-                },
-                "data-title": {
-                    "label": "Title",
-                    "value": "A rogue's gallery of suspects",
-                    "type": "text"
-                },
-                "data-summary": {
-                    "label": "Summary",
-                    "value": "Investigators in at least three countries are sorting through a rogues’ gallery of players, trying to determine how the killing of Haitian President Jovenel Moïse was carried out on July 7, 2021.",
-                    "type": "text"
-                },
-                "data-link": {
-                    "label": "Link URL",
-                    "value": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article266152901.html",
-                    "type": "text"
-                },
-                "data-img": {
-                    "label": "Image URL",
-                    "value": "https://www.miamiherald.com/static/hi/2022/haiti-assassination/assets/network-outlink.jpg",
-                    "type": "text"
-                },
-                "data-alt": {
-                    "label": "Alt Text",
-                    "value": "Illustration of Jovenel Moïse in a network graphic node with a network of other illustrated profiles surrounding him",
-                    "type": "text"
-                },
-                "data-color": {
-                    "label": "Color (Optional)",
-                    "value": "",
-                    "type": "color"
-                }
-            }
-        },
-        {
-            "type": "increment",
             "label": "inset-box",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.js",
@@ -820,6 +779,48 @@ const menuDev = {
                         }
                     ],
                     "type": "switch"
+                }
+            }
+        },
+        {
+            "type": "increment",
+            "label": "link-preview",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/link-preview.js",
+            "defaultOptions": {
+                "data-series": {
+                    "label": "Series",
+                    "value": "Made in Miami",
+                    "type": "text"
+                },
+                "data-title": {
+                    "label": "Title",
+                    "value": "A rogue's gallery of suspects",
+                    "type": "text"
+                },
+                "data-summary": {
+                    "label": "Summary",
+                    "value": "Investigators in at least three countries are sorting through a rogues’ gallery of players, trying to determine how the killing of Haitian President Jovenel Moïse was carried out on July 7, 2021.",
+                    "type": "text"
+                },
+                "data-link": {
+                    "label": "Link URL",
+                    "value": "https://www.miamiherald.com/news/nation-world/world/americas/haiti/article266152901.html",
+                    "type": "text"
+                },
+                "data-img": {
+                    "label": "Image URL",
+                    "value": "https://www.miamiherald.com/static/hi/2022/haiti-assassination/assets/network-outlink.jpg",
+                    "type": "text"
+                },
+                "data-alt": {
+                    "label": "Alt Text",
+                    "value": "Illustration of Jovenel Moïse in a network graphic node with a network of other illustrated profiles surrounding him",
+                    "type": "text"
+                },
+                "data-color": {
+                    "label": "Color (Optional)",
+                    "value": "",
+                    "type": "color"
                 }
             }
         },
