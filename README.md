@@ -1,3 +1,31 @@
+# annotated-image
+A customizable image component with annotations and optional reveal effect.
+
+### Data Attributes
+- `src`: Main image source URL
+- `portrait-src`: Portrait image source URL
+- `breakpoint`: Breakpoint for switching between landscape and portrait (default: 600)
+- `annotations`: URL of JSON file containing annotation data
+- `reveal`: Enable reveal effect (boolean)
+- `reveal-mask`: Mask image URL for reveal effect (landscape)
+- `reveal-mask-portrait`: Mask image URL for reveal effect (portrait)
+- `reveal-options`: JSON string with reveal effect options
+
+### Example
+```html
+<annotated-image
+  src="image.jpg"
+  portrait-src="image-portrait.jpg"
+  breakpoint="800"
+  annotations="annotations.json"
+  reveal
+  reveal-mask="mask.png"
+  reveal-mask-portrait="mask-portrait.png"
+  reveal-options='{"minOpacity": "0.3", "duration": "2000"}'
+>
+</annotated-image>
+```
+
 # audio-player
 The `AudioPlayer` is a custom web component that provides an HTML5 audio player with optional waveform visualization using WaveSurfer.js. It supports standard audio controls, progress tracking, and volume control. The component will automatically handle the audio playback, display waveform if enabled, and provide interactive controls for the user.
 
@@ -315,4 +343,276 @@ This web component renders a preview of a linked content URL.
   data-color="#ff0000"
 >
 </link-preview>
+```
+
+
+# obituary-section
+A custom element for displaying obituary sections with profiles, images, and navigation.
+
+### Data Attributes
+- `data-sheet`: URL of JSON data source
+- `data-img-filepath`: Path to image directory
+- `data-sort`: Field to sort profiles by
+- `data-initials`: Use initials for missing images
+- `collage`: Display image collage
+
+### Example
+```html
+<obituary-section
+  data-sheet="obituaries.json"
+  data-img-filepath="/images/obituaries"
+  data-sort="title"
+  collage
+>
+</obituary-section>
+```
+
+
+# outro-text
+A custom element for displaying styled outro text with dividers.
+
+### Data Attributes
+None
+
+### Slot
+Default slot for custom content (supports `<p>` and `<h5>` elements)
+
+### Example
+```html
+<outro-text>
+  <h5>Conclusion</h5>
+  <p>This is the outro text.</p>
+  <p>It can contain multiple paragraphs.</p>
+  <h5>Another Section</h5>
+  <p>Some more text.</p>
+</outro-text>
+```
+
+
+
+# related-stories
+A custom element for displaying a group of related stories with a title and dividers.
+
+### Data Attributes
+- `data-title`: Title for the related stories section
+- `data-include-site`: Passes the attribute to child `related-story` elements
+- `data-include-date`: Passes the attribute to child `related-story` elements
+
+### Slot
+Default slot for [`<related-story>`](#related-story) elements
+
+### Example
+
+```html
+<related-stories
+  data-title="More to Read"
+  data-include-site
+  data-include-date
+>
+  <related-story data-url="https://example.com/article1"></related-story>
+  <related-story data-url="https://example.com/article2"></related-story>
+</related-stories>
+```
+
+
+
+# related-story
+A custom element for displaying a single related story with image, title, and optional site name and publish date. Content is dynamically generated based on Open Graph data fetched from the provided URL.
+
+
+### Data Attributes
+- `data-url`: URL of the related story
+- `data-include-site`: Display the site name
+- `data-include-date`: Display the publish date
+- `data-dividers`: Add dividers above and below the story
+
+### Example
+```html
+<related-story
+  data-url="https://example.com/article"
+  data-include-site
+  data-include-date
+  data-dividers
+>
+</related-story>
+```
+
+
+
+# resizable-image
+A custom element for displaying responsive images with optional captions and layout styles.
+
+### Data Attributes
+- `data-image`: URL of the image to display
+- `data-image-alt`: Alt text for the image
+- `data-embed-class`: Layout style ("prominent" or "full-bleed")
+
+### Slot
+Default slot for adding a `<figcaption>` element
+
+### Example
+
+```html
+<resizable-image
+  data-image="https://example.com/image.jpg"
+  data-image-alt="Description of the image"
+  data-embed-class="prominent"
+>
+  <figcaption>Image caption goes here</figcaption>
+</resizable-image>
+```
+
+
+
+
+# resizable-video
+A custom element for displaying responsive videos with optional captions and layout styles.
+
+### Data Attributes
+- `data-video`: URL of the video to display
+- `data-embed-class`: Layout style ("prominent" or "full-bleed")
+
+### Slot
+Default slot for adding a `<figcaption>` element
+
+### Example
+```html
+<resizable-video
+  data-video="https://example.com/video.mp4"
+  data-embed-class="prominent"
+>
+  <figcaption>Video caption goes here</figcaption>
+</resizable-video>
+```
+
+
+# scrolling-map
+A custom element for displaying an interactive, scrollable map with configurable data and styling. Content is dynamically generated based on the provided configuration files.
+
+### Data Attributes
+
+- `background`: Background color of the map
+- `projectpath`: Base path for project assets
+- `mapid`: Unique identifier for the map
+- `mapconfig`: URL or path to map configuration file
+- `textconfig`: URL or path to text configuration file
+- `embedclass`: CSS class for embedding the map
+- `textcolor`: Color of the text overlays
+- `textborder`: Border color for text overlays
+- `textbackground`: Background color for text overlays
+- `datapath`: Path to data files (default: `${projectPath}/data`)
+- `imagepath`: Path to image files (default: `${projectPath}/images`)
+- `videopath`: Path to video files (default: `${projectPath}/videos`)
+
+### Example
+```html
+<scrolling-map
+  background="#FFFFFF"
+  project-path="/my-project"
+  mapid="my-map"
+  mapconfig="map-config.json"
+  textconfig="text-config.json"
+  embedclass="full-bleed"
+  textcolor="#000000"
+  textborder="#FFFFFF"
+  textbackground="#F0F0F0"
+>
+</scrolling-map>
+```
+
+
+
+# scrolling-video
+A custom element for displaying a video that scrolls with the page, allowing for synchronized text overlays and interactive playback.
+
+### Data Attributes
+- `src`: URL of the video file
+- `portrait-src`: URL of the video file for portrait orientation (optional)
+- `data-embed-class`: CSS class for embedding the video
+- `data-watermark`: URL of the watermark image (optional)
+- `data-height-multiplier`: Multiplier for the video's scroll height (default: 1)
+- `data-edit-mode`: Enables edit mode with time display (optional)
+- `interpolate`: Enables smooth interpolation between frames (optional)
+
+### Slot
+Default slot for adding `<p>` elements with `data-timestamp` attributes for synchronized text overlays.
+
+### Example
+```html
+<scrolling-video
+  src="video.mp4"
+  portrait-src="video-portrait.mp4"
+  data-embed-class="full-bleed"
+  data-watermark="logo.png"
+  data-height-multiplier="1.5"
+  interpolate
+>
+  <p data-timestamp="0:05">Text overlay at 5 seconds</p>
+  <p data-timestamp="0:10">Text overlay at 10 seconds</p>
+</scrolling-video>
+```
+
+
+
+
+# summary-list
+A custom element for displaying a styled list with an optional title, subtitle, and border.
+
+### Data Attributes
+- `data-title`: Title of the summary list
+- `data-subtitle`: Subtitle of the summary list
+- `data-border-color`: Color of the border and divider
+- `data-list-style`: Type of list element to use ("ul" or "ol", default: "ul")
+
+### Slot
+Default slot for adding list items (`<li>` elements)
+
+### Example
+```html
+<summary-list
+  data-title="Key Points"
+  data-subtitle="Important information"
+  data-border-color="#000000"
+  data-list-style="ol"
+>
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Third point</li>
+</summary-list>
+```
+
+
+
+# video-subtitles
+A customizable video player with subtitles, intro/outro screens, and scroll controls.
+
+### Data Attributes
+- `src`: Main video source URL
+- `src-portrait`: Portrait video source URL (optional)
+- `intro-src`: Intro video source URL
+- `subtitles`: Subtitles JSON file URL
+- `scrollby`: Enable scroll-to-continue functionality (boolean)
+- `logo`: Logo image URL
+- `headline`: Headline text
+- `teaser`: Teaser text
+- `byline`: Byline text
+- `prevent-scroll`: Prevent scrolling (boolean)
+- `auto-unmute`: Automatically unmute video (boolean)
+
+### Example
+```html
+<video-subtitles
+  src="main-video.mp4"
+  src-portrait="portrait-video.mp4"
+  intro-src="intro-video.mp4"
+  subtitles="subtitles.json"
+  scrollby
+  logo="logo.png"
+  headline="Video Title"
+  teaser="Video description"
+  byline="By Author Name"
+  prevent-scroll
+  auto-unmute
+>
+</video-subtitles>
 ```
