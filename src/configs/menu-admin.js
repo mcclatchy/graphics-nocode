@@ -151,6 +151,104 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "lead-split",
+            "maxCount": "1",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-split.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-split.css",
+            "defaultOptions": {
+                "data-title": {
+                    "label": "Title",
+                    "value": "Messi in Miami",
+                    "type": "text"
+                },
+                "data-subtitle": {
+                    "label": "Subtitle",
+                    "value": "Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive",
+                    "type": "text"
+                },
+                "data-intro-text": {
+                    "label": "Intro Text",
+                    "value": "",
+                    "type": "text"
+                },
+                "data-caption": {
+                    "label": "Caption",
+                    "value": "Illustration by Rachel Handley",
+                    "type": "text"
+                },
+                "data-image-side": {
+                    "label": "Image Side",
+                    "value": "",
+                    "options": [{
+                            "label": "Left",
+                            "value": ""
+                        },
+                        {
+                            "label": "Right",
+                            "value": "right"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "--lead-split-border-bottom": {
+                    "label": "Border",
+                    "value": "1px solid var(--media-background-color)",
+                    "options": [{
+                            "label": "On",
+                            "value": "1px solid var(--media-background-color)"
+                        },
+                        {
+                            "label": "Off",
+                            "value": "none"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "--lead-split-background-color": {
+                    "label": "Background Color",
+                    "value": "",
+                    "type": "color"
+                },
+                "--lead-split-text-color": {
+                    "label": "Text Color",
+                    "value": "",
+                    "type": "color"
+                },
+                "--lead-split-secondary-text-color": {
+                    "label": "Secondary Text Color",
+                    "value": "",
+                    "type": "color"
+                },
+                "slot": {
+                    "label": "Images",
+                    "options": ["img"],
+                    "attributes": {
+                        "src": {
+                            "value": "",
+                            "label": "Image URL",
+                            "type": "text"
+                        }
+                    },
+                    "sort": "src",
+                    "excludeText": true,
+                    "value": [{
+                            "tag": "img",
+                            "text": "",
+                            "attributes": {
+                                "src": {
+                                    "label": "Image URL",
+                                    "value": "https://storage.googleapis.com/mc-high-impact/2024/nc-hbcu-underfunding/images/lead-person.jpg",
+                                    "type": "text"
+                                }
+                            }
+                        }
+                    ],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "lead-title",
             "maxCount": "1",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-title.js",
@@ -231,6 +329,53 @@ const menuAdmin = {
         }
     ],
     "text-cards": [{
+            "type": "increment",
+            "label": "animated-number",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/animated-number.js",
+            "defaultOptions": {
+                "data-start": {
+                    "label": "Start",
+                    "value": "0",
+                    "type": "text"
+                },
+                "data-end": {
+                    "label": "End",
+                    "value": "1000",
+                    "type": "text"
+                },
+                "data-start-color": {
+                    "label": "Start Color",
+                    "value": "",
+                    "type": "color"
+                },
+                "data-end-color": {
+                    "label": "End Color",
+                    "value": "#009900",
+                    "type": "color"
+                },
+                "data-animation-time": {
+                    "label": "Animation Time",
+                    "value": "2000",
+                    "type": "text"
+                },
+                "data-prefix": {
+                    "label": "Prefix",
+                    "value": "$",
+                    "type": "text"
+                },
+                "data-suffix": {
+                    "label": "Suffix",
+                    "value": "",
+                    "type": "text"
+                },
+                "data-intersection-ratio": {
+                    "label": "Intersection Ratio",
+                    "value": "0.5",
+                    "type": "text"
+                }
+            }
+        },
+        {
             "type": "increment",
             "label": "block-quote",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/block-quote.js",
