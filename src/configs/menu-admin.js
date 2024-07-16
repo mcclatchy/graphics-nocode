@@ -1181,7 +1181,8 @@ const menuAdmin = {
             }
         }
     ],
-    "graphics": [{
+    "graphics": [
+        {
             "type": "increment",
             "label": "event-timeline",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/event-timeline.js",
@@ -1242,6 +1243,29 @@ const menuAdmin = {
                     "value": true,
                     "hide": true,
                     "type": "boolean"
+                }
+            }
+        },
+        {
+            "type": "increment",
+            "label": "progress-bar",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/progress-bar.js",
+            "defaultOptions": {
+                "--progress-bar-height": {
+                    "label": "Bar Height",
+                    "value": "3",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "1",
+                    "max": "7"
+                },
+                "--progress-bar-opacity": {
+                    "label": "Background Opacity",
+                    "value": "25",
+                    "type": "range",
+                    "unit": "%",
+                    "min": "0",
+                    "max": "100"
                 }
             }
         },
