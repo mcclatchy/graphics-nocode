@@ -125,12 +125,12 @@ const menuAdmin = {
                 },
                 "data-title": {
                     "label": "Title",
-                    "value": "Messi in Miami",
+                    "value": "",
                     "type": "text"
                 },
                 "data-subtitle": {
                     "label": "Subtitle",
-                    "value": "Not only did Messi defy all odds and decide to join Inter Miami, his former FC Barcelona teammates Sergio Busquets and Jordi Alba signed and are also along for the ride.",
+                    "value": "",
                     "type": "text"
                 },
                 "slot": {
