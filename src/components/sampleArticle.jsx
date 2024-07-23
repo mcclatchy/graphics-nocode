@@ -49,7 +49,7 @@ const SampleArticle = (props) => {
 
     const noInlineSizeNames = ['scrolling-map', 'inset-box']
 
-    const nonBodyComponentNames = ["lead-image", "lead-logo", "lead-split", "lead-title", "lead-video", "progress-bar"]
+    const nonBodyComponentNames = ["lead-image", "lead-logo", "lead-media", "lead-split", "lead-title", "lead-video", "progress-bar"]
     const nonBodyWebComponents = props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));
     const nonBodyToolbars = props.toolbars.filter(toolbar => nonBodyComponentNames.includes(toolbar.props.name))
 
@@ -225,10 +225,10 @@ const SampleArticle = (props) => {
         <meta name="googlebot" content="noodp, noarchive" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@miamiherald" />
-        <meta name="twitter:title" content="Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive | Opinion" />
+        <meta name="twitter:title" content="Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive" />
         <meta property="og:site_name" content="Miami Herald" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive | Opinion" />
+        <meta property="og:title" content="Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive" />
         <meta property="og:url" content="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article278457949.html" />
         <meta property="og:description" content="Lionel Messi gave up the captain’s armband to ex-captain DeAndre Yedlin for the Leagues Cup trophy ceremony" />
         <meta name="twitter:description" content="Lionel Messi gave up the captain’s armband to ex-captain DeAndre Yedlin for the Leagues Cup trophy ceremony" />
@@ -545,7 +545,7 @@ const SampleArticle = (props) => {
               </a>
 
               <h1 className="h1">
-                Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive | Opinion
+                Lionel Messi’s play has been ‘epic’ so far, his humility has been equally impressive
               </h1>
               <div className="bio">
                 <div>
@@ -972,8 +972,8 @@ const SampleArticle = (props) => {
                 </div>
               </section></div></div><div id="zone-el-13" className="zone-el"><section><div className="grid"><article id="secondary-story-2" className="card ">
                   <figure>
-                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article275883451.html#storylink=moresection" className="image-link-macro kfocusable" title="Uncertainty about Messi, Busquets is hurting Inter Miami. Club, fans need answers now | Opinion">
-                      <img src="https://www.miamiherald.com/latest-news/mcmzc1/picture275891546/alternates/LANDSCAPE_480/sipa_46566336.jpg" alt="Uncertainty about Messi, Busquets is hurting Inter Miami. Club, fans need answers now | Opinion" loading="lazy" />
+                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article275883451.html#storylink=moresection" className="image-link-macro kfocusable" title="Uncertainty about Messi, Busquets is hurting Inter Miami. Club, fans need answers now">
+                      <img src="https://www.miamiherald.com/latest-news/mcmzc1/picture275891546/alternates/LANDSCAPE_480/sipa_46566336.jpg" alt="Uncertainty about Messi, Busquets is hurting Inter Miami. Club, fans need answers now" loading="lazy" />
                     </a>
                   </figure>
                   <div className="card package  ">
@@ -984,7 +984,7 @@ const SampleArticle = (props) => {
                     </h2>
                     <h3>
                       <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article275883451.html#storylink=moresection">
-                        Uncertainty about Messi, Busquets is hurting Inter Miami. Club, fans need answers now | Opinion
+                        Uncertainty about Messi, Busquets is hurting Inter Miami. Club, fans need answers now
                       </a>
                     </h3>
                     <div className="update-date time" data-originaldate={1685463091}>Updated May 30, 2023 12:11 PM </div>
@@ -992,8 +992,8 @@ const SampleArticle = (props) => {
                 </article>
                 <article id="secondary-story-3" className="card ">
                   <figure>
-                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article275407791.html#storylink=moresection" className="image-link-macro kfocusable" title="Lonnie Walker IV, Bruce Brown put UM bond on hold during NBA Western Conference finals | Opinion">
-                      <img src="https://www.miamiherald.com/latest-news/lsngny/picture213458094/alternates/LANDSCAPE_480/BruceBrown" alt="Lonnie Walker IV, Bruce Brown put UM bond on hold during NBA Western Conference finals | Opinion" loading="lazy" />
+                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article275407791.html#storylink=moresection" className="image-link-macro kfocusable" title="Lonnie Walker IV, Bruce Brown put UM bond on hold during NBA Western Conference finals">
+                      <img src="https://www.miamiherald.com/latest-news/lsngny/picture213458094/alternates/LANDSCAPE_480/BruceBrown" alt="Lonnie Walker IV, Bruce Brown put UM bond on hold during NBA Western Conference finals" loading="lazy" />
                     </a>
                   </figure>
                   <div className="card package  ">
@@ -1004,7 +1004,7 @@ const SampleArticle = (props) => {
                     </h2>
                     <h3>
                       <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article275407791.html#storylink=moresection">
-                        Lonnie Walker IV, Bruce Brown put UM bond on hold during NBA Western Conference finals | Opinion
+                        Lonnie Walker IV, Bruce Brown put UM bond on hold during NBA Western Conference finals
                       </a>
                     </h3>
                     <div className="update-date time" data-originaldate={1684255045}>Updated May 16, 2023 12:37 PM </div>
@@ -1012,8 +1012,8 @@ const SampleArticle = (props) => {
                 </article>
                 <article id="secondary-story-4" className="card ">
                   <figure>
-                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274950571.html#storylink=moresection" className="image-link-macro kfocusable" title="There are no ‘failures’ in sports. Heed the words of Giannis and President Roosevelt | Opinion">
-                      <img src="https://www.miamiherald.com/latest-news/bwvr4c/picture274679226/alternates/LANDSCAPE_480/Heat_v_Bucks_MJO_16.jpg" alt="There are no ‘failures’ in sports. Heed the words of Giannis and President Roosevelt | Opinion" loading="lazy" />
+                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274950571.html#storylink=moresection" className="image-link-macro kfocusable" title="There are no ‘failures’ in sports. Heed the words of Giannis and President Roosevelt">
+                      <img src="https://www.miamiherald.com/latest-news/bwvr4c/picture274679226/alternates/LANDSCAPE_480/Heat_v_Bucks_MJO_16.jpg" alt="There are no ‘failures’ in sports. Heed the words of Giannis and President Roosevelt" loading="lazy" />
                     </a>
                   </figure>
                   <div className="card package  ">
@@ -1024,7 +1024,7 @@ const SampleArticle = (props) => {
                     </h2>
                     <h3>
                       <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274950571.html#storylink=moresection">
-                        There are no ‘failures’ in sports. Heed the words of Giannis and President Roosevelt | Opinion
+                        There are no ‘failures’ in sports. Heed the words of Giannis and President Roosevelt
                       </a>
                     </h3>
                     <div className="time">
@@ -1034,8 +1034,8 @@ const SampleArticle = (props) => {
                 </article>
                 <article id="secondary-story-5" className="card ">
                   <figure>
-                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274435765.html#storylink=moresection" className="image-link-macro kfocusable" title="NIL is “the next arms race” in college sports, UM athletes need more than John Ruiz | Opinion">
-                      <img src="https://www.miamiherald.com/latest-news/veb071/picture256480601/alternates/LANDSCAPE_480/MIA_104JohnRuizUM00NEWPPP" alt="NIL is “the next arms race” in college sports, UM athletes need more than John Ruiz | Opinion" loading="lazy" />
+                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274435765.html#storylink=moresection" className="image-link-macro kfocusable" title="NIL is “the next arms race” in college sports, UM athletes need more than John Ruiz">
+                      <img src="https://www.miamiherald.com/latest-news/veb071/picture256480601/alternates/LANDSCAPE_480/MIA_104JohnRuizUM00NEWPPP" alt="NIL is “the next arms race” in college sports, UM athletes need more than John Ruiz" loading="lazy" />
                     </a>
                   </figure>
                   <div className="card package  ">
@@ -1046,7 +1046,7 @@ const SampleArticle = (props) => {
                     </h2>
                     <h3>
                       <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274435765.html#storylink=moresection">
-                        NIL is “the next arms race” in college sports, UM athletes need more than John Ruiz | Opinion
+                        NIL is “the next arms race” in college sports, UM athletes need more than John Ruiz
                       </a>
                     </h3>
                     <div className="update-date time" data-originaldate={1681863753}>Updated April 18, 2023 8:22 PM </div>
@@ -1054,8 +1054,8 @@ const SampleArticle = (props) => {
                 </article>
                 <article id="secondary-story-6" className="card ">
                   <figure>
-                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274190670.html#storylink=moresection" className="image-link-macro kfocusable" title="Feathers, stars, trash-talking, TikTok-ing are just what women’s basketball needed | Opinion">
-                      <img src="https://www.kentucky.com/latest-news/iqkmfr/picture273913650/alternates/LANDSCAPE_480/20230402_add_aj6_232.JPG" alt="Feathers, stars, trash-talking, TikTok-ing are just what women’s basketball needed | Opinion" loading="lazy" />
+                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274190670.html#storylink=moresection" className="image-link-macro kfocusable" title="Feathers, stars, trash-talking, TikTok-ing are just what women’s basketball needed">
+                      <img src="https://www.kentucky.com/latest-news/iqkmfr/picture273913650/alternates/LANDSCAPE_480/20230402_add_aj6_232.JPG" alt="Feathers, stars, trash-talking, TikTok-ing are just what women’s basketball needed" loading="lazy" />
                     </a>
                   </figure>
                   <div className="card package  ">
@@ -1066,7 +1066,7 @@ const SampleArticle = (props) => {
                     </h2>
                     <h3>
                       <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article274190670.html#storylink=moresection">
-                        Feathers, stars, trash-talking, TikTok-ing are just what women’s basketball needed | Opinion
+                        Feathers, stars, trash-talking, TikTok-ing are just what women’s basketball needed
                       </a>
                     </h3>
                     <div className="update-date time" data-originaldate={1681251092}>Updated April 11, 2023 6:11 PM </div>
@@ -1074,8 +1074,8 @@ const SampleArticle = (props) => {
                 </article>
                 <article id="secondary-story-7" className="card ">
                   <figure>
-                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article273126405.html#storylink=moresection" className="image-link-macro kfocusable" title="Here is a list of reasons March Madness is the best sporting event in America | Opinion">
-                      <img src="https://www.miamiherald.com/latest-news/379rc8/picture272241168/alternates/LANDSCAPE_480/MIA_20230206AD3097MIAMIHurr" alt="Here is a list of reasons March Madness is the best sporting event in America | Opinion" loading="lazy" />
+                    <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article273126405.html#storylink=moresection" className="image-link-macro kfocusable" title="Here is a list of reasons March Madness is the best sporting event in America">
+                      <img src="https://www.miamiherald.com/latest-news/379rc8/picture272241168/alternates/LANDSCAPE_480/MIA_20230206AD3097MIAMIHurr" alt="Here is a list of reasons March Madness is the best sporting event in America" loading="lazy" />
                     </a>
                   </figure>
                   <div className="card package  ">
@@ -1086,7 +1086,7 @@ const SampleArticle = (props) => {
                     </h2>
                     <h3>
                       <a href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman/article273126405.html#storylink=moresection">
-                        Here is a list of reasons March Madness is the best sporting event in America | Opinion
+                        Here is a list of reasons March Madness is the best sporting event in America
                       </a>
                     </h3>
                     <div className="update-date time" data-originaldate={1678884148}>Updated March 15, 2023 8:42 AM </div>

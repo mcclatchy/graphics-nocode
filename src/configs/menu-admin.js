@@ -52,10 +52,32 @@ const menuAdmin = {
     ],
     "lead-cards": [{
             "type": "increment",
-            "label": "lead-image",
+            "label": "lead-logo",
             "maxCount": "1",
-            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.js",
-            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-image.css",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.js",
+            "defaultOptions": {
+                "data-logo": {
+                    "label": "Logo URL",
+                    "value": "https://www.miamiherald.com/static/hi/2023/reality-check/images/reality-check-logo-black.png",
+                    "type": "text"
+                },
+                "data-max-width": {
+                    "label": "Logo Max Width",
+                    "value": "500",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "150",
+                    "max": "700"
+                }
+            }
+        },
+        {
+            "type": "increment",
+            "label": "lead-media",
+            "maxCount": "1",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-media.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-media.css",
             "defaultOptions": {
                 "data-embed-class": {
                     "label": "Embed Class",
@@ -75,46 +97,41 @@ const menuAdmin = {
                         {
                             "label": "Overlap",
                             "value": "overlap"
-                        }
-                    ],
-                    "type": "switch"
-                },
-                "data-header-position": {
-                    "label": "Header Position",
-                    "value": "",
-                    "options": [{
-                            "label": "Overlay",
-                            "value": "overlaid"
                         },
                         {
-                            "label": "Beneath",
-                            "value": ""
+                            "label": "Corner Text",
+                            "value": "corner-text"
                         }
                     ],
                     "type": "switch"
                 },
-                "data-image": {
-                    "label": "Lead Image URL",
-                    "value": "https://www.charlotteobserver.com/static/hi/2023/devalos-perkins/images/lead-1.jpg",
+                "data-header-color": {
+                    "label": "Header Color",
+                    "value": "",
+                    "options": [{
+                            "label": "Default",
+                            "value": ""
+                        },
+                        {
+                            "label": "Light",
+                            "value": "light"
+                        },
+                        {
+                            "label": "Dark",
+                            "value": "dark"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-title": {
+                    "label": "Title",
+                    "value": "Messi in Miami",
                     "type": "text"
                 },
-                "--lead-image-object-position-horizontal-mobile": {
-                    "label": "Horizontal Position",
-                    "value": "50",
-                    "type": "range",
-                    "unit": "%",
-                    "min": "0",
-                    "max": "100",
-                    "property": ":root"
-                },
-                "--lead-image-object-position-vertical-mobile": {
-                    "label": "Vertical Position",
-                    "value": "50",
-                    "type": "range",
-                    "unit": "%",
-                    "min": "0",
-                    "max": "100",
-                    "property": ":root"
+                "data-subtitle": {
+                    "label": "Subtitle",
+                    "value": "Not only did Messi defy all odds and decide to join Inter Miami, his former FC Barcelona teammates Sergio Busquets and Jordi Alba signed and are also along for the ride.",
+                    "type": "text"
                 },
                 "slot": {
                     "label": "Caption",
@@ -124,28 +141,11 @@ const menuAdmin = {
                         "text": "Illustration by Rachel Handley"
                     }],
                     "type": "text-item"
-                }
-            }
-        },
-        {
-            "type": "increment",
-            "label": "lead-logo",
-            "maxCount": "1",
-            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.js",
-            "defaultOptions": {
-                "data-logo": {
-                    "label": "Logo URL",
-                    "value": "https://www.miamiherald.com/static/hi/2023/reality-check/images/reality-check-logo-black.png",
-                    "type": "text"
                 },
-                "data-max-width": {
-                    "label": "Logo Max Width",
-                    "value": "500",
-                    "type": "range",
-                    "unit": "px",
-                    "min": "150",
-                    "max": "700"
+                "data-media": {
+                    "label": "Lead Media URL",
+                    "value": "https://www.miamiherald.com/static/hi/2023/tree-canopy/images/intro-7-centered.jpg",
+                    "type": "text"
                 }
             }
         },
@@ -237,7 +237,7 @@ const menuAdmin = {
                             "attributes": {
                                 "src": {
                                     "label": "Image URL",
-                                    "value": "https://storage.googleapis.com/mc-high-impact/2024/nc-hbcu-underfunding/images/lead-person.jpg",
+                                    "value": "https://www.miamiherald.com/static/hi/2024/nc-hbcu-underfunding/images/lead-person.jpg",
                                     "type": "text"
                                 }
                             }
@@ -257,72 +257,6 @@ const menuAdmin = {
                 "data-title": {
                     "label": "Title",
                     "value": "Messi in Miami",
-                    "type": "text"
-                }
-            }
-        },
-        {
-            "type": "increment",
-            "label": "lead-video",
-            "maxCount": "1",
-            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-video.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-video.js",
-            "defaultOptions": {
-                "data-title": {
-                    "label": "Title",
-                    "value": "Messi in Miami",
-                    "type": "text"
-                },
-                "data-header-position": {
-                    "label": "Header Position",
-                    "value": "overlaid",
-                    "options": [{
-                            "label": "Overlay",
-                            "value": "overlaid"
-                        },
-                        {
-                            "label": "Beneath",
-                            "value": ""
-                        }
-                    ],
-                    "type": "switch"
-                },
-                "data-embed-class": {
-                    "label": "Embed Class",
-                    "value": "",
-                    "options": [{
-                            "label": "Full Screen",
-                            "value": ""
-                        },
-                        {
-                            "label": "Full Bleed",
-                            "value": "full-bleed"
-                        }
-                    ],
-                    "type": "switch"
-                },
-                "--lead-video-header-max-width": {
-                    "label": "Header Max Width",
-                    "value": "728",
-                    "type": "range",
-                    "unit": "px",
-                    "min": "400",
-                    "max": "728",
-                    "property": ":root"
-                },
-                "data-video": {
-                    "label": "Video URL - Landscape",
-                    "value": "https://miamiherald.com/static/hi/2023/skydiving-lodi/videos/intro-tyler-interview.mp4",
-                    "type": "text"
-                },
-                "data-video-portrait": {
-                    "label": "Video URL - Portrait (Optional)",
-                    "value": "",
-                    "type": "text"
-                },
-                "data-logo": {
-                    "label": "Logo URL (Optional: will override Title)",
-                    "value": "",
                     "type": "text"
                 }
             }
