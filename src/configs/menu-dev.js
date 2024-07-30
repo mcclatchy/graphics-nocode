@@ -1003,7 +1003,7 @@ const menuDev = {
             "defaultOptions": {
                 "data-video": {
                     "label": "Video URL",
-                    "value": "https://www.miamiherald.com/static/hi/2024/sac-cal-osha/videos/osha-lead-video-loop.mp4",
+                    "value": "https://www.miamiherald.com/static/hi/2023/skydiving-lodi/videos/tyler-interview.mp4",
                     "type": "text"
                 },
                 "data-embed-class": {
@@ -1024,6 +1024,28 @@ const menuDev = {
                         {
                             "label": "Full Bleed",
                             "value": "full-bleed"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-video-type": {
+                    "label": "Video Type",
+                    "value": "controls-click-to-play",
+                    "options": [{
+                            "label": "Muted Autoplay",
+                            "value": "muted-autoplay"
+                        },
+                        {
+                            "label": "Muted Scrollplay",
+                            "value": "muted-scrollplay"
+                        },
+                        {
+                            "label": "Controls Scrollplay",
+                            "value": "controls-scrollplay"
+                        },
+                        {
+                            "label": "Controls<br>Click-to-play",
+                            "value": "controls-click-to-play"
                         }
                     ],
                     "type": "switch"

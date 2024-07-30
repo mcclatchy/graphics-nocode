@@ -7,6 +7,7 @@
 }
 
 .tool-switch .item {
+	line-height: 1.3;
 	padding: 5px 5px;
 	border: 1px solid var(--tool-black);
 	width: 110px;

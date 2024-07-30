@@ -20,8 +20,8 @@ const Switch = (props) => {
         		handleClick(e, option.value)
         		props.handleChange(e, props.props)
         	}}
+          dangerouslySetInnerHTML={{__html: option.label}}
         >
-        	{option.label}
         </div>
       )
     })}
