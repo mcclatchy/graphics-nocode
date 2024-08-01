@@ -269,8 +269,8 @@ const menuAdmin = {
             "type": "increment",
             "label": "lead-title",
             "maxCount": "1",
-            "script": "lead-title.js",
-            "link": "lead-title.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-title.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-title.css",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
