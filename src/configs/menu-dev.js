@@ -55,8 +55,8 @@ const menuDev = {
             "type": "increment",
             "label": "lead-logo",
             "maxCount": "1",
-            "link": "lead-logo.css",
-            "script": "lead-logo.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.js",
             "defaultOptions": {
                 "data-logo": {
                     "label": "Logo URL",
@@ -271,6 +271,11 @@ const menuDev = {
                 "data-title": {
                     "label": "Title",
                     "value": "Messi in Miami",
+                    "type": "text"
+                },
+                "data-link": {
+                    "label": "Title Link (Optional)",
+                    "value": "",
                     "type": "text"
                 }
             }

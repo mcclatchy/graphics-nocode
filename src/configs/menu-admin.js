@@ -264,12 +264,17 @@ const menuAdmin = {
             "type": "increment",
             "label": "lead-title",
             "maxCount": "1",
-            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-title.js",
-            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-title.css",
+            "script": "lead-title.js",
+            "link": "lead-title.css",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
                     "value": "Messi in Miami",
+                    "type": "text"
+                },
+                "data-link": {
+                    "label": "Title Link (Optional)",
+                    "value": "",
                     "type": "text"
                 }
             }
