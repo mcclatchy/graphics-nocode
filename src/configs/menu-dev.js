@@ -55,12 +55,17 @@ const menuDev = {
             "type": "increment",
             "label": "lead-logo",
             "maxCount": "1",
-            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.css",
-            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lead-logo.js",
+            "link": "lead-logo.css",
+            "script": "lead-logo.js",
             "defaultOptions": {
                 "data-logo": {
                     "label": "Logo URL",
                     "value": "https://www.miamiherald.com/static/hi/2023/reality-check/images/reality-check-logo-black.png",
+                    "type": "text"
+                },
+                "data-link": {
+                    "label": "Logo Link (Optional)",
+                    "value": "",
                     "type": "text"
                 },
                 "data-max-width": {
@@ -70,6 +75,14 @@ const menuDev = {
                     "unit": "px",
                     "min": "150",
                     "max": "700"
+                },
+                "--lead-logo-margin": {
+                    "label": "Logo Margin",
+                    "value": "10",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "0",
+                    "max": "20"
                 }
             }
         },

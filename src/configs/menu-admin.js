@@ -62,6 +62,11 @@ const menuAdmin = {
                     "value": "https://www.miamiherald.com/static/hi/2023/reality-check/images/reality-check-logo-black.png",
                     "type": "text"
                 },
+                "data-link": {
+                    "label": "Logo Link (Optional)",
+                    "value": "",
+                    "type": "text"
+                },
                 "data-max-width": {
                     "label": "Logo Max Width",
                     "value": "500",
@@ -69,6 +74,14 @@ const menuAdmin = {
                     "unit": "px",
                     "min": "150",
                     "max": "700"
+                },
+                "--lead-logo-margin": {
+                    "label": "Logo Margin",
+                    "value": "10",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "0",
+                    "max": "20"
                 }
             }
         },
