@@ -1050,6 +1050,11 @@ const menuDev = {
                     ],
                     "type": "switch"
                 },
+                "data-captions": {
+                    "label": "Video Captions",
+                    "value": "https://www.miamiherald.com/static/hi/2023/skydiving-lodi/data/tyler-interview.json",
+                    "type": "text"
+                },
                 "slot": {
                     "label": "Caption",
                     "options": ["figcaption"],
