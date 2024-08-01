@@ -338,177 +338,177 @@ const SampleArticle = (props) => {
                 </div>
             </div>
             <nav className="main-nav sans summary" id="main-nav" role="menu">
-                <div id="nav-menu-search-icon" className="search flex" role="menuitem" tabIndex="0">
-                    <form tabIndex="-1" action="/search/" className="flex" role="search" method="POST"><input id="nav-menu-search-bar" type="text" name="q" placeholder="Search" aria-label="Search Miami Herald" tabIndex="0"/><button type="submit" aria-label="Search" tabIndex="-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <div id="nav-menu-search-icon" className="search flex" role="menuitem" tab-index="0">
+                    <form tab-index="-1" action="/search/" className="flex" role="search" method="POST"><input id="nav-menu-search-bar" type="text" name="q" placeholder="Search" aria-label="Search Miami Herald" tab-index="0"/><button type="submit" aria-label="Search" tab-index="-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
                             </svg></button></form>
                 </div>
-                <a className="" href="https://www.miamiherald.com/#navlink=subnav" role="menuitem" tabIndex="0">Home
+                <a className="" href="https://www.miamiherald.com/#navlink=subnav" role="menuitem" tab-index="0">Home
                     
                     </a>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-1" id="menubtn-1" className="summary expander" tabIndex="0" aria-haspopup="true">Customer Service</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-1" id="menubtn-1" className="summary expander" tab-index="0" aria-haspopup="true">Customer Service</button>
                     <div id="menu-1" aria-labelledby="menubtn-1" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/customer-service/about-us#navlink=subnav" role="menuitem" tabIndex="0">About Us</a></div>
-                        <div role="none"><a href="https://account.miamiherald.com/my-account/" role="menuitem" tabIndex="0">Account Management</a></div>
-                        <div role="none"><a href="https://miamiherald.newspapers.com/" role="menuitem" tabIndex="0">Archives</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/customer-service/contact-us#navlink=subnav" role="menuitem" tabIndex="0">Contact Us</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/customer-service#navlink=subnav" role="menuitem" tabIndex="0">Customer Service</a></div>
-                        <div role="none"><a href="https://subscribe.miamiherald.com/beinformed" role="menuitem" tabIndex="0">Subscribe</a></div>
-                        <div role="none"><a href="https://myaccount.miamiherald.com/ral_no/home" role="menuitem" tabIndex="0">Manage Print Subscription</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/customer-service/faq#navlink=subnav" role="menuitem" tabIndex="0">FAQ</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/customer-service/sponsorships#navlink=subnav" role="menuitem" tabIndex="0">Sponsorship</a></div>
-                        <div role="none"><span className="option-label" tabIndex="-1">Advertise</span></div>
-                        <div role="none"><a href="https://go.mcclatchy.com/media-capabilities-raleigh/p/1" role="menuitem" tabIndex="0">Contact McClatchy Advertising</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service/about-us#navlink=subnav" role="menuitem" tab-index="0">About Us</a></div>
+                        <div role="none"><a href="https://account.miamiherald.com/my-account/" role="menuitem" tab-index="0">Account Management</a></div>
+                        <div role="none"><a href="https://miamiherald.newspapers.com/" role="menuitem" tab-index="0">Archives</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service/contact-us#navlink=subnav" role="menuitem" tab-index="0">Contact Us</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service#navlink=subnav" role="menuitem" tab-index="0">Customer Service</a></div>
+                        <div role="none"><a href="https://subscribe.miamiherald.com/beinformed" role="menuitem" tab-index="0">Subscribe</a></div>
+                        <div role="none"><a href="https://myaccount.miamiherald.com/ral_no/home" role="menuitem" tab-index="0">Manage Print Subscription</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service/faq#navlink=subnav" role="menuitem" tab-index="0">FAQ</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/customer-service/sponsorships#navlink=subnav" role="menuitem" tab-index="0">Sponsorship</a></div>
+                        <div role="none"><span className="option-label" tab-index="-1">Advertise</span></div>
+                        <div role="none"><a href="https://go.mcclatchy.com/media-capabilities-raleigh/p/1" role="menuitem" tab-index="0">Contact McClatchy Advertising</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-2" id="menubtn-2" className="summary expander" tabIndex="0" aria-haspopup="true">Stay Connected</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-2" id="menubtn-2" className="summary expander" tab-index="0" aria-haspopup="true">Stay Connected</button>
                     <div id="menu-2" aria-labelledby="menubtn-2" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/mobile#navlink=subnav" role="menuitem" tabIndex="0">Mobile &amp; Apps</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/newsletters#navlink=subnav" role="menuitem" tabIndex="0">Newsletters</a></div>
-                        <div role="none"><span className="option-label" tabIndex="-1">Advertise</span></div>
-                        <div role="none"><a href="https://www.facebook.com/newsandobserver/" role="menuitem" tabIndex="0">Facebook</a></div>
-                        <div role="none"><a href="https://twitter.com/miamiherald/" role="menuitem" tabIndex="0">Twitter</a></div>
-                        <div role="none"><a href="http://instagram.com/miamiherald/" role="menuitem" tabIndex="0">Instagram</a></div>
-                        <div role="none"><a href="https://www.youtube.com/c/TheMiamiHerald" role="menuitem" tabIndex="0">YouTube</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/mobile#navlink=subnav" role="menuitem" tab-index="0">Mobile &amp; Apps</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/newsletters#navlink=subnav" role="menuitem" tab-index="0">Newsletters</a></div>
+                        <div role="none"><span className="option-label" tab-index="-1">Advertise</span></div>
+                        <div role="none"><a href="https://www.facebook.com/newsandobserver/" role="menuitem" tab-index="0">Facebook</a></div>
+                        <div role="none"><a href="https://twitter.com/miamiherald/" role="menuitem" tab-index="0">Twitter</a></div>
+                        <div role="none"><a href="http://instagram.com/miamiherald/" role="menuitem" tab-index="0">Instagram</a></div>
+                        <div role="none"><a href="https://www.youtube.com/c/TheMiamiHerald" role="menuitem" tab-index="0">YouTube</a></div>
                     </div>
-                </div><a className="" href="https://www.miamiherald.com/e-edition/today#navlink=subnav" role="menuitem" tabIndex="0">Read today's Edition
+                </div><a className="" href="https://www.miamiherald.com/e-edition/today#navlink=subnav" role="menuitem" tab-index="0">Read today's Edition
                     
-                    </a><a className="" href="https://www.votedraleighsbest.com/" role="menuitem" tabIndex="0">Raleigh's Best
-                    
-                    </a>
-                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/><a className="" href="https://www.miamiherald.com/detour#navlink=subnav" role="menuitem" tabIndex="0">Detour Travel
+                    </a><a className="" href="https://www.votedraleighsbest.com/" role="menuitem" tab-index="0">Raleigh's Best
                     
                     </a>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-7" id="menubtn-7" className="summary expander" tabIndex="0" aria-haspopup="true">News</button>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tab-index="-1"/><a className="" href="https://www.miamiherald.com/detour#navlink=subnav" role="menuitem" tab-index="0">Detour Travel
+                    
+                    </a>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-7" id="menubtn-7" className="summary expander" tab-index="0" aria-haspopup="true">News</button>
                     <div id="menu-7" aria-labelledby="menubtn-7" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/news/local#navlink=subnav" role="menuitem" tabIndex="0">Local</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/local/crime#navlink=subnav" role="menuitem" tabIndex="0">Crime</a></div>
-                        <div role="none"><span className="option-label" tabIndex="-1">Counties</span></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/durham-county#navlink=subnav" role="menuitem" tabIndex="0">Durham County</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/johnston-county#navlink=subnav" role="menuitem" tabIndex="0">Johnston County</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/orange-county#navlink=subnav" role="menuitem" tabIndex="0">Orange County</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/wake-county#navlink=subnav" role="menuitem" tabIndex="0">Wake County</a></div>
-                        <div role="none"><span className="option-label" tabIndex="-1">More News</span></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/local/education#navlink=subnav" role="menuitem" tabIndex="0">Education</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/weather-news#navlink=subnav" role="menuitem" tabIndex="0">Weather News</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/traffic#navlink=subnav" role="menuitem" tabIndex="0">Transportation</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/state/north-carolina#navlink=subnav" role="menuitem" tabIndex="0">North Carolina</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/nation-world/national#navlink=subnav" role="menuitem" tabIndex="0">National</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/databases#navlink=subnav" role="menuitem" tabIndex="0">Databases</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local#navlink=subnav" role="menuitem" tab-index="0">Local</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/crime#navlink=subnav" role="menuitem" tab-index="0">Crime</a></div>
+                        <div role="none"><span className="option-label" tab-index="-1">Counties</span></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/durham-county#navlink=subnav" role="menuitem" tab-index="0">Durham County</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/johnston-county#navlink=subnav" role="menuitem" tab-index="0">Johnston County</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/orange-county#navlink=subnav" role="menuitem" tab-index="0">Orange County</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/counties/wake-county#navlink=subnav" role="menuitem" tab-index="0">Wake County</a></div>
+                        <div role="none"><span className="option-label" tab-index="-1">More News</span></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/local/education#navlink=subnav" role="menuitem" tab-index="0">Education</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/weather-news#navlink=subnav" role="menuitem" tab-index="0">Weather News</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/traffic#navlink=subnav" role="menuitem" tab-index="0">Transportation</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/state/north-carolina#navlink=subnav" role="menuitem" tab-index="0">North Carolina</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/nation-world/national#navlink=subnav" role="menuitem" tab-index="0">National</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/databases#navlink=subnav" role="menuitem" tab-index="0">Databases</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-8" id="menubtn-8" className="summary expander" tabIndex="0" aria-haspopup="true">Sports</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-8" id="menubtn-8" className="summary expander" tab-index="0" aria-haspopup="true">Sports</button>
                     <div id="menu-8" aria-labelledby="menubtn-8" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/sports#navlink=subnav" role="menuitem" tabIndex="0">All Sports</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/nhl/carolina-hurricanes#navlink=subnav" role="menuitem" tabIndex="0">Canes</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/high-school#navlink=subnav" role="menuitem" tabIndex="0">High Schools</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/nascar-auto-racing#navlink=subnav" role="menuitem" tabIndex="0">NASCAR &amp; Auto Racing</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/nfl/carolina-panthers#navlink=subnav" role="menuitem" tabIndex="0">Panthers</a></div>
-                        <div role="none"><span className="option-label" tabIndex="-1">Colleges</span></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/duke#navlink=subnav" role="menuitem" tabIndex="0">Duke</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/nc-state#navlink=subnav" role="menuitem" tabIndex="0">NC State</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/unc#navlink=subnav" role="menuitem" tabIndex="0">North Carolina</a></div>
-                        <div role="none"><span className="option-label" tabIndex="-1">Columnists</span></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/luke-decock#navlink=subnav" role="menuitem" tabIndex="0">Luke DeCock</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/scott-fowler#navlink=subnav" role="menuitem" tabIndex="0">Scott Fowler</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports#navlink=subnav" role="menuitem" tab-index="0">All Sports</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/nhl/carolina-hurricanes#navlink=subnav" role="menuitem" tab-index="0">Canes</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/high-school#navlink=subnav" role="menuitem" tab-index="0">High Schools</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/nascar-auto-racing#navlink=subnav" role="menuitem" tab-index="0">NASCAR &amp; Auto Racing</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/nfl/carolina-panthers#navlink=subnav" role="menuitem" tab-index="0">Panthers</a></div>
+                        <div role="none"><span className="option-label" tab-index="-1">Colleges</span></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/duke#navlink=subnav" role="menuitem" tab-index="0">Duke</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/nc-state#navlink=subnav" role="menuitem" tab-index="0">NC State</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/college/acc/unc#navlink=subnav" role="menuitem" tab-index="0">North Carolina</a></div>
+                        <div role="none"><span className="option-label" tab-index="-1">Columnists</span></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/luke-decock#navlink=subnav" role="menuitem" tab-index="0">Luke DeCock</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/sports/spt-columns-blogs/scott-fowler#navlink=subnav" role="menuitem" tab-index="0">Scott Fowler</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-9" id="menubtn-9" className="summary expander" tabIndex="0" aria-haspopup="true">Politics</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-9" id="menubtn-9" className="summary expander" tab-index="0" aria-haspopup="true">Politics</button>
                     <div id="menu-9" aria-labelledby="menubtn-9" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/news/politics-government#navlink=subnav" role="menuitem" tabIndex="0">Politics &amp; Government</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/politics-government/election#navlink=subnav" role="menuitem" tabIndex="0">Election</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/politics-government#navlink=subnav" role="menuitem" tab-index="0">Politics &amp; Government</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/politics-government/election#navlink=subnav" role="menuitem" tab-index="0">Election</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-10" id="menubtn-10" className="summary expander" tabIndex="0" aria-haspopup="true">Business &amp; Real Estate</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-10" id="menubtn-10" className="summary expander" tab-index="0" aria-haspopup="true">Business &amp; Real Estate</button>
                     <div id="menu-10" aria-labelledby="menubtn-10" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/business#navlink=subnav" role="menuitem" tabIndex="0">All Business</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/news/business/real-estate-news#navlink=subnav" role="menuitem" tabIndex="0">Real Estate</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/money#navlink=subnav" role="menuitem" tabIndex="0">Personal Finance</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/business#navlink=subnav" role="menuitem" tab-index="0">All Business</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/news/business/real-estate-news#navlink=subnav" role="menuitem" tab-index="0">Real Estate</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/money#navlink=subnav" role="menuitem" tab-index="0">Personal Finance</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-11" id="menubtn-11" className="summary expander" tabIndex="0" aria-haspopup="true">Living &amp; Entertainment</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-11" id="menubtn-11" className="summary expander" tab-index="0" aria-haspopup="true">Living &amp; Entertainment</button>
                     <div id="menu-11" aria-labelledby="menubtn-11" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/living#navlink=subnav" role="menuitem" tabIndex="0">Living</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/entertainment#navlink=subnav" role="menuitem" tabIndex="0">Entertainment</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/living/food-drink#navlink=subnav" role="menuitem" tabIndex="0">Food + Drink</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/entertainment/comics#navlink=subnav" role="menuitem" tabIndex="0">Comics</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/entertainment/horoscopes#navlink=subnav" role="menuitem" tabIndex="0">Horoscopes</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/entertainment/games-puzzles#navlink=subnav" role="menuitem" tabIndex="0">Puzzles &amp; Games</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/entertainment/tv/warm-tv-blog#navlink=subnav" role="menuitem" tabIndex="0">Happiness is a Warm TV</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/living#navlink=subnav" role="menuitem" tab-index="0">Living</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment#navlink=subnav" role="menuitem" tab-index="0">Entertainment</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/living/food-drink#navlink=subnav" role="menuitem" tab-index="0">Food + Drink</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/comics#navlink=subnav" role="menuitem" tab-index="0">Comics</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/horoscopes#navlink=subnav" role="menuitem" tab-index="0">Horoscopes</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/games-puzzles#navlink=subnav" role="menuitem" tab-index="0">Puzzles &amp; Games</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/entertainment/tv/warm-tv-blog#navlink=subnav" role="menuitem" tab-index="0">Happiness is a Warm TV</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-12" id="menubtn-12" className="summary expander" tabIndex="0" aria-haspopup="true">Opinion</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-12" id="menubtn-12" className="summary expander" tab-index="0" aria-haspopup="true">Opinion</button>
                     <div id="menu-12" aria-labelledby="menubtn-12" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/opinion#navlink=subnav" role="menuitem" tabIndex="0">All Opinion</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/opinion/editorials#navlink=subnav" role="menuitem" tabIndex="0">Editorials</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor#navlink=subnav" role="menuitem" tabIndex="0">Letters to the Editor</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/submit-letter#navlink=subnav" role="menuitem" tabIndex="0">Submit a Letter</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/submit-op-ed#navlink=subnav" role="menuitem" tabIndex="0">Submit an Op-ed</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion#navlink=subnav" role="menuitem" tab-index="0">All Opinion</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/editorials#navlink=subnav" role="menuitem" tab-index="0">Editorials</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor#navlink=subnav" role="menuitem" tab-index="0">Letters to the Editor</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/submit-letter#navlink=subnav" role="menuitem" tab-index="0">Submit a Letter</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/opinion/letters-to-the-editor/submit-op-ed#navlink=subnav" role="menuitem" tab-index="0">Submit an Op-ed</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-13" id="menubtn-13" className="summary expander" tabIndex="0" aria-haspopup="true">Obituaries</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-13" id="menubtn-13" className="summary expander" tab-index="0" aria-haspopup="true">Obituaries</button>
                     <div id="menu-13" aria-labelledby="menubtn-13" role="menu">
-                        <div role="none"><a href="https://www.legacy.com/obituaries/miamiherald/" role="menuitem" tabIndex="0">View Obituaries</a></div>
-                        <div role="none"><a href="https://miamiherald.obituaries.com" role="menuitem" tabIndex="0">Place an Obituary</a></div>
+                        <div role="none"><a href="https://www.legacy.com/obituaries/miamiherald/" role="menuitem" tab-index="0">View Obituaries</a></div>
+                        <div role="none"><a href="https://miamiherald.obituaries.com" role="menuitem" tab-index="0">Place an Obituary</a></div>
                     </div>
                 </div>
-                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-15" id="menubtn-15" className="summary expander" tabIndex="0" aria-haspopup="true">Sports Betting</button>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tab-index="-1"/>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-15" id="menubtn-15" className="summary expander" tab-index="0" aria-haspopup="true">Sports Betting</button>
                     <div id="menu-15" aria-labelledby="menubtn-15" role="menu">
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276264976.html" role="menuitem" tabIndex="0">North Carolina Sports Betting</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276265821.html" role="menuitem" tabIndex="0">North Carolina Betting Apps</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276268846.html" role="menuitem" tabIndex="0">North Carolina Sportsbook Promo Code</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276267541.html" role="menuitem" tabIndex="0">BetMGM North Carolina Bonus Code</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276267666.html" role="menuitem" tabIndex="0">Caesars North Carolina Promo Code</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article283805073.html" role="menuitem" tabIndex="0">ESPN BET North Carolina Promo Code</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article284174123.html" role="menuitem" tabIndex="0">Fanatics Sportsbook North Carolina Promo</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article284067068.html" role="menuitem" tabIndex="0">Bet365 North Carolina Bonus Code</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276272471.html" role="menuitem" tabIndex="0">FanDuel North Carolina Promo Code</a></div>
-                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276271871.html" role="menuitem" tabIndex="0">DraftKings North Carolina Promo Code</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276264976.html" role="menuitem" tab-index="0">North Carolina Sports Betting</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276265821.html" role="menuitem" tab-index="0">North Carolina Betting Apps</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276268846.html" role="menuitem" tab-index="0">North Carolina Sportsbook Promo Code</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276267541.html" role="menuitem" tab-index="0">BetMGM North Carolina Bonus Code</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276267666.html" role="menuitem" tab-index="0">Caesars North Carolina Promo Code</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article283805073.html" role="menuitem" tab-index="0">ESPN BET North Carolina Promo Code</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article284174123.html" role="menuitem" tab-index="0">Fanatics Sportsbook North Carolina Promo</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article284067068.html" role="menuitem" tab-index="0">Bet365 North Carolina Bonus Code</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276272471.html" role="menuitem" tab-index="0">FanDuel North Carolina Promo Code</a></div>
+                        <div role="none"><a href="https://www.charlotteobserver.com/betting/article276271871.html" role="menuitem" tab-index="0">DraftKings North Carolina Promo Code</a></div>
                     </div>
                 </div>
-                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-17" id="menubtn-17" className="summary expander" tabIndex="0" aria-haspopup="true">Shopping/Reviews</button>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tab-index="-1"/>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-17" id="menubtn-17" className="summary expander" tab-index="0" aria-haspopup="true">Shopping/Reviews</button>
                     <div id="menu-17" aria-labelledby="menubtn-17" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/reviews#navlink=subnav" role="menuitem" tabIndex="0">Reviews</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/product-reviews#navlink=subnav" role="menuitem" tabIndex="0">Product Reviews</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/health-wellness#navlink=subnav" role="menuitem" tabIndex="0">Health and Wellness</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/software-business#navlink=subnav" role="menuitem" tabIndex="0">Software and Business</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/how-to-geek#navlink=subnav" role="menuitem" tabIndex="0">How To Geek</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/shopping#navlink=subnav" role="menuitem" tabIndex="0">Shopping</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/shop-with-us#navlink=subnav" role="menuitem" tabIndex="0">Shop With Us</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/reviews#navlink=subnav" role="menuitem" tab-index="0">Reviews</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/product-reviews#navlink=subnav" role="menuitem" tab-index="0">Product Reviews</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/health-wellness#navlink=subnav" role="menuitem" tab-index="0">Health and Wellness</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/software-business#navlink=subnav" role="menuitem" tab-index="0">Software and Business</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/how-to-geek#navlink=subnav" role="menuitem" tab-index="0">How To Geek</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/shopping#navlink=subnav" role="menuitem" tab-index="0">Shopping</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/shop-with-us#navlink=subnav" role="menuitem" tab-index="0">Shop With Us</a></div>
                     </div>
-                </div><a className="" href="https://www.miamiherald.com/press-releases#navlink=subnav" role="menuitem" tabIndex="0">Press Releases
+                </div><a className="" href="https://www.miamiherald.com/press-releases#navlink=subnav" role="menuitem" tab-index="0">Press Releases
                     
-                    </a><a className="" href="https://www.miamiherald.com/deals-offers#navlink=subnav" role="menuitem" tabIndex="0">Deals &amp; Offers
+                    </a><a className="" href="https://www.miamiherald.com/deals-offers#navlink=subnav" role="menuitem" tab-index="0">Deals &amp; Offers
                     
                     </a>
-                <hr className="nav-divider" role="separator" aria-hidden="true" tabIndex="-1"/>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-21" id="menubtn-21" className="summary expander" tabIndex="0" aria-haspopup="true">Sponsored Content</button>
+                <hr className="nav-divider" role="separator" aria-hidden="true" tab-index="-1"/>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-21" id="menubtn-21" className="summary expander" tab-index="0" aria-haspopup="true">Sponsored Content</button>
                     <div id="menu-21" aria-labelledby="menubtn-21" role="menu">
-                        <div role="none"><a href="https://www.miamiherald.com/advertise/sponsored-content/?ntv_adpz=3618" role="menuitem" tabIndex="0">Paid Content by BrandPoint</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/partner-content#navlink=subnav" role="menuitem" tabIndex="0">Partner Content</a></div>
-                        <div role="none"><a href="https://www.miamiherald.com/family-features#navlink=subnav" role="menuitem" tabIndex="0">Family Features</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/advertise/sponsored-content/?ntv_adpz=3618" role="menuitem" tab-index="0">Paid Content by BrandPoint</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/partner-content#navlink=subnav" role="menuitem" tab-index="0">Partner Content</a></div>
+                        <div role="none"><a href="https://www.miamiherald.com/family-features#navlink=subnav" role="menuitem" tab-index="0">Family Features</a></div>
                     </div>
                 </div>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-22" id="menubtn-22" className="summary expander" tabIndex="0" aria-haspopup="true">Classifieds</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-22" id="menubtn-22" className="summary expander" tab-index="0" aria-haspopup="true">Classifieds</button>
                     <div id="menu-22" aria-labelledby="menubtn-22" role="menu">
-                        <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/raleigh/index.html" role="menuitem" tabIndex="0">Place a Classified Ad</a></div>
-                        <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/raleigh/flow.html?action=jump&amp;_flowId=adportal-classified-flow&amp;categoryName=Recruitment&amp;classificationName=Employment" role="menuitem" tabIndex="0">Post a Job</a></div>
-                        <div role="none"><a href="https://classifieds.mcclatchy.com/marketplace/raleigh/" role="menuitem" tabIndex="0">Browse Classifieds</a></div>
+                        <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/raleigh/index.html" role="menuitem" tab-index="0">Place a Classified Ad</a></div>
+                        <div role="none"><a href="https://placeclassifieds.mcclatchy.com/classifieds/raleigh/flow.html?action=jump&amp;_flowId=adportal-classified-flow&amp;categoryName=Recruitment&amp;classificationName=Employment" role="menuitem" tab-index="0">Post a Job</a></div>
+                        <div role="none"><a href="https://classifieds.mcclatchy.com/marketplace/raleigh/" role="menuitem" tab-index="0">Browse Classifieds</a></div>
                     </div>
-                </div><a className="" href="https://placecelebration.mcclatchy.com/celebrations/raleigh/index.html" role="menuitem" tabIndex="0">Place an Ad - Celebrations
+                </div><a className="" href="https://placecelebration.mcclatchy.com/celebrations/raleigh/index.html" role="menuitem" tab-index="0">Place an Ad - Celebrations
                     
-                    </a><a className="" href="https://jobs.miamiherald.com/" role="menuitem" tabIndex="0">Search Jobs
+                    </a><a className="" href="https://jobs.miamiherald.com/" role="menuitem" tab-index="0">Search Jobs
                     
-                    </a><a className="" href="https://classifieds.mcclatchy.com/marketplace/raleigh/" role="menuitem" tabIndex="0">Search Legal Notices
+                    </a><a className="" href="https://classifieds.mcclatchy.com/marketplace/raleigh/" role="menuitem" tab-index="0">Search Legal Notices
                     
                     </a>
-                <div className="subsection" tabIndex="-1"> <button aria-controls="menu-26" id="menubtn-26" className="summary expander" tabIndex="0" aria-haspopup="true">Advertising</button>
+                <div className="subsection" tab-index="-1"> <button aria-controls="menu-26" id="menubtn-26" className="summary expander" tab-index="0" aria-haspopup="true">Advertising</button>
                     <div id="menu-26" aria-labelledby="menubtn-26" role="menu">
-                        <div role="none"><a href="https://business.mcclatchy.com/raleigh" role="menuitem" tabIndex="0">Place an Ad</a></div>
-                        <div role="none"><a href="https://hiring.mcclatchy.com/recruitmentproducts" role="menuitem" tabIndex="0">Staffing Solutions</a></div>
-                        <div role="none"><a href="https://www.winwithmcclatchy.com/political-advocacy" role="menuitem" tabIndex="0">Political | Advocacy Advertising</a></div>
+                        <div role="none"><a href="https://business.mcclatchy.com/raleigh" role="menuitem" tab-index="0">Place an Ad</a></div>
+                        <div role="none"><a href="https://hiring.mcclatchy.com/recruitmentproducts" role="menuitem" tab-index="0">Staffing Solutions</a></div>
+                        <div role="none"><a href="https://www.winwithmcclatchy.com/political-advocacy" role="menuitem" tab-index="0">Political | Advocacy Advertising</a></div>
                     </div>
                 </div>
             </nav>
@@ -747,7 +747,7 @@ const SampleArticle = (props) => {
                 </div>
               </article></div>
 <div id="zone-el-16" className="zone-el" data-type="editorial">
-    <div tabindex="0" role="region" data-test="vf-conversations-root-element" className="viafoura" style={{minHeight: "428px"}} aria-label="Conversation">
+    <div tab-index="0" role="region" data-test="vf-conversations-root-element" className="viafoura" style={{minHeight: "428px"}} aria-label="Conversation">
         <section data-v-8249a4bc="" data-vf-id="3" className="vf-body-text--deprecated vf-is-logged-out">
             <div data-v-8249a4bc="" className="vf3-comments vf3-comments__last-child-no-ad">
                 <div data-v-8249a4bc="" className="vf3-comments__report-modal-overlay" style={{display: "none"}}></div>
@@ -758,10 +758,10 @@ const SampleArticle = (props) => {
                             <span data-v-89919a0c="" data-v-7870d8ba="" aria-live="polite" className="vf-offscreen-text">
                                 Follow this conversation to be notified when new comments are posted
                             </span>
-                            <span data-v-89919a0c="" data-v-7870d8ba="" ariaHidden="true" className="vf-follow-button__text vf-flex vf-centered">
+                            <span data-v-89919a0c="" data-v-7870d8ba="" aria-hidden="true" className="vf-follow-button__text vf-flex vf-centered">
                                 follow
                             </span>
-                            <span data-v-89919a0c="" data-v-7870d8ba="" ariaHidden="true" className="vf-follow-button__hidden-text">
+                            <span data-v-89919a0c="" data-v-7870d8ba="" aria-hidden="true" className="vf-follow-button__hidden-text">
                                 following
                             </span>
                         </button>
@@ -779,7 +779,7 @@ const SampleArticle = (props) => {
                             <div data-v-2396f95c="" data-v-dddb053c="" data-v-b5a86bde="" data-v-45fba7ae="" className="vf-content-layout vf-new-content vf-post-form__new-content vf-new-content--single" data-v-2917e5f4="">
                                 <div data-v-2396f95c="" className="vf-content-layout__left">
                                     <div data-v-dddb053c="" data-v-2396f95c="" className="pin-line"></div>
-                                    <div data-v-dddb053c="" data-v-2396f95c="" className="pin-line pin-line--bottom"></div> <button data-v-1dbbc2ae="" data-v-63066b2a="" data-v-45fba7ae="" ariaHidden="false" className="vf-front-avatar vf-post-form__avatar vf-avatar vf-no-outline vf-avatar--medium vf-avatar--clickable vf-js-tray-activator" data-v-2396f95c="">
+                                    <div data-v-dddb053c="" data-v-2396f95c="" className="pin-line pin-line--bottom"></div> <button data-v-1dbbc2ae="" data-v-63066b2a="" data-v-45fba7ae="" aria-hidden="false" className="vf-front-avatar vf-post-form__avatar vf-avatar vf-no-outline vf-avatar--medium vf-avatar--clickable vf-js-tray-activator" data-v-2396f95c="">
                                         <div data-v-1dbbc2ae="" className="vf-image-wrapper vf-avatar__inner vf-crop vf-image-round"><img src="https://cdn.viafoura.net/assets/defaultavatar.913f94a2fa72a280b0374131f1c9b175.png" alt="Jump to log in or sign Up" title="Jump to log in or sign Up"/>
                                         </div>
                                     </button>
@@ -806,18 +806,18 @@ const SampleArticle = (props) => {
                 <div data-v-8249a4bc=""></div>
                 <article data-v-5909b365="" data-v-8249a4bc="" className="vf-tabbed-views vf3-comments__tabbed-nav">
                     <nav data-v-4c13d62a="" data-v-5909b365="" className="vf-tabbed-nav vf-horiz-list vf-dropdown-tabs" aria-label="Conversation">
-                        <div role="tablist" className="vf-horiz-list vf-tabbed-nav__tabs"><span ariaHidden="true"></span>
-                            <div className="vf-flex-nav"><button data-v-35fff156="" id="all__button_4" tabindex="0" aria-label="All Comments, 0 items" className="vf-flex-nav vf-nav-button vf-accent-border-colour vf-expanding-hover-light vf-active" role="tab" aria-selected="true" aria-controls="all__panel_4"><span data-v-58b5b311="" data-v-35fff156="" className="vf-nav-label vf-nav-tab-button"><span data-v-58b5b311="" data-v-35fff156="" className="vf-label-text vf-nav-tab-button__text">
+                        <div role="tablist" className="vf-horiz-list vf-tabbed-nav__tabs"><span aria-hidden="true"></span>
+                            <div className="vf-flex-nav"><button data-v-35fff156="" id="all__button_4" tab-index="0" aria-label="All Comments, 0 items" className="vf-flex-nav vf-nav-button vf-accent-border-colour vf-expanding-hover-light vf-active" role="tab" aria-selected="true" aria-controls="all__panel_4"><span data-v-58b5b311="" data-v-35fff156="" className="vf-nav-label vf-nav-tab-button"><span data-v-58b5b311="" data-v-35fff156="" className="vf-label-text vf-nav-tab-button__text">
                                             All Comments
                                         </span>
                                     </span>
-                                </button></div><span ariaHidden="true" style={{width: "1px"}}></span>
+                                </button></div><span aria-hidden="true" style={{width: "1px"}}></span>
                         </div>
                         <div data-v-4851b2f1="" data-v-8249a4bc="" className="comment-nav-right vf3-comments__tabbed-nav__right">
-                            <div data-v-4851b2f1="" className="vf-dropdown vf-select-dropdown vf-sort-actions" autohide="" aria-label="sorting by newest button" positions="bottom-left,bottom-right,right-bottom,left-bottom"><button data-v-606f25f2="" type="button" className="vf-dropdown-button vf-no-outline vf-select-dropdown__trigger vf-dropdown-trigger js-trigger vf-secondary-text vf-dropdown-button--small vf-dropdown-button--accent vf-dropdown-button--icon-right vf-dropdown__text-trigger" aria-controls="dropdown1" aria-expanded="false" aria-haspopup="menu"><svg data-v-606f25f2="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-icon-svg vf-icon-svg--stroke vf-chevron-icon vf-dropdown-button__icon">
+                            <div data-v-4851b2f1="" className="vf-dropdown vf-select-dropdown vf-sort-actions" autohide="" aria-label="sorting by newest button" positions="bottom-left,bottom-right,right-bottom,left-bottom"><button data-v-606f25f2="" type="button" className="vf-dropdown-button vf-no-outline vf-select-dropdown__trigger vf-dropdown-trigger js-trigger vf-secondary-text vf-dropdown-button--small vf-dropdown-button--accent vf-dropdown-button--icon-right vf-dropdown__text-trigger" aria-controls="dropdown1" aria-expanded="false" aria-haspopup="menu"><svg data-v-606f25f2="" viewBox="0 0 18 18" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-icon-svg vf-icon-svg--stroke vf-chevron-icon vf-dropdown-button__icon">
                                         <g data-v-606f25f2="" transform="rotate(0 9 9)">
-                                            <line data-v-606f25f2="" x1="4.2" y1="6" x2="9" y2="11" stroke-width="1.1" stroke-linecap="round"></line>
-                                            <line data-v-606f25f2="" x1="13.8" y1="6" x2="9" y2="11" stroke-width="1.1" stroke-linecap="round"></line>
+                                            <line data-v-606f25f2="" x1="4.2" y1="6" x2="9" y2="11" strokeWidth="1.1" strokeLinecap="round"></line>
+                                            <line data-v-606f25f2="" x1="13.8" y1="6" x2="9" y2="11" strokeWidth="1.1" strokeLinecap="round"></line>
                                         </g>
                                     </svg> <span data-v-606f25f2="" className="vf-dropdown-button__text">
                                         NEWEST
@@ -825,12 +825,12 @@ const SampleArticle = (props) => {
                             </div>
                             <div data-v-4851b2f1="" className="comment-nav-right__settings-button">
                             </div>
-                            <button data-v-7870d8ba="" data-v-76f9528e="" data-v-4851b2f1="" type="button" aria-label="View your notifications and profile settings" data-vf-id="-1" data-test="vf-tray-trigger-bell" className="comment-nav-right__icon vf-button vf-no-outline is-size-large vf-tray-trigger"><strong data-v-08b30e78="" data-v-76f9528e="" aria-label="You have 0 new notifications" className="vf-label count-badge count-badge--tiny count-badge--danger-color vf-tray-count" data-v-7870d8ba="" style={{display: "none"}}><span data-v-08b30e78="" ariaHidden="true" className="count-badge__inner count-badge--tiny__inner">
+                            <button data-v-7870d8ba="" data-v-76f9528e="" data-v-4851b2f1="" type="button" aria-label="View your notifications and profile settings" data-vf-id="-1" data-test="vf-tray-trigger-bell" className="comment-nav-right__icon vf-button vf-no-outline is-size-large vf-tray-trigger"><strong data-v-08b30e78="" data-v-76f9528e="" aria-label="You have 0 new notifications" className="vf-label count-badge count-badge--tiny count-badge--danger-color vf-tray-count" data-v-7870d8ba="" style={{display: "none"}}><span data-v-08b30e78="" aria-hidden="true" className="count-badge__inner count-badge--tiny__inner">
                                         0
-                                    </span></strong> <svg data-v-76f9528e="" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-icon-medium vf-icon vf-icon_bell_icon" data-v-7870d8ba="">
+                                    </span></strong> <svg data-v-76f9528e="" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-icon-medium vf-icon vf-icon_bell_icon" data-v-7870d8ba="">
                                     <defs></defs>
                                     <g>
-                                        <path fill="currentColor" fill-rule="evenodd" d="M50 3c7 0 13 3 18 7 4 5 7 11 8 18l5 28c2 7 5 10 9 12l3 3c1 1 2 2 2 5 0 2-2 5-5 5H10c-3 0-5-3-5-5 0-3 1-4 2-5l3-3c4-2 7-5 9-12l5-28c1-7 4-13 8-18 5-4 11-7 18-7zM36 83h28v1c0 8-6 14-14 14s-14-6-14-14v-1z"></path>
+                                        <path fill="currentColor" fillRule="evenodd" d="M50 3c7 0 13 3 18 7 4 5 7 11 8 18l5 28c2 7 5 10 9 12l3 3c1 1 2 2 2 5 0 2-2 5-5 5H10c-3 0-5-3-5-5 0-3 1-4 2-5l3-3c4-2 7-5 9-12l5-28c1-7 4-13 8-18 5-4 11-7 18-7zM36 83h28v1c0 8-6 14-14 14s-14-6-14-14v-1z"></path>
                                     </g>
                                 </svg></button>
                         </div>
@@ -845,7 +845,7 @@ const SampleArticle = (props) => {
                                 </div>
                                 <div data-v-095529d9=""></div>
                                 <div data-v-095529d9="" className="all-comments__top-rt-bar-container">
-                                    <div data-v-9ff0535e="" data-v-095529d9="" className="realtime-bar vf-rt-stuck-link vf-rt-main-sticky all-comments__top-rt-bar realtime-bar--at-top" ariaHidden="true">
+                                    <div data-v-9ff0535e="" data-v-095529d9="" className="realtime-bar vf-rt-stuck-link vf-rt-main-sticky all-comments__top-rt-bar realtime-bar--at-top" aria-hidden="true">
                                         <div data-v-3f6168e0="" data-v-9ff0535e="" className="transition-wrapper">
                                         </div>
                                     </div>
@@ -860,7 +860,7 @@ const SampleArticle = (props) => {
                                     </div>
                                 </div>
                                 <div data-v-f1086c48="" data-v-095529d9="" className="vf-ad-empty-comments">
-                                    <div data-v-f1086c48=""><span data-v-f1086c48="" className="vf-empty-comments__icon-wrapper"><svg data-v-f1086c48="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-comment-icon vf-icon-small vf-empty-comments__icon vf-icon-svg vf-icon-svg--fill">
+                                    <div data-v-f1086c48=""><span data-v-f1086c48="" className="vf-empty-comments__icon-wrapper"><svg data-v-f1086c48="" viewBox="0 0 18 18" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" className="vf-comment-icon vf-icon-small vf-empty-comments__icon vf-icon-svg vf-icon-svg--fill">
                                                 <path d="M5 3a2 2 0 00-2 2v10l1.923-1.921.077.001h8a2 2 0 002-2V5a2 2 0 00-2-2H5zM4 5a1 1 0 011-1h8a1 1 0 011 1v6.08a1 1 0 01-1 1H5l-.476-.017-.524.524V5z"></path>
                                             </svg></span>
                                         Start the conversation
@@ -898,7 +898,7 @@ const SampleArticle = (props) => {
                                             <p data-v-35e2c53f="" className="vf-trending-article__a11y-label vf-offscreen-text">
                                                 A trending article titled "Pride flag will no longer fly over California city after officials reverse policy" with 5 comments.
                                             </p>
-                                            <div data-v-2646fd56="" data-v-35e2c53f="" className="vf-trending-article__layout vf-item-layout vf-item-layout--medium" ariaHidden="true">
+                                            <div data-v-2646fd56="" data-v-35e2c53f="" className="vf-trending-article__layout vf-item-layout vf-item-layout--medium" aria-hidden="true">
                                                 <div data-v-2646fd56="" className="vf-item-layout__image-wrapper">
                                                     <div data-v-2646fd56="" className="vf-image-wrapper vf-item-layout__image vf-crop vf-image-square"><img src="https://www.sacbee.com/news/nation-world/national/3dbqzd/picture286407280/alternates/LANDSCAPE_1140/sophie-emeny-g8_RshvAYCY-unsplash%20(1).jpg" alt="The LGBTQ+ Pride flag will no longer fly over a Southern California city during Pride Month in June after city leaders adopted a “neutral flag policy,” reports say."/>
                                                     </div>
@@ -908,7 +908,7 @@ const SampleArticle = (props) => {
                                                     <p data-v-2646fd56="" title="Pride flag will no longer fly over California city after officials reverse policy" className="vf-item-layout__title vf-primary-text">
                                                         Pride flag will no longer fly over California city after officials reverse policy
                                                     </p>
-                                                    <p data-v-35e2c53f="" data-v-2646fd56="" className="vf-trending-article__comment-count vf-item-layout__additional-details vf-secondary-text vf-ellipsis-overflow"><svg data-v-35e2c53f="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" count="5" className="vf-comment-icon vf-trending-article__comment-icon vf-icon-svg vf-icon-svg--fill" data-v-2646fd56="">
+                                                    <p data-v-35e2c53f="" data-v-2646fd56="" className="vf-trending-article__comment-count vf-item-layout__additional-details vf-secondary-text vf-ellipsis-overflow"><svg data-v-35e2c53f="" viewBox="0 0 18 18" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" count="5" className="vf-comment-icon vf-trending-article__comment-icon vf-icon-svg vf-icon-svg--fill" data-v-2646fd56="">
                                                             <path d="M5 3a2 2 0 00-2 2v10l1.923-1.921.077.001h8a2 2 0 002-2V5a2 2 0 00-2-2H5zM4 5a1 1 0 011-1h8a1 1 0 011 1v6.08a1 1 0 01-1 1H5l-.476-.017-.524.524V5z"></path>
                                                         </svg>
                                                         5
@@ -920,7 +920,7 @@ const SampleArticle = (props) => {
                                             <p data-v-35e2c53f="" className="vf-trending-article__a11y-label vf-offscreen-text">
                                                 A trending article titled "California commission approved new I-80 toll lanes. Could you be charged $1 per mile?" with 9 comments.
                                             </p>
-                                            <div data-v-2646fd56="" data-v-35e2c53f="" className="vf-trending-article__layout vf-item-layout vf-item-layout--medium" ariaHidden="true">
+                                            <div data-v-2646fd56="" data-v-35e2c53f="" className="vf-trending-article__layout vf-item-layout vf-item-layout--medium" aria-hidden="true">
                                                 <div data-v-2646fd56="" className="vf-item-layout__image-wrapper">
                                                     <div data-v-2646fd56="" className="vf-image-wrapper vf-item-layout__image vf-crop vf-image-square"><img src="https://www.sacbee.com/latest-news/fvtiyd/picture282448738/alternates/LANDSCAPE_1140/SAC_112228_LS_Caltrans_001" alt="Caltrans regional project manager Sutha Suthahar, left, explains the proposed $465 million project to construct toll express lanes on Interstate 80 and U.S. Highway 50 in Yolo and Sacramento counties to residents Kevin Cohee, Brook Gale and Gene Castillo during a community meeting at the West Sacramento Community Center on Tuesday, Nov. 28, 2023."/>
                                                     </div>
@@ -930,7 +930,7 @@ const SampleArticle = (props) => {
                                                     <p data-v-2646fd56="" title="California commission approved new I-80 toll lanes. Could you be charged $1 per mile?" className="vf-item-layout__title vf-primary-text">
                                                         California commission approved new I-80 toll lanes. Could you be charged $1 per mile?
                                                     </p>
-                                                    <p data-v-35e2c53f="" data-v-2646fd56="" className="vf-trending-article__comment-count vf-item-layout__additional-details vf-secondary-text vf-ellipsis-overflow"><svg data-v-35e2c53f="" viewBox="0 0 18 18" ariaHidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" count="9" className="vf-comment-icon vf-trending-article__comment-icon vf-icon-svg vf-icon-svg--fill" data-v-2646fd56="">
+                                                    <p data-v-35e2c53f="" data-v-2646fd56="" className="vf-trending-article__comment-count vf-item-layout__additional-details vf-secondary-text vf-ellipsis-overflow"><svg data-v-35e2c53f="" viewBox="0 0 18 18" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" count="9" className="vf-comment-icon vf-trending-article__comment-icon vf-icon-svg vf-icon-svg--fill" data-v-2646fd56="">
                                                             <path d="M5 3a2 2 0 00-2 2v10l1.923-1.921.077.001h8a2 2 0 002-2V5a2 2 0 00-2-2H5zM4 5a1 1 0 011-1h8a1 1 0 011 1v6.08a1 1 0 01-1 1H5l-.476-.017-.524.524V5z"></path>
                                                         </svg>
                                                         9
