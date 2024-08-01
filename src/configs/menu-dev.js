@@ -160,6 +160,11 @@ const menuDev = {
                     "label": "Lead Media URL",
                     "value": "https://www.miamiherald.com/static/hi/2023/tree-canopy/images/intro-7-centered.jpg",
                     "type": "text"
+                },
+                "data-media-portrait": {
+                    "label": "Lead Media URL (Portrait)",
+                    "value": "https://www.miamiherald.com/static/hi/2023/tree-canopy/images/intro-7-portrait.jpg",
+                    "type": "text"
                 }
             }
         },
