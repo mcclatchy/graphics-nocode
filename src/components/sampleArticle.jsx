@@ -620,11 +620,11 @@ const SampleArticle = (props) => {
                               <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_768/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 601px)"/>
                               <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_640/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 441px)"/>
                               <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_480/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 320px)"/>
-                              <img className="responsive-image" srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" alt="Inter Miami forward Lionel Messi (10) celebrates after scoring a goal against Orlando City." title="Inter Miami forward Lionel Messi (10) celebrates after scoring a goal against Orlando City in the second half of an MLS match at Chase Stadium on Saturday, March 2, 2024. He may return to the lineup against Mexican team Monterrey in the Champions Cup quarterfinal after missing the past three games with a hamstring injury."></img>
+                              <img className="responsive-image" srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" alt="Inter Miami forward Lionel Messi celebrates after scoring a goal against Orlando City." title="Inter Miami forward Lionel Messi celebrates after scoring a goal against Orlando City."></img>
                           </picture>
                       </div>
                       <figcaption>
-                          Inter Miami forward Lionel Messi (10) celebrates after scoring a goal against Orlando City.
+                          Inter Miami forward Lionel Messi celebrates after scoring a goal against Orlando City.
                           <span className="byline">
                               MATIAS J. OCNER
                           </span>
