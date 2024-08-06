@@ -956,6 +956,7 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "nearest-figure",
+            "maxCount": "1",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/nearest-figure.js",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/nearest-figure.css",
             "defaultOptions": {
