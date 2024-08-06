@@ -955,6 +955,45 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "nearest-figure",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/nearest-figure.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/nearest-figure.css",
+            "defaultOptions": {
+                "data-figure-class": {
+                    "label": "Figure Class",
+                    "value": "outer-left",
+                    "options": [
+                        {
+                            "label": "Outer Left",
+                            "value": "outer-left"
+                        },
+                        {
+                            "label": "Inner Left",
+                            "value": "inner-left"
+                        },
+                        {
+                            "label": "Inner Right",
+                            "value": "inner-right"
+                        },
+                        {
+                            "label": "Outer Right",
+                            "value": "outer-right"
+                        },
+                        {
+                            "label": "Wide",
+                            "value": "wide"
+                        },
+                        {
+                            "label": "Full Bleed",
+                            "value": "full-bleed"
+                        }
+                    ],
+                    "type": "switch"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "related-stories",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/related-stories.js",
             "defaultOptions": {

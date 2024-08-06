@@ -610,21 +610,32 @@ const SampleArticle = (props) => {
               <p>Why would Messi, arguably the greatest player of all time, the World Cup champion, the Argentine icon, come to Major League Soccer to play for a fledgling Inter Miami team that holds its games in a temporary stadium?</p>{/**/}{/*]*/}{/*[*/}
               <p>It made little sense.</p>{/**/}{/*]*/}{/*[*/}
               <p>Then, on April 8, during halftime of Inter Miami’s game against FC Dallas, I ran into Mas, the passionate team owner, on the DRV PNK Stadium field and he said something that made me start to believe. Maybe not believe, but at least entertain the thought that this might happen.</p>
+              
+              <figure>
+                  <div>
+                      <div className="img-container picture ">
+                          <picture>
+                              <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 992px)"/>
+                              <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_960/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 768px)"/>
+                              <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_768/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 601px)"/>
+                              <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_640/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 441px)"/>
+                              <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_480/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 320px)"/>
+                              <img className="responsive-image" srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" alt="Inter Miami forward Lionel Messi (10) celebrates after scoring a goal against Orlando City." title="Inter Miami forward Lionel Messi (10) celebrates after scoring a goal against Orlando City in the second half of an MLS match at Chase Stadium on Saturday, March 2, 2024. He may return to the lineup against Mexican team Monterrey in the Champions Cup quarterfinal after missing the past three games with a hamstring injury."></img>
+                          </picture>
+                      </div>
+                      <figcaption>
+                          Inter Miami forward Lionel Messi (10) celebrates after scoring a goal against Orlando City.
+                          <span className="byline">
+                              MATIAS J. OCNER
+                          </span>
+                          <span className="credit">mocner@miamiherald.com</span>
+                      </figcaption>
+                  </div>
+              </figure>
 
               <p>The University of Miami men’s and women’s basketball teams were being honored by Inter Miami for their historic March Madness runs, and I was on the field to capture some photos. I asked Mas how things were going, as his team had lost four games in a row, and he replied: “Michelle, it’s going to be an epic summer.”</p>{/**/}{/*]*/}{/*[*/}
               <p>“Epic?” I asked, wearing a skeptical grin.</p>{/**/}{/*]*/}{/*[*/}
               <p>“Epic!” Mas said, emphatically. Then he added, “Epic! Mark my words.”</p>
-
-              <div className="zone grid combo" data-type="ad">{/*[*/}
-                <div id="zone-el-102" className="zone zone-el hidden" data-type="ad"/>
-                  <div id="zone-el-103" className="zone zone-el stn-player" data-type="ad">
-                    <div>
-                      <div id="stn-player-section-front">
-                        <div className="s2nPlayer element-spacing-large k-BX10tEL0" data-type="float" />
-                    </div>
-                  </div>
-                </div>{/*]*/}
-              </div>{/*]*/}{/*[*/}
 
               <p>That game ended in a 1-0 loss. Miami’s losing skid stretched to five games. A chorus of boos rained down on the team as players and then-coach Phil Neville trudged dejectedly toward the tunnel.</p>{/**/}{/*]*/}{/*[*/}
               <h3>Messi drives turnaround</h3>

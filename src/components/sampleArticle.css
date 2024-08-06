@@ -8,6 +8,32 @@
   padding: 0 var(--page-padding);
 }
 
+@keyframes gradientBG {
+    0% {
+        background-position: 00% 40%
+    }
+
+    20% {
+        background-position: 00% 80%
+    }
+
+    40% {
+        background-position: 00% 40%
+    }
+
+    60% {
+        background-position: 60% 0%
+    }
+
+    80% {
+        background-position: 80% 0%
+    }
+
+    to {
+        background-position: 00% 40%
+    }
+}
+
 #mastheadVueContainer, footer, .bottom-nav, .tool-article {
 	container-type:inline-size
 }
