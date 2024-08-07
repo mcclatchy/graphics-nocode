@@ -498,6 +498,57 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "side-menu",
+            "maxCount": "1",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/side-menu.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/side-menu.css",
+            "defaultOptions": {
+                "slot": {
+                    "label": "Text",
+                    "options": ["li"],
+                    "value": [{
+                            "tag": "li",
+                            "text": '<a href="#liliana-rauer">Liliana Rauer</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#quinn-carter">Quinn Carter</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#shayne-cates">Shayne Cates</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#xander-trexler">Xander Trexler</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#matthew">Matthew</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#adam">Adam</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#nikson-matthews">Nikson Matthews</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#scar-rulien">Scar Rulien</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": '<a href="#isaac-craghtten">Isaac Craghtten</a>'
+                        }
+                    ],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "summary-list",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/summary-list.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/summary-list.js",
