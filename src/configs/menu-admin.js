@@ -498,6 +498,42 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "related-links",
+            "link": "related-links.css",
+            "script": "related-links.js",
+            "defaultOptions": {
+                "data-title": {
+                    "label": "Title",
+                    "value": "Understanding the News",
+                    "type": "text"
+                },
+                "data-subtitle": {
+                    "label": "Subtitle",
+                    "value": "President Joe Biden withdrew Sunday from the 2024 presidential race. Read more on what's happening beyond the top headlines.",
+                    "type": "text"
+                },
+                "slot": {
+                    "label": "Text",
+                    "options": ["li"],
+                    "value": [{
+                            "tag": "li",
+                            "text": 'A Harris-Newsom presidential ticket? There’s one big legal hurdle: <a target="_blank" href="https://www.sacbee.com/news/politics-government/capitol-alert/article290287249.html#2024-election">The 12th Amendment</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": 'Biden makes history, but <a target="_blank" href="https://www.newsobserver.com/news/politics-government/article290246614.html#2024-election%22">two other sitting presidents cut it close to Election Day</a>'
+                        },
+                        {
+                            "tag": "li",
+                            "text": 'What does Kamala Harris’ record show? <a target="_blank" href="https://www.sacbee.com/news/politics-government/election/presidential-election/article290222034.html#2024-election">Take a look</a>'
+                        }
+                    ],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "side-menu",
             "maxCount": "1",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/side-menu.js",
@@ -631,6 +667,45 @@ const menuAdmin = {
                     ],
                     "type": "switch"
                 },
+            }
+        },
+        {
+            "type": "increment",
+            "label": "audio-quote",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.js",
+            "defaultOptions": {
+                "data-quotes": {
+                    "label": "Title",
+                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/data/borges-snippet.json",
+                    "type": "text"
+                },
+                "data-audio": {
+                    "label": "Audio URL",
+                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/audio/borges-snippet.mp3",
+                    "type": "text"
+                },
+                "audio-quote-max-width": {
+                    "label": "Max Embed Width",
+                    "value": "728",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "300",
+                    "max": "1000"
+                },
+                "data-controls": {
+                    "label": "Progress Style",
+                    "value": "circle",
+                    "options": [{
+                            "label": "Circle",
+                            "value": "circle"
+                        },
+                        {
+                            "label": "Bar",
+                            "value": "bar"
+                        }
+                    ],
+                    "type": "switch"
+                }
             }
         },
         {
@@ -1034,6 +1109,10 @@ const menuAdmin = {
                         {
                             "label": "Wide",
                             "value": "wide"
+                        },
+                        {
+                            "label": "Extra Wide",
+                            "value": "extra-wide"
                         },
                         {
                             "label": "Full Bleed",
