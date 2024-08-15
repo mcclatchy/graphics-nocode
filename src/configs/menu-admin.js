@@ -499,8 +499,8 @@ const menuAdmin = {
         {
             "type": "increment",
             "label": "related-links",
-            "link": "related-links.css",
-            "script": "related-links.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/related-links.css",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/related-links.js",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
@@ -673,6 +673,7 @@ const menuAdmin = {
             "type": "increment",
             "label": "audio-quote",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.css",
             "defaultOptions": {
                 "data-quotes": {
                     "label": "Title",
