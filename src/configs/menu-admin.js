@@ -645,18 +645,23 @@ const menuAdmin = {
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-control.css",
             "defaultOptions": {
                 "data-audio": {
-                    "label": "Audio URL",
+                    "label": "Background Audio URL",
                     "value": "https://www.washingtonpost.com/arts-entertainment/interactive/2021/tenement-museum/audio/ambient_v2.mp3",
                     "type": "text"
                 },
                 "data-volume": {
-                    "label": "Audio Volume",
+                    "label": "Background Audio Volume",
                     "value": "50",
                     "type": "range",
                     "unit": "",
                     "min": "0",
                     "max": "100"
                 },
+                "data-note": {
+                    "label": "Note (Optional)",
+                    "value": "",
+                    "type": "text"
+                }
             }
         },
         {
