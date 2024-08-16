@@ -640,6 +640,27 @@ const menuAdmin = {
     ],
     "media-cards": [{
             "type": "increment",
+            "label": "audio-control",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-control.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-control.css",
+            "defaultOptions": {
+                "data-audio": {
+                    "label": "Audio URL",
+                    "value": "https://www.washingtonpost.com/arts-entertainment/interactive/2021/tenement-museum/audio/ambient_v2.mp3",
+                    "type": "text"
+                },
+                "data-volume": {
+                    "label": "Audio Volume",
+                    "value": "50",
+                    "type": "range",
+                    "unit": "",
+                    "min": "0",
+                    "max": "100"
+                },
+            }
+        },
+        {
+            "type": "increment",
             "label": "audio-player",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-player.js",
             "defaultOptions": {

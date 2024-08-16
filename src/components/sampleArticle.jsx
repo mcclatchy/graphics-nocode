@@ -47,7 +47,7 @@ const SampleArticle = (props) => {
       props.freeze ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement);
     }
 
-    const noInlineSizeNames = ['scrolling-map', 'inset-box']
+    const noInlineSizeNames = ['audio-control', 'scrolling-map', 'inset-box']
 
     const nonBodyComponentNames = ["lead-image", "lead-logo", "lead-media", "lead-split", "lead-title", "lead-video", "progress-bar"]
     const nonBodyWebComponents = props.webComponents.filter(webComponent => nonBodyComponentNames.includes(webComponent.props.name));

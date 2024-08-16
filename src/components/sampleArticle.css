@@ -34,8 +34,12 @@
     }
 }
 
-#mastheadVueContainer, footer, .bottom-nav, .tool-article {
-	container-type:inline-size
+#mastheadVueContainer, footer, .bottom-nav {
+	container-type: inline-size;
+}
+
+.tool-article {
+	container-type: normal;
 }
 
 .d-sm,.d-md{display:none}@container(min-width: 768px){.h-sm{display:none}.d-sm{display:block}}@container(min-width: 992px){.h-md{display:none}.d-md{display:block}}/*!
