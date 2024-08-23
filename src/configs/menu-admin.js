@@ -1289,6 +1289,14 @@ const menuAdmin = {
                         }
                     ],
                     "type": "switch"
+                },
+                "data-figure-max-width": {
+                    "label": "Figure Max Width",
+                    "value": "350",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "100",
+                    "max": "400"
                 }
             }
         },
