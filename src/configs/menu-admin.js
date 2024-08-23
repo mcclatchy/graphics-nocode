@@ -498,6 +498,121 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "quiz-box",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/quiz-box.js",
+            "defaultOptions": {
+                "--quiz-box-max-width": {
+                    "label": "Max Embed Width",
+                    "value": "768",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "300",
+                    "max": "1000"
+                },
+                "data-question": {
+                  "label": "Question",
+                  "value": "In which year did Epic Games release Fortnite?",
+                  "type": "text"
+                },
+                "data-question-size": {
+                    "label": "Question Font Size",
+                    "value": "small",
+                    "options": [{
+                            "label": "Small",
+                            "value": "small"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "medium"
+                        },
+                        {
+                            "label": "Large",
+                            "value": "large"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-correct-answer": {
+                  "label": "Correct Answer",
+                  "value": "3",
+                  "type": "text"
+                },
+                "data-answer-width": {
+                    "label": "Answer Width",
+                    "value": "small",
+                    "options": [
+                        {
+                            "label": "Extra Small",
+                            "value": "extra-small"
+                        },
+                        {
+                            "label": "Small",
+                            "value": "small"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "medium"
+                        },
+                        {
+                            "label": "Large",
+                            "value": "large"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-answer-1": {
+                  "label": "Answer 1",
+                  "value": "1999",
+                  "type": "text"
+                },
+                "data-explanation-1": {
+                  "label": "Explanation 1",
+                  "value": "Incorrect. Fortnite was released much later.",
+                  "type": "text"
+                },
+                "data-answer-2": {
+                  "label": "Answer 2",
+                  "value": "2008",
+                  "type": "text"
+                },
+                "data-explanation-2": {
+                  "label": "Explanation 2",
+                  "value": "Incorrect. Fortnite was released almost a decade later.",
+                  "type": "text"
+                },
+                "data-answer-3": {
+                  "label": "Answer 3",
+                  "value": "2017",
+                  "type": "text"
+                },
+                "data-explanation-3": {
+                  "label": "Explanation 3",
+                  "value": "Correct! Fortnite was released in 2017.",
+                  "type": "text"
+                },
+                "data-answer-4": {
+                  "label": "Answer 4",
+                  "value": "2020",
+                  "type": "text"
+                },
+                "data-explanation-4": {
+                  "label": "Explanation 4",
+                  "value": "Incorrect. Fortnite was released a few years earlier.",
+                  "type": "text"
+                },
+                "slot": {
+                    "label": "Image / Video / GIF",
+                    "options": [""],
+                    "value": [{
+                        "tag": "",
+                        "text": ''
+                    }],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "related-links",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/related-links.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/related-links.js",
@@ -711,13 +826,40 @@ const menuAdmin = {
                     "value": "https://www.miamiherald.com/static/hi/graphics/assets/audio/borges-snippet.mp3",
                     "type": "text"
                 },
-                "audio-quote-max-width": {
+                "--audio-quote-max-width": {
                     "label": "Max Embed Width",
-                    "value": "728",
+                    "value": "650",
                     "type": "range",
                     "unit": "px",
                     "min": "300",
                     "max": "1000"
+                },
+                "data-quote-size": {
+                    "label": "Quote Size",
+                    "value": "",
+                    "options": [{
+                            "label": "Small",
+                            "value": "small"
+                        },
+                        {
+                            "label": "Normal",
+                            "value": ""
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-img": {
+                    "label": "Image URL (Optional)",
+                    "value": "https://www.miamiherald.com/static/hi/2022/haiti-assassination/assets/network-outlink.jpg",
+                    "type": "text"
+                },
+                "--audio-quote-img-width": {
+                    "label": "Image Width (Optional)",
+                    "value": "250",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "150",
+                    "max": "350"
                 },
                 "data-controls": {
                     "label": "Progress Style",
@@ -1356,6 +1498,44 @@ const menuAdmin = {
                     "value": [{
                         "tag": "figcaption",
                         "text": "Illustration by Rachel Handley, animation by Sohail Al-Jamea"
+                    }],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
+            "label": "tab-container",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/tab-container.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/tab-container.css",
+            "defaultOptions": {
+                "slot": {
+                    "label": "Caption",
+                    "options": ["div", 'button slot="tab-header"'],
+                    "value": [
+                    {
+                        "tag": 'button slot="tab-header"',
+                        "text": '1'
+                    },
+                    {
+                        "tag": 'button slot="tab-header"',
+                        "text": '2'
+                    },
+                    {
+                        "tag": 'button slot="tab-header"',
+                        "text": '3'
+                    },
+                    {
+                        "tag": 'div slot="tab-content"',
+                        "text": '<div class="sr-widget" data-sr-widget="us.match.nfl.scoreboard" data-sr-match-id="sd:match:bcf98c35-6ae0-41b5-b77d-332c142a2354"></div>'
+                    },
+                    {
+                        "tag": 'div slot="tab-content"',
+                        "text": '<iframe src="https://arbourtrary.com"></iframe>'
+                    },
+                    {
+                        "tag": 'div slot="tab-content"',
+                        "text": '<iframe src="https://example.net"></iframe>'
                     }],
                     "type": "text-item"
                 }
