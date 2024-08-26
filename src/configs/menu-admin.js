@@ -1555,6 +1555,7 @@ const menuAdmin = {
             "type": "increment",
             "label": "event-timeline",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/event-timeline.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/event-timeline.css",
             "defaultOptions": {
                 "data-title": {
                     "label": "Title",
@@ -1568,7 +1569,7 @@ const menuAdmin = {
                 },
                 "data-sheet": {
                     "label": "Sheet",
-                    "value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/1npUIJTdZLX9tgM01AX1oNBKfpejCpXSMU8Seim8Msdo.json",
+                    "value": "https://www.miamiherald.com/static/hi/prodx/sheet-data/1-KIOCsqsOAAHbkSbR3anGyARvxe62ljxfinKF37bbZk.json",
                     "type": "text"
                 },
                 "data-expanded": {
