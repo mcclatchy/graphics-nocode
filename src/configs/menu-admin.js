@@ -755,6 +755,222 @@ const menuAdmin = {
     ],
     "media-cards": [{
             "type": "increment",
+            "label": "article-grid",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/article-grid.js",
+            "defaultOptions": {
+                "data-header": {
+                    "label": "Header Text",
+                    "value": "Next in Series",
+                    "type": "text"
+                },
+                "slot": {
+                    "label": "Article Cards",
+                    "options": ["article-card"],
+                    "attributes": {
+                        "data-url": {
+                            "value": "",
+                            "label": "URL",
+                            "type": "text"
+                        },
+                        "data-visibility-date": {
+                            "label": "Visibility Date",
+                            "value": "",
+                            "type": "text"
+                        },
+                        "data-placeholder-title": {
+                            "label": "Placeholder Title",
+                            "value": "",
+                            "type": "text"
+                        },
+                        "data-hide-after-publication": {
+                            "label": "Hide After Publication",
+                            "value": "",
+                            "type": "switch"
+                        }
+                    },
+                    "excludeText": true,
+                    "value": [{
+                            "tag": "article-card",
+                            "text": "",
+                            "attributes": {
+                                "data-url": {
+                                    "value": "https://www.charlotteobserver.com",
+                                    "label": "URL",
+                                    "type": "text"
+                                },
+                                "data-visibility-date": {
+                                    "label": "Visbility Date",
+                                    "value": "2023-09-04T05:00:00-05:00",
+                                    "type": "text"
+                                },
+                                "data-placeholder-title": {
+                                    "label": "Placeholder Title",
+                                    "value": "Part 1: ‘I’m human,’ the pilot said, ‘and I made a mistake.’ But somebody was going to have to pay",
+                                    "type": "text"
+                                },
+                                "data-hide-after-publication": {
+                                    "label": "Hide After Publication",
+                                    "value": "",
+                                    "options": [{
+                                            "label": "True",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "label": "False",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "switch"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "article-card",
+                            "text": "",
+                            "attributes": {
+                                "data-url": {
+                                    "value": "https://www.charlotteobserver.com/news/local/article291544020.ece",
+                                    "label": "URL",
+                                    "type": "text"
+                                },
+                                "data-visibility-date": {
+                                    "label": "Visbility Date",
+                                    "value": "2024-09-05T05:00:00-05:00",
+                                    "type": "text"
+                                },
+                                "data-placeholder-title": {
+                                    "label": "Placeholder Title",
+                                    "value": "Part 2: Dozens of passengers died on impact. The rest faced another deadly threat: ‘Dante’s Inferno’",
+                                    "type": "text"
+                                },
+                                "data-hide-after-publication": {
+                                    "label": "Hide After Publication",
+                                    "value": "",
+                                    "options": [{
+                                            "label": "True",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "label": "False",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "switch"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "article-card",
+                            "text": "",
+                            "attributes": {
+                                "data-url": {
+                                    "value": "https://www.charlotteobserver.com/news/local/article291544020.ece",
+                                    "label": "URL",
+                                    "type": "text"
+                                },
+                                "data-visibility-date": {
+                                    "label": "Visbility Date",
+                                    "value": "2024-09-06T05:00:00-05:00",
+                                    "type": "text"
+                                },
+                                "data-placeholder-title": {
+                                    "label": "Placeholder Title",
+                                    "value": "Part 3: What led to this deadly disaster? It started with a casual conversation in the cockpit",
+                                    "type": "text"
+                                },
+                                "data-hide-after-publication": {
+                                    "label": "Hide After Publication",
+                                    "value": "",
+                                    "options": [{
+                                            "label": "True",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "label": "False",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "switch"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "article-card",
+                            "text": "",
+                            "attributes": {
+                                "data-url": {
+                                    "value": "https://www.charlotteobserver.com/news/local/article291544020.ece",
+                                    "label": "URL",
+                                    "type": "text"
+                                },
+                                "data-visibility-date": {
+                                    "label": "Visbility Date",
+                                    "value": "2024-09-07T05:00:00-05:00",
+                                    "type": "text"
+                                },
+                                "data-placeholder-title": {
+                                    "label": "Placeholder Title",
+                                    "value": "Part 4: ‘I’m human,’ the pilot said, ‘and I made a mistake.’ But somebody was going to have to pay",
+                                    "type": "text"
+                                },
+                                "data-hide-after-publication": {
+                                    "label": "Hide After Publication",
+                                    "value": "",
+                                    "options": [{
+                                            "label": "True",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "label": "False",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "switch"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "article-card",
+                            "text": "",
+                            "attributes": {
+                                "data-url": {
+                                    "value": "https://www.charlotteobserver.com/news/local/article291544020.ece",
+                                    "label": "URL",
+                                    "type": "text"
+                                },
+                                "data-visibility-date": {
+                                    "label": "Visbility Date",
+                                    "value": "2024-09-08T05:00:00-05:00",
+                                    "type": "text"
+                                },
+                                "data-placeholder-title": {
+                                    "label": "Placeholder Title",
+                                    "value": "Part 5: 50 years later, why do so few people in Charlotte remember that this tragedy ever happened?",
+                                    "type": "text"
+                                },
+                                "data-hide-after-publication": {
+                                    "label": "Hide After Publication",
+                                    "value": "",
+                                    "options": [{
+                                            "label": "True",
+                                            "value": "true"
+                                        },
+                                        {
+                                            "label": "False",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "switch"
+                                }
+                            }
+                        }
+                    ],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "audio-control",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-control.js",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-control.css",
@@ -817,13 +1033,18 @@ const menuAdmin = {
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.css",
             "defaultOptions": {
                 "data-quotes": {
-                    "label": "Title",
+                    "label": "Quotes URL",
                     "value": "https://www.miamiherald.com/static/hi/graphics/assets/data/borges-snippet.json",
                     "type": "text"
                 },
                 "data-audio": {
                     "label": "Audio URL",
                     "value": "https://www.miamiherald.com/static/hi/graphics/assets/audio/borges-snippet.mp3",
+                    "type": "text"
+                },
+                "data-attribution": {
+                    "label": "Attribution",
+                    "value": "Jorge Luis Borges",
                     "type": "text"
                 },
                 "--audio-quote-max-width": {

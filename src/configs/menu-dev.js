@@ -508,6 +508,78 @@ const menuDev = {
     "media-cards": [
         {
             "type": "increment",
+            "label": "audio-quote",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.css",
+            "defaultOptions": {
+                "data-quotes": {
+                    "label": "Quotes URL",
+                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/data/borges-snippet.json",
+                    "type": "text"
+                },
+                "data-audio": {
+                    "label": "Audio URL",
+                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/audio/borges-snippet.mp3",
+                    "type": "text"
+                },
+                "data-attribution": {
+                    "label": "Attribution",
+                    "value": "Jorge Luis Borges",
+                    "type": "text"
+                },
+                "--audio-quote-max-width": {
+                    "label": "Max Embed Width",
+                    "value": "650",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "300",
+                    "max": "1000"
+                },
+                "data-quote-size": {
+                    "label": "Quote Size",
+                    "value": "small",
+                    "options": [{
+                            "label": "Small",
+                            "value": "small"
+                        },
+                        {
+                            "label": "Normal",
+                            "value": ""
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-img": {
+                    "label": "Image URL (Optional)",
+                    "value": "",
+                    "type": "text"
+                },
+                "--audio-quote-img-width": {
+                    "label": "Image Width (Optional)",
+                    "value": "250",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "150",
+                    "max": "350"
+                },
+                "data-controls": {
+                    "label": "Progress Style",
+                    "value": "circle",
+                    "options": [{
+                            "label": "Circle",
+                            "value": "circle"
+                        },
+                        {
+                            "label": "Bar",
+                            "value": "bar"
+                        }
+                    ],
+                    "type": "switch"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "image-carousel",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-carousel.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-carousel.js",
