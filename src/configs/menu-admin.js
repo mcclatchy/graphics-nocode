@@ -1082,6 +1082,20 @@ const menuAdmin = {
                     "min": "150",
                     "max": "350"
                 },
+                "data-image-fit": {
+                    "label": "Image Fit (Optional)",
+                    "value": "",
+                    "options": [{
+                            "label": "Contain",
+                            "value": ""
+                        },
+                        {
+                            "label": "Cover",
+                            "value": "cover"
+                        }
+                    ],
+                    "type": "switch"
+                },
                 "data-controls": {
                     "label": "Progress Style",
                     "value": "circle",
