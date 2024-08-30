@@ -1466,7 +1466,21 @@ const menuAdmin = {
                     "label": "Color (Optional)",
                     "value": "",
                     "type": "color"
-                }
+                },
+                "data-mobile-class": {
+                    "label": "Mobile Class",
+                    "value": "",
+                    "options": [{
+                            "label": "Horizontal",
+                            "value": ""
+                        },
+                        {
+                            "label": "Vertical",
+                            "value": "vertical"
+                        }
+                    ],
+                    "type": "switch"
+                },
             }
         },
         {
