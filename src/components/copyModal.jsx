@@ -11,7 +11,8 @@ import "./copyModal.css"
 class CopyModal extends React.Component {
   constructor(props) {
     super(props);
-    this.embedRelatedId = "tool-embed-related"
+    this.embedRelatedId = "tool-embed-related";
+    this.hideFromApp = "hide-from-app";
   }
 
   render() {
@@ -85,6 +86,7 @@ class CopyModal extends React.Component {
 	        	let link = webComponent.props?.link ? cleanHTML(`<link rel="stylesheet" href="${webComponent.props?.link}">\n`) : "";
 	        	let options = webComponent.props.options;
 	        	let element = getElementByIdPrefix(webComponent.props.id);
+	        	console.log(element)
 	      		if (element && !webComponent.props.options?.slot) {
 	        		element.innerHTML = ''
 	        	}
@@ -93,6 +95,11 @@ class CopyModal extends React.Component {
 
 	        	// TODO: Remove inline styles from children? Seems useful for scrolling-video. Need to see if it scales...
 	        	element?.children && Array.from(element.children).forEach(child => child.removeAttribute("style"))
+
+	        	// Adding hide-from-app by default to element and element's direct children
+	        	element && element.classList.add(this.hideFromApp);
+	        	element && [...element.children].forEach(child => child.classList.add(this.hideFromApp));
+
 	        	const html = element?.outerHTML;
 	        	const textId = `tool-embed-${webComponent.props.id}`;
 	        	const style = getExternalStyleFromOptions(options);
