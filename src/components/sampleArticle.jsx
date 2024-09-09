@@ -532,6 +532,7 @@ const SampleArticle = (props) => {
                       options={webComponent.props.options}
                       script={webComponent.props.script}
                       link={webComponent.props.link}
+                      html={webComponent.props.html}
                     >
                     </WebComponent>
                   </div>
@@ -601,6 +602,7 @@ const SampleArticle = (props) => {
                       options={webComponent.props.options}
                       script={webComponent.props.script}
                       link={webComponent.props.link}
+                      html={webComponent.props.html}
                     >
                     </WebComponent>
                   </div>

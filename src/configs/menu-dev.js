@@ -353,6 +353,19 @@ const menuDev = {
         },
         {
             "type": "increment",
+            "label": "hide-from-app",
+            "maxCount": "1",
+            "html": '<style>.app-only-item{display:none;}#app-only-message{font-style:italic;}</style>\n<script type="module"> const isPageInfoPresent = window?.pageInfo ? true : false; const appOnlyItems = document.querySelectorAll(".app-only-item"); appOnlyItems.forEach(elem => {elem.closest(".embed-infographic")?.classList.remove("embed-infographic")}); if (!isPageInfoPresent) { appOnlyItems.forEach(elem => {elem.style.setProperty("display", "block")}); const elementsToHide = document.querySelectorAll(".hide-from-app"); elementsToHide.forEach(elem => {elem.style.setProperty("display", "none","important")}); }</script>\n\n<p id="app-only-message" class="app-only-item">Viewing this story in our app? <a target="_blank" href="$-tool-article">Click here</a> for a better experience on our website.</p>',
+            "defaultOptions": {
+                "$-tool-article": {
+                    "label": "Article URL",
+                    "value": "https://www.miamiherald.com/news/local/environment/climate-change/article276415291.html",
+                    "type": "text"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "info-slate",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/info-slate.js",
             "defaultOptions": {

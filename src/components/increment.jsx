@@ -33,6 +33,7 @@ const Increment = (props) => {
                 options={props.defaultOptions}
                 script={props.script}
                 link={props.link}
+                html={props.html}
               />;
 
               props.setWebComponents(webComponents => {
@@ -44,6 +45,7 @@ const Increment = (props) => {
 
                   script={props.script}
                   link={props.link}
+                  html={props.html}
 
                   count={count}
                   setCount={setCount}

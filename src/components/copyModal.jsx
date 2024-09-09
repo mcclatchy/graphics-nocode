@@ -13,6 +13,7 @@ class CopyModal extends React.Component {
     super(props);
     this.embedRelatedId = "tool-embed-related";
     this.hideFromApp = "hide-from-app";
+    this.toolVariablePrefix = "$-tool-"
   }
 
   render() {
@@ -52,6 +53,17 @@ class CopyModal extends React.Component {
 	    }, 1000);
 		}
 
+		// TODO: this logic probably needs to live in the textItem area
+		// Should directly change the page HTML and the copyModal should pull from the changes to the page
+		const insertToolVariables = (html, options) => {
+			for (const [option, optionInfo] of Object.entries(options)) {
+				if (option.startsWith(this.toolVariablePrefix)) {
+					html = html.replace(option, optionInfo.value);
+				}
+			}
+			return html;
+		}
+
     return(
       <div className="tool-modal tool-copy-modal" style={{display: this.props.copyMode ? 'block' : 'none' }}>
 
@@ -86,7 +98,7 @@ class CopyModal extends React.Component {
 	        	let link = webComponent.props?.link ? cleanHTML(`<link rel="stylesheet" href="${webComponent.props?.link}">\n`) : "";
 	        	let options = webComponent.props.options;
 	        	let element = getElementByIdPrefix(webComponent.props.id);
-	        	console.log(element)
+
 	      		if (element && !webComponent.props.options?.slot) {
 	        		element.innerHTML = ''
 	        	}
@@ -100,7 +112,8 @@ class CopyModal extends React.Component {
 	        	element && element.classList.add(this.hideFromApp);
 	        	element && [...element.children].forEach(child => child.classList.add(this.hideFromApp));
 
-	        	const html = element?.outerHTML;
+	        	const elementHTML = element?.outerHTML ? beautifyHTML(element.outerHTML) : "";
+	        	const componentHTML = webComponent.props?.html ? insertToolVariables(webComponent.props.html, options) : "";
 	        	const textId = `tool-embed-${webComponent.props.id}`;
 	        	const style = getExternalStyleFromOptions(options);
 
@@ -114,7 +127,7 @@ class CopyModal extends React.Component {
 				      	</div>
 	              <TextareaAutosize 
 	              	id={textId}
-		              value={makePathRelative(script + link + "\n" + beautifyHTML(html)) + `${style ? "\n" + beautifyHTML(style) : ""}`}
+		              value={makePathRelative(script + link + (elementHTML ? "\n" : "") + elementHTML) + componentHTML + `${style ? "\n" + beautifyHTML(style) : ""}`}
 			            className="monospace tool-copy-text"
 			            spellCheck="false"
 			            readOnly={true}

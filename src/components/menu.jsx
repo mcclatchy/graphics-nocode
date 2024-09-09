@@ -31,6 +31,7 @@ const Menu = (props) => {
 	      	maxCount={item.maxCount}
 	      	script={item.script}
 	      	link={item.link}
+	      	html={item.html}
 	    		defaultOptions={structuredClone(item.defaultOptions)}
 
 	    		editMode={props.editMode}

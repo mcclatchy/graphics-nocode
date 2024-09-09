@@ -52,7 +52,7 @@ class WebComponent extends React.Component {
     const internalStyle = getInternalStyleFromOptions(sortedOptions);
     const externalStyle = getExternalStyleFromOptions(sortedOptions);
 
-    const html = `
+    const html = this.props.html ? this.props.html : `
       ${externalStyle}
       <${this.props.name}
         ${internalStyle}
