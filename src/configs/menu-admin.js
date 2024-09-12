@@ -208,6 +208,11 @@ const menuAdmin = {
                     ],
                     "type": "switch"
                 },
+                "data-logo": {
+                    "label": "Logo Image URL",
+                    "value": "https://www.miamiherald.com/static/hi/2024/nc-reality-check/images/raleigh-reality-check-logo.png",
+                    "type": "text"
+                },
                 "--lead-split-border-bottom": {
                     "label": "Border",
                     "value": "1px solid var(--media-background-color)",
@@ -393,6 +398,19 @@ const menuAdmin = {
                 "--fact-box-icon-height": {
                     "label": "Image Height (px)",
                     "value": "70px",
+                    "type": "text"
+                }
+            }
+        },
+        {
+            "type": "increment",
+            "label": "hide-from-app",
+            "maxCount": "1",
+            "html": '<style>.app-only-item{display:none;}#app-only-message{font-style:italic;}</style>\n<script type="module"> const isPageInfoPresent = window?.pageInfo ? true : false; const appOnlyItems = document.querySelectorAll(".app-only-item"); appOnlyItems.forEach(elem => {elem.closest(".embed-infographic")?.classList.remove("embed-infographic")}); if (!isPageInfoPresent) { appOnlyItems.forEach(elem => {elem.style.setProperty("display", "block")}); const elementsToHide = document.querySelectorAll(".hide-from-app"); elementsToHide.forEach(elem => {elem.style.setProperty("display", "none","important")}); }</script>\n\n<p id="app-only-message" class="app-only-item">\n\tViewing this story in our app?\n\t<a target="_blank" href="$-tool-article">\n\tClick here\n\t</a>\n\tfor a better experience on our website.\n</p>',
+            "defaultOptions": {
+                "$-tool-article": {
+                    "label": "Article URL",
+                    "value": "https://www.miamiherald.com/news/local/environment/climate-change/article276415291.html",
                     "type": "text"
                 }
             }
@@ -1525,6 +1543,10 @@ const menuAdmin = {
                             "value": "outer-right"
                         },
                         {
+                            "label": "Portrait",
+                            "value": "portrait"
+                        },
+                        {
                             "label": "Wide",
                             "value": "wide"
                         },
@@ -1540,12 +1562,12 @@ const menuAdmin = {
                     "type": "switch"
                 },
                 "data-figure-max-width": {
-                    "label": "Figure Max Width",
-                    "value": "350",
+                    "label": "Figure Max Width (Overrides Figure Class Width)",
+                    "value": "",
                     "type": "range",
                     "unit": "px",
                     "min": "100",
-                    "max": "400"
+                    "max": "1400"
                 }
             }
         },
