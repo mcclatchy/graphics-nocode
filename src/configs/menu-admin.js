@@ -354,7 +354,7 @@ const menuAdmin = {
                 },
                 "data-color": {
                     "label": "Color",
-                    "value": "#00008b",
+                    "value": "",
                     "type": "color"
                 },
                 "data-max-width": {
@@ -1517,6 +1517,62 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "lottie-box",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lottie-box.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lottie-box.css",
+            "defaultOptions": {
+                "data-lottie-config": {
+                    "label": "Lottie Config URL",
+                    "value": "https://www.miamiherald.com/static/hi/2024/nc-epic-games/data/Battle_Bus_Floating.json",
+                    "type": "text"
+                },
+                "data-speed": {
+                    "label": "Animation Speed",
+                    "value": "100",
+                    "type": "range",
+                    "unit": "%",
+                    "min": "1",
+                    "max": "250"
+                },
+                "data-embed-class": {
+                    "label": "Embed Class",
+                    "value": "",
+                    "options": [{
+                            "label": "None",
+                            "value": ""
+                        },
+                        {
+                            "label": "Inner Left",
+                            "value": "inner-left"
+                        },
+                        {
+                            "label": "Inner Right",
+                            "value": "inner-right"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-height": {
+                    "label": "Height",
+                    "value": "250",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "100",
+                    "max": "1400"
+                },
+                "data-width": {
+                    "label": "Width",
+                    "value": "250",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "100",
+                    "max": "1400"
+                }
+
+            }
+        },
+        {
+            "type": "increment",
             "label": "nearest-figure",
             "maxCount": "1",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/nearest-figure.js",
@@ -1822,6 +1878,29 @@ const menuAdmin = {
         }
     ],
     "graphics": [
+        {
+            "type": "increment",
+            "label": "background-split",
+            "maxCount": "1",
+            "script": "background-split.js",
+            "defaultOptions": {
+                "data-top-color": {
+                    "label": "Top Color",
+                    "value": "#e8e7f8",
+                    "type": "color"
+                },
+                "data-bottom-color": {
+                    "label": "Bottom Color",
+                    "value": "#ffd6d6",
+                    "type": "color"
+                },
+                "data-split-selector": {
+                    "label": "Split Element CSS Selector",
+                    "value": "article h3:last-of-type",
+                    "type": "text"
+                }
+            }
+        },
         {
             "type": "increment",
             "label": "event-timeline",
