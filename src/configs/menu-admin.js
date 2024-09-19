@@ -1882,7 +1882,7 @@ const menuAdmin = {
             "type": "increment",
             "label": "background-split",
             "maxCount": "1",
-            "script": "background-split.js",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/background-split.js",
             "defaultOptions": {
                 "data-top-color": {
                     "label": "Top Color",
