@@ -1,4 +1,4 @@
-import React, { Component, cloneElement } from "react";
+import React, { Component, cloneElement, Fragment } from "react";
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import Toolbar from "./Toolbar.jsx"
 import WebComponent from "./webComponent.jsx"
@@ -594,7 +594,7 @@ const SampleArticle = (props) => {
               {bodyWebComponents && bodyWebComponents.map((webComponent, i) => {
                 const toolbar = bodyToolbars[i];
                 return (
-                  <>
+                  <Fragment key={`fragment-${i}`}>
                     <div style={{position: 'relative', maxWidth: "100%", padding: 0, containerType: noInlineSizeNames.includes(webComponent.props.name) ? "" : "inline-size"}} key={i}>
                       {cloneElement(toolbar, { key: toolbar.id })}
                     </div>
@@ -607,7 +607,7 @@ const SampleArticle = (props) => {
                         html={webComponent.props.html}
                       >
                     </WebComponent>
-                  </>
+                  </Fragment>
                 )
               })}
 
