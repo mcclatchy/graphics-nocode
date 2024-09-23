@@ -594,18 +594,20 @@ const SampleArticle = (props) => {
               {bodyWebComponents && bodyWebComponents.map((webComponent, i) => {
                 const toolbar = bodyToolbars[i];
                 return (
-                  <div style={{position: 'relative', maxWidth: "100%", padding: 0, containerType: noInlineSizeNames.includes(webComponent.props.name) ? "" : "inline-size"}} key={i}>
-                    {cloneElement(toolbar, { key: toolbar.id })}
+                  <>
+                    <div style={{position: 'relative', maxWidth: "100%", padding: 0, containerType: noInlineSizeNames.includes(webComponent.props.name) ? "" : "inline-size"}} key={i}>
+                      {cloneElement(toolbar, { key: toolbar.id })}
+                    </div>
                     <WebComponent
-                      name={webComponent.props.name}
-                      id={`${webComponent.props.id}?v=${Date.now()}`}
-                      options={webComponent.props.options}
-                      script={webComponent.props.script}
-                      link={webComponent.props.link}
-                      html={webComponent.props.html}
-                    >
+                        name={webComponent.props.name}
+                        id={`${webComponent.props.id}?v=${Date.now()}`}
+                        options={webComponent.props.options}
+                        script={webComponent.props.script}
+                        link={webComponent.props.link}
+                        html={webComponent.props.html}
+                      >
                     </WebComponent>
-                  </div>
+                  </>
                 )
               })}
 
