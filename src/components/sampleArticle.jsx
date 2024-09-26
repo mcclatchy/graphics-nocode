@@ -524,7 +524,7 @@ const SampleArticle = (props) => {
 
                 clearMovedWebComponent(webComponent.props.name);
                 return (
-                  <div style={{width: "100%", maxWidth: "100vw", position: "relative", padding: 0, margin: 0}} key={i} >
+                  <div style={{width: "100%", maxWidth: "100vw", position: "relative", padding: 0, margin: 0, height: 0, marginTop: "calc(-1* var(--space))"}} key={i} >
                     {cloneElement(toolbar, { key: toolbar.id })}
                     <WebComponent
                       name={webComponent.props.name}
@@ -595,7 +595,7 @@ const SampleArticle = (props) => {
                 const toolbar = bodyToolbars[i];
                 return (
                   <Fragment key={`fragment-${i}`}>
-                    <div style={{position: 'relative', maxWidth: "100%", padding: 0, containerType: noInlineSizeNames.includes(webComponent.props.name) ? "" : "inline-size"}} key={i}>
+                    <div style={{position: 'relative', maxWidth: "100%", padding: 0, height: 0, marginTop: "calc(-1* var(--space))", containerType: noInlineSizeNames.includes(webComponent.props.name) ? "" : "inline-size"}} key={i}>
                       {cloneElement(toolbar, { key: toolbar.id })}
                     </div>
                     <WebComponent

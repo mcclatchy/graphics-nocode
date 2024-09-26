@@ -718,6 +718,23 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "social-share",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/social-share.js",
+            "defaultOptions": {
+                "data-title": {
+                    "label": "Title",
+                    "value": "Share this story",
+                    "type": "text"
+                },
+                "data-minimal": {
+                    "value": true,
+                    "hide": true,
+                    "type": "boolean"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "summary-list",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/summary-list.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/summary-list.js",
