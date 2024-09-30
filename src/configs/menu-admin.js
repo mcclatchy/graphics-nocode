@@ -1399,6 +1399,43 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "image-slider",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-slider.js?vsim=1",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-slider.css?vsim=1",
+            "defaultOptions": {
+                "data-image-left": {
+                    "label": "Left Image URL",
+                    "value": "https://www.newsobserver.com/static/hi/2024/nc-hurricane-helene/images/biltmore-village-before.jpg",
+                    "type": "text"
+                },
+                "data-tag-left": {
+                    "label": "Left Tag",
+                    "value": "Before",
+                    "type": "text"
+                },
+                "data-image-right": {
+                    "label": "Right Image URL",
+                    "value": "https://www.newsobserver.com/static/hi/2024/nc-hurricane-helene/images/biltmore-village-after.jpg",
+                    "type": "text"
+                },
+                "data-tag-right": {
+                    "label": "Right Tag",
+                    "value": "After",
+                    "type": "text"
+                },
+                "slot": {
+                    "label": "Caption",
+                    "options": ["figcaption"],
+                    "value": [{
+                        "tag": "figcaption",
+                        "text": 'Satellite imagery from ©Planet Labs shows Biltmore Village, North Carolina before and after Hurricane Helene. The image on the left was taken on 09/28/2024 and the image on the right was taken 09/23/2024. <span class="byline">Susan Merriam, David Newcomb</span>'
+                    }],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "inset-box",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.js",
