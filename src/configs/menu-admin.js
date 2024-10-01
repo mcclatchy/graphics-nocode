@@ -1621,8 +1621,16 @@ const menuAdmin = {
                     "unit": "px",
                     "min": "100",
                     "max": "1400"
+                },
+                "slot": {
+                    "label": "Caption",
+                    "options": ["figcaption"],
+                    "value": [{
+                        "tag": "figcaption",
+                        "text": ""
+                    }],
+                    "type": "text-item"
                 }
-
             }
         },
         {
