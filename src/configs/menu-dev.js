@@ -521,6 +521,37 @@ const menuDev = {
     "media-cards": [
         {
             "type": "increment",
+            "label": "audio-player",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-player.js",
+            "defaultOptions": {
+                "data-title": {
+                    "label": "Title",
+                    "value": "Clemson Chant",
+                    "type": "text"
+                },
+                "data-audio": {
+                    "label": "Audio URL",
+                    "value": "https://www.miamiherald.com/static/hi/2024/sc-ea-games/audio/south-carolina/17_USCMB_Def3_EDT2a.mp3",
+                    "type": "text"
+                },
+                "data-waveform": {
+                    "label": "Progress Visual",
+                    "value": "true",
+                    "options": [{
+                            "label": "Waveform",
+                            "value": "true"
+                        },
+                        {
+                            "label": "Bar",
+                            "value": ""
+                        }
+                    ],
+                    "type": "switch"
+                },
+            }
+        },
+        {
+            "type": "increment",
             "label": "audio-quote",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.js",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/audio-quote.css",
@@ -843,6 +874,43 @@ const menuDev = {
         },
         {
             "type": "increment",
+            "label": "image-slider",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-slider.js?vsim=1",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/image-slider.css?vsim=1",
+            "defaultOptions": {
+                "data-image-left": {
+                    "label": "Left Image URL",
+                    "value": "https://www.newsobserver.com/static/hi/2024/nc-hurricane-helene/images/biltmore-village-before.jpg",
+                    "type": "text"
+                },
+                "data-tag-left": {
+                    "label": "Left Tag",
+                    "value": "Before",
+                    "type": "text"
+                },
+                "data-image-right": {
+                    "label": "Right Image URL",
+                    "value": "https://www.newsobserver.com/static/hi/2024/nc-hurricane-helene/images/biltmore-village-after.jpg",
+                    "type": "text"
+                },
+                "data-tag-right": {
+                    "label": "Right Tag",
+                    "value": "After",
+                    "type": "text"
+                },
+                "slot": {
+                    "label": "Caption",
+                    "options": ["figcaption"],
+                    "value": [{
+                        "tag": "figcaption",
+                        "text": 'Satellite imagery from ©Planet Labs shows Biltmore Village, North Carolina before and after Hurricane Helene. The image on the left was taken on 09/28/2024 and the image on the right was taken 09/23/2024. <span class="byline">Susan Merriam, David Newcomb</span>'
+                    }],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "inset-box",
             "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.css",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/inset-box.js",
@@ -960,6 +1028,118 @@ const menuDev = {
                     "label": "Color (Optional)",
                     "value": "",
                     "type": "color"
+                }
+            }
+        },
+        {
+            "type": "increment",
+            "label": "lottie-box",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lottie-box.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/lottie-box.css",
+            "defaultOptions": {
+                "data-lottie-config": {
+                    "label": "Lottie Config URL",
+                    "value": "https://www.miamiherald.com/static/hi/2024/nc-epic-games/data/Battle_Bus_Floating.json",
+                    "type": "text"
+                },
+                "data-speed": {
+                    "label": "Animation Speed",
+                    "value": "100",
+                    "type": "range",
+                    "unit": "%",
+                    "min": "1",
+                    "max": "250"
+                },
+                "data-embed-class": {
+                    "label": "Embed Class",
+                    "value": "",
+                    "options": [{
+                            "label": "None",
+                            "value": ""
+                        },
+                        {
+                            "label": "Inner Left",
+                            "value": "inner-left"
+                        },
+                        {
+                            "label": "Inner Right",
+                            "value": "inner-right"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-height": {
+                    "label": "Height",
+                    "value": "250",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "100",
+                    "max": "1400"
+                },
+                "data-width": {
+                    "label": "Width",
+                    "value": "250",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "100",
+                    "max": "1400"
+                }
+
+            }
+        },
+        {
+            "type": "increment",
+            "label": "nearest-figure",
+            "maxCount": "1",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/nearest-figure.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/nearest-figure.css",
+            "defaultOptions": {
+                "data-figure-class": {
+                    "label": "Figure Class",
+                    "value": "outer-left",
+                    "options": [
+                        {
+                            "label": "Outer Left",
+                            "value": "outer-left"
+                        },
+                        {
+                            "label": "Inner Left",
+                            "value": "inner-left"
+                        },
+                        {
+                            "label": "Inner Right",
+                            "value": "inner-right"
+                        },
+                        {
+                            "label": "Outer Right",
+                            "value": "outer-right"
+                        },
+                        {
+                            "label": "Portrait",
+                            "value": "portrait"
+                        },
+                        {
+                            "label": "Wide",
+                            "value": "wide"
+                        },
+                        {
+                            "label": "Extra Wide",
+                            "value": "extra-wide"
+                        },
+                        {
+                            "label": "Full Bleed",
+                            "value": "full-bleed"
+                        }
+                    ],
+                    "type": "switch"
+                },
+                "data-figure-max-width": {
+                    "label": "Figure Max Width (Overrides Figure Class Width)",
+                    "value": "",
+                    "type": "range",
+                    "unit": "px",
+                    "min": "100",
+                    "max": "1400"
                 }
             }
         },
