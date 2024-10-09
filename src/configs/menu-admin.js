@@ -417,6 +417,108 @@ const menuAdmin = {
         },
         {
             "type": "increment",
+            "label": "icon-links",
+            "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/icon-links.js",
+            "link": "https://www.miamiherald.com/static/hi/graphics/3.0.0/icon-links.css",
+            "defaultOptions": {
+                "data-title": {
+                    "label": "Title",
+                    "value": "Listen to the podcast",
+                    "type": "text"
+                },
+                "data-minimal": {
+                    "value": true,
+                    "hide": true,
+                    "type": "boolean"
+                },
+                "slot": {
+                    "label": "Images",
+                    "options": ["img"],
+                    "attributes": {
+                        "src": {
+                            "value": "",
+                            "label": "Image URL",
+                            "type": "text"
+                        },
+                        "href": {
+                            "value": "",
+                            "label": "Link URL",
+                            "type": "text"
+                        }
+                    },
+                    "excludeText": true,
+                    "value": [
+                        {
+                            "tag": "img",
+                            "text": "",
+                            "attributes": {
+                                "src": {
+                                    "label": "Image URL",
+                                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/icons/spotify-color.svg",
+                                    "type": "text"
+                                },
+                                "href": {
+                                    "label": "Link URL",
+                                    "value": "https://open.spotify.com/show/1vCqvB2Dv7MSjzvjgRiHzM",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "img",
+                            "text": "",
+                            "attributes": {
+                                "src": {
+                                    "label": "Image URL",
+                                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/icons/youtube-color.svg",
+                                    "type": "text"
+                                },
+                                "href": {
+                                    "label": "Link URL",
+                                    "value": "https://www.youtube.com/playlist?list=PLPJMkddm1G_QT5h0d6JNmX5C4Aicd0ubT",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "img",
+                            "text": "",
+                            "attributes": {
+                                "src": {
+                                    "label": "Image URL",
+                                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/icons/apple-podcasts-color.svg",
+                                    "type": "text"
+                                },
+                                "href": {
+                                    "label": "Link URL",
+                                    "value": "https://podcasts.apple.com/us/podcast/the-wrong-walk-home/id1732366456",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "img",
+                            "text": "",
+                            "attributes": {
+                                "src": {
+                                    "label": "Image URL",
+                                    "value": "https://www.miamiherald.com/static/hi/graphics/assets/icons/iheart-radio-color.svg",
+                                    "type": "text"
+                                },
+                                "href": {
+                                    "label": "Link URL",
+                                    "value": "https://www.iheart.com/podcast/269-the-wrong-walk-home-153317778/",
+                                    "type": "text"
+                                }
+                            }
+                        }
+                    ],
+                    "type": "text-item"
+                }
+            }
+        },
+        {
+            "type": "increment",
             "label": "info-slate",
             "script": "https://www.miamiherald.com/static/hi/graphics/3.0.0/info-slate.js",
             "defaultOptions": {
