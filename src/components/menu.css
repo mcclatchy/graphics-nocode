@@ -48,6 +48,10 @@ button {
 	border-top: 1px solid var(--tool-black);
 }
 
+.tool-topper a {
+	height: 26px;
+}
+
 .tool-footer button {
 	display: flex;
 }

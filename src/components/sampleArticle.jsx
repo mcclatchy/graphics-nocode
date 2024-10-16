@@ -542,7 +542,7 @@ const SampleArticle = (props) => {
             <header className="header">
      
               <a className="kicker h6" href="https://www.miamiherald.com/sports/spt-columns-blogs/michelle-kaufman">
-                Michelle Kaufman
+                Sports
               </a>
 
               <h1 className="h1">
@@ -551,9 +551,7 @@ const SampleArticle = (props) => {
               <div className="bio">
                 <div>
                   <div>
-                    <p className="byline">
-                      <a href="mailto:mkaufman@miamiherald.com"> By Michelle Kaufman</a> 
-                    </p>
+                    <div className="byline">By <a href="#">Michelle Kaufman</a> <span className="credit">Miami Herald</span></div>
                   </div>
                   <div>
                     <time id="update_date" className="update-date time" dateTime="2023-08-22T12:42:32-04:00">Updated August 22, 2023 12:42 PM</time>
@@ -616,7 +614,6 @@ const SampleArticle = (props) => {
               <p>Then, on April 8, during halftime of Inter Miami’s game against FC Dallas, I ran into Mas, the passionate team owner, on the DRV PNK Stadium field and he said something that made me start to believe. Maybe not believe, but at least entertain the thought that this might happen.</p>
               
               <figure>
-                  <div>
                       <div className="img-container picture ">
                           <picture>
                               <source srcSet="https://www.miamiherald.com/latest-news/mgjqs8/picture287311260/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Orlando_City_MJO_31.JPG" media="(min-width: 992px)"/>
@@ -634,7 +631,6 @@ const SampleArticle = (props) => {
                           </span>
                           <span className="credit">mocner@miamiherald.com</span>
                       </figcaption>
-                  </div>
               </figure>
 
               <p>The University of Miami men’s and women’s basketball teams were being honored by Inter Miami for their historic March Madness runs, and I was on the field to capture some photos. I asked Mas how things were going, as his team had lost four games in a row, and he replied: “Michelle, it’s going to be an epic summer.”</p>{/**/}{/*]*/}{/*[*/}
@@ -669,7 +665,6 @@ const SampleArticle = (props) => {
               <p>It was a beautiful moment.</p>{/**/}{/*]*/}{/*[*/}
               
               <figure>
-                  <div>
                       <div className="img-container picture ">
                           <picture>
                               <source srcSet="https://www.miamiherald.com/latest-news/x1jxsb/picture280261124/alternates/LANDSCAPE_1140/MIA_Inter_Miami_v_Cincinnat%20(2)" media="(min-width: 992px)" />
@@ -687,7 +682,6 @@ const SampleArticle = (props) => {
                           </span>
                           <span className="credit">mocner@miamiherald.com</span>
                       </figcaption>
-                  </div>
               </figure>
 
               <p>Yedlin was the captain before Messi arrived. The U.S. national team defender took on a leadership role when he joined Inter Miami in 2022, even though midfielder Gregore wore the captain’s armband. His influence was undeniable, as teammates began joining him in meditation sessions and barefoot post-practice “grounding” walks around the field. He also persuaded Neville to let players show off their fashion sense before games rather than show up in team gear.</p>{/**/}{/*]*/}{/*[*/}
