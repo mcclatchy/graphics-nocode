@@ -2192,17 +2192,17 @@ const menuAdmin = {
                 },
                 "projectPath": {
                     "label": "Project URL Path",
-                    "value": "https://www.kansascity.com/static/hi/2023/kc-ogallala-aquifer",
+                    "value": "https://www.newsobserver.com/static/hi/2024/nc-license-plates",
                     "type": "text"
                 },
                 "textConfig": {
                     "label": "Text Config URL",
-                    "value": "https://www.kansascity.com/static/hi/2023/kc-ogallala-aquifer/data/config-text.json",
+                    "value": "https://www.newsobserver.com/static/hi/2024/nc-license-plates/data/config-greensboro-text.json",
                     "type": "text"
                 },
                 "mapConfig": {
                     "label": "Map Config URL",
-                    "value": "https://www.kansascity.com/static/hi/2023/kc-ogallala-aquifer/data/config-map.json",
+                    "value": "https://www.newsobserver.com/static/hi/2024/nc-license-plates/data/config-greensboro-map.json",
                     "type": "text"
                 },
                 "background": {
