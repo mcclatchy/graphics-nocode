@@ -479,6 +479,7 @@ figure img {
 figcaption, .caption {
   font: 400 0.667rem/1.4em var(--sans);
   color: var(--caption-color, var(--secondary-text-color));
+  padding-top: 10px;
 }
 
 figcaption .byline {
