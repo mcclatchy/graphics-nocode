@@ -1355,7 +1355,61 @@ const menuDev = {
             }
         }
     ],
-    "graphics": [{
+    "graphics": [
+        {
+            "type": "increment",
+            "label": "background-split",
+            "maxCount": "1",
+            "script": "https://www.miamiherald.com/static/hi/graphics/4.0.0/background-split.js",
+            "defaultOptions": {
+                "data-top-color": {
+                    "label": "Top Color",
+                    "value": "#6b61ff",
+                    "type": "color"
+                },
+                "data-top-text-color": {
+                    "label": "Top Text Color",
+                    "value": "#FFFFFF",
+                    "type": "color"
+                },
+                "data-top-link-color": {
+                    "label": "Top Link Color",
+                    "value": "#FFFFFF",
+                    "type": "color"
+                },
+                "data-top-caption-color": {
+                    "label": "Top Caption Color",
+                    "value": "#F1F1F1",
+                    "type": "color"
+                },
+                "data-bottom-color": {
+                    "label": "Bottom Color",
+                    "value": "#e8e7f8",
+                    "type": "color"
+                },
+                "data-bottom-text-color": {
+                    "label": "Bottom Text Color",
+                    "value": "#191917",
+                    "type": "color"
+                },
+                "data-bottom-secondary-text-color": {
+                    "label": "Bottom Secondary Text Color",
+                    "value": "#565655",
+                    "type": "color"
+                },
+                "data-bottom-link-color": {
+                    "label": "Bottom Link Color",
+                    "value": "#191917",
+                    "type": "color"
+                },
+                "data-bottom-caption-color": {
+                    "label": "Bottom Caption Color",
+                    "value": "",
+                    "type": "color"
+                }
+            }
+        },
+        {
             "type": "increment",
             "label": "event-timeline",
             "script": "https://www.miamiherald.com/static/hi/graphics/4.0.0/event-timeline.js",

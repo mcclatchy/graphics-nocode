@@ -2,6 +2,44 @@
 	height: 200px;
 	background: var(--tool-lightgray);
 }
+
+.ab-feed {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.ab-feed-body {
+  color: #000000;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+.ab-feed.ab-effect-slide {
+  -moz-transition: none;
+  transition: none;
+  -webkit-transition: none;
+}
+.ab-feed.ab-effect-slide.ab-show {
+  -moz-transform: none;
+  transform: none;
+  -webkit-transform: none;
+}
+.ab-hide {
+  display: none;
+}
+.brz_unread_circle,.brz_envelope {
+  stroke-width:0px;
+}
+#brz_envelope_container {
+  border-radius: 0px;
+  margin: auto 5px auto 0;
+  padding: 10px;
+  display: none;
+}
+
+.msb #brz_envelope_container {
+  display: block;
+}
+
 /* TODO: Can I change this? Doing this because usually styles apply to .story-body > * but this gets nested deeper with the page setup */
 .embed-infographic {
   margin: 20px auto;
