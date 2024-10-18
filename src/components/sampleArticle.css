@@ -1572,6 +1572,17 @@ footer {
     margin: 0 auto;
   }
 }
+@media only screen and (min-width: 830px) {
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
 @container (min-width: 1024px) {
   .footer {
     grid-template-columns: 340px 1fr;
